@@ -49,6 +49,10 @@ class RetireShipHandler : PacketHandler {
 
             val ship = ShipRepository.findById(shipId) ?: continue
 
+            if (ship.isLocked != 0) {
+                continue
+            }
+
             val template = templateData?.get(ship.templateId.toString())
             if (template != null) {
                 val byType = byTypeData?.get(template.type.toString())

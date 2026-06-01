@@ -80,7 +80,8 @@ object AlsConfigLoader {
                 } ?: AlsDatabaseSection(),
                 data = (map["data"] as? Map<String, Any?>)?.let { m ->
                     AlsDataSection(
-                        region = m["region"] as? String ?: "CN"
+                        region = m["region"] as? String ?: "CN",
+                        resourceRepoUrl = m["resourceRepoUrl"] as? String ?: "https://github.com/AzurLaneTools/AzurLaneData"
                     )
                 } ?: AlsDataSection(),
                 admin = (map["admin"] as? Map<String, Any?>)?.let { m ->
@@ -164,6 +165,7 @@ database:
 
 data:
   region: "CN"
+  resourceRepoUrl: "https://github.com/AzurLaneTools/AzurLaneData"
 
 admin:
   enabled: true

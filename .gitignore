@@ -8,4 +8,5 @@ bin/
 .idea/
 *.iml
 out/
+test/
 bak/

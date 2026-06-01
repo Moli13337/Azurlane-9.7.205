@@ -52,8 +52,8 @@ object CnDataLoader : RegionDataLoader {
         loadUserLevel(shareCfgDataPath, shareCfgPath)
         loadTutorialHandbook(shareCfgDataPath, shareCfgPath)
 
-        ConfigLoader.loadGenericConfig("item_data_template", shareCfgDataPath, shareCfgPath)
-        ConfigLoader.loadGenericConfig("equip_data_template", shareCfgDataPath, shareCfgPath)
+        ConfigLoader.loadGenericConfigWithFallback("item_data_template", "item_data_statistics", shareCfgDataPath, shareCfgPath)
+        ConfigLoader.loadGenericConfigWithFallback("equip_data_template", "equip_data_statistics", shareCfgDataPath, shareCfgPath)
         ConfigLoader.loadGenericConfig("skill_data_template", shareCfgDataPath, shareCfgPath)
         ConfigLoader.loadGenericConfig("chapter_template", shareCfgDataPath, shareCfgPath)
         ConfigLoader.loadGenericConfig("shop_template", shareCfgDataPath, shareCfgPath)

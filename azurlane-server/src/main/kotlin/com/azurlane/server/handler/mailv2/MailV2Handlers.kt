@@ -26,18 +26,43 @@ class GetMailListHandler : PacketHandler {
             ?: return Mailv2.SC_30003.newBuilder().build()
 
         val request = Mailv2.CS_30002.parseFrom(payload)
+        val type = request.type.toInt()
         val indexBegin = request.indexBegin.toInt()
         val indexEnd = request.indexEnd.toInt()
 
-        val mails = MailV2Repository.findByReceiverId(commanderId, indexBegin, indexEnd)
+        val mails = when (type) {
+            1 -> MailV2Repository.findByReceiverId(commanderId, indexBegin, indexEnd)
+            2 -> MailV2Repository.findByReceiverId(commanderId).filter { it.importantFlag == 1 }
+            3 -> {
+                val allMails = MailV2Repository.findByReceiverId(commanderId)
+                val allAttachments = MailV2Repository.findAttachmentsByMailIds(allMails.map { it.id })
+                    .groupBy { it.mailId }
+                allMails.filter { mail ->
+                    val attachments = allAttachments[mail.id] ?: emptyList()
+                    attachments.isNotEmpty() && attachments.any { att ->
+                        !isCommonDrop(att.type, att.itemId)
+                    }
+                }
+            }
+            else -> MailV2Repository.findByReceiverId(commanderId, indexBegin, indexEnd)
+        }
+
         val allAttachments = MailV2Repository.findAttachmentsByMailIds(mails.map { it.id })
             .groupBy { it.mailId }
 
-        logger.info { "get mail list: commander=$commanderId indexBegin=$indexBegin indexEnd=$indexEnd count=${mails.size}" }
+        logger.info { "get mail list: commander=$commanderId type=$type indexBegin=$indexBegin indexEnd=$indexEnd count=${mails.size}" }
 
         return Mailv2.SC_30003.newBuilder()
             .addAllMailList(mails.map { buildMailInfo(it, allAttachments[it.id] ?: emptyList()) })
             .build()
+    }
+}
+
+private fun isCommonDrop(type: Int, id: Int): Boolean {
+    return when (type) {
+        GameConstants.DROP_TYPE_RESOURCE -> id == 1 || id == 2 || id == 14
+        GameConstants.DROP_TYPE_ITEM -> id == 20001
+        else -> false
     }
 }
 
@@ -87,7 +112,7 @@ class MailMatchOperationHandler : PacketHandler {
             }
             2 -> {
                 val mails = MailV2Repository.findByReceiverId(commanderId)
-                mails.filter { it.readFlag == 1 && it.attachFlag == 0 }.forEach { mail ->
+                mails.filter { it.readFlag == 2 && it.attachFlag != 1 }.forEach { mail ->
                     MailV2Repository.deleteMail(commanderId, mail.id)
                     matchedMailIds.add(mail.id)
                 }
@@ -119,7 +144,7 @@ class MailMatchOperationHandler : PacketHandler {
     }
 }
 
-class MarkMailReadHandler : PacketHandler {
+class DeleteSingleMailHandler : PacketHandler {
     override val cmdId = 30008
 
     override suspend fun handle(payload: ByteArray, client: ClientConnection): Message {
@@ -129,9 +154,9 @@ class MarkMailReadHandler : PacketHandler {
         val request = Mailv2.CS_30008.parseFrom(payload)
         val mailId = request.mailId.toInt()
 
-        val success = MailV2Repository.markRead(commanderId, mailId)
+        val success = MailV2Repository.deleteMail(commanderId, mailId)
 
-        logger.info { "mark mail read: commander=$commanderId mailId=$mailId success=$success" }
+        logger.info { "delete mail: commander=$commanderId mailId=$mailId success=$success" }
 
         return Mailv2.SC_30009.newBuilder()
             .setResult(if (success) 0 else 1)
@@ -151,7 +176,7 @@ class OneClickOperationHandler : PacketHandler {
 
         when (arg) {
             1 -> MailV2Repository.markAllRead(commanderId)
-            2 -> MailV2Repository.deleteMailsByReadFlag(commanderId, 1)
+            2 -> MailV2Repository.deleteMailsByReadFlag(commanderId, 2)
         }
 
         logger.info { "one click operation: commander=$commanderId arg=$arg" }

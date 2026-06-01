@@ -114,6 +114,7 @@ object Builds : Table("builds") {
     val pos = integer("pos").default(0)
     val shipId = integer("ship_id").default(0)
     val isConsumed = integer("is_consumed").default(0)
+    val createdAt = long("created_at").default(0L)
 
     override val primaryKey = PrimaryKey(id)
     init { index(false, builderId) }

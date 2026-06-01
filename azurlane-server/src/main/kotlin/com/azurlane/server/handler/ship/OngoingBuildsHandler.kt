@@ -22,10 +22,12 @@ class OngoingBuildsHandler : PacketHandler {
 
         val worklistList = builds.map { build ->
             val finishTimestamp = if (build.finishesAt > 0L) (build.finishesAt / 1000).toInt() else 0
-            val remainingSeconds = if (build.finishesAt > 0L) {
-                maxOf(0L, (build.finishesAt - System.currentTimeMillis()) / 1000)
-            } else 0L
-            val startTimestamp = finishTimestamp - remainingSeconds.toInt()
+            val startTimestamp = if (build.createdAt > 0L) (build.createdAt / 1000).toInt() else {
+                val remainingSeconds = if (build.finishesAt > 0L) {
+                    maxOf(0L, (build.finishesAt - System.currentTimeMillis()) / 1000)
+                } else 0L
+                finishTimestamp - remainingSeconds.toInt()
+            }
 
             Common.BUILDINFO.newBuilder()
                 .setTime(startTimestamp)
