@@ -11,5 +11,14 @@ Jar: https://github.com/Moli13337/Azurlane/releases/tag/test
 
 I am too lazy. I might update in the future, but please don't have too high expectations of me.
 
-Thank you for downloading.
-:)
+---
+
+Acknowledgment List (in no particular order):
+
+I couldn't have completed this project without you. Thank you for your selfless dedication!
+
+- https://github.com/AzurLaneTools
+- https://github.com/ggmolly/belfast
+- https://github.com/rafi1212122/BLHX.Server
+
+Thank you for downloading :)
