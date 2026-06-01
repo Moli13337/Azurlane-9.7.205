@@ -1,0 +1,342 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+import "activity26.proto";
+
+message SKIN_HIDDEN_INFO {
+  optional uint32 skin_id = 1;
+  repeated uint32 hidden_parts = 2 [packed = false];
+}
+
+message APARTMENT_GIVE_GIFT {
+  optional uint32 gift_id = 1;
+  optional uint32 number = 2;
+}
+
+message APARTMENT_GIFT {
+  optional uint32 gift_id = 1;
+  optional uint32 number = 2;
+  optional uint32 used_number = 3;
+}
+
+message APARTMENT_SHIP {
+  optional uint32 ship_group = 1;
+  optional uint32 favor_lv = 2;
+  optional uint32 favor_exp = 3;
+  repeated uint32 regular_trigger = 4 [packed = false];
+  optional uint32 daily_favor = 5;
+  repeated uint32 dialogues = 6 [packed = false];
+  repeated uint32 skins = 7 [packed = false];
+  optional uint32 cur_skin = 8;
+  optional string name = 9;
+  optional uint32 name_cd = 10;
+  optional uint32 visit_time = 11;
+  repeated SKIN_HIDDEN_INFO hidden_info = 12;
+}
+
+message APARTMENT_INS {
+  optional uint32 ship_group = 1;
+  optional uint32 care_flag = 2;
+  optional uint32 cur_back = 3;
+  optional uint32 cur_comm_id = 4;
+  repeated COMM_INFO comm_list = 5;
+  repeated PHONE_INFO phone_list = 6;
+  repeated FRIEND_CIRCLE_INFO friend_list = 7;
+}
+
+message APARTMENT_ROOM {
+  optional uint32 id = 1;
+  repeated APARTMENT_FURNITURE furnitures = 2;
+  repeated uint32 collections = 3 [packed = false];
+  repeated uint32 ships = 4 [packed = false];
+}
+
+message APARTMENT_FURNITURE {
+  optional uint32 furniture_id = 1;
+  optional uint32 slot_id = 2;
+}
+
+message APARTMENT_GIFT_SHOP {
+  optional uint32 gift_id = 1;
+  optional uint32 count = 2;
+}
+
+message APA_EVENT_INFO {
+  optional uint32 event_type = 1;
+  optional uint32 value = 2;
+  optional uint32 ship_id = 3;
+}
+
+message ACT_INFO {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+  optional uint32 act_id = 3;
+  optional uint32 time = 4;
+}
+
+message COMM_INFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+  optional uint32 read_flag = 3;
+  repeated KEYVALUE reply_list = 4;
+}
+
+message PHONE_INFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+  optional uint32 read_flag = 3;
+}
+
+message FRIEND_CIRCLE_INFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+  optional uint32 read_flag = 3;
+  optional uint32 good_flag = 4;
+  repeated REPLY_FRIEND reply_list = 5;
+  optional uint32 exit_time = 6;
+}
+
+message REPLY_FRIEND {
+  optional uint32 key = 1;
+  optional uint32 value = 2;
+  optional uint32 time = 3;
+}
+
+// cmd: 28000 - 公寓数据推送(SC only, 登录推送)
+message SC_28000 {
+  repeated APARTMENT_GIFT gifts = 1;
+  repeated APARTMENT_SHIP ships = 2;
+  repeated APARTMENT_GIFT_SHOP gift_daily = 3;
+  repeated APARTMENT_GIFT_SHOP gift_permanent = 4;
+  repeated APARTMENT_GIFT_SHOP furniture_daily = 5;
+  repeated APARTMENT_GIFT_SHOP furniture_permanent = 6;
+  optional uint32 daily_vigor_max = 7;
+  repeated APARTMENT_ROOM rooms = 8;
+  repeated APARTMENT_INS ins = 9;
+}
+
+// cmd: 28001 - 进入房间
+message CS_28001 {
+  optional uint32 room_id = 1;
+}
+
+// cmd: 28002 - 进入房间响应
+message SC_28002 {
+  optional uint32 result = 1;
+  optional APARTMENT_ROOM room = 2;
+  repeated APARTMENT_INS ins = 3;
+}
+
+// cmd: 28003 - 触发交互
+message CS_28003 {
+  optional uint32 ship_group = 1;
+  optional uint32 trigger_id = 2;
+}
+
+// cmd: 28004 - 触发交互响应
+message SC_28004 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28005 - 领取互动奖励
+message CS_28005 {
+  optional uint32 ship_group = 1;
+}
+
+// cmd: 28006 - 领取互动奖励响应
+message SC_28006 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 28007 - 放置家具
+message CS_28007 {
+  optional uint32 room_id = 1;
+  repeated APARTMENT_FURNITURE furnitures = 2;
+}
+
+// cmd: 28008 - 放置家具响应
+message SC_28008 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28009 - 送礼
+message CS_28009 {
+  optional uint32 ship_group = 1;
+  repeated APARTMENT_GIVE_GIFT gifts = 2;
+}
+
+// cmd: 28010 - 送礼响应
+message SC_28010 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28011 - 收藏
+message CS_28011 {
+  optional uint32 room_id = 1;
+  optional uint32 collection_id = 2;
+  optional uint32 ship_group = 3;
+}
+
+// cmd: 28012 - 收藏响应
+message SC_28012 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28013 - 换装
+message CS_28013 {
+  optional uint32 ship_group = 1;
+  optional uint32 skin = 2;
+}
+
+// cmd: 28014 - 换装响应
+message SC_28014 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28015 - 对话
+message CS_28015 {
+  optional uint32 dialog_id = 1;
+}
+
+// cmd: 28016 - 对话响应
+message SC_28016 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 28017 - 改名
+message CS_28017 {
+  optional uint32 type = 1;
+}
+
+// cmd: 28018 - 改名响应
+message SC_28018 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28019 - 拜访
+message CS_28019 {
+  optional uint32 room_id = 1;
+  optional uint32 ship_group = 2;
+}
+
+// cmd: 28020 - 拜访响应
+message SC_28020 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28021 - 设置名字
+message CS_28021 {
+  optional uint32 ship_group = 1;
+  optional string name = 2;
+}
+
+// cmd: 28022 - 设置名字响应
+message SC_28022 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28023 - 触发事件
+message CS_28023 {
+  repeated APA_EVENT_INFO event_list = 1;
+}
+
+// cmd: 28024 - 触发事件响应
+message SC_28024 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28025 - 活动推送(SC only)
+message SC_28025 {
+  repeated ACT_INFO list = 1;
+}
+
+// cmd: 28026 - 互动操作
+message CS_28026 {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+  repeated uint32 id_list = 3 [packed = false];
+}
+
+// cmd: 28027 - 互动操作响应
+message SC_28027 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28028 - 通讯操作
+message CS_28028 {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+  optional uint32 id = 3;
+  optional uint32 chat_id = 4;
+  optional uint32 value = 5;
+}
+
+// cmd: 28029 - 通讯操作响应
+message SC_28029 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 28030 - 设置背景
+message CS_28030 {
+  optional uint32 ship_id = 1;
+  optional uint32 back_id = 2;
+}
+
+// cmd: 28031 - 设置背景响应
+message SC_28031 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28032 - 设置心情值
+message CS_28032 {
+  optional uint32 ship_id = 1;
+  optional uint32 value = 2;
+}
+
+// cmd: 28033 - 设置心情值响应
+message SC_28033 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28034 - 通讯详情
+message CS_28034 {
+  optional uint32 ship_id = 1;
+  optional uint32 comm_id = 2;
+}
+
+// cmd: 28035 - 通讯详情响应
+message SC_28035 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28036 - 隐藏部位
+message CS_28036 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 28037 - 隐藏部位响应
+message SC_28037 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28038 - 设置隐藏部位
+message CS_28038 {
+  optional uint32 ship_group = 1;
+  optional uint32 skin_id = 2;
+  repeated uint32 hidden_parts = 3 [packed = false];
+}
+
+// cmd: 28039 - 设置隐藏部位响应
+message SC_28039 {
+  optional uint32 result = 1;
+}
+
+// cmd: 28090 - 埋点上报
+message CS_28090 {
+  optional uint32 track_typ = 1;
+  repeated int32 int_args = 2 [packed = false];
+  repeated string str_args = 3;
+}

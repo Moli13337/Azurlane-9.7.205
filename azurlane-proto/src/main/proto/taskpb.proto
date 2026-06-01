@@ -1,0 +1,264 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message task_progress {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+}
+
+message task_add {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+  optional uint32 accept_time = 3;
+  optional uint32 submit_time = 4;
+}
+
+message task_update {
+  optional uint32 id = 1;
+  optional uint32 mode = 2;
+  optional uint32 progress = 3;
+}
+
+message weekly_task {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+}
+
+message weekly_info {
+  repeated weekly_task task = 1;
+  optional uint32 pt = 2;
+  optional uint32 reward_lv = 3;
+}
+
+message act_task {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+}
+
+message act_task_list {
+  optional uint32 act_id = 1;
+  repeated act_task tasks = 2;
+}
+
+message act_task_init_list {
+  optional uint32 act_id = 1;
+  repeated act_task tasks = 2;
+  repeated uint32 finish_ids = 3 [packed = false];
+}
+
+message act_task_update {
+  optional uint32 act_id = 1;
+  optional uint32 task_id = 2;
+  optional uint32 mode = 3;
+  optional uint32 progress = 4;
+}
+
+// cmd: 20001 - 任务信息初始化推送 (SC only)
+message SC_20001 {
+  repeated TASKINFO info = 1;
+}
+
+// cmd: 20002 - 任务进度推送 (SC only)
+message SC_20002 {
+  repeated task_progress info = 1;
+}
+
+// cmd: 20003 - 任务添加推送 (SC only)
+message SC_20003 {
+  repeated task_add info = 1;
+}
+
+// cmd: 20004 - 任务完成ID列表推送 (SC only)
+message SC_20004 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 20005 - 领取任务奖励 (CS)
+message CS_20005 {
+  optional uint32 id = 1;
+  repeated DROPINFO choice_award = 2;
+}
+
+// cmd: 20006 - 领取任务奖励响应 (SC)
+message SC_20006 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20007 - 接受任务 (CS)
+message CS_20007 {
+  optional uint32 id = 1;
+}
+
+// cmd: 20008 - 接受任务响应 (SC)
+message SC_20008 {
+  optional uint32 result = 1;
+  optional task_add task = 2;
+}
+
+// cmd: 20009 - 更新任务进度 (CS)
+message CS_20009 {
+  repeated task_update progressinfo = 1;
+}
+
+// cmd: 20010 - 更新任务进度响应 (SC)
+message SC_20010 {
+  optional uint32 result = 1;
+}
+
+// cmd: 20011 - 一键领取奖励 (CS)
+message CS_20011 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 20012 - 一键领取奖励响应 (SC)
+message SC_20012 {
+  repeated uint32 id_list = 1 [packed = false];
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20013 - 花费道具领取奖励 (CS)
+message CS_20013 {
+  optional uint32 id = 1;
+  optional uint32 item_cost = 2;
+}
+
+// cmd: 20014 - 花费道具领取奖励响应 (SC)
+message SC_20014 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20015 - 时间推送 (SC only)
+message SC_20015 {
+  optional uint32 time = 1;
+}
+
+// cmd: 20016 - 触发任务事件 (CS)
+message CS_20016 {
+  optional uint32 event_type = 1;
+  optional uint32 event_target = 2;
+  optional uint32 event_count = 3;
+}
+
+// cmd: 20017 - 触发任务事件响应 (SC)
+message SC_20017 {
+  optional uint32 result = 1;
+}
+
+// cmd: 20101 - 周常信息初始化推送 (SC only)
+message SC_20101 {
+  weekly_info info = 1;
+}
+
+// cmd: 20102 - 周常任务更新推送 (SC only)
+message SC_20102 {
+  repeated weekly_task task = 1;
+}
+
+// cmd: 20103 - 周常任务完成ID推送 (SC only)
+message SC_20103 {
+  repeated uint32 id = 1 [packed = false];
+}
+
+// cmd: 20104 - 周常任务删除ID推送 (SC only)
+message SC_20104 {
+  repeated uint32 id = 1 [packed = false];
+}
+
+// cmd: 20105 - 周常积分更新推送 (SC only)
+message SC_20105 {
+  optional uint32 pt = 1;
+}
+
+// cmd: 20106 - 领取周常任务奖励 (CS)
+message CS_20106 {
+  optional uint32 id = 1;
+}
+
+// cmd: 20107 - 领取周常任务奖励响应 (SC)
+message SC_20107 {
+  optional uint32 result = 1;
+  optional weekly_task next = 2;
+}
+
+// cmd: 20108 - 领取周常积分奖励 (CS)
+message CS_20108 {
+  repeated uint32 id = 1 [packed = false];
+}
+
+// cmd: 20109 - 领取周常积分奖励响应 (SC)
+message SC_20109 {
+  optional uint32 result = 1;
+  optional uint32 pt = 2;
+  repeated weekly_task next = 3;
+}
+
+// cmd: 20110 - 花费道具领取周常奖励 (CS)
+message CS_20110 {
+  optional uint32 id = 1;
+}
+
+// cmd: 20111 - 花费道具领取周常奖励响应 (SC)
+message SC_20111 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20201 - 活动任务初始化推送 (SC only)
+message SC_20201 {
+  repeated act_task_init_list info = 1;
+}
+
+// cmd: 20202 - 活动任务添加推送 (SC only)
+message SC_20202 {
+  repeated act_task_list info = 1;
+}
+
+// cmd: 20203 - 活动任务更新推送 (SC only)
+message SC_20203 {
+  repeated act_task_list info = 1;
+}
+
+// cmd: 20204 - 活动任务删除推送 (SC only)
+message SC_20204 {
+  repeated act_task_list info = 1;
+}
+
+// cmd: 20205 - 领取活动任务奖励 (CS)
+message CS_20205 {
+  optional uint32 act_id = 1;
+  repeated uint32 task_ids = 2 [packed = false];
+}
+
+// cmd: 20206 - 领取活动任务奖励响应 (SC)
+message SC_20206 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20207 - 花费道具领取活动任务奖励 (CS)
+message CS_20207 {
+  optional uint32 act_id = 1;
+  optional uint32 task_id = 2;
+  optional uint32 item_cost = 3;
+}
+
+// cmd: 20208 - 花费道具领取活动任务奖励响应 (SC)
+message SC_20208 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 20209 - 更新活动任务进度 (CS)
+message CS_20209 {
+  repeated act_task_update progressinfo = 1;
+}
+
+// cmd: 20210 - 更新活动任务进度响应 (SC)
+message SC_20210 {
+  optional uint32 result = 1;
+}

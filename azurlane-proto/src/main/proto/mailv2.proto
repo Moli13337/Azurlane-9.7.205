@@ -1,0 +1,179 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+message MATCH_EXPRESSION {
+  optional uint32 type = 1;
+  repeated uint32 arg_list = 2 [packed = false];
+}
+
+message MAIL_INFO {
+  optional uint32 id = 1;
+  optional uint32 date = 2;
+  optional string title = 3;
+  optional string content = 4;
+  repeated DROPINFO attachment_list = 5;
+  optional uint32 attach_flag = 6;
+  optional uint32 read_flag = 7;
+  optional uint32 imp_flag = 8;
+}
+
+message MAIL_SIMPLE_INFO {
+  optional uint32 id = 1;
+  optional uint32 date = 2;
+  optional string title = 3;
+  optional string content = 4;
+  repeated DROPINFO attachment_list = 5;
+}
+
+message MAIL_TITLE {
+  optional uint32 id = 1;
+  optional string title = 2;
+}
+
+message TIME_REWARD_INFO {
+  optional uint32 id = 1;
+  optional uint32 timestamp = 2;
+  optional string title = 3;
+  optional string text = 4;
+  repeated DROPINFO attachment_list = 5;
+  optional uint32 attach_flag = 6;
+  optional uint32 send_time = 7;
+}
+
+// cmd: 30001 - 邮件未读通知(SC only)
+message SC_30001 {
+  optional uint32 unread_number = 1;
+  optional uint32 total_number = 2;
+}
+
+// cmd: 30002 - 请求邮件列表
+message CS_30002 {
+  optional uint32 type = 1;
+  optional uint32 index_begin = 2;
+  optional uint32 index_end = 3;
+}
+
+// cmd: 30003 - 邮件列表响应
+message SC_30003 {
+  repeated MAIL_INFO mail_list = 1;
+}
+
+// cmd: 30004 - 请求简单邮件列表
+message CS_30004 {
+  optional uint32 index_begin = 1;
+  optional uint32 index_end = 2;
+}
+
+// cmd: 30005 - 简单邮件列表响应
+message SC_30005 {
+  repeated MAIL_SIMPLE_INFO mail_list = 1;
+}
+
+// cmd: 30006 - 邮件匹配操作
+message CS_30006 {
+  optional uint32 cmd = 1;
+  repeated MATCH_EXPRESSION match_list = 2;
+}
+
+// cmd: 30007 - 邮件操作结果
+message SC_30007 {
+  optional uint32 result = 1;
+  repeated uint32 mail_id_list = 2 [packed = false];
+  repeated DROPINFO drop_list = 3;
+  optional uint32 unread_number = 4;
+}
+
+// cmd: 30008 - 标记邮件已读
+message CS_30008 {
+  optional uint32 mail_id = 1;
+}
+
+// cmd: 30009 - 标记已读结果
+message SC_30009 {
+  optional uint32 result = 1;
+}
+
+// cmd: 30010 - 一键操作
+message CS_30010 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 30011 - 一键操作结果
+message SC_30011 {
+  optional uint32 result = 1;
+}
+
+// cmd: 30012 - 邮件兑换
+message CS_30012 {
+  optional uint32 oil = 1;
+  optional uint32 gold = 2;
+}
+
+// cmd: 30013 - 兑换结果
+message SC_30013 {
+  optional uint32 result = 1;
+}
+
+// cmd: 30014 - 批量ID操作
+message CS_30014 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 30015 - 邮件标题列表响应
+message SC_30015 {
+  repeated MAIL_TITLE mail_title_list = 2;
+}
+
+// cmd: 30016 - 请求带分组
+message CS_30016 {
+  optional uint32 item_id = 1;
+  optional uint32 groupid = 2;
+}
+
+// cmd: 30017 - 年份列表响应
+message SC_30017 {
+  repeated uint32 years = 1 [packed = false];
+}
+
+// cmd: 30018 - 请求带年份和分组
+message CS_30018 {
+  optional uint32 item_id = 1;
+  optional uint32 year = 2;
+  optional uint32 groupid = 3;
+}
+
+// cmd: 30019 - 操作结果(带掉落)
+message SC_30019 {
+  optional uint32 ret = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 30101 - 计时奖励状态通知(SC only)
+message SC_30101 {
+  optional uint32 number = 1;
+  optional uint32 max_timestamp = 2;
+}
+
+// cmd: 30102 - 请求计时奖励列表
+message CS_30102 {
+  optional uint32 type = 1;
+}
+
+// cmd: 30103 - 计时奖励列表响应
+message SC_30103 {
+  repeated TIME_REWARD_INFO time_reward_list = 1;
+}
+
+// cmd: 30104 - 领取计时奖励
+message CS_30104 {
+  optional uint32 reward_id = 1;
+}
+
+// cmd: 30105 - 领取计时奖励结果
+message SC_30105 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  optional uint32 number = 3;
+  optional uint32 max_timestamp = 4;
+}

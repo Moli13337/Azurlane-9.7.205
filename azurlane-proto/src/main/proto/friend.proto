@@ -1,0 +1,307 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+// ============================================================
+// 数据结构定义（friend独有）
+// ============================================================
+
+message PLAYER_INFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 lv = 3;
+  optional DISPLAYINFO display = 4;
+}
+
+message MSG_INFO {
+  optional uint32 timestamp = 1;
+  optional PLAYER_INFO player = 2;
+  optional string content = 3;
+}
+
+message DETAIL_INFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 title = 3;
+  optional uint32 lv = 4;
+  optional uint32 ship_count = 5;
+  optional uint32 collection_count = 6;
+  optional uint32 pvp_attack_count = 7;
+  optional uint32 pvp_win_count = 8;
+  optional uint32 collect_attack_count = 9;
+  optional uint32 attack_count = 10;
+  optional uint32 win_count = 11;
+  optional string adv = 12;
+  optional uint32 online = 13;
+  optional uint32 pre_online_time = 14;
+  optional uint32 score = 15;
+  repeated uint32 medal_id = 16 [packed = false];
+  optional DISPLAYINFO display = 17;
+}
+
+message FRIEND_INFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 lv = 3;
+  optional string adv = 4;
+  optional uint32 online = 5;
+  optional uint32 pre_online_time = 6;
+  optional DISPLAYINFO display = 7;
+}
+
+message AD_ARG {
+  optional uint32 type = 1;
+  optional string string = 2;
+  optional uint32 int = 3;
+}
+
+// ============================================================
+// cmd: 50000 - 好友登录推送 (SC)
+// ============================================================
+
+message SC_50000 {
+  repeated FRIEND_INFO friend_list = 1;
+  repeated MSG_INFO request_list = 2;
+}
+
+// ============================================================
+// cmd: 50001 - 搜索玩家 (CS)
+// ============================================================
+
+message CS_50001 {
+  optional uint32 type = 1;
+  optional string keyword = 2;
+}
+
+// cmd: 50002 - 搜索玩家响应 (SC)
+message SC_50002 {
+  optional uint32 result = 1;
+  optional DETAIL_INFO player = 2;
+}
+
+// ============================================================
+// cmd: 50003 - 发送好友请求 (CS)
+// ============================================================
+
+message CS_50003 {
+  optional uint32 id = 1;
+  optional string content = 2;
+}
+
+// cmd: 50004 - 发送好友请求响应 (SC)
+message SC_50004 {
+  optional uint32 result = 1;
+}
+
+// cmd: 50005 - 收到好友请求推送 (SC)
+message SC_50005 {
+  optional MSG_INFO msg = 1;
+}
+
+// ============================================================
+// cmd: 50006 - 接受好友请求 (CS)
+// ============================================================
+
+message CS_50006 {
+  optional uint32 id = 1;
+}
+
+// cmd: 50007 - 接受好友请求响应 (SC)
+message SC_50007 {
+  optional uint32 result = 1;
+}
+
+// cmd: 50008 - 好友上线通知推送 (SC)
+message SC_50008 {
+  optional FRIEND_INFO player = 1;
+}
+
+// ============================================================
+// cmd: 50009 - 拒绝好友请求 (CS)
+// ============================================================
+
+message CS_50009 {
+  optional uint32 id = 1;
+}
+
+// cmd: 50010 - 拒绝好友请求响应 (SC)
+message SC_50010 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 50011 - 删除好友 (CS)
+// ============================================================
+
+message CS_50011 {
+  optional uint32 id = 1;
+}
+
+// cmd: 50012 - 删除好友响应 (SC)
+message SC_50012 {
+  optional uint32 result = 1;
+}
+
+// cmd: 50013 - 好友下线通知推送 (SC)
+message SC_50013 {
+  optional uint32 id = 1;
+}
+
+// ============================================================
+// cmd: 50014 - 获取推荐好友列表 (CS)
+// ============================================================
+
+message CS_50014 {
+  optional uint32 type = 1;
+}
+
+// cmd: 50015 - 推荐好友列表响应 (SC)
+message SC_50015 {
+  repeated PLAYER_INFO player_list = 1;
+}
+
+// ============================================================
+// cmd: 50016 - 获取黑名单 (CS)
+// ============================================================
+
+message CS_50016 {
+  optional uint32 type = 1;
+}
+
+// cmd: 50017 - 黑名单响应 (SC)
+message SC_50017 {
+  repeated PLAYER_INFO black_list = 1;
+}
+
+// ============================================================
+// cmd: 50018 - 批量查询好友信息 (CS)
+// ============================================================
+
+message CS_50018 {
+  repeated uint32 user_id_list = 1 [packed = false];
+}
+
+// cmd: 50019 - 批量查询好友信息响应 (SC)
+message SC_50019 {
+  repeated FRIEND_INFO user_list = 1;
+}
+
+// ============================================================
+// cmd: 50101 - 广告推送 (SC)
+// ============================================================
+
+message SC_50101 {
+  optional PLAYER_INFO player = 1;
+  optional uint32 type = 2;
+  optional string content = 3;
+}
+
+// ============================================================
+// cmd: 50102 - 广告操作 (CS)
+// ============================================================
+
+message CS_50102 {
+  optional uint32 type = 1;
+  optional string content = 2;
+}
+
+// cmd: 50103 - 广告参数推送 (SC)
+message SC_50103 {
+  optional uint32 ad_id = 1;
+  repeated AD_ARG arg_list = 2;
+}
+
+// ============================================================
+// cmd: 50104 - 收到聊天消息推送 (SC)
+// ============================================================
+
+message SC_50104 {
+  optional MSG_INFO msg = 1;
+}
+
+// ============================================================
+// cmd: 50105 - 发送聊天消息 (CS)
+// ============================================================
+
+message CS_50105 {
+  optional uint32 id = 1;
+  optional string content = 2;
+}
+
+// cmd: 50106 - 发送聊天消息响应 (SC)
+message SC_50106 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 50107 - 删除聊天消息 (CS)
+// ============================================================
+
+message CS_50107 {
+  optional uint32 id = 1;
+}
+
+// cmd: 50108 - 删除聊天消息响应 (SC)
+message SC_50108 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 50109 - 标记聊天已读 (CS)
+// ============================================================
+
+message CS_50109 {
+  optional uint32 id = 1;
+}
+
+// cmd: 50110 - 标记聊天已读响应 (SC)
+message SC_50110 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 50111 - 举报聊天消息 (CS)
+// ============================================================
+
+message CS_50111 {
+  optional uint32 id = 1;
+  optional string info = 2;
+  optional string content = 3;
+}
+
+// cmd: 50112 - 举报聊天消息响应 (SC)
+message SC_50112 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 50113 - 获取玩家信息 (CS)
+// ============================================================
+
+message CS_50113 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 50114 - 获取玩家信息响应 (SC)
+message SC_50114 {
+  optional uint32 result = 1;
+  optional PLAYER_INFO player = 2;
+}
+
+// ============================================================
+// cmd: 50115 - 推送 (SC)
+// ============================================================
+
+message SC_50115 {
+  optional uint32 timestamp = 1;
+}
+
+// ============================================================
+// cmd: 50116 - 推送 (SC)
+// ============================================================
+
+message SC_50116 {
+  optional PLAYER_INFO player = 1;
+  optional uint32 type = 2;
+  optional string content = 3;
+}

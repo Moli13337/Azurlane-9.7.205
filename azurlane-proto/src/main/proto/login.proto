@@ -1,0 +1,315 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+// ============================================================
+// 通用子消息
+// ============================================================
+
+message SERVERINFO {
+  repeated uint32 ids = 1 [packed = false];
+  optional string ip = 2;
+  optional uint32 port = 3;
+  optional uint32 state = 4;
+  optional string name = 5;
+  optional uint32 tag_state = 6;
+  optional uint32 sort = 7;
+  optional string proxy_ip = 8;
+  optional uint32 proxy_port = 9;
+}
+
+message NOTICEINFO {
+  optional uint32 id = 1;
+  optional string version = 2;
+  optional string btn_title = 3;
+  optional string title = 4;
+  optional string title_image = 5;
+  optional string time_desc = 6;
+  optional string content = 7;
+  optional uint32 tag_type = 8;
+  optional uint32 icon = 9;
+  optional uint32 track = 10;
+  optional uint32 priority = 11;
+  optional uint32 need_level = 12;
+}
+
+message TRACK_INFO {
+  optional uint32 track_typ = 1;
+  optional uint32 track_time = 2;
+  repeated int32 int_args = 3 [packed = false];
+  repeated string str_args = 4;
+}
+
+message LOGIN_ADDR {
+  optional string desc = 1;
+  optional string ip = 2;
+  optional uint32 port = 3;
+  optional string proxy_ip = 4;
+  optional uint32 proxy_port = 5;
+  optional uint32 type = 6;
+}
+
+// ============================================================
+// cmd: 10001 - 注册账号请求 (CS)
+// ============================================================
+
+message CS_10001 {
+  optional string account = 1;
+  optional string password = 2;
+  optional string mail_box = 3;
+}
+
+// cmd: 10002 - 注册账号响应 (SC)
+message SC_10002 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 10018 - 服务器状态检查请求 (CS)
+// ============================================================
+
+message CS_10018 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 10019 - 服务器状态检查响应 (SC)
+message SC_10019 {
+  repeated SERVERINFO serverlist = 1;
+}
+
+// ============================================================
+// cmd: 10020 - 登录认证请求 (CS)
+// ============================================================
+
+message CS_10020 {
+  optional uint32 login_type = 1;
+  optional string arg1 = 2;
+  optional string arg2 = 3;
+  optional string arg3 = 4;
+  optional string arg4 = 5;
+  optional string check_key = 6;
+  optional uint32 device = 7;
+}
+
+// cmd: 10021 - 登录认证响应 (SC)
+message SC_10021 {
+  optional uint32 result = 1;
+  repeated SERVERINFO serverlist = 2;
+  optional uint32 account_id = 3;
+  optional string server_ticket = 4;
+  repeated NOTICEINFO notice_list = 5;
+  optional uint32 device = 6;
+  repeated uint32 limit_server_ids = 7 [packed = false];
+}
+
+// ============================================================
+// cmd: 10022 - 加入服务器请求 (CS)
+// ============================================================
+
+message CS_10022 {
+  optional uint32 account_id = 1;
+  optional string server_ticket = 2;
+  optional string platform = 3;
+  optional uint32 serverid = 4;
+  optional string check_key = 5;
+  optional string device_id = 6;
+}
+
+// cmd: 10023 - 加入服务器响应 (SC)
+message SC_10023 {
+  optional uint32 result = 1;
+  optional uint32 user_id = 2;
+  optional string server_ticket = 3;
+  optional uint32 server_load = 4;
+  optional uint32 db_load = 5;
+}
+
+// ============================================================
+// cmd: 10024 - 创建新玩家请求 (CS)
+// ============================================================
+
+message CS_10024 {
+  optional string nick_name = 1;
+  optional uint32 ship_id = 2;
+  optional string device_id = 3;
+}
+
+// cmd: 10025 - 创建新玩家响应 (SC)
+message SC_10025 {
+  optional uint32 result = 1;
+  optional uint32 user_id = 2;
+}
+
+// ============================================================
+// cmd: 10026 - 玩家是否存在请求 (CS)
+// ============================================================
+
+message CS_10026 {
+  optional uint32 account_id = 1;
+}
+
+// cmd: 10027 - 玩家是否存在响应 (SC)
+message SC_10027 {
+  optional uint32 user_id = 1;
+  optional uint32 level = 2;
+}
+
+// ============================================================
+// cmd: 10100 - 心跳请求 (CS)
+// need_request: 是否需要请求标志
+// ============================================================
+
+message CS_10100 {
+  optional uint32 need_request = 1;
+}
+
+// cmd: 10101 - 心跳响应 (SC)
+message SC_10101 {
+  optional uint32 state = 1;
+}
+
+// ============================================================
+// cmd: 10700 - 资源版本检查请求 (CS)
+// ============================================================
+
+message CS_10700 {
+  optional string platform = 1;
+  optional string sub_platform = 2;
+  optional uint32 pack_index = 3;
+}
+
+// cmd: 10701 - 资源版本检查响应 (SC)
+message SC_10701 {
+  optional string url = 1;
+  repeated string version = 2;
+  repeated LOGIN_ADDR addr_list = 3;
+  optional uint32 timestamp = 4;
+  optional uint32 monday_0oclock_timestamp = 5;
+  repeated string cdn_list = 6;
+}
+
+// ============================================================
+// cmd: 10800 - 网关登录请求-旧版 (CS)
+// ============================================================
+
+message CS_10800 {
+  optional uint32 state = 1;
+  optional string platform = 2;
+}
+
+// cmd: 10801 - 网关登录响应-旧版 (SC)
+message SC_10801 {
+  optional string gateway_ip = 1;
+  optional uint32 gateway_port = 2;
+  optional string url = 3;
+  repeated string version = 4;
+  optional string proxy_ip = 5;
+  optional uint32 proxy_port = 6;
+  optional uint32 is_ts = 7;
+  optional uint32 timestamp = 8;
+  optional uint32 monday_0oclock_timestamp = 9;
+  repeated string cdn_list = 10;
+}
+
+// ============================================================
+// cmd: 10802 - 网关登录请求-新版 (CS)
+// platform 为 int 类型 (非 string)
+// ============================================================
+
+message CS_10802 {
+  optional uint32 state = 1;
+  optional uint32 platform = 2;
+}
+
+// cmd: 10803 - 网关登录响应-新版 (SC)
+message SC_10803 {
+  optional string gateway_ip = 1;
+  optional uint32 gateway_port = 2;
+  optional string proxy_ip = 3;
+  optional uint32 proxy_port = 4;
+}
+
+// ============================================================
+// cmd: 10991 - 批量追踪数据上报 (CS, 无响应)
+// ============================================================
+
+message CS_10991 {
+  repeated TRACK_INFO infos = 1;
+}
+
+// ============================================================
+// cmd: 10992 - 单条追踪数据上报 (CS, 无响应)
+// ============================================================
+
+message CS_10992 {
+  optional uint32 track_type = 1;
+  optional uint32 event_id = 2;
+  optional string para1 = 3;
+  optional string para2 = 4;
+  optional string para3 = 5;
+}
+
+// ============================================================
+// cmd: 10993 - 行为追踪上报 (CS, 无响应)
+// ============================================================
+
+message CS_10993 {
+  optional uint32 action_system = 1;
+  optional uint32 action_id = 2;
+  optional string action_des = 3;
+  optional uint32 action_arg = 4;
+}
+
+// ============================================================
+// cmd: 10994 - 追踪类型请求 (CS)
+// ============================================================
+
+message CS_10994 {
+  optional uint32 type = 1;
+}
+
+// cmd: 10995 - 追踪响应 (SC)
+message SC_10995 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 10996 - 版本检查请求 (CS)
+// ============================================================
+
+message CS_10996 {
+  optional uint32 state = 1;
+  optional string platform = 2;
+}
+
+// cmd: 10997 - 版本检查响应 (SC)
+message SC_10997 {
+  optional uint32 version1 = 1;
+  optional uint32 version2 = 2;
+  optional uint32 version3 = 3;
+  optional uint32 version4 = 4;
+  optional string gateway_ip = 5;
+  optional uint32 gateway_port = 6;
+  optional string url = 7;
+}
+
+// ============================================================
+// cmd: 10998 - 服务器命令通知 (SC only, 服务端主动推送)
+// ============================================================
+
+message SC_10998 {
+  optional uint32 cmd = 1;
+  optional uint32 result = 2;
+}
+
+// ============================================================
+// cmd: 10999 - 服务器踢出通知 (SC only, 服务端主动推送)
+// reason: 踢出原因
+//   1 = 在其他设备登录
+//   2 = 服务器维护
+//   3 = 账号封禁
+// ============================================================
+
+message SC_10999 {
+  optional uint32 reason = 1;
+}

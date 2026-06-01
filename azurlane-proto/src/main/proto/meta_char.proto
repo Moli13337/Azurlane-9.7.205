@@ -1,0 +1,35 @@
+syntax = "proto3";
+package com.azurlane.proto;
+
+import "common.proto";
+import "technology.proto";
+
+message SC_70000 {
+  repeated METACHARINFO meta_char_list = 1;
+}
+
+message CS_70001 {
+  optional uint32 id = 1;
+  repeated uint32 attr_list = 2 [packed = false];
+}
+
+message SC_70002 {
+  optional uint32 result = 1;
+}
+
+message CS_70003 {
+  optional uint32 id = 1;
+}
+
+message SC_70004 {
+  optional uint32 result = 1;
+}
+
+message CS_70005 {
+  optional uint32 id = 1;
+}
+
+message SC_70006 {
+  optional uint32 result = 1;
+  optional SHIPINFO ship = 2;
+}

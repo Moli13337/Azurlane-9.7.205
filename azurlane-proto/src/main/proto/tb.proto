@@ -1,0 +1,629 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+message TBDROP {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+  optional int32 number = 3;
+}
+
+message TBDISPLAY {
+  repeated TBDROP benefit_display = 1;
+  repeated TBBENEFITVAL dollar_num_display = 2;
+  repeated TBBFCOUNTER counter = 3;
+}
+
+message TBBENEFITVAL {
+  optional uint32 buffid = 1;
+  repeated KVDATA benefitval = 2;
+}
+
+message TBBFCOUNTER {
+  optional uint32 group = 1;
+  repeated TBBFCHANGE change = 2;
+}
+
+message TBBFCHANGE {
+  optional uint32 drop_type = 1;
+  optional uint32 drop_id = 2;
+  optional uint32 positive_counter = 3;
+  optional uint32 negative_counter = 4;
+}
+
+message TBDROPS {
+  repeated TBDROP base_drop = 1;
+  repeated TBDROP benefit_drop = 2;
+  optional TBDISPLAY display = 3;
+}
+
+message TBROUND {
+  optional uint32 round = 1;
+  optional uint32 in_temp = 2;
+  optional uint32 temp_round = 3;
+}
+
+message TBRES {
+  repeated KVDATA attrs = 1;
+  repeated KVDATA resource = 2;
+}
+
+message TBTALENT {
+  repeated uint32 talents = 1 [packed = false];
+}
+
+message TBPLAN {
+  repeated uint32 plan_upgrade = 1 [packed = false];
+}
+
+message TBSITE {
+  repeated uint32 characters = 1 [packed = false];
+  repeated KVDATA work_counter = 2;
+  repeated uint32 works = 3 [packed = false];
+  repeated KVDATA event_counter = 4;
+}
+
+message TBBF {
+  optional uint32 id = 1;
+  optional uint32 round = 2;
+  optional uint32 is_pending = 3;
+}
+
+message TBBENEFIT {
+  repeated TBBF actives = 1;
+}
+
+message TBPERMANENT {
+  optional uint32 ng_plus_count = 1;
+  repeated uint32 polaroids = 2 [packed = false];
+  repeated uint32 endings = 3 [packed = false];
+  repeated uint32 active_endings = 4 [packed = false];
+  repeated uint32 tarot_archive = 5 [packed = false];
+  optional uint32 max_round = 6;
+}
+
+message TBFSMCACHEPLAN {
+  optional uint32 cur_index = 1;
+  repeated KVDATA plans = 2;
+}
+
+message TBFSMCACHETALENT {
+  optional uint32 finished = 1;
+  repeated uint32 talents = 2 [packed = false];
+  repeated uint32 retalents = 3 [packed = false];
+}
+
+message TBFSMCACHESITE {
+  repeated uint32 events = 1 [packed = false];
+  repeated uint32 shops = 2 [packed = false];
+  repeated KVDATA buys = 3;
+  optional KVDATA state = 4;
+  repeated uint32 character_this_round = 5 [packed = false];
+  optional uint32 refresh_count = 6;
+}
+
+message TBFSMCACHECHAT {
+  optional uint32 finished = 1;
+  repeated uint32 chats = 2 [packed = false];
+}
+
+message TBFSMCACHEEND {
+  repeated uint32 ends = 1 [packed = false];
+  optional uint32 select = 2;
+}
+
+message TBFSMCACHEMIND {
+}
+
+message TBFSMCACHENIN1 {
+  repeated TBDROP selects = 1;
+  repeated uint32 reroll_count = 2 [packed = false];
+  optional uint32 is_from_shop = 3;
+}
+
+message TBFSMCACHEAFFIXUP {
+}
+
+message TBFSMCACHETAROT {
+}
+
+message TBFSMCACHEEVAL {
+  optional uint32 is_finished = 1;
+}
+
+message TBFSMCACHE {
+  repeated TBFSMCACHEPLAN cache_plan = 1;
+  repeated TBFSMCACHETALENT cache_talent = 2;
+  repeated TBFSMCACHESITE cache_site = 3;
+  repeated TBFSMCACHECHAT cache_chat = 4;
+  repeated TBFSMCACHEEND cache_end = 5;
+  repeated TBFSMCACHEMIND cache_mind = 6;
+  repeated TBFSMCACHENIN1 cache_nin1 = 7;
+  repeated TBFSMCACHEAFFIXUP cache_affix_up = 8;
+  repeated TBFSMCACHETAROT cache_tarot = 9;
+  repeated TBFSMCACHEEVAL cache_eval = 10;
+}
+
+message TBFSM {
+  optional uint32 system_no = 1;
+  optional uint32 current_node = 2;
+  repeated TBFSMCACHE cache = 3;
+  repeated TBFSM priority_fsm = 4;
+  repeated uint32 tarot_selects = 5 [packed = false];
+}
+
+message TBINFO {
+  optional uint32 id = 1;
+  optional TBFSM fsm = 2;
+  optional TBROUND round = 3;
+  optional TBRES res = 4;
+  optional TBTALENT talent = 5;
+  optional TBPLAN plan = 6;
+  optional TBSITE site = 7;
+  repeated KVDATA evaluations = 8;
+  optional string name = 9;
+  optional uint32 favor_lv = 10;
+  optional TBBENEFIT benefit = 11;
+  optional uint32 difficulty = 12;
+  optional uint32 eval_fail = 13;
+  optional TBDISPLAY display = 14;
+}
+
+// cmd: 29001 - 获取TB信息
+message CS_29001 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29002 - TB信息响应
+message SC_29002 {
+  optional uint32 result = 1;
+  optional TBINFO tb = 2;
+  optional TBPERMANENT permanent = 3;
+}
+
+// cmd: 29003 - 查询结局列表
+message CS_29003 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29004 - 结局列表响应
+message SC_29004 {
+  optional uint32 result = 1;
+  repeated uint32 endings = 2 [packed = false];
+}
+
+// cmd: 29005 - 确认结局
+message CS_29005 {
+  optional uint32 id = 1;
+  optional uint32 ending_id = 2;
+}
+
+// cmd: 29006 - 确认结局响应
+message SC_29006 {
+  optional uint32 result = 1;
+}
+
+// cmd: 29007 - 设置难度
+message CS_29007 {
+  optional uint32 id = 1;
+  optional uint32 difficulty = 2;
+}
+
+// cmd: 29008 - 设置难度响应
+message SC_29008 {
+  optional uint32 result = 1;
+  optional TBINFO tb = 2;
+}
+
+// cmd: 29009 - 修改名字
+message CS_29009 {
+  optional uint32 id = 1;
+  optional string name = 2;
+}
+
+// cmd: 29010 - 修改名字响应
+message SC_29010 {
+  optional uint32 result = 1;
+}
+
+// cmd: 29011 - 开始游戏
+message CS_29011 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29012 - 开始游戏响应
+message SC_29012 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+}
+
+// cmd: 29013 - 选择排名
+message CS_29013 {
+  optional uint32 id = 1;
+  optional uint32 rank = 2;
+}
+
+// cmd: 29014 - 选择排名响应
+message SC_29014 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29015 - 获取聊天
+message CS_29015 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29016 - 获取聊天响应
+message SC_29016 {
+  optional uint32 result = 1;
+  repeated uint32 chats = 2 [packed = false];
+}
+
+// cmd: 29017 - 选择聊天
+message CS_29017 {
+  optional uint32 id = 1;
+  optional uint32 chat_id = 2;
+}
+
+// cmd: 29018 - 选择聊天响应
+message SC_29018 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29019 - 获取天赋
+message CS_29019 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29020 - 获取天赋响应
+message SC_29020 {
+  optional uint32 result = 1;
+  repeated uint32 talents = 2 [packed = false];
+}
+
+// cmd: 29021 - 选择天赋
+message CS_29021 {
+  optional uint32 id = 1;
+  optional uint32 talent = 2;
+}
+
+// cmd: 29022 - 选择天赋响应
+message SC_29022 {
+  optional uint32 result = 1;
+  optional uint32 talent = 2;
+}
+
+// cmd: 29023 - 重置天赋
+message CS_29023 {
+  optional uint32 id = 1;
+  optional uint32 talent = 2;
+}
+
+// cmd: 29024 - 重置天赋响应
+message SC_29024 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29025 - 执行计划
+message CS_29025 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29026 - 执行计划响应
+message SC_29026 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29027 - 结算
+message CS_29027 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29028 - 结算响应
+message SC_29028 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29030 - 选择分支
+message CS_29030 {
+  optional uint32 id = 1;
+  optional uint32 branch = 2;
+}
+
+// cmd: 29031 - 选择分支响应
+message SC_29031 {
+  optional uint32 result = 1;
+  optional uint32 next_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29032 - 获取FSM状态
+message CS_29032 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29033 - 获取FSM状态响应
+message SC_29033 {
+  optional uint32 result = 1;
+  optional TBFSM fsm = 2;
+}
+
+// cmd: 29040 - 设置计划
+message CS_29040 {
+  optional uint32 id = 1;
+  repeated KVDATA plans = 2;
+}
+
+// cmd: 29041 - 设置计划响应
+message SC_29041 {
+  optional uint32 result = 1;
+  repeated KVDATA plans = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29042 - 执行下一轮
+message CS_29042 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29043 - 执行下一轮响应
+message SC_29043 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29044 - 批量执行计划
+message CS_29044 {
+  optional uint32 id = 1;
+  repeated uint32 plan_ids = 2 [packed = false];
+}
+
+// cmd: 29045 - 批量执行计划响应
+message SC_29045 {
+  optional uint32 result = 1;
+}
+
+// cmd: 29046 - 休息
+message CS_29046 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29047 - 休息响应
+message SC_29047 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29048 - 回家
+message CS_29048 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29049 - 回家响应
+message SC_29049 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+  optional TBRES res = 3;
+}
+
+// cmd: 29050 - 下一周
+message CS_29050 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29051 - 下一周响应
+message SC_29051 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29060 - 进入地点
+message CS_29060 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29061 - 进入地点响应
+message SC_29061 {
+  optional uint32 result = 1;
+  optional TBFSMCACHESITE fsm_site = 2;
+  repeated uint32 characters = 3 [packed = false];
+  optional TBDROPS drop = 4;
+}
+
+// cmd: 29062 - 开始工作
+message CS_29062 {
+  optional uint32 id = 1;
+  optional uint32 work_id = 2;
+}
+
+// cmd: 29063 - 开始工作响应
+message SC_29063 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29064 - 触发事件
+message CS_29064 {
+  optional uint32 id = 1;
+  optional uint32 event = 2;
+}
+
+// cmd: 29065 - 触发事件响应
+message SC_29065 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29066 - 购买商品
+message CS_29066 {
+  optional uint32 id = 1;
+  optional uint32 shop = 2;
+  optional uint32 num = 3;
+}
+
+// cmd: 29067 - 购买商品响应
+message SC_29067 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29068 - 遇见角色
+message CS_29068 {
+  optional uint32 id = 1;
+  optional uint32 character = 2;
+}
+
+// cmd: 29069 - 遇见角色响应
+message SC_29069 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29070 - 完成工作
+message CS_29070 {
+  optional uint32 id = 1;
+  optional uint32 work_id = 2;
+}
+
+// cmd: 29071 - 完成工作响应
+message SC_29071 {
+  optional uint32 result = 1;
+}
+
+// cmd: 29072 - 获取商店
+message CS_29072 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29073 - 获取商店响应
+message SC_29073 {
+  optional uint32 result = 1;
+  repeated uint32 shops = 2 [packed = false];
+}
+
+// cmd: 29090 - 刷新地点
+message CS_29090 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29091 - 刷新地点响应
+message SC_29091 {
+  optional uint32 result = 1;
+  optional uint32 first_node = 2;
+  optional TBDROPS drop = 3;
+}
+
+// cmd: 29092 - 重新开始
+message CS_29092 {
+  optional uint32 id = 1;
+  optional uint32 difficulty = 2;
+}
+
+// cmd: 29093 - 重新开始响应
+message SC_29093 {
+  optional uint32 result = 1;
+  optional TBINFO tb = 2;
+}
+
+// cmd: 29101 - nin1选择
+message CS_29101 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29102 - nin1选择响应
+message SC_29102 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29103 - nin1重选
+message CS_29103 {
+  optional uint32 id = 1;
+  optional uint32 index = 2;
+}
+
+// cmd: 29104 - nin1重选响应
+message SC_29104 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29105 - nin1确认
+message CS_29105 {
+  optional uint32 id = 1;
+  optional uint32 index = 2;
+}
+
+// cmd: 29106 - nin1确认响应
+message SC_29106 {
+  optional uint32 result = 1;
+  optional TBFSMCACHENIN1 cache = 2;
+}
+
+// cmd: 29107 - nin1跳过
+message CS_29107 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29108 - nin1跳过响应
+message SC_29108 {
+  optional uint32 result = 1;
+  optional TBFSMCACHENIN1 cache = 2;
+}
+
+// cmd: 29120 - 塔罗选择
+message CS_29120 {
+  optional uint32 id = 1;
+  optional uint32 tarot_id = 2;
+}
+
+// cmd: 29121 - 塔罗选择响应
+message SC_29121 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29122 - 词缀升级
+message CS_29122 {
+  optional uint32 id = 1;
+  optional uint32 affixid = 2;
+}
+
+// cmd: 29123 - 词缀升级响应
+message SC_29123 {
+  optional uint32 result = 1;
+  optional TBDROPS drop = 2;
+}
+
+// cmd: 29124 - 评估
+message CS_29124 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29125 - 评估响应
+message SC_29125 {
+  optional uint32 result = 1;
+}
+
+// cmd: 29126 - 获取FSM(登录)
+message CS_29126 {
+  optional uint32 id = 1;
+}
+
+// cmd: 29127 - 获取FSM(登录)响应
+message SC_29127 {
+  optional uint32 result = 1;
+  optional TBFSM fsm = 2;
+}

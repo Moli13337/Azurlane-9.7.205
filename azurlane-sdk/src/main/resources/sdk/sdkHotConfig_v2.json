@@ -1,0 +1,160 @@
+{
+  "game": {
+    "jbCheckMethods": [1, 2, 3],
+    "compatibleOldTid": 1,
+    "guessOrderTypes": [0, 5],
+    "enableSaveFailTid": 1
+  },
+  "baseCmptConfigNew": {
+    "trackData": {
+      "logState": "1",
+      "androidPercent": 0,
+      "iosPersent": 0,
+      "strategy": [{"type": "0,24,0,0,0,0,0", "value": "0,0,0,0,0,0,0"}]
+    },
+    "fingerprint": "0",
+    "heartbeats": "0"
+  },
+  "switch": {
+    "ios_switch_caid": 0,
+    "config_init_timeout": 3000,
+    "config_init_switch_times": 2,
+    "config_login_timeout": 3000,
+    "config_activate_interval_time": 300000,
+    "config_login_switch_times": 0,
+    "android_head_connect_timeout": 1500,
+    "android_head_so_timeout": 2000,
+    "ios_head_connect_timeout": 1500,
+    "android_connect_timeout": 4000,
+    "android_so_timeout": 4000,
+    "ios_connect_timeout": 6000,
+    "ios_receipt_connect_timeout": 10000,
+    "userinfo_switch_count": 1,
+    "login_switch_nocache_count": -1,
+    "login_switch_cache_count": -1,
+    "limit_request": [],
+    "android_limit_request": [],
+    "ios_limit_request": [],
+    "ios_pay_can_skip_request_product": 1,
+    "guest_update_realname_verified": 0,
+    "useNewSSOLogin": 1,
+    "oaid_switch": 0,
+    "oaid_switch_new": 0,
+    "oaid_switch_new_370": 0,
+    "fingerprint_switch": 0,
+    "ios_switch_idfa": 0
+  },
+  "captcha": {
+    "ios_skip_once_enable": 1,
+    "android_skip_once_enable": 1,
+    "captcha_url": "https://127.0.0.1/captcha"
+  },
+  "channelConfig": {
+    "readCache": false,
+    "version": "1.5.4",
+    "coverCache": {}
+  },
+  "error_code": {
+    "60005": "熔断",
+    "60006": "限流",
+    "500001": "游戏处于封测，账号未激活",
+    "500002": "账号或密码错误",
+    "-1": "AppKey不存在或者已封禁",
+    "-2": "无效的登录Token(登录已过期)",
+    "-3": "无效的API签名(程序错误)",
+    "-101": "未登录",
+    "-102": "帐号已封禁"
+  },
+  "pay_server_groups": {
+    "group_company": ["127.0.0.1"]
+  },
+  "https_error_intercept_switch": {
+    "login_extreme_test": false,
+    "three_no_account": false
+  },
+  "relative_apps": [],
+  "disable_exit_gameid_android": [],
+  "disable_exit_gameid_ios": [],
+  "minor_guardian": {},
+  "safe_config": {"dun_timeout": 3000, "all_state": 0, "sm_state": 0, "nte_state": 0},
+  "anti_config": {"dun_timeout": 3000, "all_state": 0, "sm_state": 0, "nte_state": 0},
+  "banshu_tips": {"config_tourist_login_tip": ""},
+  "sdk_switch": {
+    "cobbler": 0,
+    "cobblerPriority": 0,
+    "bgc_plugin": 0,
+    "enable_login_route_config": 0,
+    "enable_init_route_config": 0,
+    "ios_switch_idfa": 0,
+    "web_interceptor_android": 0,
+    "web_interceptor_ios": 0,
+    "fingerprint_switch": 0,
+    "oaid_switch": 0,
+    "oaid_switch_new": 0
+  },
+  "apm_config": {
+    "enable": 0,
+    "crash_enable": 0,
+    "env_enable": 0,
+    "trace_enable": 0,
+    "net_enable": 0,
+    "net_fail_enable": 0,
+    "net_success_enable": 0,
+    "mem_enable": 0,
+    "cpu_enable": 0,
+    "disk_enable": 0,
+    "anr_enable": 0,
+    "evil_msg_enable": 0
+  },
+  "apm_config_ios": {
+    "enable": 0,
+    "crash_enable": 0,
+    "env_enable": 0,
+    "trace_enable": 0,
+    "net_enable": 0,
+    "net_fail_enable": 0,
+    "net_success_enable": 0,
+    "mem_enable": 0,
+    "cpu_enable": 0,
+    "disk_enable": 0,
+    "anr_enable": 0,
+    "evil_msg_enable": 0
+  },
+  "dynamic": {
+    "dynamicState": "0",
+    "androidPercent": 0,
+    "strategy": []
+  },
+  "rnSwitch": {
+    "iosRnOpen": 0,
+    "androidRnOpen": 0,
+    "preload": 0,
+    "ResetPwd": 0,
+    "ios": {"preload": 0, "ResetPwd": 0, "PhoneLogin": 0},
+    "android": {"preload": 0, "ResetPwd": 0}
+  },
+  "sdk_gray": {
+    "iOS_gray": {
+      "sdk_switch": 1,
+      "main_switch": 1,
+      "sdk_new_switch": 1,
+      "main_new_switch": 1,
+      "games_switch": [],
+      "gray_games_switch": [],
+      "black_list": {"udid": [], "model": [], "pf_ver": [], "sdk_ver": [], "game_id": []},
+      "udids": [],
+      "white_list": []
+    },
+    "android_gray": {
+      "sdk_switch": 1,
+      "main_switch": 1,
+      "sdk_new_switch": 1,
+      "main_new_switch": 1,
+      "games_switch": [],
+      "gray_games_switch": [],
+      "black_list": {"udid": [], "brand": [], "model": [], "pf_ver": [], "sdk_ver": [], "game_id": []},
+      "udids": [],
+      "white_list": []
+    }
+  }
+}

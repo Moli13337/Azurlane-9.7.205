@@ -1,0 +1,399 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+message CHILD_TIME {
+  optional uint32 month = 1;
+  optional uint32 week = 2;
+  optional uint32 day = 3;
+}
+
+message CHILD_TASK {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+}
+
+message CHILD_BUFF {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+}
+
+message CHILD_PLAN_CELL {
+  optional uint32 day = 1;
+  optional uint32 index = 2;
+  repeated CHILD_PLAN_VAL value = 3;
+}
+
+message CHILD_PLAN_VAL {
+  optional uint32 plan_id = 1;
+  optional uint32 event_id = 2;
+  optional uint32 spec_event_id = 3;
+}
+
+message CHILD_POLAROID {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+}
+
+message CHILD_ATTR {
+  optional uint32 id = 1;
+  optional uint32 val = 2;
+}
+
+message CHILD_FAVOR {
+  optional uint32 lv = 1;
+  optional uint32 exp = 2;
+}
+
+message CHILD_PLAN_HISTORY {
+  optional uint32 plan_id = 1;
+  optional uint32 count = 2;
+}
+
+message CHILD_ITEM {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message CHILD_DROP {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+  optional int32 number = 3;
+}
+
+message CHILD_PLAN_RESULT {
+  optional uint32 day = 1;
+  optional uint32 index = 2;
+  repeated CHILD_DROP plan_drops = 3;
+  repeated CHILD_DROP event_drops = 4;
+  repeated CHILD_DROP spec_event_drops = 5;
+}
+
+message CHILD_SHOP_GOODS {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message CHILD_SHOP_DATA {
+  optional uint32 shop_id = 1;
+  repeated CHILD_SHOP_GOODS goods = 2;
+}
+
+message CHILD_OPTION_RECORD {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message CHILD_PROGRESS {
+  optional uint32 task_id = 1;
+  optional uint32 progress = 2;
+}
+
+message CHILD_SITE_OPTION {
+  optional uint32 site_id = 1;
+  repeated uint32 option_ids = 2 [packed = false];
+}
+
+message CHILD_INFO {
+  optional uint32 tid = 1;
+  optional CHILD_TIME cur_time = 2;
+  optional uint32 mood = 3;
+  optional uint32 money = 4;
+  optional uint32 site_number = 5;
+  repeated CHILD_ATTR attrs = 6;
+  optional CHILD_FAVOR favor = 7;
+  repeated CHILD_ITEM items = 8;
+  repeated CHILD_PLAN_HISTORY plan_history = 9;
+  repeated uint32 memorys = 10 [packed = false];
+  repeated CHILD_PLAN_VAL plans = 11;
+  repeated CHILD_POLAROID polaroids = 12;
+  optional uint32 target = 13;
+  repeated CHILD_TASK tasks = 14;
+  repeated uint32 realized_wish = 15 [packed = false];
+  repeated CHILD_BUFF buffs = 16;
+  optional string user_name = 17;
+  repeated uint32 spec_events = 18 [packed = false];
+  optional uint32 can_trigger_home_event = 19;
+  repeated uint32 home_events = 20 [packed = false];
+  repeated uint32 discount_event_id = 21 [packed = false];
+  repeated CHILD_SHOP_DATA shop = 22;
+  repeated CHILD_OPTION_RECORD option_records = 23;
+  repeated uint32 favor_award_history = 24 [packed = false];
+  optional uint32 is_ending = 25;
+  optional uint32 new_game_plus_count = 26;
+  optional uint32 had_target_stage_award = 27;
+  optional uint32 had_adjustment = 28;
+  optional uint32 is_special_secretary_valid = 29;
+  optional uint32 ending_buy_count = 30;
+  optional uint32 memory_buy_count = 31;
+  optional uint32 polaroid_buy_count = 32;
+}
+
+// cmd: 27000 - 获取育幼信息
+message CS_27000 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27001 - 育幼信息响应
+message SC_27001 {
+  optional uint32 result = 1;
+  optional CHILD_INFO child = 2;
+}
+
+// cmd: 27002 - 推进日程
+message CS_27002 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27003 - 推进日程响应
+message SC_27003 {
+  optional uint32 result = 1;
+  repeated CHILD_PLAN_RESULT plan_results = 2;
+  repeated CHILD_PLAN_CELL events = 3;
+}
+
+// cmd: 27004 - 选择地点选项
+message CS_27004 {
+  optional uint32 siteid = 1;
+  optional uint32 optionid = 2;
+}
+
+// cmd: 27005 - 选择地点选项响应
+message SC_27005 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+  repeated CHILD_DROP event_drops = 3;
+  repeated uint32 events = 4 [packed = false];
+  optional uint32 branch_id = 5;
+}
+
+// cmd: 27006 - 领取日程奖励
+message CS_27006 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27007 - 领取日程奖励响应
+message SC_27007 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+}
+
+// cmd: 27008 - 结局确认
+message CS_27008 {
+  optional uint32 ending_id = 1;
+  repeated uint32 qualified_id = 2 [packed = false];
+}
+
+// cmd: 27009 - 结局确认响应
+message SC_27009 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27010 - 查询结局列表
+message CS_27010 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27011 - 结局列表响应
+message SC_27011 {
+  repeated uint32 endings = 1 [packed = false];
+  repeated uint32 qualifieds = 2 [packed = false];
+}
+
+// cmd: 27012 - 设置日程计划
+message CS_27012 {
+  repeated CHILD_PLAN_CELL plans = 1;
+}
+
+// cmd: 27013 - 设置日程计划响应
+message SC_27013 {
+  optional uint32 result = 1;
+  repeated CHILD_PLAN_CELL plans = 2;
+}
+
+// cmd: 27014 - 触发事件
+message CS_27014 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27015 - 触发事件响应
+message SC_27015 {
+  optional uint32 result = 1;
+  repeated uint32 events = 2 [packed = false];
+}
+
+// cmd: 27016 - 处理事件
+message CS_27016 {
+  optional uint32 eventid = 1;
+}
+
+// cmd: 27017 - 处理事件响应
+message SC_27017 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+}
+
+// cmd: 27019 - 删除记忆
+message CS_27019 {
+  optional uint32 id = 1;
+}
+
+// cmd: 27020 - 删除记忆响应
+message SC_27020 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27021 - 任务推送(SC only)
+message SC_27021 {
+  repeated CHILD_TASK tasks = 1;
+}
+
+// cmd: 27022 - 删除推送(SC only)
+message SC_27022 {
+  repeated uint32 ids = 1 [packed = false];
+}
+
+// cmd: 27023 - 领取任务奖励
+message CS_27023 {
+  optional uint32 id = 1;
+  optional uint32 system = 2;
+}
+
+// cmd: 27024 - 领取任务奖励响应
+message SC_27024 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP awards = 2;
+}
+
+// cmd: 27025 - 任务更新推送(SC only)
+message SC_27025 {
+  repeated CHILD_TASK tasks = 1;
+}
+
+// cmd: 27027 - 触发特殊事件
+message CS_27027 {
+  optional uint32 spec_events_id = 1;
+}
+
+// cmd: 27028 - 触发特殊事件响应
+message SC_27028 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+}
+
+// cmd: 27029 - 重置育幼
+message CS_27029 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27030 - 重置育幼响应
+message SC_27030 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27031 - 修改名字
+message CS_27031 {
+  optional string name = 1;
+}
+
+// cmd: 27032 - 修改名字响应
+message SC_27032 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27033 - 购买商品
+message CS_27033 {
+  optional uint32 shop_id = 1;
+  repeated CHILD_SHOP_GOODS goods = 2;
+}
+
+// cmd: 27034 - 购买商品响应
+message SC_27034 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+}
+
+// cmd: 27035 - 领取收集奖励
+message CS_27035 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27036 - 领取收集奖励响应
+message SC_27036 {
+  optional uint32 result = 1;
+  repeated CHILD_DROP drops = 2;
+}
+
+// cmd: 27037 - 更新进度
+message CS_27037 {
+  optional uint32 type_1 = 1;
+  repeated CHILD_PROGRESS progresses = 2;
+}
+
+// cmd: 27038 - 更新进度响应
+message SC_27038 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27039 - 重置属性
+message CS_27039 {
+  optional uint32 attr_id = 1;
+}
+
+// cmd: 27040 - 重置属性响应
+message SC_27040 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27041 - 购买结局
+message CS_27041 {
+  optional uint32 ending_id = 1;
+}
+
+// cmd: 27042 - 购买结局响应
+message SC_27042 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27043 - 查询商店
+message CS_27043 {
+  optional uint32 shop_id = 1;
+}
+
+// cmd: 27044 - 查询商店响应
+message SC_27044 {
+  optional uint32 result = 1;
+  optional CHILD_SHOP_DATA shop_data = 2;
+}
+
+// cmd: 27045 - 查询地点选项
+message CS_27045 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27046 - 查询地点选项响应
+message SC_27046 {
+  optional uint32 result = 1;
+  repeated CHILD_SITE_OPTION opts = 2;
+}
+
+// cmd: 27047 - 跳过动画
+message CS_27047 {
+  optional uint32 type = 1;
+}
+
+// cmd: 27048 - 跳过动画响应
+message SC_27048 {
+  optional uint32 result = 1;
+}
+
+// cmd: 27049 - 批量购买
+message CS_27049 {
+  optional uint32 type = 1;
+  optional uint32 ids = 2;
+}
+
+// cmd: 27050 - 批量购买响应
+message SC_27050 {
+  optional uint32 result = 1;
+}

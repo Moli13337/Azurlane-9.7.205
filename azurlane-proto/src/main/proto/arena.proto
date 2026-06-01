@@ -1,0 +1,176 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message TARGETINFO {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+  optional string name = 3;
+  optional uint32 score = 4;
+  optional uint32 rank = 5;
+  repeated SHIPINFO vanguard_ship_list = 6;
+  repeated SHIPINFO main_ship_list = 7;
+  optional DISPLAYINFO display = 8;
+}
+
+message ARENARANK {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+  optional string name = 3;
+  optional uint32 score = 4;
+  optional DISPLAYINFO display = 5;
+}
+
+message ARENASHOP {
+  optional uint32 shop_id = 1;
+  optional uint32 count = 2;
+}
+
+message RANK_INFO {
+  optional uint32 user_id = 1;
+  optional uint32 point = 2;
+  optional string name = 3;
+  optional uint32 lv = 4;
+  optional uint32 arena_rank = 5;
+  optional DISPLAYINFO display = 6;
+}
+
+// cmd: 18001 - 请求演习对手列表 (CS)
+message CS_18001 {
+  optional uint32 type = 1;
+}
+
+// cmd: 18002 - 演习对手列表响应 (SC)
+message SC_18002 {
+  optional uint32 score = 1;
+  optional uint32 rank = 2;
+  optional uint32 fight_count = 3;
+  optional uint32 fight_count_reset_time = 4;
+  optional uint32 flash_target_count = 5;
+  repeated uint32 vanguard_ship_id_list = 6 [packed = false];
+  repeated uint32 main_ship_id_list = 7 [packed = false];
+  repeated TARGETINFO target_list = 8;
+}
+
+// cmd: 18003 - 刷新演习对手 (CS)
+message CS_18003 {
+  optional uint32 type = 1;
+}
+
+// cmd: 18004 - 刷新对手响应 (SC)
+message SC_18004 {
+  optional uint32 result = 1;
+  repeated TARGETINFO target_list = 2;
+}
+
+// cmd: 18005 - 演习赛季推送 (SC only)
+message SC_18005 {
+  optional uint32 score = 1;
+  optional uint32 rank = 2;
+  repeated TARGETINFO target_list = 3;
+}
+
+// cmd: 18006 - 请求战力排行列表 (CS)
+message CS_18006 {
+  optional uint32 type = 1;
+}
+
+// cmd: 18007 - 战力排行列表响应 (SC)
+message SC_18007 {
+  repeated ARENARANK arena_rank_lsit = 1;
+}
+
+// cmd: 18008 - 更新演习舰队 (CS)
+message CS_18008 {
+  repeated uint32 vanguard_ship_id_list = 1 [packed = false];
+  repeated uint32 main_ship_id_list = 2 [packed = false];
+}
+
+// cmd: 18009 - 更新演习舰队响应 (SC)
+message SC_18009 {
+  optional uint32 result = 1;
+}
+
+// cmd: 18100 - 获取军需商店 (CS)
+message CS_18100 {
+  optional uint32 type = 1;
+}
+
+// cmd: 18101 - 军需商店响应 (SC)
+message SC_18101 {
+  optional uint32 flash_count = 1;
+  repeated ARENASHOP arena_shop_list = 2;
+  optional uint32 next_flash_time = 3;
+}
+
+// cmd: 18102 - 刷新军需商店 (CS)
+message CS_18102 {
+  optional uint32 type = 1;
+}
+
+// cmd: 18103 - 刷新军需商店响应 (SC)
+message SC_18103 {
+  optional uint32 result = 1;
+  repeated ARENASHOP arena_shop_list = 2;
+}
+
+// cmd: 18104 - 获取对手详情 (CS)
+message CS_18104 {
+  optional uint32 id = 1;
+}
+
+// cmd: 18105 - 对手详情响应 (SC)
+message SC_18105 {
+  TARGETINFO info = 1;
+}
+
+// cmd: 18201 - 请求排行榜分页 (CS)
+message CS_18201 {
+  optional uint32 page = 1;
+  optional uint32 type = 2;
+  optional uint32 act_id = 3;
+}
+
+// cmd: 18202 - 排行榜分页响应 (SC)
+message SC_18202 {
+  repeated RANK_INFO list = 1;
+}
+
+// cmd: 18203 - 请求我的排名 (CS)
+message CS_18203 {
+  optional uint32 type = 1;
+  optional uint32 act_id = 2;
+}
+
+// cmd: 18204 - 我的排名响应 (SC)
+message SC_18204 {
+  optional uint32 point = 1;
+  optional uint32 rank = 2;
+}
+
+// cmd: 18010 - 演习战斗结算 (CS)
+message CS_18010 {
+  optional uint32 is_win = 1;
+}
+
+// cmd: 18011 - 演习战斗结算响应 (SC)
+message SC_18011 {
+  optional uint32 result = 1;
+  optional uint32 score = 2;
+  optional uint32 rank = 3;
+  optional uint32 fight_count = 4;
+}
+
+// cmd: 18106 - 购买演习商店商品 (CS)
+message CS_18106 {
+  optional uint32 shop_id = 1;
+  optional uint32 count = 2;
+}
+
+// cmd: 18107 - 购买演习商店商品响应 (SC)
+message SC_18107 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}

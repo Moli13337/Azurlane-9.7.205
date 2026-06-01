@@ -1,0 +1,2159 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message PB_VECTOR3 {
+  optional float x = 1;
+  optional float y = 2;
+  optional float z = 3;
+}
+
+message PB_VECTOR_3 {
+  optional float x = 1;
+  optional float y = 2;
+  optional float z = 3;
+}
+
+message PB_QUATERNION {
+  optional float x = 1;
+  optional float y = 2;
+  optional float z = 3;
+  optional float w = 4;
+}
+
+message PB_ISLAND_ITEM {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_FORMULA_DROP_INFO {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_USE_FORMULA {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_ISLAND_TECH {
+  repeated uint32 finish_list = 1 [packed = false];
+  repeated PB_REPEAT_FINISH repeat_finish_list = 2;
+}
+
+message PB_REPEAT_FINISH {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_ISLAND_APPOINT_AREA_AWARD {
+  optional uint32 id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 exp = 3;
+  optional uint32 formula_id = 4;
+  repeated PB_FORMULA_DROP_INFO formula_drop_list = 5;
+  optional uint32 main_num = 6;
+  optional uint32 other_num = 7;
+}
+
+message PB_ISLAND_APPOINT_AREA {
+  optional uint32 id = 1;
+  repeated uint32 part_list = 2 [packed = false];
+  repeated PB_USE_FORMULA formula_list = 3;
+}
+
+message PB_ISLAND_HAND_AREA {
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional uint32 formula_id = 3;
+  optional uint32 start_time = 4;
+  optional uint32 end_time = 5;
+}
+
+message PB_ISLAND_SHIP_APPOINT {
+  optional uint32 id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 max_times = 3;
+  optional uint32 get_times = 4;
+  optional uint32 formula_id = 5;
+  optional uint32 start_time = 6;
+  repeated uint32 cost_time_list = 7 [packed = false];
+  optional uint32 speed_time = 8;
+  optional uint32 times_extra = 9;
+}
+
+message PB_ISLAND_BUILD_COLLECT {
+  optional uint32 get_num = 1;
+  optional uint32 refresh_time = 2;
+  repeated PB_FORMULA_DROP_INFO collect_list = 3;
+}
+
+message PB_ISLAND_PART_EFFECT {
+  optional uint32 num = 1;
+  optional uint32 cost_extra = 2;
+  optional uint32 main_extra = 3;
+  optional uint32 other_extra = 4;
+}
+
+message PB_ISLAND_BUILD {
+  optional uint32 id = 1;
+  repeated PB_ISLAND_SHIP_APPOINT ship_appoint_list = 2;
+  repeated PB_ISLAND_APPOINT_AREA_AWARD award_list = 3;
+  repeated PB_ISLAND_APPOINT_AREA appoint_list = 4;
+  PB_ISLAND_BUILD_COLLECT build_collect = 5;
+  repeated PB_ISLAND_HAND_AREA hand_list = 6;
+}
+
+message PB_ISLAND_ORDER_SHIP_LOAD {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+  optional uint32 state = 3;
+}
+
+message PB_ISLAND_ORDER_SLOT {
+  optional uint32 id = 1;
+  optional uint32 type = 2;
+  optional uint32 cur_select = 3;
+  optional uint32 start_time = 4;
+  optional uint32 submit_time = 5;
+  optional uint32 position = 6;
+  optional uint32 dialog_id = 7;
+  repeated PB_ISLAND_ITEM cost = 8;
+  optional uint32 order_lv = 9;
+  optional uint32 view_flag = 10;
+}
+
+message PB_ISLAND_ORDER_SHIP_SLOT {
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional uint32 load_time = 3;
+  optional uint32 get_time = 4;
+  repeated PB_ISLAND_ORDER_SHIP_LOAD cost = 5;
+  repeated PB_ISLAND_ITEM reward = 6;
+  optional uint32 finish_num = 7;
+  optional uint32 auto_time = 8;
+}
+
+message PB_SHIP_ORDER_APPOINT {
+  optional uint32 id = 1;
+  optional uint32 view_time = 2;
+  repeated PB_ISLAND_ITEM cost = 3;
+  repeated PB_ISLAND_ITEM reward = 4;
+}
+
+message PB_FINISH_ACT_GROUP {
+  optional uint32 act_id = 1;
+  repeated uint32 groups = 2 [packed = false];
+}
+
+message PB_ISLAND_ORDER_SYSTEM {
+  optional uint32 favor = 1;
+  optional uint32 get_favor = 2;
+  optional uint32 daily_select = 3;
+  optional uint32 daily_slot_num = 4;
+  optional uint32 time_slot_num = 5;
+  repeated PB_ISLAND_ORDER_SLOT slot_list = 6;
+  repeated PB_ISLAND_ORDER_SHIP_SLOT ship_slot_list = 7;
+  repeated PB_SPEED_USE speed_list = 8;
+  optional uint32 ship_refresh = 9;
+  repeated PB_SHIP_ORDER_APPOINT appoint_list = 10;
+  PB_FINISH_ACT_GROUP act_group = 11;
+}
+
+message PB_ISLAND_BUFF {
+  optional uint32 id = 1;
+  optional uint32 start_time = 2;
+}
+
+message PB_SHIP_ATTR {
+  optional uint32 id = 1;
+  optional uint32 value = 2;
+}
+
+message PB_SHIP_WORK_PLACE {
+  optional uint32 type = 1;
+  optional uint32 place = 2;
+}
+
+message PB_ISLAND_SHIP {
+  optional uint32 id = 1;
+  optional uint32 lv = 2;
+  optional uint32 exp = 3;
+  optional uint32 break_lv = 4;
+  optional uint32 skill_lv = 5;
+  optional uint32 power = 6;
+  optional uint32 recover_time = 7;
+  repeated PB_ISLAND_BUFF buff_list = 8;
+  repeated PB_SHIP_ATTR extra_attr_list = 9;
+  optional uint32 up_limit_state = 10;
+  optional uint32 cur_skin_id = 11;
+  PB_SHIP_WORK_PLACE work_place = 12;
+}
+
+message PB_ISLAND_SHIP_POWER {
+  optional uint32 ship_id = 1;
+  optional uint32 power = 2;
+}
+
+message PB_ISLAND_SHIP_SKIN {
+  optional uint32 ship_id = 1;
+  repeated uint32 skin_list = 2 [packed = false];
+}
+
+message PB_ISLAND_SKIN {
+  optional uint32 id = 1;
+  optional uint32 color_id = 2;
+  repeated uint32 color_list = 3 [packed = false];
+}
+
+message PB_ISLAND_CUR_DRESS {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+}
+
+message PB_ISLAND_DRESS_USER {
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional uint32 color = 3;
+  repeated uint32 color_list = 4 [packed = false];
+}
+
+message PB_ISLAND_DRESS_NUM {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+  optional uint32 read = 3;
+  optional uint32 time = 4;
+}
+
+message PB_ISLAND_SHIP_WEAR {
+  optional uint32 ship_id = 1;
+  optional uint32 dress_id = 2;
+}
+
+message PB_DRESS_COLOR {
+  optional uint32 id = 1;
+  optional uint32 color = 2;
+}
+
+message PB_CAP_STATE {
+  optional uint32 dress_id = 1;
+  optional uint32 cap_id = 2;
+}
+
+message PB_ISLAND_USER_DRESS_SYS {
+  PB_ISLAND_CUR_DRESS cur_dress = 1;
+  repeated PB_ISLAND_DRESS_NUM had_dress = 2;
+  repeated PB_CAP_STATE cap_list = 3;
+}
+
+message PB_GAME_TYPE_SHIP {
+  optional uint32 game_type = 1;
+  optional uint32 ship_id = 2;
+}
+
+message PB_ISLAND_SHIP_SYS {
+  repeated uint32 invite_list = 1 [packed = false];
+  repeated PB_ISLAND_SHIP ship_list = 2;
+  repeated PB_ISLAND_DRESS_NUM had_dress = 3;
+  repeated PB_ISLAND_SHIP_WEAR wear_list = 4;
+  repeated PB_ISLAND_SHIP_SKIN skin_list = 5;
+  repeated PB_GAME_TYPE_SHIP game_ship_list = 6;
+}
+
+message PB_PLAYER_POS_RECORD {
+  optional uint32 map_id = 1;
+  PB_VECTOR3 position = 2;
+  PB_VECTOR3 rotation = 3;
+}
+
+message PB_SLOT {
+  optional uint32 slot_id = 1;
+  optional uint32 owner_id = 2;
+}
+
+message PB_OBJECT {
+  optional uint32 id = 1;
+  optional uint32 type = 2;
+  repeated PB_SLOT slots = 3;
+  optional uint32 status = 4;
+}
+
+message PB_SYNC_OBJECT {
+  optional uint32 id = 1;
+  PB_VECTOR_3 pos = 2;
+  PB_QUATERNION dir = 3;
+  optional uint32 status = 4;
+}
+
+message PB_FURNITURE {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  optional uint32 time = 3;
+}
+
+message PB_FURNITURE_DATA {
+  optional uint32 id = 1;
+  optional uint32 x = 2;
+  optional uint32 y = 3;
+  optional uint32 dir = 4;
+}
+
+message PB_PLACEMENT_DATA {
+  repeated PB_FURNITURE_DATA placed_list = 1;
+  optional bytes floor_data = 2;
+  optional bytes tile_data = 3;
+}
+
+message PB_PLACEMENT_THEME {
+  optional uint32 id = 1;
+  optional string name = 2;
+  PB_PLACEMENT_DATA placed_data = 3;
+}
+
+message PB_PLAYER {
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional string name = 3;
+  optional uint32 level = 4;
+  DISPLAYINFO display = 5;
+  optional uint32 map_id = 6;
+  PB_ISLAND_CUR_DRESS cur_dress = 7;
+  PB_DRESS_COLOR dress_color = 8;
+}
+
+message PB_VISITOR {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 time = 3;
+  optional uint32 cmd = 4;
+}
+
+message PB_SHOP {
+  optional uint32 id = 1;
+  optional uint32 exist_time = 2;
+  optional uint32 refresh_time = 3;
+  repeated PB_GOODS goods_list = 4;
+  optional uint32 refresh_count = 5;
+}
+
+message PB_GOODS {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_TASK_PROCESS {
+  optional uint32 target_id = 1;
+  optional uint32 target_count = 2;
+}
+
+message PB_TASK {
+  optional uint32 id = 1;
+  optional uint32 timestamp = 2;
+  repeated PB_TASK_PROCESS process_list = 3;
+}
+
+message PB_TASK_RANDOM {
+  optional uint32 task_id = 1;
+  optional uint32 timestamp = 2;
+}
+
+message PB_ISLAND_TASK {
+  repeated uint32 task_id_list_finish = 1 [packed = false];
+  repeated PB_TASK task_list = 2;
+  optional uint32 focus_id = 3;
+  repeated PB_TASK_RANDOM task_list_random = 4;
+  optional uint32 week_daily_task_num = 5;
+}
+
+message PB_ISLAND_SEASON_REVIEW {
+  optional uint32 id = 1;
+  repeated uint32 count_list = 2 [packed = false];
+}
+
+message PB_ISLAND_SEASON {
+  optional uint32 id = 1;
+  optional uint32 pt = 2;
+  repeated uint32 fetch_list = 3 [packed = false];
+  repeated uint32 count_list = 4 [packed = false];
+}
+
+message PB_ISLAND_GATHER_PUSH {
+  optional uint32 id = 1;
+  PB_VECTOR3 pos = 2;
+  optional uint32 state = 3;
+  optional uint32 mark = 4;
+  optional uint32 refresh_time = 5;
+  optional uint32 push_type = 6;
+}
+
+message PB_ISLAND_WILD_GATHER {
+  optional uint32 id = 1;
+  PB_VECTOR3 pos = 2;
+  optional uint32 state = 3;
+  optional uint32 mark = 4;
+  optional uint32 refresh_time = 5;
+}
+
+message PB_ISLAND_COLLECT_ITEM {
+  optional uint32 id = 1;
+  repeated PB_ISLAND_COLLECT_FRAGMENT had_fragment = 2;
+}
+
+message PB_ISLAND_COLLECT_FRAGMENT {
+  optional uint32 id = 1;
+  PB_VECTOR3 pos = 2;
+  optional uint32 mark = 3;
+}
+
+message PB_ISLAND_COLLECT_FRAGMENT_PUSH {
+  optional uint32 id = 1;
+  PB_VECTOR3 pos = 2;
+  optional uint32 mark = 3;
+  optional uint32 push_type = 4;
+}
+
+message PB_ISLAND_COLLECT_SYS {
+  repeated PB_ISLAND_COLLECT_ITEM collect_item = 1;
+  repeated uint32 finish_list = 2 [packed = false];
+}
+
+message PB_TRADE_PRESELL {
+  optional uint32 trade_id = 1;
+  optional uint32 sell_num_min = 2;
+  optional uint32 sell_num_max = 3;
+  optional uint32 sell_money_min = 4;
+  optional uint32 sell_money_max = 5;
+}
+
+message PB_EVENT_EFFECT {
+  optional uint32 food_id = 1;
+  optional uint32 add_per = 2;
+}
+
+message PB_TRADE_NUM {
+  optional uint32 trade_id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_TRADE_POST {
+  optional uint32 post_id = 1;
+  optional uint32 ship_id = 2;
+}
+
+message PB_TRADE_SELL_FOOD {
+  optional uint32 food_id = 1;
+  optional uint32 num = 2;
+  optional uint32 sell_money = 3;
+}
+
+message PB_TRADE_FOOD {
+  optional uint32 food_id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_ISLAND_TRADE {
+  optional uint32 id = 1;
+  optional uint32 lv = 2;
+  optional uint32 total_sell = 3;
+  repeated PB_TRADE_SELL_FOOD sell_list = 4;
+  repeated PB_TRADE_FOOD rest_list = 5;
+  repeated PB_TRADE_POST post_list = 6;
+  optional uint32 end_time = 7;
+  optional uint32 speed_time = 8;
+}
+
+message PB_ISLAND_TRADE_SYS {
+  optional uint32 today_event = 1;
+  optional uint32 today_trade = 2;
+  PB_EVENT_EFFECT effect = 3;
+  repeated PB_TRADE_NUM today_num = 4;
+  repeated PB_ISLAND_TRADE trade_list = 5;
+  repeated PB_TRADE_PRESELL presell_list = 6;
+}
+
+message PB_ISLAND_ACHIEVENT {
+  optional uint32 event_arg = 1;
+  optional uint32 event_type = 2;
+  optional uint32 value = 3;
+}
+
+message PB_ISLAND_ACHIEVEMENT_SYS {
+  repeated PB_ISLAND_ACHIEVENT achieve_list = 1;
+  repeated uint32 finish_list = 2 [packed = false];
+}
+
+message PB_ISLAND_GLOBAL_BUFF {
+  repeated PB_ISLAND_BUFF forever_list = 1;
+  repeated PB_ISLAND_BUFF limit_list = 2;
+}
+
+message PB_SPEEDUP_TICKET {
+  optional uint32 key = 1;
+  optional uint32 num = 2;
+}
+
+message PB_SPEEDUP_KEY {
+  optional uint32 speed_id = 1;
+  optional uint32 end_time = 2;
+}
+
+message PB_SPEED_USE {
+  optional uint32 slot_id = 1;
+  optional uint32 speed_time = 2;
+}
+
+message PB_ISLAND_NPC {
+  optional uint32 id = 1;
+  optional uint32 object_id = 2;
+}
+
+message PB_ISLAND_NPC_PUSH {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+  optional uint32 object_id = 3;
+}
+
+message PB_ISLAND_LABEL {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_SET_FLAG {
+  optional uint32 type = 1;
+  optional uint32 flag = 2;
+}
+
+message PB_BOOK_COND {
+  optional uint32 type = 1;
+  repeated uint32 unlock_ids = 2 [packed = false];
+}
+
+message PB_LV_COLLECT {
+  optional uint32 lv = 1;
+  optional uint32 value = 2;
+}
+
+message PB_BOOK_COLLECT {
+  optional uint32 id = 1;
+  optional uint32 base = 2;
+  repeated PB_LV_COLLECT lv_list = 3;
+  repeated PB_LV_COLLECT star_list = 4;
+}
+
+message PB_VIEW_BOOK {
+  repeated PB_BOOK_COND cond_list = 1;
+  repeated uint32 book_list = 2 [packed = false];
+  repeated uint32 book_awards = 3 [packed = false];
+  repeated PB_BOOK_COLLECT book_collects = 4;
+  repeated PB_ISLAND_ITEM item_list = 5;
+}
+
+message PB_CARD_IMAGE {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_FISH_WEIGHT {
+  optional uint32 fish_id = 1;
+  optional uint32 min_weight = 2;
+  optional uint32 max_weight = 3;
+  optional uint32 gold_state = 4;
+}
+
+message PB_FISH_SYS {
+  optional uint32 old_bait = 1;
+  optional uint32 fish_rod = 2;
+  repeated PB_FISH_WEIGHT fish_weight = 3;
+}
+
+message PB_ISLAND_MAKE {
+  optional uint32 make_id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_TRE_SELL_LIST {
+  optional uint32 island_id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_TRE_HISTORY_PRICE {
+  optional uint32 timestamp = 1;
+  optional uint32 price = 2;
+}
+
+message PB_ISLAND_TREASURE {
+  optional uint32 week_buy_num = 1;
+  repeated PB_TRE_SELL_LIST sell_list = 2;
+  repeated PB_TRE_HISTORY_PRICE price_list = 3;
+  repeated uint32 invite_list = 4 [packed = false];
+}
+
+message PB_GATHER_SHIP {
+  optional uint32 ship_id = 1;
+  optional uint32 cur_power = 2;
+  optional uint32 recover_time = 3;
+  optional uint32 add_exp = 4;
+}
+
+message PB_BUILD_REFRESH {
+  optional uint32 build_id = 1;
+  optional uint32 refresh_time = 2;
+}
+
+message PB_ISLAND_PUBLIC {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+  optional uint32 exp = 3;
+  optional uint32 storage_level = 4;
+  optional string name = 5;
+  PB_ISLAND_TECH tech = 6;
+  optional uint32 prosperity = 7;
+  repeated uint32 ability_list = 8 [packed = false];
+  optional uint32 prosperity_rewarded = 9;
+  PB_ISLAND_SHIP_SYS ship_sys = 10;
+  optional uint32 agora_level = 11;
+  PB_PLACEMENT_DATA placed_data = 12;
+  repeated PB_SET_FLAG flag_list = 13;
+  optional uint32 tree_gift_timestamp = 14;
+  optional uint32 tree_gift_count = 15;
+  optional uint32 tree_gift_invited = 16;
+  optional uint32 tree_gift_visitor = 17;
+  PB_ISLAND_TASK task_info = 18;
+  PB_ISLAND_TRADE_SYS trade_sys = 19;
+  repeated PB_ISLAND_BUILD build_list = 20;
+  PB_ISLAND_TREASURE treasure = 21;
+}
+
+message PB_ISLAND_PRIVATE {
+  optional uint32 open_flag = 1;
+  repeated uint32 white_list = 2 [packed = false];
+  repeated uint32 black_list = 3 [packed = false];
+  repeated PB_VISITOR visitor_history = 4;
+  repeated PB_ISLAND_ITEM item_list = 5;
+  repeated PB_ISLAND_ITEM item_list_cache = 6;
+  repeated PB_FURNITURE furniture_list = 7;
+  repeated PB_SHOP shop_list = 8;
+  PB_ISLAND_ORDER_SYSTEM order_system = 9;
+  optional string invite_code = 10;
+  optional uint32 daily_timestamp = 11;
+  repeated uint32 daily_list = 12 [packed = false];
+  repeated PB_ISLAND_SEASON_REVIEW season_review_list = 13;
+  PB_ISLAND_SEASON season = 14;
+  PB_ISLAND_COLLECT_SYS collect_sys = 15;
+  optional uint32 formula_num = 16;
+  PB_ISLAND_USER_DRESS_SYS user_dress = 17;
+  PB_ISLAND_ACHIEVEMENT_SYS achievement_sys = 18;
+  PB_ISLAND_GLOBAL_BUFF global_buff = 19;
+  repeated PB_SPEEDUP_TICKET speed_tickets = 20;
+  repeated uint32 action_list = 21 [packed = false];
+  repeated uint32 action_feedback_npc_list = 22 [packed = false];
+  repeated PB_SET_FLAG flag_list = 23;
+  PB_VIEW_BOOK view_book = 24;
+  repeated uint32 follow_ships = 25 [packed = false];
+  repeated PB_CARD_IMAGE image_list = 26;
+  PB_FISH_SYS fish_sys = 27;
+}
+
+message PB_ISLAND {
+  PB_ISLAND_PUBLIC public_data = 1;
+  optional PB_ISLAND_PRIVATE private_data = 2;
+}
+
+// ===== CS/SC Messages =====
+
+// cmd: 21000 - 进入岛屿 (CS)
+message CS_21000 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21001 - 进入岛屿结果 (SC)
+message SC_21001 {
+  optional uint32 ret = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21002 - 设置开关标记 (CS)
+message CS_21002 {
+  repeated uint32 open_flag = 1 [packed = false];
+  repeated uint32 close_flag = 2 [packed = false];
+}
+
+// cmd: 21003 - 设置开关标记结果 (SC)
+message SC_21003 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21004 - 修改岛屿名 (CS)
+message CS_21004 {
+  optional string name = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 21005 - 修改岛屿名结果 (SC)
+message SC_21005 {
+  optional uint32 ret = 1;
+}
+
+// cmd: 21006 - 设置标记 (CS)
+message CS_21006 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21007 - 设置标记结果 (SC)
+message SC_21007 {
+  optional uint32 result = 1;
+  repeated PB_ISLAND_ITEM item_list = 2;
+}
+
+// cmd: 21008 - 获取邀请码 (CS)
+message CS_21008 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21009 - 获取邀请码结果 (SC)
+message SC_21009 {
+  optional uint32 result = 1;
+  optional string invite_code = 2;
+}
+
+// cmd: 21010 - 升级 (CS)
+message CS_21010 {
+  optional uint32 level = 1;
+}
+
+// cmd: 21011 - 升级结果 (SC)
+message SC_21011 {
+  optional uint32 ret = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21012 - 升级类型 (CS)
+message CS_21012 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21013 - 升级类型结果 (SC)
+message SC_21013 {
+  optional uint32 ret = 1;
+}
+
+// cmd: 21014 - 使用物品 (CS)
+message CS_21014 {
+  optional uint32 type = 1;
+  repeated PB_ISLAND_ITEM item_list = 2;
+}
+
+// cmd: 21015 - 使用物品结果 (SC)
+message SC_21015 {
+  optional uint32 result = 1;
+  repeated PB_ISLAND_ITEM item_list = 2;
+}
+
+// cmd: 21016 - 打开商店 (CS)
+message CS_21016 {
+  optional uint32 shop_id = 1;
+}
+
+// cmd: 21017 - 打开商店结果 (SC)
+message SC_21017 {
+  optional uint32 result = 1;
+  PB_SHOP shop_info = 2;
+}
+
+// cmd: 21018 - 购买商品 (CS)
+message CS_21018 {
+  repeated KVDATA2 goods_list = 1;
+}
+
+// cmd: 21019 - 购买商品结果 (SC)
+message SC_21019 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21020 - 刷新商店 (CS)
+message CS_21020 {
+  optional uint32 shop_id = 1;
+}
+
+// cmd: 21021 - 刷新商店结果 (SC)
+message SC_21021 {
+  optional uint32 result = 1;
+  PB_SHOP shop_info = 2;
+}
+
+// cmd: 21022 - 领取季节奖励 (CS)
+message CS_21022 {
+  optional uint32 target_pt = 1;
+}
+
+// cmd: 21023 - 领取季节奖励结果 (SC)
+message SC_21023 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21024 - 结算季节 (CS)
+message CS_21024 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21025 - 结算季节结果 (SC)
+message SC_21025 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  PB_ISLAND_SEASON_REVIEW season_review = 3;
+  PB_ISLAND_ORDER_SYSTEM order_sys = 4;
+}
+
+// cmd: 21026 - 使用配方 (CS)
+message CS_21026 {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  repeated uint32 arg = 3 [packed = false];
+}
+
+// cmd: 21027 - 使用配方结果 (SC)
+message SC_21027 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  repeated PB_ISLAND_SHIP ship_list = 3;
+}
+
+// cmd: 21030 - 获取任务列表 (CS)
+message CS_21030 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21031 - 任务列表推送 (SC)
+message SC_21031 {
+  repeated uint32 remove_task_list = 1 [packed = false];
+  repeated uint32 remove_task_finish = 2 [packed = false];
+  repeated PB_TASK task_list = 3;
+  repeated PB_TASK_RANDOM task_list_random = 4;
+}
+
+// cmd: 21032 - 领取任务奖励 (CS)
+message CS_21032 {
+  repeated uint32 task_id_list = 1 [packed = false];
+}
+
+// cmd: 21033 - 领取任务奖励结果 (SC)
+message SC_21033 {
+  repeated PB_TASK task_list = 1;
+}
+
+// cmd: 21034 - 接受任务 (CS)
+message CS_21034 {
+  optional uint32 task_id = 1;
+}
+
+// cmd: 21035 - 接受任务结果 (SC)
+message SC_21035 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21036 - 更新任务进度 (CS)
+message CS_21036 {
+  optional uint32 task_id = 1;
+  optional uint32 target_id = 2;
+  optional uint32 target_count = 3;
+}
+
+// cmd: 21037 - 更新任务进度结果 (SC)
+message SC_21037 {
+  optional uint32 result = 1;
+  repeated PB_TASK task_list = 2;
+}
+
+// cmd: 21038 - 放弃任务 (CS)
+message CS_21038 {
+  optional uint32 task_id = 1;
+}
+
+// cmd: 21039 - 放弃任务结果 (SC)
+message SC_21039 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21040 - 任务推送 (SC only)
+message SC_21040 {
+  repeated PB_TASK task_list = 1;
+}
+
+// cmd: 21041 - 批量领取任务奖励 (CS)
+message CS_21041 {
+  repeated uint32 task_ids = 1 [packed = false];
+}
+
+// cmd: 21042 - 批量领取任务奖励结果 (SC)
+message SC_21042 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21043 - 任务更新推送 (SC only)
+message SC_21043 {
+  repeated PB_TASK task_list = 1;
+  repeated PB_TASK_RANDOM task_list_random = 2;
+}
+
+// cmd: 21050 - 升级科技 (CS)
+message CS_21050 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 21051 - 升级科技结果 (SC)
+message SC_21051 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21052 - 触发事件 (CS)
+message CS_21052 {
+  repeated uint32 event_list = 1 [packed = false];
+}
+
+// cmd: 21053 - 触发事件结果 (SC)
+message SC_21053 {
+  repeated uint32 event_list = 1 [packed = false];
+}
+
+// cmd: 21060 - 钓鱼开始 (CS)
+message CS_21060 {
+  optional uint32 island_id = 1;
+  optional uint32 point_id = 2;
+}
+
+// cmd: 21061 - 钓鱼开始结果 (SC)
+message SC_21061 {
+  optional uint32 result = 1;
+  optional uint32 fish_id = 2;
+  optional uint32 weight = 3;
+  optional uint32 gold_state = 4;
+}
+
+// cmd: 21062 - 钓鱼结束 (CS)
+message CS_21062 {
+  optional uint32 island_id = 1;
+  optional uint32 point_id = 2;
+  optional uint32 end_result = 3;
+}
+
+// cmd: 21063 - 钓鱼结束结果 (SC)
+message SC_21063 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21064 - 更换鱼饵 (CS)
+message CS_21064 {
+  optional uint32 bait_id = 1;
+}
+
+// cmd: 21065 - 更换鱼饵结果 (SC)
+message SC_21065 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21066 - 制作 (CS)
+message CS_21066 {
+  repeated PB_ISLAND_MAKE makes = 1;
+}
+
+// cmd: 21067 - 制作结果 (SC)
+message SC_21067 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ===== 21200-21247: 岛屿场景/社交 =====
+
+// cmd: 21200 - 进入岛屿场景 (CS)
+message CS_21200 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21201 - 进入岛屿场景结果 (SC)
+message SC_21201 {
+  PB_ISLAND island = 1;
+  PB_PLAYER_POS_RECORD player_position = 2;
+}
+
+// cmd: 21202 - 访问岛屿 (CS)
+message CS_21202 {
+  optional uint32 island_id = 1;
+  optional string code = 2;
+}
+
+// cmd: 21203 - 访问岛屿结果 (SC)
+message SC_21203 {
+  optional uint32 result = 1;
+  repeated PB_PLAYER player_list = 2;
+  optional uint32 island_id = 3;
+  optional uint32 pos = 4;
+  optional uint32 cd = 5;
+}
+
+// cmd: 21204 - 离开岛屿 (CS)
+message CS_21204 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21205 - 离开岛屿结果 (SC)
+message SC_21205 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21206 - 玩家进入岛屿推送 (SC only)
+message SC_21206 {
+  optional uint32 island_id = 1;
+  repeated PB_PLAYER player_list = 2;
+}
+
+// cmd: 21207 - 对象同步推送 (SC only)
+message SC_21207 {
+  optional uint32 island_id = 1;
+  repeated PB_OBJECT object_list = 2;
+}
+
+// cmd: 21208 - 加载完成 (CS)
+message CS_21208 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21209 - 交互操作 (CS)
+message CS_21209 {
+  optional uint32 island_id = 1;
+  optional uint32 obj_id = 2;
+  optional uint32 slot_id = 3;
+  optional uint32 op = 4;
+  optional uint32 status = 5;
+  optional uint32 type = 6;
+}
+
+// cmd: 21210 - 交互操作结果 (SC)
+message SC_21210 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21211 - 同步对象 (CS)
+message CS_21211 {
+  optional uint32 island_id = 1;
+  repeated PB_SYNC_OBJECT sync_ob_list = 2;
+}
+
+// cmd: 21212 - 同步对象结果 (SC)
+message SC_21212 {
+  repeated PB_SYNC_OBJECT sync_ob_list = 1;
+}
+
+// cmd: 21213 - 切换地图 (CS)
+message CS_21213 {
+  optional uint32 island_id = 1;
+  optional uint32 map_id = 2;
+}
+
+// cmd: 21214 - 切换地图结果 (SC)
+message SC_21214 {
+  optional uint32 result = 1;
+  repeated PB_OBJECT object_list = 2;
+  repeated PB_ISLAND_WILD_GATHER gather_list = 3;
+  repeated PB_ISLAND_COLLECT_FRAGMENT fragment_list = 4;
+  repeated PB_ISLAND_NPC npc_list = 5;
+}
+
+// cmd: 21215 - 请求访客列表 (CS)
+message CS_21215 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21216 - 访客列表推送 (SC)
+message SC_21216 {
+  repeated PB_VISITOR visitor_list = 1;
+}
+
+// cmd: 21217 - 建筑推送 (SC only)
+message SC_21217 {
+  optional uint32 island_id = 1;
+  optional uint32 build_id = 2;
+}
+
+// cmd: 21218 - 槽位推送 (SC only)
+message SC_21218 {
+  optional uint32 island_id = 1;
+  optional uint32 slot_id = 2;
+}
+
+// cmd: 21219 - 动物推送 (SC only)
+message SC_21219 {
+  optional uint32 island_id = 1;
+  optional uint32 animal_id = 2;
+}
+
+// cmd: 21220 - 任命推送 (SC only)
+message SC_21220 {
+  optional uint32 island_id = 1;
+  PB_ISLAND_SHIP_APPOINT appoint_data = 2;
+}
+
+// cmd: 21221 - 手工区推送 (SC only)
+message SC_21221 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_HAND_AREA hand_list = 2;
+}
+
+// cmd: 21222 - 订单槽位推送 (SC only)
+message SC_21222 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_ORDER_SLOT slot_list = 2;
+}
+
+// cmd: 21223 - 舰娘换装推送 (SC only)
+message SC_21223 {
+  optional uint32 island_id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 skin_id = 3;
+  optional uint32 skin_color = 4;
+  repeated uint32 unload_dress = 5 [packed = false];
+  repeated PB_ISLAND_SHIP_WEAR dress_list = 6;
+}
+
+// cmd: 21224 - 玩家换装推送 (SC only)
+message SC_21224 {
+  optional uint32 island_id = 1;
+  optional uint32 user_id = 2;
+  repeated PB_ISLAND_CUR_DRESS dress_list = 3;
+  PB_DRESS_COLOR dress_color = 4;
+}
+
+// cmd: 21225 - 交易推送 (SC only)
+message SC_21225 {
+  optional uint32 island_id = 1;
+  PB_ISLAND_TRADE trade = 2;
+}
+
+// cmd: 21226 - 订单舰船槽位推送 (SC only)
+message SC_21226 {
+  optional uint32 island_id = 1;
+  optional uint32 slot_id = 2;
+}
+
+// cmd: 21227 - 能力推送 (SC only)
+message SC_21227 {
+  optional uint32 island_id = 1;
+  optional uint32 ability_id = 2;
+}
+
+// cmd: 21228 - 建筑刷新推送 (SC only)
+message SC_21228 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_NPC_PUSH refresh_list = 2;
+}
+
+// cmd: 21229 - 保存位置 (CS)
+message CS_21229 {
+  optional uint32 island_id = 1;
+  PB_PLAYER_POS_RECORD player_position = 2;
+}
+
+// cmd: 21230 - 请求钓鱼状态 (CS)
+message CS_21230 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21231 - 请求钓鱼状态结果 (SC)
+message SC_21231 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21232 - 钓鱼状态推送 (SC only)
+message SC_21232 {
+  optional uint32 island_id = 1;
+  optional uint32 user_id = 2;
+  optional uint32 point_id = 3;
+  optional uint32 rod_id = 4;
+  optional uint32 fish_id = 5;
+}
+
+// cmd: 21233 - 钓鱼结束推送 (SC only)
+message SC_21233 {
+  optional uint32 island_id = 1;
+  optional uint32 user_id = 2;
+  optional uint32 point_id = 3;
+  optional uint32 type = 4;
+}
+
+// cmd: 21240 - 出售宝物 (CS)
+message CS_21240 {
+  optional uint32 island_id = 1;
+  optional uint32 type = 2;
+  optional uint32 num = 3;
+}
+
+// cmd: 21241 - 出售宝物结果 (SC)
+message SC_21241 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21242 - 今日价格推送 (SC only)
+message SC_21242 {
+  optional uint32 island_id = 1;
+  optional uint32 today_price = 2;
+}
+
+// cmd: 21243 - 请求宝物价格 (CS)
+message CS_21243 {
+  optional uint32 island_id = 1;
+}
+
+// cmd: 21244 - 宝物价格推送 (SC)
+message SC_21244 {
+  optional uint32 today_price = 1;
+  optional uint32 island_lv = 2;
+}
+
+// cmd: 21245 - 邀请好友 (CS)
+message CS_21245 {
+  repeated uint32 friend_list = 1 [packed = false];
+  optional uint32 map_id = 2;
+  optional uint32 price = 3;
+}
+
+// cmd: 21246 - 邀请好友结果 (SC)
+message SC_21246 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21247 - 邀请推送 (SC only)
+message SC_21247 {
+  optional uint32 island_id = 1;
+  optional uint32 map_id = 2;
+  optional uint32 price = 3;
+}
+
+// ===== 21300-21348: 岛屿社交/图鉴 =====
+
+// cmd: 21300 - 开启岛屿 (CS)
+message CS_21300 {
+  optional uint32 open_flag = 1;
+}
+
+// cmd: 21301 - 开启岛屿结果 (SC)
+message SC_21301 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21302 - 踢出玩家 (CS)
+message CS_21302 {
+  optional uint32 cmd = 1;
+  repeated uint32 user_id_list = 2 [packed = false];
+}
+
+// cmd: 21303 - 踢出玩家结果 (SC)
+message SC_21303 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21304 - 时间推送 (SC only)
+message SC_21304 {
+  optional uint32 timestamp = 1;
+}
+
+// cmd: 21305 - 请求岛屿数据 (CS)
+message CS_21305 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21306 - 请求岛屿数据结果 (SC)
+message SC_21306 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21307 - 更新岛屿数据 (CS)
+message CS_21307 {
+  PB_PLACEMENT_DATA update_data = 1;
+}
+
+// cmd: 21308 - 更新岛屿数据结果 (SC)
+message SC_21308 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21309 - 岛屿数据推送 (SC only)
+message SC_21309 {
+  optional uint32 island_id = 1;
+  PB_PLACEMENT_DATA update_data = 2;
+}
+
+// cmd: 21310 - 采集 (CS)
+message CS_21310 {
+  optional uint32 island_id = 1;
+  optional uint32 pos = 2;
+}
+
+// cmd: 21311 - 采集结果 (SC)
+message SC_21311 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21312 - 赠送礼物 (CS)
+message CS_21312 {
+  repeated uint32 friend_list = 1 [packed = false];
+}
+
+// cmd: 21313 - 赠送礼物结果 (SC)
+message SC_21313 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21314 - 收到礼物推送 (SC only)
+message SC_21314 {
+  optional uint32 island_id = 1;
+  optional uint32 gift_count = 2;
+  optional uint32 gift_visitor = 3;
+  optional uint32 gift_timestamp = 4;
+  optional uint32 cmd = 5;
+}
+
+// cmd: 21315 - 查看礼物 (CS)
+message CS_21315 {
+  repeated uint32 user_id_list = 1 [packed = false];
+}
+
+// cmd: 21316 - 查看礼物结果 (SC)
+message SC_21316 {
+  repeated KVDATA2 gift_list = 1;
+}
+
+// cmd: 21317 - 保存主题 (CS)
+message CS_21317 {
+  PB_PLACEMENT_THEME theme = 1;
+}
+
+// cmd: 21318 - 保存主题结果 (SC)
+message SC_21318 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21319 - 删除主题 (CS)
+message CS_21319 {
+  optional uint32 id = 1;
+}
+
+// cmd: 21320 - 删除主题结果 (SC)
+message SC_21320 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21321 - 获取主题列表 (CS)
+message CS_21321 {
+  optional uint32 id = 1;
+}
+
+// cmd: 21322 - 主题列表推送 (SC)
+message SC_21322 {
+  repeated PB_PLACEMENT_THEME theme_list = 1;
+}
+
+// cmd: 21323 - 发送消息 (CS)
+message CS_21323 {
+  optional uint32 island_id = 1;
+  optional string content = 2;
+}
+
+// cmd: 21324 - 发送消息结果 (SC)
+message SC_21324 {
+  optional uint32 result = 1;
+  optional string tip = 2;
+}
+
+// cmd: 21325 - 收到消息推送 (SC only)
+message SC_21325 {
+  optional uint32 island_id = 1;
+  optional uint32 user_id = 2;
+  optional string content = 3;
+}
+
+// cmd: 21326 - 查看玩家信息 (CS)
+message CS_21326 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 21327 - 玩家信息推送 (SC)
+message SC_21327 {
+  optional string name = 1;
+  optional uint32 picture = 2;
+  optional string visit_word = 3;
+  optional uint32 lv = 4;
+  optional uint32 social_flag = 5;
+  optional uint32 label_view_flag = 6;
+  repeated PB_ISLAND_LABEL label_list = 7;
+  repeated uint32 achieve_list = 8 [packed = false];
+  optional uint32 achieve_num = 9;
+  optional uint32 visit_num = 10;
+  optional uint32 good_num = 11;
+  optional uint32 ship_num = 12;
+  optional uint32 book_num = 13;
+  optional uint32 label_flag = 14;
+  optional uint32 good_flag = 15;
+  optional uint32 white_flag = 16;
+  optional uint32 black_flag = 17;
+}
+
+// cmd: 21328 - 设置头像 (CS)
+message CS_21328 {
+  optional uint32 type = 1;
+  optional uint32 picture = 2;
+}
+
+// cmd: 21329 - 设置头像结果 (SC)
+message SC_21329 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21330 - 设置留言 (CS)
+message CS_21330 {
+  optional string visit_word = 1;
+}
+
+// cmd: 21331 - 设置留言结果 (SC)
+message SC_21331 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21332 - 设置标签 (CS)
+message CS_21332 {
+  repeated uint32 flag_list = 1 [packed = false];
+}
+
+// cmd: 21333 - 设置标签结果 (SC)
+message SC_21333 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21334 - 点赞 (CS)
+message CS_21334 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 21335 - 点赞结果 (SC)
+message SC_21335 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21336 - 设置标签 (CS)
+message CS_21336 {
+  optional uint32 user_id = 1;
+  optional uint32 label_id = 2;
+}
+
+// cmd: 21337 - 设置标签结果 (SC)
+message SC_21337 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21338 - 设置分组 (CS)
+message CS_21338 {
+  repeated uint32 group_list = 1 [packed = false];
+}
+
+// cmd: 21339 - 设置分组结果 (SC)
+message SC_21339 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21340 - 解锁图鉴条件 (CS)
+message CS_21340 {
+  optional uint32 type = 1;
+  optional uint32 cond_id = 2;
+}
+
+// cmd: 21341 - 解锁图鉴条件结果 (SC)
+message SC_21341 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21342 - 图鉴物品推送 (SC only)
+message SC_21342 {
+  repeated PB_ISLAND_ITEM item_list = 1;
+}
+
+// cmd: 21343 - 领取图鉴奖励 (CS)
+message CS_21343 {
+  repeated uint32 book_ids = 1 [packed = false];
+}
+
+// cmd: 21344 - 领取图鉴奖励结果 (SC)
+message SC_21344 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21345 - 查看图鉴收集 (CS)
+message CS_21345 {
+  repeated uint32 book_ids = 1 [packed = false];
+}
+
+// cmd: 21346 - 查看图鉴收集结果 (SC)
+message SC_21346 {
+  optional uint32 result = 1;
+  repeated PB_BOOK_COLLECT collect_list = 2;
+}
+
+// cmd: 21347 - 升级图鉴 (CS)
+message CS_21347 {
+  optional uint32 lv = 1;
+}
+
+// cmd: 21348 - 升级图鉴结果 (SC)
+message SC_21348 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ===== 21401-21432: 订单系统 =====
+
+// cmd: 21401 - 接受订单 (CS)
+message CS_21401 {
+  optional uint32 slot_id = 1;
+}
+
+// cmd: 21402 - 接受订单结果 (SC)
+message SC_21402 {
+  optional uint32 result = 1;
+  PB_ISLAND_ORDER_SLOT slot = 2;
+  repeated DROPINFO drop_list = 3;
+}
+
+// cmd: 21403 - 提交订单 (CS)
+message CS_21403 {
+  optional uint32 slot_id = 1;
+}
+
+// cmd: 21404 - 提交订单结果 (SC)
+message SC_21404 {
+  optional uint32 result = 1;
+  PB_ISLAND_ORDER_SLOT slot = 2;
+}
+
+// cmd: 21405 - 完成订单 (CS)
+message CS_21405 {
+  optional uint32 slot_id = 1;
+}
+
+// cmd: 21406 - 完成订单结果 (SC)
+message SC_21406 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21407 - 订单推送 (SC only)
+message SC_21407 {
+  optional uint32 island_id = 1;
+  PB_ISLAND_ORDER_SYSTEM order_info = 2;
+}
+
+// cmd: 21408 - 舰船订单操作 (CS)
+message CS_21408 {
+  optional uint32 type = 1;
+  optional uint32 ship_slot_id = 2;
+}
+
+// cmd: 21409 - 舰船订单操作结果 (SC)
+message SC_21409 {
+  optional uint32 result = 1;
+  PB_ISLAND_ORDER_SHIP_SLOT slot = 2;
+  repeated DROPINFO drop_list = 3;
+  repeated PB_SHIP_ORDER_APPOINT appoint_list = 4;
+}
+
+// cmd: 21410 - 刷新舰船订单 (CS)
+message CS_21410 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21411 - 刷新舰船订单结果 (SC)
+message SC_21411 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21412 - 升级订单 (CS)
+message CS_21412 {
+  optional uint32 lv = 1;
+}
+
+// cmd: 21413 - 升级订单结果 (SC)
+message SC_21413 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21414 - 完成舰船订单 (CS)
+message CS_21414 {
+  optional uint32 order_id = 1;
+}
+
+// cmd: 21415 - 完成舰船订单结果 (SC)
+message SC_21415 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21416 - 装载舰船订单 (CS)
+message CS_21416 {
+  optional uint32 ship_slot_id = 1;
+  optional uint32 item_id = 2;
+}
+
+// cmd: 21417 - 装载舰船订单结果 (SC)
+message SC_21417 {
+  optional uint32 result = 1;
+  optional uint32 get_time = 2;
+  repeated DROPINFO drop_list = 3;
+}
+
+// cmd: 21418 - 交易 (CS)
+message CS_21418 {
+  optional uint32 trade_id = 1;
+  repeated PB_TRADE_POST post_list = 2;
+  repeated PB_TRADE_FOOD food_list = 3;
+  PB_TRADE_PRESELL presell = 4;
+}
+
+// cmd: 21419 - 交易结果 (SC)
+message SC_21419 {
+  optional uint32 result = 1;
+  PB_ISLAND_TRADE trade_data = 2;
+  PB_ISLAND_SHIP_POWER ship_power = 3;
+}
+
+// cmd: 21420 - 取消交易 (CS)
+message CS_21420 {
+  optional uint32 trade_id = 1;
+}
+
+// cmd: 21421 - 取消交易结果 (SC)
+message SC_21421 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  optional uint32 event_add = 3;
+  optional uint32 event_id = 4;
+}
+
+// cmd: 21422 - 交易事件推送 (SC only)
+message SC_21422 {
+  optional uint32 type = 1;
+  optional uint32 today_event = 2;
+  optional uint32 today_trade = 3;
+  PB_EVENT_EFFECT effect = 4;
+}
+
+// cmd: 21423 - 加速 (CS)
+message CS_21423 {
+  optional uint32 type = 1;
+  optional uint32 target_id = 2;
+  optional uint32 tickets = 3;
+}
+
+// cmd: 21424 - 加速结果 (SC)
+message SC_21424 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21425 - 使用加速钥匙 (CS)
+message CS_21425 {
+  repeated PB_SPEEDUP_KEY ticket_keys = 1;
+}
+
+// cmd: 21426 - 使用加速钥匙结果 (SC)
+message SC_21426 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21427 - 加速区域 (CS)
+message CS_21427 {
+  optional uint32 area_id = 1;
+  optional uint32 tickets = 2;
+}
+
+// cmd: 21428 - 加速区域结果 (SC)
+message SC_21428 {
+  optional uint32 result = 1;
+  repeated uint32 time_list = 2 [packed = false];
+}
+
+// cmd: 21429 - 领取任命奖励 (CS)
+message CS_21429 {
+  optional uint32 slot_id = 1;
+}
+
+// cmd: 21430 - 领取任命奖励结果 (SC)
+message SC_21430 {
+  optional uint32 result = 1;
+  optional uint32 next_time = 2;
+  repeated PB_SHIP_ORDER_APPOINT appoint_list = 3;
+}
+
+// cmd: 21431 - 查看任命 (CS)
+message CS_21431 {
+  optional uint32 slot_id = 1;
+  optional uint32 appoint_id = 2;
+}
+
+// cmd: 21432 - 查看任命结果 (SC)
+message SC_21432 {
+  optional uint32 result = 1;
+  PB_SHIP_ORDER_APPOINT appoint = 2;
+}
+
+// ===== 21501-21542: 建筑/采集系统 =====
+
+// cmd: 21501 - 任命舰娘 (CS)
+message CS_21501 {
+  optional uint32 build_id = 1;
+  optional uint32 area_id = 2;
+  optional uint32 ship_id = 3;
+  optional uint32 formula_id = 4;
+  optional uint32 num = 5;
+}
+
+// cmd: 21502 - 任命舰娘结果 (SC)
+message SC_21502 {
+  optional uint32 result = 1;
+  optional uint32 ship_power = 2;
+  PB_ISLAND_SHIP_APPOINT ship_appoint = 3;
+}
+
+// cmd: 21503 - 取消任命 (CS)
+message CS_21503 {
+  optional uint32 build_id = 1;
+  optional uint32 area_id = 2;
+}
+
+// cmd: 21504 - 取消任命结果 (SC)
+message SC_21504 {
+  optional uint32 result = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 cur_energy = 3;
+  optional uint32 add_exp = 4;
+  optional uint32 recover_time = 5;
+  repeated DROPINFO award = 6;
+  optional uint32 return_num = 7;
+}
+
+// cmd: 21505 - 领取建筑产物 (CS)
+message CS_21505 {
+  optional uint32 type = 1;
+  optional uint32 build_id = 2;
+  optional uint32 area_id = 3;
+}
+
+// cmd: 21506 - 领取建筑产物结果 (SC)
+message SC_21506 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  optional uint32 get_times = 3;
+  optional uint32 pt_award = 4;
+  optional uint32 formula_id = 5;
+  repeated uint32 rest_time_list = 6 [packed = false];
+  optional uint32 start_time = 7;
+}
+
+// cmd: 21507 - 刷新建筑 (CS)
+message CS_21507 {
+  optional uint32 type = 1;
+  optional uint32 build_id = 2;
+  optional uint32 area_id = 3;
+}
+
+// cmd: 21508 - 刷新建筑结果 (SC)
+message SC_21508 {
+  optional uint32 result = 1;
+  optional uint32 refresh_time = 2;
+  repeated DROPINFO drop_list = 3;
+}
+
+// cmd: 21509 - 手工制作 (CS)
+message CS_21509 {
+  optional uint32 build_id = 1;
+  repeated uint32 slot_list = 2 [packed = false];
+  optional uint32 formula_id = 3;
+}
+
+// cmd: 21510 - 手工制作结果 (SC)
+message SC_21510 {
+  optional uint32 result = 1;
+  repeated PB_ISLAND_HAND_AREA hand_list = 2;
+}
+
+// cmd: 21511 - 一键领取 (CS)
+message CS_21511 {
+  optional uint32 build_id = 1;
+  repeated uint32 area_ids = 2 [packed = false];
+}
+
+// cmd: 21512 - 一键领取结果 (SC)
+message SC_21512 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21516 - 批量制作 (CS)
+message CS_21516 {
+  optional uint32 build_id = 1;
+  repeated uint32 slot_list = 2 [packed = false];
+}
+
+// cmd: 21517 - 批量制作结果 (SC)
+message SC_21517 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21518 - 制作推送 (SC only)
+message SC_21518 {
+  optional uint32 area_id = 1;
+  optional uint32 formula_id = 2;
+  optional uint32 num = 3;
+  optional uint32 comb_num = 4;
+}
+
+// cmd: 21519 - 建筑推送 (SC only)
+message SC_21519 {
+  PB_ISLAND_BUILD build = 1;
+}
+
+// cmd: 21520 - 研究科技 (CS)
+message CS_21520 {
+  optional uint32 tech_id = 1;
+}
+
+// cmd: 21521 - 研究科技结果 (SC)
+message SC_21521 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21522 - 完成科技 (CS)
+message CS_21522 {
+  optional uint32 tech_id = 1;
+}
+
+// cmd: 21523 - 完成科技结果 (SC)
+message SC_21523 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21524 - 采集 (CS)
+message CS_21524 {
+  optional uint32 island_id = 1;
+  optional uint32 gather_id = 2;
+}
+
+// cmd: 21525 - 采集结果 (SC)
+message SC_21525 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 21526 - 取消采集 (CS)
+message CS_21526 {
+  optional uint32 island_id = 1;
+  optional uint32 gather_id = 2;
+}
+
+// cmd: 21527 - 取消采集结果 (SC)
+message SC_21527 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21528 - 采集推送 (SC only)
+message SC_21528 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_GATHER_PUSH gather_list = 2;
+}
+
+// cmd: 21529 - 收集碎片 (CS)
+message CS_21529 {
+  optional uint32 island_id = 1;
+  optional uint32 fragment_id = 2;
+}
+
+// cmd: 21530 - 收集碎片结果 (SC)
+message SC_21530 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21531 - 取消收集碎片 (CS)
+message CS_21531 {
+  optional uint32 island_id = 1;
+  optional uint32 fragment_id = 2;
+}
+
+// cmd: 21532 - 取消收集碎片结果 (SC)
+message SC_21532 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21533 - 收集 (CS)
+message CS_21533 {
+  optional uint32 collect_id = 1;
+}
+
+// cmd: 21534 - 收集结果 (SC)
+message SC_21534 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21535 - 碎片推送 (SC only)
+message SC_21535 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_COLLECT_FRAGMENT_PUSH fragment_data = 2;
+}
+
+// cmd: 21536 - 采集数据推送 (SC only)
+message SC_21536 {
+  optional uint32 get_num = 1;
+  optional uint32 get_times = 2;
+  optional uint32 empty_num = 3;
+  optional uint32 mange_flag = 4;
+}
+
+// cmd: 21537 - 增加制作数量 (CS)
+message CS_21537 {
+  optional uint32 build_id = 1;
+  optional uint32 area_id = 2;
+  optional uint32 add_num = 3;
+}
+
+// cmd: 21538 - 增加制作数量结果 (SC)
+message SC_21538 {
+  optional uint32 result = 1;
+  repeated uint32 cost_time_list = 2 [packed = false];
+  optional uint32 times_extra = 3;
+}
+
+// cmd: 21539 - 批量操作舰娘 (CS)
+message CS_21539 {
+  optional uint32 type = 1;
+  repeated uint32 ship_list = 2 [packed = false];
+}
+
+// cmd: 21540 - 批量操作舰娘结果 (SC)
+message SC_21540 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+  repeated PB_GATHER_SHIP ship_list = 3;
+  repeated uint32 gather_list = 4 [packed = false];
+  repeated PB_BUILD_REFRESH build_refresh = 5;
+  optional uint32 cost_gold = 6;
+}
+
+// cmd: 21541 - 请求采集列表 (CS)
+message CS_21541 {
+  optional uint32 type = 1;
+}
+
+// cmd: 21542 - 采集列表推送 (SC)
+message SC_21542 {
+  optional uint32 result = 1;
+  repeated PB_ISLAND_WILD_GATHER gather_list = 2;
+}
+
+// ===== 21601-21631: 舰娘系统 =====
+
+// cmd: 21601 - 邀请舰娘 (CS)
+message CS_21601 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 21602 - 邀请舰娘结果 (SC)
+message SC_21602 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21603 - 送走舰娘 (CS)
+message CS_21603 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 21604 - 送走舰娘结果 (SC)
+message SC_21604 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21605 - 喂食舰娘 (CS)
+message CS_21605 {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+  repeated PB_ISLAND_ITEM item_list = 3;
+}
+
+// cmd: 21606 - 喂食舰娘结果 (SC)
+message SC_21606 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21607 - 赠送舰娘礼物 (CS)
+message CS_21607 {
+  optional uint32 ship_id = 1;
+  repeated PB_ISLAND_ITEM item_list = 2;
+}
+
+// cmd: 21608 - 赠送舰娘礼物结果 (SC)
+message SC_21608 {
+  optional uint32 result = 1;
+  optional uint32 add_exp = 2;
+}
+
+// cmd: 21609 - 查看舰娘 (CS)
+message CS_21609 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 21610 - 查看舰娘结果 (SC)
+message SC_21610 {
+  optional uint32 result = 1;
+  PB_ISLAND_SHIP ship = 2;
+}
+
+// cmd: 21611 - 休息舰娘 (CS)
+message CS_21611 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 21612 - 休息舰娘结果 (SC)
+message SC_21612 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21613 - 赠送舰娘特定礼物 (CS)
+message CS_21613 {
+  optional uint32 ship_id = 1;
+  optional uint32 gift_id = 2;
+}
+
+// cmd: 21614 - 赠送舰娘特定礼物结果 (SC)
+message SC_21614 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21617 - 换装 (CS)
+message CS_21617 {
+  optional uint32 ship_id = 1;
+  repeated uint32 unload_dress = 2 [packed = false];
+  repeated PB_ISLAND_SHIP_WEAR dress_list = 3;
+  optional uint32 skin_id = 4;
+  optional uint32 color_id = 5;
+}
+
+// cmd: 21618 - 换装结果 (SC)
+message SC_21618 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21619 - 更换颜色 (CS)
+message CS_21619 {
+  optional uint32 ship_id = 1;
+  optional uint32 color_id = 2;
+}
+
+// cmd: 21620 - 更换颜色结果 (SC)
+message SC_21620 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21621 - 购买装扮 (CS)
+message CS_21621 {
+  optional uint32 dress_id = 1;
+}
+
+// cmd: 21622 - 购买装扮结果 (SC)
+message SC_21622 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21623 - 舰娘体力推送 (SC only)
+message SC_21623 {
+  optional uint32 ship_id = 1;
+  optional uint32 cur_power = 2;
+  optional uint32 recover_time = 3;
+}
+
+// cmd: 21624 - 购买装扮2 (CS)
+message CS_21624 {
+  optional uint32 dress_id = 1;
+}
+
+// cmd: 21625 - 购买装扮2结果 (SC)
+message SC_21625 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21626 - 访客换装 (CS)
+message CS_21626 {
+  optional uint32 island_id = 1;
+  repeated PB_ISLAND_CUR_DRESS dress_list = 2;
+  repeated PB_DRESS_COLOR color_list = 3;
+}
+
+// cmd: 21627 - 访客换装结果 (SC)
+message SC_21627 {
+  optional uint32 result = 1;
+  repeated PB_CAP_STATE cap_list = 2;
+}
+
+// cmd: 21628 - 设置装扮颜色 (CS)
+message CS_21628 {
+  optional uint32 id = 1;
+  optional uint32 color_id = 2;
+}
+
+// cmd: 21629 - 设置装扮颜色结果 (SC)
+message SC_21629 {
+  optional uint32 result = 1;
+}
+
+// cmd: 21630 - 舰娘互动 (CS)
+message CS_21630 {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 21631 - 舰娘互动结果 (SC)
+message SC_21631 {
+  optional uint32 result = 1;
+}
+
+// ===== 21700-21703: NPC系统 =====
+
+// cmd: 21700 - NPC交互 (CS)
+message CS_21700 {
+  optional uint32 island_id = 1;
+  optional uint32 target_id = 2;
+  optional uint32 action_id = 3;
+}
+
+// cmd: 21701 - NPC交互推送 (SC only)
+message SC_21701 {
+  optional uint32 island_id = 1;
+  optional uint32 player_id = 2;
+  optional uint32 target_id = 3;
+  optional uint32 action_id = 4;
+}
+
+// cmd: 21702 - NPC反馈 (CS)
+message CS_21702 {
+  optional uint32 npc_id = 1;
+  optional uint32 action_feedback_id = 2;
+}
+
+// cmd: 21703 - NPC反馈结果 (SC)
+message SC_21703 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}

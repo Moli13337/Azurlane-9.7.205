@@ -1,0 +1,75 @@
+syntax = "proto3";
+package com.azurlane.proto;
+
+import "common.proto";
+
+message FLEETTECH {
+  optional uint32 group_id = 1;
+  optional uint32 effect_tech_id = 2;
+  optional uint32 study_tech_id = 3;
+  optional uint32 study_finish_time = 4;
+  optional uint32 rewarded_tech = 5;
+}
+
+message TECHSET {
+  optional uint32 ship_type = 1;
+  optional uint32 attr_type = 2;
+  optional uint32 set_value = 3;
+}
+
+message SC_64000 {
+  repeated FLEETTECH tech_list = 1;
+  repeated TECHSET techset_list = 2;
+}
+
+message CS_64001 {
+  optional uint32 tech_group_id = 1;
+  optional uint32 tech_id = 2;
+}
+
+message SC_64002 {
+  optional uint32 result = 1;
+}
+
+message CS_64003 {
+  optional uint32 tech_group_id = 1;
+}
+
+message SC_64004 {
+  optional uint32 result = 1;
+}
+
+message CS_64005 {
+  optional uint32 group_id = 1;
+  optional uint32 tech_id = 2;
+}
+
+message SC_64006 {
+  optional uint32 result = 1;
+  repeated DROPINFO rewards = 2;
+}
+
+message CS_64007 {
+  optional uint32 type = 1;
+}
+
+message SC_64008 {
+  optional uint32 result = 1;
+  repeated DROPINFO rewards = 2;
+}
+
+message CS_64009 {
+  repeated TECHSET techset_list = 1;
+}
+
+message SC_64010 {
+  optional uint32 result = 1;
+}
+
+message CS_64990 {
+  optional uint32 test = 1;
+}
+
+message SC_64991 {
+  optional uint32 result = 1;
+}

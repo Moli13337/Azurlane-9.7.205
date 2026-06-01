@@ -1,0 +1,320 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+// ============================================================
+// cmd: 11000 - 登录时间同步 (SC only)
+// ============================================================
+
+message SC_11000 {
+  optional uint32 timestamp = 1;
+  optional uint32 monday_0oclock_timestamp = 2;
+}
+
+// ============================================================
+// cmd: 11001 - 玩家登录聚合请求 (CS)
+// ============================================================
+
+message CS_11001 {
+  optional uint32 timestamp = 1;
+}
+
+// ============================================================
+// cmd: 11002 - 舰船数量与时间同步 (SC)
+// ============================================================
+
+message SC_11002 {
+  optional uint32 timestamp = 1;
+  optional uint32 monday_0oclock_timestamp = 2;
+  optional uint32 ship_count = 3;
+}
+
+// ============================================================
+// cmd: 11003 - 玩家详细信息 (SC)
+// ============================================================
+
+message SC_11003 {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 level = 3;
+  optional uint32 exp = 4;
+  repeated RESOURCE resource_list = 5;
+  optional uint32 attack_count = 6;
+  optional uint32 win_count = 7;
+  optional string adv = 8;
+  repeated KVDATA character = 9;
+  optional uint32 ship_bag_max = 10;
+  optional uint32 equip_bag_max = 11;
+  optional uint32 gm_flag = 12;
+  optional uint32 rank = 13;
+  optional uint32 pvp_attack_count = 14;
+  optional uint32 pvp_win_count = 15;
+  optional uint32 collect_attack_count = 16;
+  optional uint32 guide_index = 17;
+  optional uint32 buy_oil_count = 18;
+  optional uint32 chat_room_id = 19;
+  repeated CARDINFO card_list = 20;
+  optional uint32 max_rank = 21;
+  optional uint32 register_time = 22;
+  optional uint32 ship_count = 23;
+  optional uint32 acc_pay_lv = 24;
+  repeated uint32 story_list = 25 [packed = false];
+  optional uint32 guild_wait_time = 26;
+  optional uint32 chat_msg_ban_time = 27;
+  repeated uint32 flag_list = 28 [packed = false];
+  repeated COOLDOWN cd_list = 29;
+  optional uint32 commander_bag_max = 30;
+  repeated uint32 medal_id = 31 [packed = false];
+  repeated IDTIMEINFO icon_frame_list = 32;
+  repeated IDTIMEINFO chat_frame_list = 33;
+  DISPLAYINFO display = 34;
+  optional uint32 rmb = 35;
+  APPRECIATIONINFO appreciation = 36;
+  optional uint32 theme_upload_not_allowed_time = 37;
+  repeated REFUND_SHOPINFO refund_shop_info_list = 38;
+  repeated uint32 cartoon_read_mark = 39 [packed = false];
+  repeated uint32 cartoon_collect_mark = 40 [packed = false];
+  optional uint32 random_ship_mode = 41;
+  repeated KVDATA random_ship_list = 42;
+  optional uint32 marry_ship = 43;
+  repeated SHIP_TAKING_DATA taking_ship_list = 44;
+  repeated uint32 soundstory = 45 [packed = false];
+  optional uint32 child_display = 46;
+  LIVINGAREA_COVER cover = 47;
+  optional uint32 mail_storeroom_lv = 48;
+  repeated uint32 battle_ui_list = 49 [packed = false];
+  optional uint32 battle_ui = 50;
+  repeated KVDATA activity_medals = 51;
+  optional uint32 new_guide_index = 52;
+  optional uint32 loading_pic_open_flag = 53;
+  repeated uint32 loading_pic_id_list_1 = 54 [packed = false];
+  repeated uint32 loading_pic_id_list_2 = 55 [packed = false];
+}
+
+// ============================================================
+// cmd: 11004 - 资源同步 (SC)
+// ============================================================
+
+message SC_11004 {
+  repeated RESOURCE resource_list = 1;
+}
+
+// ============================================================
+// cmd: 11005 - 装扮应用请求 (CS)
+// ============================================================
+
+message CS_11005 {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+}
+
+// cmd: 11006 - 装扮应用响应 (SC)
+message SC_11006 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11007 - 修改玩家名称 (CS)
+// ============================================================
+
+message CS_11007 {
+  optional uint32 type = 1;
+  optional string name = 2;
+}
+
+// cmd: 11008 - 修改名称响应 (SC)
+message SC_11008 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11009 - 修改签名 (CS)
+// ============================================================
+
+message CS_11009 {
+  optional string adv = 1;
+}
+
+// cmd: 11010 - 修改签名响应 (SC)
+message SC_11010 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11011 - 更新秘书舰 (CS)
+// ============================================================
+
+message CS_11011 {
+  repeated KVDATA character = 1;
+}
+
+// cmd: 11012 - 更新秘书舰响应 (SC)
+message SC_11012 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11013 - 资源发放请求 (CS, GM命令)
+// ============================================================
+
+message CS_11013 {
+  optional uint32 type = 1;
+  optional uint32 number = 2;
+}
+
+// cmd: 11014 - 资源发放响应 (SC)
+message SC_11014 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11100 - GM命令 (CS)
+// ============================================================
+
+message CS_11100 {
+  optional string cmd = 1;
+  optional string arg1 = 2;
+  optional string arg2 = 3;
+  optional string arg3 = 4;
+  optional string arg4 = 5;
+}
+
+// cmd: 11101 - GM命令响应 (SC)
+message SC_11101 {
+  optional uint32 result = 1;
+  optional string msg = 2;
+}
+
+// ============================================================
+// cmd: 11015 - 玩家Buff列表 (SC only)
+// ============================================================
+
+message SC_11015 {
+  repeated BENEFITBUFF buff_list = 1;
+}
+
+// ============================================================
+// cmd: 11016 - 更新引导索引 (CS)
+// ============================================================
+
+message CS_11016 {
+  optional uint32 guide_index = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 11017 - 更新剧情 (CS)
+message CS_11017 {
+  optional uint32 story_id = 1;
+}
+
+// cmd: 11018 - 更新引导/剧情响应 (SC)
+message SC_11018 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 11019 - 更新通用标记 (CS)
+// ============================================================
+
+message CS_11019 {
+  optional uint32 flag_id = 1;
+}
+
+// cmd: 11020 - 更新通用标记响应 (SC)
+message SC_11020 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11021 - 取消通用标记 (CS)
+// ============================================================
+
+message CS_11021 {
+  optional uint32 flag_id = 1;
+}
+
+// cmd: 11022 - 取消通用标记响应 (SC)
+message SC_11022 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11023 - 退款信息请求 (CS)
+// ============================================================
+
+message CS_11023 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11024 - 退款信息响应 (SC)
+message SC_11024 {
+  optional uint32 result = 1;
+  repeated REFUND_SHOPINFO shop_info = 2;
+}
+
+// ============================================================
+// cmd: 11025 - 问卷请求 (CS)
+// ============================================================
+
+message CS_11025 {
+  optional uint32 survey_id = 1;
+}
+
+// cmd: 11026 - 问卷响应 (SC)
+message SC_11026 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11027 - 问卷状态更新 (CS)
+// ============================================================
+
+message CS_11027 {
+  optional uint32 survey_id = 1;
+}
+
+// cmd: 11028 - 问卷状态响应 (SC)
+message SC_11028 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11029 - 主场景追踪 (CS, 无响应)
+// ============================================================
+
+message CS_11029 {
+  optional uint32 track_typ = 1;
+  optional uint32 int_arg1 = 2;
+  optional uint32 int_arg2 = 3;
+  optional uint32 int_arg3 = 4;
+  optional string str_arg1 = 5;
+}
+
+// ============================================================
+// cmd: 11030 - 修改生活区封面 (CS)
+// ============================================================
+
+message CS_11030 {
+  optional uint32 livingarea_cover_id = 1;
+}
+
+// cmd: 11031 - 修改生活区封面响应 (SC)
+message SC_11031 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11032 - 批量更新剧情列表 (CS)
+// ============================================================
+
+message CS_11032 {
+  repeated uint32 story_ids = 1 [packed = false];
+}
+
+// cmd: 11033 - 批量更新剧情列表响应 (SC)
+message SC_11033 {
+  optional uint32 result = 1;
+}

@@ -1,0 +1,149 @@
+syntax = "proto3";
+package com.azurlane.proto;
+
+import "common.proto";
+import "legion.proto";
+
+message CAPITAL_LOG {
+  optional uint32 cmd = 1;
+  optional uint32 time = 2;
+  optional uint32 user_id = 3;
+  optional string name = 4;
+  optional uint32 arg1 = 5;
+}
+
+message GUILD_BATTLE_RANK_USER_INFO {
+  optional uint32 user_id = 1;
+  optional uint32 count = 2;
+}
+
+message GUILD_BATTLE_RANK_INFO {
+  optional uint32 period = 1;
+  repeated GUILD_BATTLE_RANK_USER_INFO rankuserinfo = 2;
+}
+
+message CS_62002 {
+  optional uint32 id = 1;
+}
+
+message SC_62003 {
+  optional uint32 result = 1;
+  repeated uint32 donate_tasks = 2 [packed = false];
+}
+
+message SC_62004 {
+  optional WEEKLY_TASK this_weekly_tasks = 1;
+}
+
+message SC_62005 {
+  optional uint32 benefit_finish_time = 1;
+}
+
+message SC_62006 {
+  optional uint32 progress = 1;
+}
+
+message CS_62007 {
+  optional uint32 type = 1;
+}
+
+message SC_62008 {
+  optional uint32 result = 1;
+}
+
+message CS_62009 {
+  optional uint32 type = 1;
+}
+
+message SC_62010 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+message CS_62011 {
+  optional uint32 type = 1;
+}
+
+message SC_62012 {
+  optional uint32 result = 1;
+  repeated CAPITAL_LOG inclog = 2;
+  repeated CAPITAL_LOG declog = 3;
+  repeated CAPITAL_LOG otherlog = 4;
+}
+
+message CS_62013 {
+  optional uint32 id = 1;
+}
+
+message SC_62014 {
+  optional uint32 result = 1;
+}
+
+message CS_62015 {
+  optional uint32 id = 1;
+}
+
+message SC_62016 {
+  optional uint32 result = 1;
+}
+
+message SC_62017 {
+  optional uint32 id = 1;
+}
+
+message SC_62018 {
+  optional uint32 id = 1;
+}
+
+message SC_62019 {
+  optional uint32 id = 1;
+  optional uint32 user_id = 2;
+  optional uint32 has_capital = 3;
+  optional uint32 has_tech_point = 4;
+}
+
+message CS_62020 {
+  optional uint32 id = 1;
+}
+
+message SC_62021 {
+  optional uint32 result = 1;
+}
+
+message CS_62022 {
+  optional uint32 type = 1;
+}
+
+message SC_62023 {
+  optional uint32 result = 1;
+  optional uint32 progress = 2;
+}
+
+message CS_62024 {
+  optional uint32 type = 1;
+}
+
+message SC_62025 {
+  optional uint32 result = 1;
+  optional uint32 capital = 2;
+}
+
+message CS_62029 {
+  optional uint32 type = 1;
+}
+
+message SC_62030 {
+  repeated GUILD_BATTLE_RANK_INFO list = 1;
+}
+
+message SC_62031 {
+  repeated uint32 donate_tasks = 1 [packed = false];
+}
+
+message CS_62100 {
+  optional uint32 type = 1;
+}
+
+message SC_62101 {
+  repeated GUILD_TECHNOLOGY technologys = 1;
+}

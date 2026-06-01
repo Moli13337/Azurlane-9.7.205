@@ -1,0 +1,606 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message BUILD_INFO {
+  optional uint32 pos = 1;
+  optional uint32 tid = 2;
+}
+
+message GROUPINFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  repeated uint32 ship_list = 3 [packed = false];
+  repeated COMMANDERSINFO commanders = 4;
+  optional uint32 fleet_type = 5;
+}
+
+message SKIN_FORBIDDEN {
+  optional uint32 id = 1;
+  optional uint32 type = 2;
+  optional uint32 start_time = 3;
+  optional uint32 stop_time = 4;
+}
+
+message PT_OLD_LOVER_ITEM {
+  optional uint32 item_id = 1;
+  optional uint32 group_id = 2;
+  optional uint32 year = 3;
+}
+
+message PT_LOVE_LETTER_MEDAL {
+  optional uint32 group_id = 1;
+  optional uint32 exp = 2;
+  optional uint32 level = 3;
+}
+
+message PT_SHIP_LOVE_LETTER {
+  optional uint32 group_id = 1;
+  repeated uint32 letter_id_list = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 12001 - 船坞列表 (SC only, 登录推送)
+// ============================================================
+
+message SC_12001 {
+  repeated SHIPINFO shiplist = 1;
+}
+
+// ============================================================
+// cmd: 12002 - 建造舰船请求 (CS)
+// ============================================================
+
+message CS_12002 {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  optional uint32 costtype = 3;
+}
+
+// cmd: 12003 - 建造结果 (SC)
+message SC_12003 {
+  optional uint32 result = 1;
+  repeated BUILDINFO build_info = 2;
+}
+
+// ============================================================
+// cmd: 12004 - 退役舰船请求 (CS)
+// ============================================================
+
+message CS_12004 {
+  repeated uint32 ship_id_list = 1 [packed = false];
+}
+
+// cmd: 12005 - 退役结果 (SC)
+message SC_12005 {
+  optional uint32 result = 1;
+  repeated uint32 ship_id_list = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 12006 - 装备上舰请求 (CS)
+// ============================================================
+
+message CS_12006 {
+  optional uint32 ship_id = 1;
+  optional uint32 equip_id = 2;
+  optional uint32 pos = 3;
+  optional uint32 type = 4;
+}
+
+// cmd: 12007 - 装备结果 (SC)
+message SC_12007 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12008 - 立即完成建造请求 (CS)
+// ============================================================
+
+message CS_12008 {
+  optional uint32 type = 1;
+  repeated uint32 pos_list = 2 [packed = false];
+}
+
+// cmd: 12009 - 立完建造结果 (SC)
+message SC_12009 {
+  optional uint32 result = 1;
+  repeated uint32 pos_list = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 12010 - 新舰船推送 (SC only)
+// ============================================================
+
+message SC_12010 {
+  repeated SHIPINFO ship_list = 1;
+}
+
+// ============================================================
+// cmd: 12011 - 改造舰船请求 (CS)
+// ============================================================
+
+message CS_12011 {
+  optional uint32 ship_id = 1;
+  optional uint32 remould_id = 2;
+  repeated uint32 material_id = 3 [packed = false];
+}
+
+// cmd: 12012 - 改造结果 (SC)
+message SC_12012 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12017 - 强化舰船请求 (CS)
+// ============================================================
+
+message CS_12017 {
+  optional uint32 ship_id = 1;
+  repeated uint32 material_id_list = 2 [packed = false];
+}
+
+// cmd: 12018 - 强化结果 (SC)
+message SC_12018 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12019 - 亲密度推送 (SC only)
+// ============================================================
+
+message SC_12019 {
+  optional uint32 intimacy = 1;
+}
+
+// ============================================================
+// cmd: 12020 - 验证舰船操作请求 (CS)
+// ============================================================
+
+message CS_12020 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 12021 - 验证结果 (SC)
+message SC_12021 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12022 - 锁定/解锁舰船请求 (CS)
+// ============================================================
+
+message CS_12022 {
+  repeated uint32 ship_id_list = 1 [packed = false];
+  optional uint32 is_locked = 2;
+}
+
+// cmd: 12023 - 锁定结果 (SC)
+message SC_12023 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12024 - 建造队列信息 (SC only, 登录推送)
+// ============================================================
+
+message SC_12024 {
+  optional uint32 worklist_count = 1;
+  repeated BUILDINFO worklist_list = 2;
+  optional uint32 draw_count_1 = 3;
+  optional uint32 draw_count_10 = 4;
+  optional uint32 exchange_count = 5;
+}
+
+// ============================================================
+// cmd: 12025 - 领取建造完成舰船请求 (CS)
+// ============================================================
+
+message CS_12025 {
+  optional uint32 type = 1;
+  repeated uint32 pos_list = 2 [packed = false];
+}
+
+// cmd: 12026 - 领取舰船结果 (SC)
+message SC_12026 {
+  optional uint32 result = 1;
+  repeated SHIPINFO ship_list = 2;
+}
+
+// ============================================================
+// cmd: 12027 - 突破舰船请求 (CS)
+// ============================================================
+
+message CS_12027 {
+  optional uint32 ship_id = 1;
+  repeated uint32 material_id_list = 2 [packed = false];
+}
+
+// cmd: 12028 - 突破结果 (SC)
+message SC_12028 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12029 - 舰船操作列表请求 (CS)
+// ============================================================
+
+message CS_12029 {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+// cmd: 12030 - 操作列表结果 (SC)
+message SC_12030 {
+  optional uint32 result = 1;
+  repeated SHIPINFO ship_list = 2;
+}
+
+// ============================================================
+// cmd: 12031 - 士气恢复时间 (SC only, 登录推送)
+// ============================================================
+
+message SC_12031 {
+  optional uint32 energy_auto_increase_time = 1;
+}
+
+// ============================================================
+// cmd: 12032 - 誓约舰船请求 (CS)
+// ============================================================
+
+message CS_12032 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 12033 - 誓约结果 (SC)
+message SC_12033 {
+  optional uint32 result = 1;
+  optional uint32 time = 2;
+}
+
+// ============================================================
+// cmd: 12034 - 重命名誓约舰船请求 (CS)
+// ============================================================
+
+message CS_12034 {
+  optional uint32 ship_id = 1;
+  optional string name = 2;
+}
+
+// cmd: 12035 - 重命名结果 (SC)
+message SC_12035 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12036 - 更换装备皮肤请求 (CS)
+// ============================================================
+
+message CS_12036 {
+  optional uint32 ship_id = 1;
+  optional uint32 equip_skin_id = 2;
+  optional uint32 pos = 3;
+}
+
+// cmd: 12037 - 装备皮肤结果 (SC)
+message SC_12037 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12038 - 提升舰船等级上限请求 (CS)
+// ============================================================
+
+message CS_12038 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 12039 - 等级上限提升结果 (SC)
+message SC_12039 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12040 - 设置收藏舰船请求 (CS)
+// ============================================================
+
+message CS_12040 {
+  optional uint32 ship_id = 1;
+  optional uint32 flag = 2;
+}
+
+// cmd: 12041 - 收藏结果 (SC)
+message SC_12041 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12042 - 新舰船推送2 (SC only)
+// ============================================================
+
+message SC_12042 {
+  repeated SHIPINFO ship_list = 1;
+}
+
+// ============================================================
+// cmd: 12043 - 查询建造完成列表请求 (CS)
+// ============================================================
+
+message CS_12043 {
+  optional uint32 type = 1;
+}
+
+// cmd: 12044 - 建造完成列表 (SC)
+message SC_12044 {
+  repeated BUILD_INFO infoList = 1;
+}
+
+// ============================================================
+// cmd: 12045 - 确认舰船请求 (CS)
+// ============================================================
+
+message CS_12045 {
+  optional uint32 type = 1;
+}
+
+// cmd: 12046 - 确认结果 (SC)
+message SC_12046 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12047 - 兑换舰船请求 (CS)
+// ============================================================
+
+message CS_12047 {
+  optional uint32 ship_tid = 1;
+}
+
+// cmd: 12048 - 兑换结果 (SC)
+message SC_12048 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 12101 - 舰队列表 (SC only, 登录推送)
+// ============================================================
+
+message SC_12101 {
+  repeated GROUPINFO group_list = 1;
+}
+
+// ============================================================
+// cmd: 12102 - 编辑舰队请求 (CS)
+// ============================================================
+
+message CS_12102 {
+  optional uint32 id = 1;
+  repeated uint32 ship_list = 2 [packed = false];
+}
+
+// cmd: 12103 - 编辑舰队响应 (SC)
+message SC_12103 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12104 - 修改舰队名称请求 (CS)
+// ============================================================
+
+message CS_12104 {
+  optional uint32 id = 1;
+  optional string name = 2;
+}
+
+// cmd: 12105 - 修改舰队名称响应 (SC)
+message SC_12105 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12106 - 舰队信息推送 (SC only)
+// ============================================================
+
+message SC_12106 {
+  GROUPINFO group = 1;
+}
+
+// ============================================================
+// cmd: 12201 - 皮肤列表 (SC only, 登录推送)
+// ============================================================
+
+message SC_12201 {
+  repeated IDTIMEINFO skin_list = 1;
+  repeated uint32 forbidden_skin_list = 2 [packed = false];
+  repeated uint32 forbidden_skin_type = 3 [packed = false];
+  repeated SKIN_FORBIDDEN forbidden_list = 4;
+}
+
+// ============================================================
+// cmd: 12202 - 更换皮肤请求 (CS)
+// ============================================================
+
+message CS_12202 {
+  optional uint32 ship_id = 1;
+  optional uint32 skin_id = 2;
+  optional uint32 skin_shadow = 3;
+}
+
+// cmd: 12203 - 更换皮肤响应 (SC)
+message SC_12203 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12204 - 随机秘书舰开关 (CS)
+// ============================================================
+
+message CS_12204 {
+  optional uint32 flag = 1;
+}
+
+// cmd: 12205 - 随机秘书舰开关响应 (SC)
+message SC_12205 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12206 - 随机秘书舰模式 (CS)
+// ============================================================
+
+message CS_12206 {
+  optional uint32 flag = 1;
+}
+
+// cmd: 12207 - 随机秘书舰模式响应 (SC)
+message SC_12207 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12208 - 修改随机旗舰列表请求 (CS)
+// ============================================================
+
+message CS_12208 {
+  repeated KVDATA2 ship_shadow_list = 1;
+}
+
+// cmd: 12209 - 修改随机旗舰列表响应 (SC)
+message SC_12209 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12210 - 完成幻影任务请求 (CS)
+// ============================================================
+
+message CS_12210 {
+  optional uint32 ship_id = 1;
+  optional uint32 skin_shadow_id = 2;
+}
+
+// cmd: 12211 - 完成幻影任务响应 (SC)
+message SC_12211 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12212 - 获取幻影任务进度请求 (CS)
+// ============================================================
+
+message CS_12212 {
+  repeated uint32 ship_id_list = 1 [packed = false];
+}
+
+// cmd: 12213 - 获取幻影任务进度响应 (SC)
+message SC_12213 {
+  repeated KVDATA ship_count_list = 1;
+}
+
+// ============================================================
+// cmd: 12299 - GM/测试命令 (CS)
+// ============================================================
+
+message CS_12299 {
+  optional uint32 num = 1;
+}
+
+// ============================================================
+// cmd: 12301 - 请求助战舰船列表 (CS)
+// ============================================================
+
+message CS_12301 {
+  optional uint32 type = 1;
+  repeated uint32 id_list = 2 [packed = false];
+}
+
+// cmd: 12302 - 助战舰船列表响应 (SC)
+message SC_12302 {
+  repeated SHIPINFO ship_list = 1;
+}
+
+// ============================================================
+// cmd: 12400 - 解锁情书请求 (CS)
+// ============================================================
+
+message CS_12400 {
+  optional uint32 id = 1;
+}
+
+// cmd: 12401 - 解锁情书响应 (SC)
+message SC_12401 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12402 - 领取情书等级奖励请求 (CS)
+// ============================================================
+
+message CS_12402 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 12403 - 领取情书等级奖励响应 (SC)
+message SC_12403 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 12404 - 兑现情书礼物请求 (CS)
+// ============================================================
+
+message CS_12404 {
+  repeated PT_OLD_LOVER_ITEM item_list = 1;
+}
+
+// cmd: 12405 - 兑现情书礼物响应 (SC)
+message SC_12405 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 12406 - 获取所有情书数据请求 (CS)
+// ============================================================
+
+message CS_12406 {
+  optional uint32 type = 1;
+}
+
+// cmd: 12407 - 获取所有情书数据响应 (SC)
+message SC_12407 {
+  repeated PT_OLD_LOVER_ITEM converted_list = 1;
+  repeated uint32 rewarded_list = 2 [packed = false];
+  repeated PT_LOVE_LETTER_MEDAL medal_list = 3;
+  repeated PT_SHIP_LOVE_LETTER letter_list = 4;
+  repeated PT_SHIP_LOVE_LETTER converted_letter_list = 5;
+}
+
+// ============================================================
+// cmd: 12408 - 情书升级请求 (CS)
+// ============================================================
+
+message CS_12408 {
+  optional uint32 group_id = 1;
+}
+
+// cmd: 12409 - 情书升级响应 (SC)
+message SC_12409 {
+  optional uint32 ret = 1;
+}
+
+// ============================================================
+// cmd: 12410 - 请求情书内容请求 (CS)
+// ============================================================
+
+message CS_12410 {
+  optional uint32 letter_id = 1;
+}
+
+// cmd: 12411 - 请求情书内容响应 (SC)
+message SC_12411 {
+  optional string content = 1;
+}

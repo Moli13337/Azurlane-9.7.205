@@ -1,0 +1,176 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message SHOPINFO {
+  optional uint32 shop_id = 1;
+  optional uint32 pay_count = 2;
+}
+
+message GOODS_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message SELECTED_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+// cmd: 11501 - 充值发起 (CS)
+message CS_11501 {
+  optional uint32 shop_id = 1;
+  optional uint32 device = 2;
+}
+
+// cmd: 11502 - 充值发起响应 (SC)
+message SC_11502 {
+  optional uint32 result = 1;
+  optional string pay_id = 2;
+  optional string url = 3;
+  optional string order_sign = 4;
+}
+
+// cmd: 11503 - 充值成功推送 (SC)
+message SC_11503 {
+  optional uint32 shop_id = 1;
+  optional string pay_id = 2;
+  optional uint32 gem = 3;
+  optional uint32 gem_free = 4;
+}
+
+// cmd: 11504 - 充值确认 (CS)
+message CS_11504 {
+  optional string pay_id = 1;
+}
+
+// cmd: 11505 - 充值确认响应 (SC)
+message SC_11505 {
+  optional uint32 result = 1;
+}
+
+// cmd: 11506 - 充值状态查询 (CS)
+message CS_11506 {
+  optional uint32 state = 1;
+}
+
+// cmd: 11507 - 充值状态查询响应 (SC)
+message SC_11507 {
+  optional uint32 result = 1;
+}
+
+// cmd: 11510 - 充值失败通知 (CS)
+message CS_11510 {
+  optional string pay_id = 1;
+  optional uint32 code = 2;
+}
+
+// cmd: 11511 - 充值失败通知响应 (SC)
+message SC_11511 {
+  optional uint32 result = 1;
+}
+
+// cmd: 16001 - 购买商品请求 (CS)
+message CS_16001 {
+  optional uint32 id = 1;
+  optional uint32 number = 2;
+}
+
+// cmd: 16002 - 购买商品响应 (SC)
+message SC_16002 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 16100 - 抽奖请求 (CS)
+message CS_16100 {
+  optional uint32 cnt = 1;
+}
+
+// cmd: 16101 - 抽奖响应 (SC)
+message SC_16101 {
+  optional uint32 result = 1;
+  repeated SHIPINFO ship_list = 2;
+}
+
+// cmd: 16104 - 请求商店列表 (CS)
+message CS_16104 {
+  optional uint32 type = 1;
+}
+
+// cmd: 16105 - 商店列表响应 (SC)
+message SC_16105 {
+  repeated uint32 first_pay_list = 1 [packed = false];
+  repeated SHOPINFO pay_list = 2;
+  repeated SHOPINFO normal_list = 3;
+  repeated SHOPINFO normal_group_list = 4;
+}
+
+// cmd: 16106 - 请求限时商店 (CS)
+message CS_16106 {
+  optional uint32 type = 1;
+}
+
+// cmd: 16107 - 限时商店响应 (SC)
+message SC_16107 {
+  optional uint32 result = 1;
+  optional uint32 item_flash_time = 2;
+  repeated GOODS_INFO good_list = 3;
+}
+
+// cmd: 16108 - 购买限时商品 (CS)
+message CS_16108 {
+  optional uint32 flash_time = 1;
+  optional uint32 shopid = 2;
+  repeated SELECTED_INFO selected = 3;
+}
+
+// cmd: 16109 - 购买限时商品响应 (SC)
+message SC_16109 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 16200 - 月度商店推送 (SC only, 登录推送)
+message SC_16200 {
+  repeated SHOPINFO core_shop_list = 1;
+  repeated SHOPINFO blue_shop_list = 2;
+  repeated SHOPINFO normal_shop_list = 3;
+  optional uint32 month = 4;
+}
+
+// cmd: 16201 - 购买月度商店商品 (CS)
+message CS_16201 {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+  optional uint32 count = 3;
+}
+
+// cmd: 16202 - 购买月度商店商品响应 (SC)
+message SC_16202 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 16203 - 刷新月度商店 (CS)
+message CS_16203 {
+  optional uint32 flag = 1;
+}
+
+// cmd: 16204 - 刷新月度商店响应 (SC)
+message SC_16204 {
+  optional uint32 ret = 1;
+}
+
+// cmd: 16205 - 购买解密物 (CS)
+message CS_16205 {
+  optional uint32 id = 1;
+  optional uint32 cost_type = 2;
+}
+
+// cmd: 16206 - 购买解密物响应 (SC)
+message SC_16206 {
+  optional uint32 ret = 1;
+}

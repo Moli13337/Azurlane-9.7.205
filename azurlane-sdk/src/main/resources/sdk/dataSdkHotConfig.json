@@ -1,0 +1,21 @@
+{
+  "switch": {
+    "ios_switch_https": 1,
+    "android_switch_https": 0,
+    "android_verify_connect_timeout": 4000,
+    "android_verify_read_timeout": 4000,
+    "android_read_timeout": 4000,
+    "android_connect_timeout": 4000,
+    "ios_verify_connect_timeout": 3500,
+    "ios_verify_read_timeout": 2000,
+    "ios_read_timeout": 4000,
+    "ios_connect_timeout": 4000,
+    "ios_switch_enable_log": 0
+  },
+  "device_blacklist": {"imei": "", "simid": ""},
+  "relative_apps": [],
+  "limit_message_ios": {},
+  "disable_exit_gameid_android": [],
+  "disable_exit_gameid_ios": [],
+  "banshu_tips": {}
+}

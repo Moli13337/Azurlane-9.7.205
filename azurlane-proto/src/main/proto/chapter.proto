@@ -1,0 +1,455 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message CHAPTERINFO {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+  optional uint32 kill_boss_count = 3;
+  optional uint32 kill_enemy_count = 4;
+  optional uint32 take_box_count = 5;
+  optional uint32 defeat_count = 6;
+  optional uint32 today_defeat_count = 7;
+  optional uint32 pass_count = 8;
+}
+
+message CURRENTCHAPTERINFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+  repeated CHAPTERCELLINFO cell_list = 3;
+  repeated GROUPINCHAPTER main_group_list = 4;
+  repeated CHAPTERCELLINFO ai_list = 5;
+  repeated ESCORT_POS escort_list = 6;
+  optional uint32 round = 7;
+  optional uint32 is_submarine_auto_attack = 8;
+  repeated uint32 operation_buff = 9 [packed = false];
+  optional uint32 model_act_count = 10;
+  repeated uint32 buff_list = 11 [packed = false];
+  optional uint32 loop_flag = 12;
+  repeated uint32 extra_flag_list = 13 [packed = false];
+  repeated CELLFLAG cell_flag_list = 14;
+  optional uint32 chapter_hp = 15;
+  repeated STRATEGYINFO chapter_strategy_list = 16;
+  optional uint32 kill_count = 17;
+  optional uint32 init_ship_count = 18;
+  optional uint32 continuous_kill_count = 19;
+  repeated STRATEGYINFO battle_statistics = 20;
+  repeated FLEETDUTYKEYVALUEPAIR fleet_duties = 21;
+  optional uint32 move_step_count = 22;
+  repeated GROUPINCHAPTER submarine_group_list = 23;
+  repeated GROUPINCHAPTER support_group_list = 24;
+}
+
+message CHAPTERCELLINFO {
+  CHAPTERCELLPOS pos = 1;
+  optional uint32 item_type = 2;
+  optional uint32 item_id = 3;
+  optional uint32 item_flag = 4;
+  optional uint32 item_data = 5;
+  repeated uint32 extra_id = 6 [packed = false];
+}
+
+message CELLFLAG {
+  CHAPTERCELLPOS pos = 1;
+  repeated uint32 flag_list = 2 [packed = false];
+}
+
+message CHAPTERCELLPOS {
+  optional uint32 row = 1;
+  optional uint32 column = 2;
+}
+
+message GROUPINCHAPTER {
+  optional uint32 id = 1;
+  repeated SHIPINCHAPTER ship_list = 2;
+  CHAPTERCELLPOS pos = 3;
+  optional uint32 step_count = 4;
+  repeated STRATEGYINFO box_strategy_list = 5;
+  repeated STRATEGYINFO ship_strategy_list = 6;
+  repeated uint32 strategy_ids = 7 [packed = false];
+  optional uint32 bullet = 8;
+  CHAPTERCELLPOS start_pos = 9;
+  repeated COMMANDERSINFO commander_list = 10;
+  optional uint32 move_step_down = 11;
+  optional uint32 kill_count = 12;
+  optional uint32 fleet_id = 13;
+  optional uint32 vision_lv = 14;
+}
+
+message SHIPINCHAPTER {
+  optional uint32 id = 1;
+  optional uint32 hp_rant = 2;
+}
+
+message STRATEGYINFO {
+  optional uint32 id = 1;
+  optional uint32 count = 3;
+}
+
+message AI_ACT {
+  CHAPTERCELLPOS ai_pos = 1;
+  optional uint32 strategy_id = 2;
+  CHAPTERCELLPOS target_pos = 3;
+  repeated CHAPTERCELLPOS move_path = 4;
+  repeated CHAPTERCELLINFO map_update = 5;
+  repeated SHIPINCHAPTER ship_update = 6;
+  optional uint32 commander_skill_effect_id = 7;
+  optional uint32 act_type = 8;
+  optional uint32 hp_del = 9;
+  repeated CELLFLAG cell_flag_list = 10;
+}
+
+message ESCORT_INFO {
+  optional uint32 line_id = 1;
+  optional uint32 award_timestamp = 2;
+  optional uint32 flash_timestamp = 3;
+  repeated ESCORT_POS map = 4;
+}
+
+message ESCORT_POS {
+  optional uint32 map_id = 1;
+  optional uint32 chapter_id = 2;
+}
+
+message EXPEDITION_DAILY_COUNT {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message PRO_CHAPTER_SUBMARINE {
+  optional uint32 chapter_id = 1;
+  optional uint32 active_time = 2;
+  optional uint32 index = 3;
+}
+
+message REACTCHAPTER_INFO {
+  optional uint32 count = 1;
+  optional uint32 active_timestamp = 2;
+  optional uint32 active_id = 3;
+  optional uint32 daily_count = 4;
+}
+
+message FLEETDUTYKEYVALUEPAIR {
+  optional uint32 key = 1;
+  optional uint32 value = 2;
+}
+
+message REMAPCOUNT {
+  optional uint32 chapter_id = 1;
+  optional uint32 pos = 2;
+  optional uint32 count = 3;
+  optional uint32 flag = 4;
+}
+
+// ============================================================
+// cmd: 13000 - 大世界初始化数据 (SC only, 登录推送)
+// ============================================================
+
+message SC_13000 {
+  optional uint32 daily_repair_count = 1;
+  CURRENTCHAPTERINFO current_chapter = 2;
+}
+
+// ============================================================
+// cmd: 13001 - 章节列表 (SC only, 登录推送)
+// ============================================================
+
+message SC_13001 {
+  repeated CHAPTERINFO chapter_list = 1;
+  REACTCHAPTER_INFO react_chapter = 2;
+  repeated FLEET_INFO fleet_list = 3;
+}
+
+// ============================================================
+// cmd: 13002 - 收藏信息 (SC only, 登录推送)
+// ============================================================
+
+message SC_13002 {
+  repeated COLLECTIONINFO collection_list = 1;
+  optional uint32 max_team = 2;
+}
+
+// ============================================================
+// cmd: 13003 - 进入章节请求 (CS)
+// ============================================================
+
+message CS_13003 {
+  optional uint32 id = 1;
+  repeated uint32 ship_id_list = 2 [packed = false];
+}
+
+// cmd: 13004 - 进入章节响应 (SC)
+message SC_13004 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 13005 - 退出章节请求 (CS)
+// ============================================================
+
+message CS_13005 {
+  optional uint32 id = 1;
+}
+
+// cmd: 13006 - 退出章节响应 (SC)
+message SC_13006 {
+  optional uint32 result = 1;
+  optional uint32 exp = 2;
+  repeated DROPINFO drop_list = 3;
+  repeated COLLECTIONINFO new_collection = 4;
+  optional uint32 is_cri = 5;
+}
+
+// ============================================================
+// cmd: 13007 - 放弃章节请求 (CS)
+// ============================================================
+
+message CS_13007 {
+  optional uint32 id = 1;
+}
+
+// cmd: 13008 - 放弃章节响应 (SC)
+message SC_13008 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 13009 - 请求收藏 (CS)
+// ============================================================
+
+message CS_13009 {
+  optional uint32 type = 1;
+}
+
+// cmd: 13010 - 收藏列表响应 (SC)
+message SC_13010 {
+  optional uint32 result = 1;
+  repeated COLLECTIONINFO collection_list = 2;
+}
+
+// cmd: 13011 - 收藏更新推送 (SC only)
+message SC_13011 {
+  repeated COLLECTIONINFO collection = 1;
+}
+
+// ============================================================
+// cmd: 13101 - 章节操作请求 (CS)
+// ============================================================
+
+message CS_13101 {
+  optional uint32 id = 1;
+  FLEET_INFO fleet = 2;
+  optional uint32 operation_item = 3;
+  optional uint32 loop_flag = 4;
+  repeated FLEETDUTYKEYVALUEPAIR fleet_duties = 5;
+}
+
+// cmd: 13102 - 章节操作响应 (SC)
+message SC_13102 {
+  optional uint32 result = 1;
+  CURRENTCHAPTERINFO current_chapter = 2;
+}
+
+// ============================================================
+// cmd: 13103 - 章节行动请求 (CS)
+// ============================================================
+
+message CS_13103 {
+  optional uint32 act = 1;
+  optional uint32 group_id = 2;
+  optional uint32 act_arg_1 = 3;
+  optional uint32 act_arg_2 = 4;
+  optional uint32 act_arg_3 = 5;
+  optional uint32 act_arg_4 = 6;
+  optional uint32 act_arg_5 = 7;
+}
+
+// cmd: 13104 - 章节行动响应 (SC)
+message SC_13104 {
+  optional uint32 result = 1;
+  repeated CHAPTERCELLPOS move_path = 2;
+  repeated DROPINFO drop_list = 3;
+  repeated CHAPTERCELLINFO map_update = 4;
+  repeated SHIPINCHAPTER ship_update = 5;
+  repeated CHAPTERCELLINFO ai_list = 6;
+  repeated AI_ACT ai_act_list = 7;
+  repeated AI_ACT submarine_act_list = 8;
+  repeated AI_ACT escort_act_list = 9;
+  repeated AI_ACT fleet_act_list = 10;
+  repeated uint32 buff_list = 11 [packed = false];
+  repeated uint32 add_flag_list = 12 [packed = false];
+  repeated uint32 del_flag_list = 13 [packed = false];
+  repeated CELLFLAG cell_flag_list = 14;
+  repeated DROPINFO extra_drop_list = 15;
+}
+
+// cmd: 13105 - 地图更新推送 (SC only)
+message SC_13105 {
+  repeated CHAPTERCELLINFO map_update = 1;
+  repeated CHAPTERCELLINFO ai_list = 2;
+  repeated uint32 add_flag_list = 3 [packed = false];
+  repeated uint32 del_flag_list = 4 [packed = false];
+  repeated uint32 buff_list = 5 [packed = false];
+  repeated CELLFLAG cell_flag_list = 6;
+  repeated DROPINFO drop_list = 7;
+}
+
+// ============================================================
+// cmd: 13106 - 请求更新 (CS)
+// ============================================================
+
+message CS_13106 {
+  optional uint32 arg = 1;
+}
+
+// ============================================================
+// cmd: 13107 - 切换编队请求 (CS)
+// ============================================================
+
+message CS_13107 {
+  optional uint32 id = 1;
+  FLEET_INFO fleet = 2;
+}
+
+// cmd: 13108 - 切换编队响应 (SC)
+message SC_13108 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 13109 - 请求掉落舰船 (CS)
+// ============================================================
+
+message CS_13109 {
+  optional uint32 id = 1;
+}
+
+// cmd: 13110 - 掉落舰船列表 (SC)
+message SC_13110 {
+  repeated uint32 drop_ship_list = 1 [packed = false];
+}
+
+// ============================================================
+// cmd: 13111 - 舰船操作 (CS)
+// ============================================================
+
+message CS_13111 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 13112 - 编队列表 (SC)
+message SC_13112 {
+  repeated FLEET_INFO fleet_list = 1;
+}
+
+// ============================================================
+// cmd: 13201 - 远征计数 (SC only, 登录推送)
+// ============================================================
+
+message SC_13201 {
+  repeated EXPEDITION_DAILY_COUNT count_list = 1;
+  optional uint32 elite_expedition_count = 2;
+  optional uint32 escort_expedition_count = 3;
+  repeated EXPEDITION_DAILY_COUNT chapter_count_list = 4;
+  repeated uint32 quick_expedition_list = 5 [packed = false];
+}
+
+// ============================================================
+// cmd: 13301 - 护航请求 (CS)
+// ============================================================
+
+message CS_13301 {
+  optional uint32 type = 1;
+}
+
+// cmd: 13302 - 护航信息 (SC)
+message SC_13302 {
+  repeated ESCORT_INFO escort_info = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 13401 - 潜艇章节请求 (CS)
+// ============================================================
+
+message CS_13401 {
+  optional uint32 type = 1;
+}
+
+// cmd: 13402 - 潜艇章节信息 (SC)
+message SC_13402 {
+  optional uint32 next_refresh_time = 1;
+  optional uint32 refresh_count = 2;
+  repeated PRO_CHAPTER_SUBMARINE chapter_list = 3;
+  optional uint32 progress = 4;
+}
+
+// ============================================================
+// cmd: 13403 - 潜艇章节操作 (CS)
+// ============================================================
+
+message CS_13403 {
+  optional uint32 type = 2;
+}
+
+// cmd: 13404 - 潜艇章节操作响应 (SC)
+message SC_13404 {
+  optional uint32 result = 1;
+  optional PRO_CHAPTER_SUBMARINE chapter_id = 2;
+}
+
+// ============================================================
+// cmd: 13501 - 激活章节请求 (CS)
+// ============================================================
+
+message CS_13501 {
+  optional uint32 active_id = 1;
+}
+
+// cmd: 13502 - 激活章节响应 (SC)
+message SC_13502 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 13503 - 请求重映射 (CS)
+// ============================================================
+
+message CS_13503 {
+  optional uint32 type = 1;
+}
+
+// cmd: 13504 - 重映射响应 (SC)
+message SC_13504 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 13505 - 请求重映射计数 (CS)
+// ============================================================
+
+message CS_13505 {
+  optional uint32 type = 1;
+}
+
+// cmd: 13506 - 重映射计数 (SC)
+message SC_13506 {
+  repeated REMAPCOUNT remap_count_list = 1;
+}
+
+// ============================================================
+// cmd: 13507 - 章节传送请求 (CS)
+// ============================================================
+
+message CS_13507 {
+  optional uint32 chapter_id = 1;
+  optional uint32 pos = 2;
+}
+
+// cmd: 13508 - 章节传送响应 (SC)
+message SC_13508 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}

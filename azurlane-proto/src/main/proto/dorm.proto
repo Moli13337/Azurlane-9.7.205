@@ -1,0 +1,410 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+message CHILDINFO {
+  optional string id = 1;
+  optional uint32 x = 2;
+  optional uint32 y = 3;
+}
+
+message FURNITUREPUTINFO {
+  optional string id = 1;
+  optional uint32 x = 2;
+  optional uint32 y = 3;
+  optional uint32 dir = 4;
+  repeated CHILDINFO child = 5;
+  optional uint64 parent = 6;
+  optional uint32 shipId = 7;
+}
+
+message FURFLOORPUTINFO {
+  optional uint32 floor = 1;
+  repeated FURNITUREPUTINFO furniture_put_list = 2;
+}
+
+message FURNITUREINFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  optional uint32 get_time = 3;
+}
+
+message POP_INFO {
+  optional uint32 id = 1;
+  optional uint32 intimacy = 2;
+  optional uint32 dorm_icon = 3;
+}
+
+message SHIP_IN_DROM {
+  optional uint32 id = 1;
+  optional uint32 tid = 2;
+  optional uint32 state = 3;
+  optional uint32 skin_id = 4;
+}
+
+message DORMTHEME {
+  optional string id = 1;
+  optional string name = 2;
+  repeated FURNITUREPUTINFO furniture_put_list = 3;
+  optional uint32 user_id = 4;
+  optional uint32 pos = 5;
+  optional uint32 like_count = 6;
+  optional uint32 fav_count = 7;
+  optional uint32 upload_time = 8;
+  optional string icon_image_md5 = 9;
+  optional string image_md5 = 10;
+}
+
+message DORMTHEME_PROFILE {
+  optional string id = 1;
+  optional uint32 upload_time = 2;
+}
+
+message THEME_MD5 {
+  optional string id = 1;
+  optional string md5 = 2;
+}
+
+message VISITOR {
+  optional string name = 1;
+  optional uint32 ship_template = 2;
+  optional uint32 ship_skin = 3;
+}
+
+// cmd: 19001 - 宿舍数据推送 (SC only, 登录推送)
+message SC_19001 {
+  optional uint32 lv = 1;
+  optional uint32 food = 2;
+  optional uint32 food_max_increase = 3;
+  optional uint32 food_max_increase_count = 4;
+  repeated uint32 ship_id_list = 5 [packed = false];
+  repeated FURNITUREINFO furniture_id_list = 6;
+  optional uint32 floor_num = 7;
+  optional uint32 exp_pos = 8;
+  repeated FURFLOORPUTINFO furniture_put_list = 9;
+  optional uint32 next_timestamp = 10;
+  optional uint32 load_exp = 11;
+  optional uint32 load_food = 12;
+  optional uint32 load_time = 13;
+  optional string name = 14;
+}
+
+// cmd: 19002 - 添加舰娘到宿舍 (CS)
+message CS_19002 {
+  optional uint32 ship_id = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 19003 - 添加舰娘结果 (SC)
+message SC_19003 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19004 - 从宿舍移除舰娘 (CS)
+message CS_19004 {
+  optional uint32 ship_id = 1;
+}
+
+// cmd: 19005 - 移除舰娘结果 (SC)
+message SC_19005 {
+  optional uint32 result = 1;
+  optional uint32 exp = 2;
+}
+
+// cmd: 19006 - 购买家具 (CS)
+message CS_19006 {
+  repeated uint32 furniture_id = 1 [packed = false];
+  optional uint32 currency = 2;
+}
+
+// cmd: 19007 - 购买家具结果 (SC)
+message SC_19007 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19008 - 保存家具摆放 (CS)
+message CS_19008 {
+  optional uint32 floor = 1;
+  repeated FURNITUREPUTINFO furniture_put_list = 2;
+}
+
+// cmd: 19009 - 保存家具摆放结果 (SC)
+message SC_19009 {
+  optional uint32 exp = 1;
+  optional uint32 food_consume = 2;
+}
+
+// cmd: 19010 - 好感度推送 (SC only)
+message SC_19010 {
+  repeated POP_INFO pop_list = 1;
+}
+
+// cmd: 19011 - 交互请求1 (CS)
+message CS_19011 {
+  optional uint32 id = 1;
+}
+
+// cmd: 19012 - 交互结果1 (SC)
+message SC_19012 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19013 - 交互请求2 (CS)
+message CS_19013 {
+  optional uint32 id = 1;
+}
+
+// cmd: 19014 - 交互结果2 (SC)
+message SC_19014 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19015 - 开关宿舍 (CS)
+message CS_19015 {
+  optional uint32 is_open = 1;
+}
+
+// cmd: 19016 - 修改宿舍名 (CS)
+message CS_19016 {
+  optional string name = 1;
+}
+
+// cmd: 19017 - 修改宿舍名结果 (SC)
+message SC_19017 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19018 - 获取主题列表 (CS)
+message CS_19018 {
+  optional uint32 id = 1;
+}
+
+// cmd: 19019 - 主题列表推送 (SC)
+message SC_19019 {
+  repeated DORMTHEME theme_list = 1;
+}
+
+// cmd: 19020 - 保存主题 (CS)
+message CS_19020 {
+  optional uint32 id = 1;
+  optional string name = 2;
+  repeated FURNITUREPUTINFO furniture_put_list = 3;
+}
+
+// cmd: 19021 - 保存主题结果 (SC)
+message SC_19021 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19022 - 删除主题 (CS)
+message CS_19022 {
+  optional uint32 id = 1;
+}
+
+// cmd: 19023 - 删除主题结果 (SC)
+message SC_19023 {
+  optional uint32 result = 1;
+}
+
+// cmd: 19024 - 使用主题 (CS)
+message CS_19024 {
+  optional uint32 type = 1;
+}
+
+// cmd: 19025 - 使用主题结果 (SC)
+message SC_19025 {
+  repeated FURFLOORPUTINFO furniture_put_list = 1;
+  optional VISITOR visitor = 2;
+}
+
+// cmd: 19101 - 访问他人宿舍 (CS)
+message CS_19101 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 19102 - 他人宿舍数据推送 (SC)
+message SC_19102 {
+  optional uint32 lv = 1;
+  optional uint32 food = 2;
+  optional uint32 food_max_increase = 3;
+  optional uint32 food_max_increase_count = 4;
+  repeated SHIP_IN_DROM ship_id_list = 5;
+  repeated FURNITUREINFO furniture_id_list = 6;
+  optional uint32 floor_num = 7;
+  optional uint32 exp_pos = 8;
+  repeated FURFLOORPUTINFO furniture_put_list = 9;
+  optional string name = 10;
+}
+
+// cmd: 19103 - 获取OSS凭证 (CS)
+message CS_19103 {
+  optional int32 typ = 1;
+}
+
+// cmd: 19104 - OSS凭证推送 (SC)
+message SC_19104 {
+  optional uint32 result = 1;
+  optional string access_id = 2;
+  optional string access_secret = 3;
+  optional uint32 expire_time = 4;
+  optional string security_token = 5;
+}
+
+// cmd: 19105 - 获取推荐主题 (CS)
+message CS_19105 {
+  optional int32 typ = 1;
+}
+
+// cmd: 19106 - 推荐主题列表 (SC)
+message SC_19106 {
+  optional uint32 result = 1;
+  repeated DORMTHEME theme_list = 2;
+}
+
+// cmd: 19107 - 获取最新主题 (CS)
+message CS_19107 {
+  optional int32 typ = 1;
+}
+
+// cmd: 19108 - 最新主题列表 (SC)
+message SC_19108 {
+  optional uint32 result = 1;
+  repeated DORMTHEME theme_list = 2;
+}
+
+// cmd: 19109 - 上传主题 (CS)
+message CS_19109 {
+  optional uint32 pos = 1;
+  optional string name = 2;
+  repeated FURNITUREPUTINFO furniture_put_list = 3;
+  optional string icon_image_md5 = 4;
+  optional string image_md5 = 5;
+}
+
+// cmd: 19110 - 上传主题结果 (SC)
+message SC_19110 {
+  optional int32 result = 1;
+}
+
+// cmd: 19111 - 删除已上传主题 (CS)
+message CS_19111 {
+  optional uint32 pos = 1;
+}
+
+// cmd: 19112 - 删除已上传主题结果 (SC)
+message SC_19112 {
+  optional int32 result = 1;
+}
+
+// cmd: 19113 - 获取主题详情 (CS)
+message CS_19113 {
+  optional string theme_id = 1;
+}
+
+// cmd: 19114 - 主题详情推送 (SC)
+message SC_19114 {
+  optional int32 result = 1;
+  DORMTHEME theme = 2;
+  optional bool has_fav = 3;
+  optional bool has_like = 4;
+}
+
+// cmd: 19115 - 获取收藏主题列表 (CS)
+message CS_19115 {
+  optional int32 typ = 1;
+}
+
+// cmd: 19116 - 收藏主题列表 (SC)
+message SC_19116 {
+  optional int32 result = 1;
+  repeated DORMTHEME_PROFILE theme_profile_list = 2;
+}
+
+// cmd: 19117 - 搜索主题 (CS)
+message CS_19117 {
+  optional int32 typ = 1;
+  optional int32 page = 2;
+  optional int32 num = 3;
+}
+
+// cmd: 19118 - 搜索主题结果 (SC)
+message SC_19118 {
+  optional int32 result = 1;
+  repeated string theme_id_list = 2;
+}
+
+// cmd: 19119 - 收藏主题 (CS)
+message CS_19119 {
+  optional string theme_id = 1;
+  optional uint32 upload_time = 2;
+}
+
+// cmd: 19120 - 收藏主题结果 (SC)
+message SC_19120 {
+  optional int32 result = 1;
+}
+
+// cmd: 19121 - 取消收藏主题 (CS)
+message CS_19121 {
+  optional string theme_id = 1;
+  optional uint32 upload_time = 2;
+}
+
+// cmd: 19122 - 取消收藏主题结果 (SC)
+message SC_19122 {
+  optional int32 result = 1;
+}
+
+// cmd: 19123 - 点赞主题 (CS)
+message CS_19123 {
+  optional uint32 pos = 1;
+}
+
+// cmd: 19124 - 点赞主题结果 (SC)
+message SC_19124 {
+  optional int32 result = 1;
+}
+
+// cmd: 19125 - 取消点赞主题 (CS)
+message CS_19125 {
+  optional uint32 pos = 1;
+}
+
+// cmd: 19126 - 取消点赞主题结果 (SC)
+message SC_19126 {
+  optional int32 result = 1;
+}
+
+// cmd: 19127 - 举报主题 (CS)
+message CS_19127 {
+  optional string theme_id = 1;
+}
+
+// cmd: 19128 - 举报主题结果 (SC)
+message SC_19128 {
+  optional int32 result = 1;
+}
+
+// cmd: 19129 - 举报主题详情 (CS)
+message CS_19129 {
+  optional uint32 target_id = 1;
+  optional string target_name = 2;
+  optional string theme_id = 3;
+  optional string theme_name = 4;
+  optional uint32 reason = 5;
+}
+
+// cmd: 19130 - 举报主题详情结果 (SC)
+message SC_19130 {
+  optional int32 result = 1;
+}
+
+// cmd: 19131 - 批量获取主题MD5 (CS)
+message CS_19131 {
+  repeated string id_list = 1;
+}
+
+// cmd: 19132 - 主题MD5列表推送 (SC)
+message SC_19132 {
+  repeated THEME_MD5 list = 1;
+}

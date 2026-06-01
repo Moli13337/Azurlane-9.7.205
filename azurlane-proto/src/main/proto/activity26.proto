@@ -1,0 +1,572 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message CELLSINFO {
+  optional uint32 row = 1;
+  optional uint32 column = 2;
+  optional uint32 color = 3;
+}
+
+message AWARDINFO {
+  optional uint32 id = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+message COLORINFO {
+  optional uint32 id = 1;
+  optional uint32 number = 2;
+}
+
+message ACT_GOODS_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  repeated uint32 bought_record = 3 [packed = false];
+}
+
+message ACT_GOODS_BUY {
+  optional uint32 itemid = 1;
+  optional uint32 count = 2;
+}
+
+message BUFF_SLOT {
+  optional uint32 pos = 1;
+  optional uint32 itemid = 2;
+  optional uint32 itemnum = 3;
+}
+
+message NINJA_PT {
+  optional uint32 b = 1;
+  optional uint32 m = 2;
+  optional uint32 k = 3;
+}
+
+message NINJA_ROLE_RECRUIT {
+  optional uint32 id = 1;
+  optional uint32 start_time = 2;
+}
+
+message NINJA_ADJUST {
+  optional uint32 time = 1;
+  NINJA_PT left_hp = 2;
+  optional uint32 max_level = 3;
+}
+
+message NINJA_SUMMARY {
+  NINJA_PT summary_pt = 1;
+  repeated DROPINFO award_list = 2;
+  NINJA_ADJUST adjust = 3;
+}
+
+message NINJA_INFO {
+  NINJA_PT pt = 1;
+  repeated uint32 builds = 2 [packed = false];
+  repeated uint32 roles = 3 [packed = false];
+  repeated NINJA_ROLE_RECRUIT recruits = 4;
+  repeated uint32 buffs = 5 [packed = false];
+  optional uint32 max_level = 6;
+  optional uint32 cur_level = 7;
+  optional uint32 max_display = 8;
+  NINJA_ADJUST adjust = 9;
+  NINJA_PT summary_pt = 10;
+}
+
+message BOSS4TH {
+  optional uint32 id = 1;
+  optional uint32 boss_hp = 2;
+  optional uint32 death = 3;
+  optional uint32 hour_traffic = 4;
+  optional uint32 hour_off = 5;
+}
+
+message MINIGAMEHUB {
+  optional uint32 id = 1;
+  optional uint32 available_cnt = 2;
+  optional uint32 used_cnt = 3;
+  optional uint32 ultimate = 4;
+  repeated KVDATA2 maxscores = 5;
+}
+
+message KEYVALUE {
+  optional uint32 key = 1;
+  optional uint32 value = 2;
+  optional uint32 value2 = 3;
+}
+
+message KEYVALUELIST {
+  optional uint32 key = 1;
+  repeated KEYVALUE value_list = 2;
+}
+
+message MINIGAMEDATA {
+  optional uint32 id = 1;
+  repeated uint32 datas = 2 [packed = false];
+  repeated KEYVALUELIST date1_key_value_list = 3;
+}
+
+message PB_ACTIVITY_ITEM {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message PB_ISLAND_NODE {
+  optional uint32 id = 1;
+  optional uint32 event_id = 2;
+  optional uint32 is_new = 3;
+}
+
+message GAMEROOM {
+  optional uint32 roomid = 1;
+  optional uint32 max_score = 2;
+}
+
+message FRIENDSCORE {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 score = 3;
+  DISPLAYINFO display = 4;
+  optional uint32 time_data = 5;
+}
+
+message P_PARTY_ROLE {
+  optional uint32 tid = 1;
+  optional uint32 bubble = 2;
+  optional uint32 speech_bubble = 3;
+}
+
+message P_SPECIAL_ROLE {
+  optional uint32 tid = 1;
+  optional uint32 state = 2;
+  optional uint32 gift = 3;
+}
+
+message ACT26_GOODS_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message ACT26_SELECT_INFO {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+// ============================================================
+// 涂色活动 (26001-26008)
+// ============================================================
+
+message SC_26001 {
+  optional uint32 id = 1;
+  repeated CELLSINFO cell_list = 2;
+  repeated COLORINFO color_list = 3;
+  repeated AWARDINFO award_list = 4;
+  optional uint32 start_time = 5;
+}
+
+message CS_26002 {
+  optional uint32 id = 1;
+  optional uint32 act_id = 2;
+}
+
+message SC_26003 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+message CS_26004 {
+  optional uint32 id = 1;
+  optional uint32 act_id = 2;
+  repeated CELLSINFO cell_list = 3;
+}
+
+message SC_26005 {
+  optional uint32 result = 1;
+}
+
+message CS_26006 {
+  optional uint32 id = 1;
+  optional uint32 act_id = 2;
+}
+
+message SC_26007 {
+  optional uint32 result = 1;
+}
+
+message CS_26008 {
+  optional uint32 act_id = 1;
+}
+
+// ============================================================
+// 周年庆活动 (26021-26022)
+// ============================================================
+
+message CS_26021 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26022 {
+  optional uint32 result = 1;
+  optional uint32 register_date = 2;
+  optional string guild_name = 3;
+  optional uint32 chapter_id = 4;
+  optional uint32 marry_number = 5;
+  optional uint32 medal_number = 6;
+  optional uint32 furniture_number = 7;
+  optional uint32 furniture_worth = 8;
+  optional uint32 character_id = 9;
+  optional uint32 first_lady_id = 10;
+  optional string first_lady_name = 11;
+  optional uint32 first_lady_time = 12;
+  optional uint32 first_online = 13;
+  optional uint32 world_max_task = 14;
+  optional uint32 collect_num = 15;
+  optional uint32 combat = 16;
+  optional uint32 ship_num_total = 17;
+  optional uint32 ship_num_120 = 18;
+  optional uint32 ship_num_125 = 19;
+  optional uint32 love200_num = 20;
+  optional uint32 skin_num = 21;
+  optional uint32 skin_ship_num = 22;
+}
+
+// ============================================================
+// 世界Boss (26031-26033)
+// ============================================================
+
+message CS_26031 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26032 {
+  optional uint32 result = 1;
+  optional uint32 boss_hp = 2;
+  repeated uint32 milestones = 3 [packed = false];
+  optional uint32 death = 4;
+}
+
+message SC_26033 {
+  optional uint32 point = 1;
+}
+
+// ============================================================
+// 活动商店 (26041-26044)
+// ============================================================
+
+message CS_26041 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26042 {
+  optional uint32 result = 1;
+  optional uint32 start_time = 2;
+  optional uint32 stop_time = 3;
+  repeated ACT_GOODS_INFO goods = 4;
+}
+
+message CS_26043 {
+  optional uint32 act_id = 1;
+  optional uint32 goodsid = 2;
+  repeated ACT_GOODS_BUY selected = 3;
+}
+
+message SC_26044 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// 烹饪制作 (26051-26056)
+// ============================================================
+
+message CS_26051 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26052 {
+  optional uint32 result = 1;
+  repeated KVDATA items = 2;
+  repeated KVDATA recipes = 3;
+  repeated BUFF_SLOT slots = 4;
+}
+
+message CS_26053 {
+  optional uint32 act_id = 1;
+  optional uint32 recipe_id = 2;
+  repeated KVDATA items = 3;
+  optional uint32 times = 4;
+}
+
+message SC_26054 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+message CS_26055 {
+  optional uint32 act_id = 1;
+  repeated BUFF_SLOT slots = 2;
+}
+
+message SC_26056 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// 忍者活动 (26060-26073)
+// ============================================================
+
+message CS_26060 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26061 {
+  optional uint32 result = 1;
+  optional NINJA_INFO info = 2;
+}
+
+message CS_26062 {
+  optional uint32 act_id = 1;
+  repeated uint32 roles = 2 [packed = false];
+}
+
+message SC_26063 {
+  optional uint32 result = 1;
+  NINJA_ADJUST adjust = 2;
+}
+
+message CS_26064 {
+  optional uint32 act_id = 1;
+  optional uint32 building_id = 2;
+}
+
+message SC_26065 {
+  optional uint32 result = 1;
+  NINJA_ADJUST adjust = 2;
+}
+
+message CS_26066 {
+  optional uint32 act_id = 1;
+  optional uint32 group = 2;
+  optional uint32 count = 3;
+}
+
+message SC_26067 {
+  optional uint32 result = 1;
+  NINJA_ADJUST adjust = 2;
+}
+
+message CS_26068 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26069 {
+  optional uint32 result = 1;
+  NINJA_SUMMARY summary = 2;
+}
+
+message CS_26070 {
+  optional uint32 act_id = 1;
+  optional uint32 level = 2;
+}
+
+message SC_26071 {
+  optional uint32 result = 1;
+  NINJA_ADJUST adjust = 2;
+}
+
+message CS_26072 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26073 {
+  optional uint32 result = 1;
+  optional NINJA_ADJUST adjust = 2;
+}
+
+// ============================================================
+// 四周年Boss (26081-26082)
+// ============================================================
+
+message CS_26081 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26082 {
+  optional uint32 result = 1;
+  repeated BOSS4TH boss_list = 2;
+}
+
+// ============================================================
+// 小游戏中心 (26101-26112)
+// ============================================================
+
+message CS_26101 {
+  optional uint32 type = 1;
+}
+
+message SC_26102 {
+  repeated MINIGAMEHUB hubs = 1;
+}
+
+message CS_26103 {
+  optional uint32 hubid = 1;
+  optional uint32 cmd = 2;
+  repeated uint32 args1 = 3 [packed = false];
+}
+
+message SC_26104 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+  optional MINIGAMEHUB hub = 3;
+  optional MINIGAMEDATA data = 4;
+}
+
+message CS_26105 {
+  repeated CS_26103 combine = 1;
+}
+
+message CS_26106 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26107 {
+  optional uint32 ret = 1;
+  repeated PB_ACTIVITY_ITEM item_list = 2;
+}
+
+message CS_26108 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26109 {
+  optional uint32 ret = 1;
+  repeated PB_ISLAND_NODE node_list = 2;
+}
+
+message CS_26110 {
+  optional uint32 gameid = 1;
+  optional uint32 time = 2;
+}
+
+message CS_26111 {
+  optional uint32 gameid = 1;
+}
+
+message SC_26112 {
+  repeated FRIENDSCORE ranks = 1;
+}
+
+// ============================================================
+// 小游戏房间 (26120-26129)
+// ============================================================
+
+message SC_26120 {
+  optional uint32 weekly_free = 1;
+  optional uint32 monthly_ticket = 2;
+  repeated GAMEROOM rooms = 3;
+  optional uint32 pay_coin_count = 4;
+  optional uint32 first_enter = 5;
+}
+
+message CS_26122 {
+  optional uint32 type = 1;
+}
+
+message SC_26123 {
+  optional uint32 result = 1;
+}
+
+message CS_26124 {
+  optional uint32 times = 1;
+}
+
+message SC_26125 {
+  optional uint32 result = 1;
+}
+
+message CS_26126 {
+  optional uint32 roomid = 1;
+  optional uint32 times = 2;
+  optional uint32 score = 3;
+}
+
+message SC_26127 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+message CS_26128 {
+  optional uint32 type = 1;
+}
+
+message SC_26129 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// 限时闪购 (26150-26155)
+// ============================================================
+
+message CS_26150 {
+  optional uint32 type = 1;
+}
+
+message SC_26151 {
+  repeated ACT26_GOODS_INFO goods = 1;
+  optional uint32 next_flash_time = 2;
+}
+
+message CS_26152 {
+  optional uint32 goodsid = 1;
+  repeated ACT26_SELECT_INFO selected = 2;
+}
+
+message SC_26153 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+message CS_26154 {
+  optional uint32 type = 1;
+}
+
+message SC_26155 {
+  optional uint32 result = 1;
+  repeated uint32 next_flash_time = 2 [packed = false];
+}
+
+// ============================================================
+// 派对活动 (26156-26161)
+// ============================================================
+
+message CS_26156 {
+  optional uint32 act_id = 1;
+}
+
+message SC_26157 {
+  optional uint32 ret = 1;
+  repeated P_PARTY_ROLE party_roles = 2;
+  repeated P_SPECIAL_ROLE special_roles = 3;
+  optional uint32 refresh_time = 4;
+}
+
+message CS_26158 {
+  optional uint32 act_id = 1;
+  repeated uint32 ship_group_id = 2 [packed = false];
+}
+
+message SC_26159 {
+  optional uint32 ret = 1;
+  optional uint32 refresh_time = 2;
+  repeated P_PARTY_ROLE party_roles = 3;
+}
+
+message CS_26160 {
+  optional uint32 act_id = 1;
+  optional uint32 int_value = 2;
+  optional string str_value = 3;
+}
+
+message SC_26161 {
+  optional uint32 result = 1;
+}

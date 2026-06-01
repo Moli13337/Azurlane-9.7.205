@@ -1,0 +1,249 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+message SHIPINFO {
+  optional uint32 id = 1;
+  optional uint32 template_id = 2;
+  optional uint32 level = 3;
+  optional uint32 exp = 4;
+  repeated EQUIPSKIN_INFO equip_info_list = 5;
+  optional uint32 energy = 6;
+  SHIPSTATE state = 7;
+  optional uint32 is_locked = 8;
+  repeated TRANSFORM_INFO transform_list = 9;
+  repeated SHIPSKILL skill_id_list = 10;
+  optional uint32 intimacy = 11;
+  optional uint32 proficiency = 12;
+  repeated STRENGTH_INFO strength_list = 13;
+  optional uint32 create_time = 14;
+  optional uint32 skin_id = 15;
+  optional uint32 propose = 16;
+  optional string name = 17;
+  optional uint32 change_name_timestamp = 18;
+  optional uint32 max_level = 19;
+  optional uint32 common_flag = 20;
+  optional uint32 activity_npc = 21;
+  repeated uint32 meta_repair_list = 22 [packed = false];
+  optional SPWEAPONINFO spweapon = 23;
+  repeated KVDATA skin_shadow_list = 24;
+  repeated uint32 char_random_flag = 25 [packed = false];
+}
+
+message SHIPSTATE {
+  optional uint32 state = 1;
+  optional uint32 state_info_1 = 2;
+  optional uint32 state_info_2 = 3;
+  optional uint32 state_info_3 = 4;
+  optional uint32 state_info_4 = 5;
+}
+
+message EQUIPSKIN_INFO {
+  optional uint32 id = 1;
+  optional uint32 skinId = 2;
+}
+
+message KVDATA {
+  optional uint32 key = 1;
+  optional uint32 value = 2;
+}
+
+message KVDATA2 {
+  optional uint32 key = 1;
+  optional uint32 value1 = 2;
+  optional uint32 value2 = 3;
+}
+
+message SHIPSKILL {
+  optional uint32 skill_id = 1;
+  optional uint32 skill_lv = 2;
+  optional uint32 skill_exp = 3;
+}
+
+message STRENGTH_INFO {
+  optional uint32 id = 1;
+  optional uint32 exp = 2;
+}
+
+message TRANSFORM_INFO {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+}
+
+message DROPINFO {
+  optional uint32 type = 1;
+  optional uint32 id = 2;
+  optional uint32 number = 3;
+}
+
+message COMMANDERINFO {
+  optional uint32 id = 1;
+  optional uint32 template_id = 2;
+  optional uint32 level = 3;
+  optional uint32 exp = 4;
+  optional uint32 is_locked = 5;
+  repeated uint32 ability = 6 [packed = false];
+  repeated uint32 ability_origin = 7 [packed = false];
+  optional uint32 ability_time = 8;
+  repeated SKILLINFO skill = 9;
+  optional uint32 used_pt = 10;
+  optional string name = 11;
+  optional uint32 rename_time = 12;
+  optional uint32 home_clean_time = 13;
+  optional uint32 home_play_time = 14;
+  optional uint32 home_feed_time = 15;
+}
+
+message SKILLINFO {
+  optional uint32 id = 1;
+  optional uint32 exp = 2;
+}
+
+message COMMANDERSINFO {
+  optional uint32 pos = 1;
+  optional uint32 id = 2;
+}
+
+message USERSIMPLEINFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 lv = 3;
+  DISPLAYINFO display = 4;
+}
+
+message DISPLAYINFO {
+  optional uint32 icon = 1;
+  optional uint32 skin = 2;
+  optional uint32 icon_frame = 3;
+  optional uint32 chat_frame = 4;
+  optional uint32 icon_theme = 5;
+  optional uint32 marry_flag = 6;
+  optional uint32 transform_flag = 7;
+}
+
+message IDTIMEINFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+}
+
+message APPRECIATIONINFO {
+  repeated uint32 gallerys = 1 [packed = false];
+  repeated uint32 musics = 2 [packed = false];
+  repeated uint32 favor_gallerys = 3 [packed = false];
+  repeated uint32 favor_musics = 4 [packed = false];
+  optional uint32 music_no = 5;
+  optional uint32 music_mode = 6;
+}
+
+message BUILDINFO {
+  optional uint32 time = 1;
+  optional uint32 finish_time = 2;
+  optional uint32 build_id = 3;
+}
+
+message SHIPCOREINFO {
+  optional uint32 id = 1;
+  optional uint32 exp = 2;
+  repeated SHIPMODELINFO model_list = 3;
+}
+
+message SHIPMODELINFO {
+  optional uint32 pos = 1;
+  optional uint32 id = 2;
+}
+
+message SHIPGROUPPOS {
+  optional uint32 ship_id = 1;
+  optional uint32 pos = 2;
+}
+
+message FLEETINFO {
+  optional uint32 id = 1;
+  repeated uint32 ship_list = 2 [packed = false];
+  repeated COMMANDERSINFO commanders = 3;
+}
+
+message COLLECTIONINFO {
+  optional uint32 id = 1;
+  optional uint32 finish_time = 2;
+  optional uint32 over_time = 3;
+  repeated uint32 ship_id_list = 4 [packed = false];
+}
+
+message TASKINFO {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+  optional uint32 accept_time = 3;
+  optional uint32 submit_time = 4;
+}
+
+message REFUND_SHOPINFO {
+  optional uint32 shop_id = 1;
+  optional uint32 buy_time = 2;
+  optional uint32 refund_time = 3;
+}
+
+message ITEM_INFO {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+message SPWEAPONINFO {
+  optional uint32 id = 1;
+  optional uint32 template_id = 2;
+  optional uint32 attr_1 = 3;
+  optional uint32 attr_2 = 4;
+  optional uint32 attr_temp_1 = 5;
+  optional uint32 attr_temp_2 = 6;
+  optional uint32 effect = 7;
+  optional uint32 pt = 8;
+}
+
+message FLEET_INFO {
+  optional uint32 id = 1;
+  repeated TEAM_INFO main_team = 2;
+  repeated TEAM_INFO submarine_team = 3;
+  repeated TEAM_INFO support_team = 4;
+}
+
+message TEAM_INFO {
+  optional uint32 id = 1;
+  repeated uint32 ship_list = 2 [packed = false];
+  optional uint32 commander_main = 3;
+  optional uint32 commander_sub = 4;
+}
+
+message RESOURCE {
+  optional uint32 type = 1;
+  optional uint32 num = 2;
+}
+
+message COOLDOWN {
+  optional uint32 key = 1;
+  optional uint32 timestamp = 2;
+}
+
+message BENEFITBUFF {
+  optional uint32 id = 1;
+  optional uint32 timestamp = 2;
+}
+
+message SHIP_TAKING_DATA {
+  optional uint32 uid = 1;
+  optional uint32 isnew = 2;
+}
+
+message CARDINFO {
+  optional uint32 type = 1;
+  optional uint32 left_date = 2;
+}
+
+message LIVINGAREA_COVER {
+  optional uint32 id = 1;
+  repeated uint32 covers = 2 [packed = false];
+}
+
+message ATTRINFO {
+  optional uint32 level = 1;
+  optional uint32 exp = 2;
+}

@@ -1,0 +1,150 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+// ============================================================
+// 数据结构定义（battle独有）
+// ============================================================
+
+message OTHERSHIPID {
+  optional uint32 ship_id = 1;
+  optional uint32 user_id = 2;
+}
+
+message DROPPERFORMANCE {
+  optional uint32 enemy_id = 1;
+  optional uint32 resource_num = 2;
+  optional uint32 other_num = 3;
+}
+
+message STATISTICSINFO {
+  optional uint32 ship_id = 1;
+  optional uint32 damage_cause = 2;
+  optional uint32 damage_caused = 3;
+  optional uint32 hp_rest = 4;
+  optional uint32 max_damage_once = 5;
+  optional uint32 ship_gear_score = 6;
+}
+
+message SHIP_EXP {
+  optional uint32 ship_id = 1;
+  optional uint32 exp = 2;
+  optional uint32 intimacy = 3;
+  optional uint32 energy = 4;
+}
+
+message COMMANDER_EXP {
+  optional uint32 commander_id = 1;
+  optional uint32 exp = 2;
+}
+
+message ENEMYINFO {
+  optional uint32 enemy_id = 1;
+  optional uint32 damage_taken = 2;
+  optional uint32 total_hp = 3;
+}
+
+message HPDROPINFO {
+  optional uint32 hp = 1;
+  repeated DROPINFO drop_info = 2;
+}
+
+message QUICK_REWARD {
+  repeated DROPINFO drop_list = 1;
+  repeated DROPINFO extra_drop_list = 2;
+}
+
+// ============================================================
+// cmd: 40001 - 战斗开始 (CS)
+// ============================================================
+
+message CS_40001 {
+  optional uint32 system = 1;
+  repeated uint32 ship_id_list = 2 [packed = false];
+  optional uint32 data = 3;
+  repeated uint32 data2 = 4 [packed = false];
+  repeated OTHERSHIPID other_ship_id_list = 5;
+}
+
+// cmd: 40002 - 战斗开始响应 (SC)
+message SC_40002 {
+  optional uint32 result = 1;
+  optional uint32 key = 2;
+  repeated DROPPERFORMANCE drop_performance = 3;
+}
+
+// ============================================================
+// cmd: 40003 - 战斗结算 (CS)
+// ============================================================
+
+message CS_40003 {
+  optional uint32 system = 1;
+  optional uint32 data = 2;
+  optional uint32 key = 3;
+  optional uint32 score = 4;
+  repeated STATISTICSINFO statistics = 5;
+  repeated uint32 kill_id_list = 6 [packed = false];
+  optional uint32 total_time = 7;
+  optional uint32 bot_percentage = 8;
+  optional uint32 extra_param = 9;
+  optional string file_check = 10;
+  optional uint32 boss_hp = 11;
+  repeated ENEMYINFO enemy_info = 12;
+  repeated uint32 data2 = 13 [packed = false];
+  repeated uint32 commander_id_list = 14 [packed = false];
+  repeated STATISTICSINFO otherstatistics = 15;
+  optional uint32 auto_before = 16;
+  optional uint32 auto_switch_time = 17;
+  optional uint32 auto_after = 18;
+}
+
+// cmd: 40004 - 战斗结算响应 (SC)
+message SC_40004 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_info = 2;
+  repeated DROPINFO extra_drop_info = 3;
+  optional uint32 player_exp = 4;
+  repeated SHIP_EXP ship_exp_list = 5;
+  optional uint32 mvp = 6;
+  repeated COMMANDER_EXP commander_exp = 7;
+  repeated HPDROPINFO hp_drop_info = 8;
+}
+
+// ============================================================
+// cmd: 40005 - 战斗中止 (CS)
+// ============================================================
+
+message CS_40005 {
+  optional uint32 system = 1;
+}
+
+// cmd: 40006 - 战斗中止响应 (SC)
+message SC_40006 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 40007 - 快速战斗 (CS)
+// ============================================================
+
+message CS_40007 {
+  optional uint32 system = 1;
+  optional uint32 id = 2;
+  optional uint32 cnt = 3;
+}
+
+// cmd: 40008 - 快速战斗响应 (SC)
+message SC_40008 {
+  optional uint32 result = 1;
+  repeated QUICK_REWARD reward_list = 2;
+}
+
+// ============================================================
+// cmd: 40009 - 战斗结算推送 (SC)
+// ============================================================
+
+message SC_40009 {
+  repeated SC_40004 re40004 = 1;
+  optional uint32 system = 2;
+  optional uint32 arg1 = 3;
+}

@@ -1,0 +1,95 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message ITEMINFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message ITEMMISC {
+  optional uint32 id = 1;
+  optional uint32 data = 2;
+}
+
+// cmd: 15001 - 物品数据初始化 (SC only, 登录推送)
+message SC_15001 {
+  repeated ITEMINFO item_list = 1;
+  repeated ITEMINFO limit_list = 2;
+  repeated ITEMMISC item_misc_list = 3;
+}
+
+// cmd: 15002 - 使用物品请求 (CS)
+message CS_15002 {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  repeated uint32 arg = 3 [packed = false];
+}
+
+// cmd: 15003 - 使用物品响应 (SC)
+message SC_15003 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 15004 - 出售物品请求 (CS) [遗留]
+message CS_15004 {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+// cmd: 15005 - 出售物品响应 (SC)
+message SC_15005 {
+  optional uint32 result = 1;
+}
+
+// cmd: 15006 - 合成物品请求 (CS)
+message CS_15006 {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+// cmd: 15007 - 合成物品响应 (SC)
+message SC_15007 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// cmd: 15008 - 批量出售物品请求 (CS)
+message CS_15008 {
+  repeated ITEMINFO item_list = 1;
+}
+
+// cmd: 15009 - 批量出售物品响应 (SC)
+message SC_15009 {
+  optional uint32 result = 1;
+}
+
+// cmd: 15010 - 打开/查看物品请求 (CS)
+message CS_15010 {
+  optional uint32 id = 1;
+}
+
+// cmd: 15011 - 打开/查看物品响应 (SC)
+message SC_15011 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 15012 - 批量使用物品请求 (CS)
+message CS_15012 {
+  repeated CS_15002 use_list = 1;
+}
+
+// cmd: 15013 - 批量使用物品响应 (SC)
+message SC_15013 {
+  repeated SC_15003 ret_list = 1;
+}
+
+// cmd: 15300 - 物品版本校验请求 (CS)
+message CS_15300 {
+  optional uint32 type = 1;
+  optional string ver_str = 2;
+}

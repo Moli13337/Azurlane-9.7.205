@@ -1,0 +1,425 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+// ===== Shared Types =====
+
+message PTGC_ROOM {
+  optional uint32 id = 1;
+  optional uint32 type = 2;
+  optional uint32 game_type = 3;
+  repeated PTGC_PLAYER player_list = 4;
+  repeated PTGC_TEAM team_list = 5;
+  repeated uint32 ready_list = 6 [packed = false];
+  optional uint32 play_flag = 7;
+}
+
+message PTGC_ROOM_SIMPLE {
+  optional uint32 id = 1;
+  optional uint32 type = 2;
+  optional uint32 game_type = 3;
+  optional string name = 4;
+  optional uint32 player_num = 5;
+  optional uint32 play_flag = 6;
+}
+
+message PTGC_TEAM {
+  repeated uint32 user_id_list = 1 [packed = false];
+}
+
+message PTGC_PLAYER {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+  optional string name = 3;
+  optional string guild_name = 4;
+  DISPLAYINFO display = 5;
+  PTGC_GAME_USER_VIEW user_view = 6;
+}
+
+message PTGC_PLAYER_RANK {
+  PTGC_PLAYER player = 1;
+  optional uint32 score = 2;
+}
+
+message PTGC_LOAD {
+  optional uint32 user_id = 1;
+  optional uint32 load = 2;
+}
+
+message PTGC_GAME_USER_VIEW {
+  optional uint32 game_type = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 skin_id = 3;
+  optional uint32 color = 4;
+  repeated uint32 dress_list = 5 [packed = false];
+}
+
+message PTGC_CHEAT_BAR_PLAYER {
+  optional uint32 user_id = 1;
+  optional uint32 seat = 2;
+  optional uint32 card_num = 3;
+  repeated PTGC_CHEAT_BAR_BOMB bomb_list = 4;
+  optional uint32 is_auto = 5;
+  optional uint32 round_num = 6;
+  PTGC_PLAYER player_info = 7;
+}
+
+message PTGC_CHEAT_BAR_BOMB {
+  optional uint32 bomb_id = 1;
+  optional uint32 state = 2;
+}
+
+message PTGC_CHEAT_BAR_CARD {
+  optional uint32 key = 1;
+  optional uint32 id = 2;
+}
+
+// ===== CS/SC Messages =====
+
+// cmd: 23001 - 获取房间列表 (CS)
+message CS_23001 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 23002 - 房间列表 (SC)
+message SC_23002 {
+  repeated PTGC_ROOM_SIMPLE room_list = 1;
+}
+
+// ============================================================
+// cmd: 23003 - 创建房间 (CS)
+// ============================================================
+
+message CS_23003 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 23004 - 创建房间结果 (SC)
+message SC_23004 {
+  optional uint32 result = 1;
+  optional PTGC_ROOM room = 2;
+}
+
+// ============================================================
+// cmd: 23005 - 匹配 (CS)
+// ============================================================
+
+message CS_23005 {
+  optional uint32 type = 1;
+  optional uint32 game_type = 2;
+}
+
+// cmd: 23006 - 匹配结果 (SC)
+message SC_23006 {
+  optional uint32 result = 1;
+  optional PTGC_ROOM room = 2;
+  optional uint32 cd = 3;
+}
+
+// ============================================================
+// cmd: 23007 - 加入房间 (CS)
+// ============================================================
+
+message CS_23007 {
+  optional uint32 room_id = 1;
+}
+
+// cmd: 23008 - 加入房间结果 (SC)
+message SC_23008 {
+  optional uint32 result = 1;
+  optional PTGC_ROOM room = 2;
+  optional uint32 cd = 3;
+}
+
+// ============================================================
+// cmd: 23009 - 切换队伍 (CS)
+// ============================================================
+
+message CS_23009 {
+  optional uint32 team_id = 1;
+}
+
+// cmd: 23010 - 切换队伍结果 (SC)
+message SC_23010 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23011 - 获取加载进度 (CS)
+// ============================================================
+
+message CS_23011 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 23012 - 加载进度推送 (SC)
+message SC_23012 {
+  optional uint32 time = 1;
+}
+
+// ============================================================
+// cmd: 23013 - 踢出玩家 (CS)
+// ============================================================
+
+message CS_23013 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 23014 - 踢出玩家结果 (SC)
+message SC_23014 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23015 - 退出房间 (CS)
+// ============================================================
+
+message CS_23015 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 23016 - 退出房间结果 (SC)
+message SC_23016 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23017 - 邀请玩家 (CS)
+// ============================================================
+
+message CS_23017 {
+  optional uint32 arg = 1;
+}
+
+// cmd: 23018 - 邀请玩家结果 (SC)
+message SC_23018 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23019 - 准备 (CS)
+// ============================================================
+
+message CS_23019 {
+  optional uint32 ready = 1;
+}
+
+// cmd: 23020 - 准备结果 (SC)
+message SC_23020 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23021 - 观战 (CS)
+// ============================================================
+
+message CS_23021 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 23022 - 观战结果 (SC)
+message SC_23022 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23023 - 聊天 (CS)
+// ============================================================
+
+message CS_23023 {
+  optional uint32 type = 1;
+  optional string content = 2;
+}
+
+// cmd: 23024 - 聊天结果 (SC)
+message SC_23024 {
+  optional uint32 result = 1;
+  optional string tip = 2;
+}
+
+// ============================================================
+// cmd: 23025 - 获取排行榜 (CS)
+// ============================================================
+
+message CS_23025 {
+  optional uint32 game_type = 1;
+}
+
+// cmd: 23026 - 排行榜 (SC)
+message SC_23026 {
+  repeated PTGC_PLAYER_RANK rank_list = 1;
+}
+
+// ============================================================
+// cmd: 23027 - 加载完成 (CS)
+// ============================================================
+
+message CS_23027 {
+  optional uint32 progress = 1;
+}
+
+// cmd: 23028 - 加载完成结果 (SC)
+message SC_23028 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 23029 - 更换舰船 (CS)
+// ============================================================
+
+message CS_23029 {
+  optional uint32 type = 1;
+  optional uint32 game_type = 2;
+  optional uint32 ship_id = 3;
+}
+
+// cmd: 23030 - 更换舰船结果 (SC)
+message SC_23030 {
+  optional uint32 result = 1;
+}
+
+// cmd: 23031 - 更换舰船推送 (SC only)
+message SC_23031 {
+  optional uint32 user_id = 1;
+  PTGC_GAME_USER_VIEW user_view = 2;
+}
+
+// ===== SC-only Push Messages =====
+
+// cmd: 23094 - 游戏开始推送 (SC only)
+message SC_23094 {
+  optional uint32 game_type = 1;
+  repeated PTGC_PLAYER player_list = 2;
+  repeated PTGC_TEAM team_list = 3;
+  repeated PTGC_LOAD load_list = 4;
+  optional uint32 time = 5;
+}
+
+// cmd: 23095 - 游戏准备推送 (SC only)
+message SC_23095 {
+  optional uint32 game_type = 1;
+  repeated PTGC_PLAYER player_list = 2;
+  repeated PTGC_TEAM team_list = 3;
+  repeated uint32 ready_list = 4 [packed = false];
+  optional uint32 time = 5;
+}
+
+// cmd: 23096 - 游戏结束推送 (SC only)
+message SC_23096 {
+  optional uint32 reason = 1;
+}
+
+// cmd: 23097 - 邀请推送 (SC only)
+message SC_23097 {
+  optional uint32 invitor = 1;
+  PTGC_ROOM room = 2;
+}
+
+// cmd: 23098 - 房间聊天推送 (SC only)
+message SC_23098 {
+  optional uint32 user_id = 1;
+  optional uint32 type = 2;
+  optional string content = 3;
+}
+
+// cmd: 23099 - 房间更新推送 (SC only)
+message SC_23099 {
+  PTGC_ROOM room = 1;
+}
+
+// ===== 炸牌/21点游戏消息 =====
+
+// cmd: 23101 - 炸牌开始推送 (SC only)
+message SC_23101 {
+  repeated PTGC_CHEAT_BAR_PLAYER player_list = 1;
+  optional uint32 real_card = 2;
+  repeated PTGC_CHEAT_BAR_CARD card_list = 3;
+  optional uint32 user_id = 4;
+  optional uint32 auto_time = 5;
+  optional uint32 start_time = 6;
+  optional uint32 room_type = 7;
+}
+
+// cmd: 23102 - 炸牌操作推送 (SC only)
+message SC_23102 {
+  optional uint32 real_card = 1;
+  repeated PTGC_CHEAT_BAR_CARD card_list = 2;
+  optional uint32 user_id = 3;
+  optional uint32 auto_time = 4;
+  optional uint32 turn_num = 5;
+}
+
+// cmd: 23103 - 炸牌操作请求 (CS)
+message CS_23103 {
+  optional uint32 type = 1;
+  repeated uint32 arg_list = 2 [packed = false];
+}
+
+// cmd: 23104 - 炸牌操作结果 (SC)
+message SC_23104 {
+  optional uint32 result = 1;
+}
+
+// cmd: 23105 - 炸牌回合推送 (SC only)
+message SC_23105 {
+  optional uint32 type = 1;
+  optional uint32 user_id = 2;
+  repeated uint32 return_list = 3 [packed = false];
+  optional uint32 next_user_id = 4;
+  optional uint32 next_type = 5;
+  optional uint32 auto_time = 6;
+}
+
+// cmd: 23106 - 炸牌结算请求 (CS)
+message CS_23106 {
+  optional uint32 type = 1;
+}
+
+// cmd: 23107 - 炸牌结算推送 (SC only)
+message SC_23107 {
+  optional uint32 result = 1;
+  repeated PTGC_CHEAT_BAR_PLAYER player_list = 2;
+  optional uint32 real_card = 3;
+  repeated PTGC_CHEAT_BAR_CARD card_list = 4;
+  optional uint32 card_num = 5;
+  optional uint32 user_id = 6;
+  optional uint32 opt_type = 7;
+  optional uint32 auto_time = 8;
+  optional uint32 turn_num = 9;
+  optional uint32 room_type = 10;
+  repeated PTGC_PLAYER out_player_list = 11;
+}
+
+// cmd: 23108 - 炸牌最终结算 (SC only)
+message SC_23108 {
+  optional uint32 rank = 1;
+  optional uint32 cur_score = 2;
+}
+
+// cmd: 23113 - 炸牌自动操作 (CS)
+message CS_23113 {
+  optional uint32 type = 1;
+}
+
+// cmd: 23114 - 炸牌自动操作结果 (SC)
+message SC_23114 {
+  optional uint32 result = 1;
+}
+
+// cmd: 23115 - 炸牌玩家状态推送 (SC only)
+message SC_23115 {
+  optional uint32 user_id = 1;
+  optional uint32 state = 2;
+}
+
+// cmd: 23116 - 炸牌胜利推送 (SC only)
+message SC_23116 {
+  optional uint32 win_user = 1;
+}
+
+// cmd: 23117 - 炸牌分数推送 (SC only)
+message SC_23117 {
+  optional uint32 cur_score = 1;
+}

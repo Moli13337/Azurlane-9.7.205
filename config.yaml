@@ -1,0 +1,81 @@
+server:
+  bindAddress: "0.0.0.0"
+  port: 80
+  name: "AzurLaneServer"
+  maintenance: false
+  id: 1
+  state: 0
+  proxyIp: ""
+  proxyPort: 0
+  cdnList: []
+  version: []
+
+database:
+  driver: "sqlite"
+  path: "data/azurlane.db"
+  maxPoolSize: 1
+
+data:
+  region: "CN"
+  dataPath: "resources"
+
+admin:
+  enabled: true
+  bindAddress: "127.0.0.1"
+  port: 8080
+
+sdk:
+  enabled: false
+  bindAddress: "0.0.0.0"
+  port: 443
+  httpPort: 8081
+  ssl: false
+  sslCertCn: "api.biligame.net"
+  sslKeystorePassword: "changeit"
+  sslCertDays: 365
+  gameId: "209"
+  merchantId: "2610"
+  channelId: "1"
+  serverId: "388"
+  appKey: "d4761645d1632e8c"
+  sdkVersion: "6.17.0"
+  appVersion: "7.1.1"
+  platform: "3"
+  cpName: "blhx"
+  gameName: "AzurLane"
+  tokenExpireDays: 365
+  tokenRenewalDays: 30
+  allowTourist: true
+  requireRealname: false
+  allowQuickLogin: false
+  allowWechatLogin: false
+  allowAppleLogin: false
+  baseUrl: "https://127.0.0.1"
+  autoApprovePay: true
+  productName: "TestProduct"
+
+logging:
+  level: "INFO"
+  packages:
+    - "com.azurlane"
+
+auth:
+  passwordMinLength: 4
+  passwordMaxLength: 128
+  nameMinLength: 4
+  nameMaxLength: 14
+  nameBlacklist: []
+  nameIllegalPattern: ""
+
+createPlayer:
+  skipOnboarding: true
+  starterShips:
+    - 202124
+    - 106011
+  initialResources:
+    1: 3000
+    2: 500
+    4: 0
+  initialItems:
+    20001: 1
+    15003: 10

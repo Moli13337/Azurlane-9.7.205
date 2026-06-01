@@ -1,0 +1,22 @@
+{
+  "notices": [
+    {
+      "notice_id": "1",
+      "title": "Welcome",
+      "template_code": "TEXT",
+      "template_src": {
+        "text": "Welcome to AzurLane Local Server!",
+        "pic_url": "",
+        "pic_redirect_url": "",
+        "redirect_view_by": "",
+        "pic_redirect_url_without_bili": "",
+        "redirect_view_by_without_bili": "",
+        "h5_url": ""
+      },
+      "show_rule": 2,
+      "dismiss_after_click": 0,
+      "dismiss_by_overlay": 0
+    }
+  ],
+  "show_limit_num": 5
+}

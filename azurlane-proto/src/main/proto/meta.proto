@@ -1,0 +1,277 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+// ============================================================
+// 数据结构定义（meta独有）
+// ============================================================
+
+message META_SHIP_INFO {
+  optional uint32 group_id = 1;
+  optional uint32 pt = 2;
+  repeated uint32 fetch_list = 3 [packed = false];
+}
+
+message META_WORLDBOSS_INFO {
+  optional uint32 id = 1;
+  optional uint32 template_id = 2;
+  optional uint32 lv = 3;
+  optional uint32 hp = 4;
+  optional uint32 owner = 5;
+  optional uint32 last_time = 6;
+  optional uint32 kill_time = 7;
+  optional uint32 fight_count = 8;
+  optional uint32 rank_count = 9;
+}
+
+message META_WORLDBOSS_RANK {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 damage = 3;
+}
+
+message META_WORLDBOSS_SIMPLE {
+  optional uint32 id = 1;
+  optional uint32 hp = 2;
+  optional uint32 rank_count = 3;
+}
+
+// ============================================================
+// cmd: 34001 - 获取META舰船列表 (CS)
+// ============================================================
+
+message CS_34001 {
+  repeated uint32 group_id = 1 [packed = false];
+}
+
+// cmd: 34002 - META舰船列表响应 (SC)
+message SC_34002 {
+  repeated META_SHIP_INFO meta_ship_list = 1;
+}
+
+// ============================================================
+// cmd: 34003 - 领取META舰船点数奖励 (CS)
+// ============================================================
+
+message CS_34003 {
+  optional uint32 group_id = 1;
+  optional uint32 target_pt = 2;
+}
+
+// cmd: 34004 - 领取点数奖励响应 (SC)
+message SC_34004 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 34501 - 获取META Boss数据 (CS)
+// ============================================================
+
+message CS_34501 {
+  optional uint32 type = 1;
+}
+
+// cmd: 34502 - META Boss数据响应 (SC)
+message SC_34502 {
+  optional uint32 fight_count = 1;
+  optional uint32 fight_count_update_time = 2;
+  optional META_WORLDBOSS_INFO self_boss = 3;
+  repeated META_WORLDBOSS_INFO other_boss = 4;
+  optional uint32 summon_pt = 5;
+  optional uint32 summon_pt_old = 6;
+  optional uint32 summon_pt_daily_acc = 7;
+  optional uint32 summon_pt_old_daily_acc = 8;
+  optional uint32 summon_free = 9;
+  optional uint32 auto_fight_finish_time = 10;
+  optional uint32 default_boss_id = 11;
+  optional uint32 auto_fight_max_damage = 12;
+  optional uint32 guild_support = 13;
+  optional uint32 friend_support = 14;
+  optional uint32 world_support = 15;
+  optional uint32 self_boss_lv = 16;
+}
+
+// ============================================================
+// cmd: 34503 - 获取其他玩家Boss列表 (CS)
+// ============================================================
+
+message CS_34503 {
+  repeated uint32 user_id_list = 1 [packed = false];
+}
+
+// cmd: 34504 - 其他玩家Boss列表响应 (SC)
+message SC_34504 {
+  repeated META_WORLDBOSS_INFO boss_list = 1;
+}
+
+// ============================================================
+// cmd: 34505 - 获取Boss排行榜 (CS)
+// ============================================================
+
+message CS_34505 {
+  optional uint32 boss_id = 1;
+}
+
+// cmd: 34506 - Boss排行榜响应 (SC)
+message SC_34506 {
+  repeated META_WORLDBOSS_RANK rank_list = 1;
+}
+
+// ============================================================
+// cmd: 34507 - Boss被召唤推送 (SC)
+// ============================================================
+
+message SC_34507 {
+  optional META_WORLDBOSS_INFO boss_info = 1;
+  optional USERSIMPLEINFO user_info = 2;
+  optional uint32 type = 3;
+}
+
+// ============================================================
+// cmd: 34508 - Boss血量变化推送 (SC)
+// ============================================================
+
+message SC_34508 {
+  optional uint32 boss_id = 1;
+  optional uint32 hp = 2;
+}
+
+// ============================================================
+// cmd: 34509 - META Boss战斗开始 (CS)
+// ============================================================
+
+message CS_34509 {
+  optional uint32 type = 1;
+}
+
+// cmd: 34510 - META Boss战斗开始响应 (SC)
+message SC_34510 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 34511 - META Boss战斗结算 (CS)
+// ============================================================
+
+message CS_34511 {
+  optional uint32 boss_id = 1;
+}
+
+// cmd: 34512 - META Boss战斗结算响应 (SC)
+message SC_34512 {
+  optional uint32 result = 1;
+  repeated DROPINFO drops = 2;
+}
+
+// ============================================================
+// cmd: 34513 - META Boss自动战斗 (CS)
+// ============================================================
+
+message CS_34513 {
+  optional uint32 type = 1;
+}
+
+// cmd: 34514 - META Boss自动战斗响应 (SC)
+message SC_34514 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 34515 - 设置META Boss求助 (CS)
+// ============================================================
+
+message CS_34515 {
+  optional uint32 boss_id = 1;
+  optional uint32 last_time = 2;
+}
+
+// cmd: 34516 - 设置META Boss求助响应 (SC)
+message SC_34516 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 34517 - 获取META Boss简要列表 (CS)
+// ============================================================
+
+message CS_34517 {
+  repeated uint32 boss_id = 1 [packed = false];
+}
+
+// cmd: 34518 - META Boss简要列表响应 (SC)
+message SC_34518 {
+  repeated META_WORLDBOSS_SIMPLE list = 1;
+}
+
+// ============================================================
+// cmd: 34519 - 获取META Boss支援舰队 (CS)
+// ============================================================
+
+message CS_34519 {
+  optional uint32 boss_id = 1;
+  optional uint32 userId = 2;
+}
+
+// cmd: 34520 - META Boss支援舰队响应 (SC)
+message SC_34520 {
+  optional uint32 result = 1;
+  repeated SHIPINFO ship_list = 2;
+}
+
+// ============================================================
+// cmd: 34521 - 召唤META Boss (CS)
+// ============================================================
+
+message CS_34521 {
+  optional uint32 template_id = 1;
+}
+
+// cmd: 34522 - 召唤META Boss响应 (SC)
+message SC_34522 {
+  optional uint32 result = 1;
+  optional META_WORLDBOSS_INFO boss = 2;
+}
+
+// ============================================================
+// cmd: 34523 - 开始自动战斗 (CS)
+// ============================================================
+
+message CS_34523 {
+  optional uint32 boss_id = 1;
+}
+
+// cmd: 34524 - 开始自动战斗响应 (SC)
+message SC_34524 {
+  optional uint32 result = 1;
+  optional uint32 auto_fight_finish_time = 2;
+}
+
+// ============================================================
+// cmd: 34525 - 获取自动战斗伤害 (CS)
+// ============================================================
+
+message CS_34525 {
+  optional uint32 boss_id = 1;
+}
+
+// cmd: 34526 - 获取自动战斗伤害响应 (SC)
+message SC_34526 {
+  optional uint32 result = 1;
+  optional uint32 count = 2;
+  optional uint32 damage = 3;
+  optional uint32 oil = 4;
+}
+
+// ============================================================
+// cmd: 34527 - 结束自动战斗 (CS)
+// ============================================================
+
+message CS_34527 {
+  optional uint32 boss_id = 1;
+}
+
+// cmd: 34528 - 结束自动战斗响应 (SC)
+message SC_34528 {
+  optional uint32 result = 1;
+}

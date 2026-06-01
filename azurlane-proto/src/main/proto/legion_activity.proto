@@ -1,0 +1,356 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+// ============================================================
+// 数据结构定义（legion_activity独有）
+// ============================================================
+
+message LEGION_KV {
+  optional uint32 key = 1;
+  optional uint32 value = 2;
+}
+
+message LEGION_RANK_INFO {
+  optional uint32 user_id = 1;
+  optional uint32 damage = 2;
+}
+
+message SHIPID_POS {
+  optional uint32 pos = 1;
+  optional uint32 shipId = 2;
+}
+
+message SHIPID_POS_INFO {
+  optional uint32 pos = 1;
+  optional SHIPINFO ship = 2;
+  optional uint32 last_time = 3;
+}
+
+message SHIP_IN_EVENT {
+  optional uint32 user_id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 template_id = 3;
+  optional uint32 skin = 4;
+}
+
+message TEAM_CELL {
+  optional uint32 user_id = 1;
+  optional uint32 ship_id = 2;
+}
+
+message TEAM_CHUNK {
+  optional uint32 user_id = 1;
+  repeated SHIPINFO ships = 2;
+}
+
+message BOSSEVENTFLEET {
+  optional uint32 fleet_id = 1;
+  repeated TEAM_CELL ships = 2;
+  repeated COMMANDERSINFO commanders = 3;
+}
+
+message EVENT_NODE {
+  optional uint32 position = 1;
+  optional uint32 node_id = 2;
+  optional uint32 status = 3;
+}
+
+message PERSON_SHIP_IN_PAGE {
+  optional uint32 page_id = 1;
+  repeated uint32 ship_ids = 2 [packed = false];
+}
+
+message EVENT_BASE {
+  optional uint32 event_id = 1;
+  optional uint32 position = 2;
+  optional uint32 start_time = 3;
+  optional uint32 complete_time = 4;
+  repeated SHIP_IN_EVENT shipinevent = 5;
+  repeated LEGION_KV attr_acc_list = 6;
+  repeated LEGION_KV attr_count_list = 7;
+  repeated EVENT_NODE eventnodes = 8;
+  optional uint32 efficiency = 9;
+  repeated PERSON_SHIP_IN_PAGE personship = 10;
+}
+
+message EVENT_BASE_COMPLETED {
+  optional uint32 event_id = 1;
+  optional uint32 position = 2;
+}
+
+message EVENT_PERFORMANCE {
+  optional uint32 event_id = 1;
+  optional uint32 index = 2;
+}
+
+message EVENT_BOSS {
+  optional uint32 boss_id = 1;
+  optional uint32 damage = 2;
+  optional uint32 hp = 3;
+}
+
+message REPORT_NODE {
+  optional uint32 id = 1;
+  optional uint32 status = 2;
+}
+
+message REPORT {
+  optional uint32 id = 1;
+  optional uint32 event_id = 2;
+  optional uint32 event_type = 3;
+  optional uint32 score = 4;
+  repeated REPORT_NODE nodes = 5;
+  optional uint32 status = 6;
+}
+
+message CURRENT_OPERATION {
+  optional uint32 operation_id = 1;
+  optional uint32 start_time = 2;
+  repeated EVENT_BASE base_events = 3;
+  optional EVENT_BOSS boss_event = 4;
+  repeated EVENT_PERFORMANCE perfs = 5;
+  repeated LEGION_KV formation_time = 6;
+  repeated EVENT_BASE_COMPLETED completed_events = 7;
+  optional uint32 daily_count = 8;
+  repeated BOSSEVENTFLEET fleets = 9;
+  optional uint32 join_times = 10;
+  optional uint32 is_participant = 11;
+}
+
+// ============================================================
+// cmd: 61001 - 选择活动章节 (CS)
+// ============================================================
+
+message CS_61001 {
+  optional uint32 chapter_id = 1;
+}
+
+message SC_61002 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61003 - 设置编队 (CS)
+// ============================================================
+
+message CS_61003 {
+  repeated SHIPID_POS shipIds = 1;
+}
+
+message SC_61004 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61005 - 获取当前活动操作数据 (CS)
+// ============================================================
+
+message CS_61005 {
+  optional uint32 type = 1;
+}
+
+message SC_61006 {
+  optional uint32 result = 1;
+  optional CURRENT_OPERATION operation = 2;
+}
+
+// ============================================================
+// cmd: 61007 - 加入活动事件 (CS)
+// ============================================================
+
+message CS_61007 {
+  optional uint32 event_tid = 1;
+  repeated uint32 ship_ids = 2 [packed = false];
+}
+
+message SC_61008 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61009 - 获取个人舰船 (CS)
+// ============================================================
+
+message CS_61009 {
+  optional uint32 type = 1;
+}
+
+message SC_61010 {
+  optional uint32 result = 1;
+  repeated SHIPID_POS_INFO person_ships = 2;
+}
+
+// ============================================================
+// cmd: 61011 - 获取编队信息 (CS)
+// ============================================================
+
+message CS_61011 {
+  optional uint32 type = 1;
+}
+
+message SC_61012 {
+  optional uint32 result = 1;
+  repeated TEAM_CHUNK ships = 2;
+  repeated TEAM_CELL recommends = 3;
+}
+
+// ============================================================
+// cmd: 61013 - 设置Boss战编队 (CS)
+// ============================================================
+
+message CS_61013 {
+  repeated BOSSEVENTFLEET fleet = 1;
+}
+
+message SC_61014 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61015 - 活动操作 (CS)
+// ============================================================
+
+message CS_61015 {
+  optional uint32 type = 1;
+}
+
+message SC_61016 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61017 - 获取战报 (CS)
+// ============================================================
+
+message CS_61017 {
+  optional uint32 index = 1;
+}
+
+message SC_61018 {
+  repeated REPORT reports = 1;
+}
+
+// ============================================================
+// cmd: 61019 - 领取奖励 (CS)
+// ============================================================
+
+message CS_61019 {
+  repeated uint32 ids = 1 [packed = false];
+}
+
+message SC_61020 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// cmd: 61021 - 玩家加入活动推送 (SC)
+message SC_61021 {
+  optional uint32 user_id = 1;
+}
+
+// cmd: 61022 - 活动状态变更推送 (SC)
+message SC_61022 {
+  optional uint32 type = 1;
+}
+
+// ============================================================
+// cmd: 61023 - 获取事件详情 (CS)
+// ============================================================
+
+message CS_61023 {
+  optional uint32 event_tid = 1;
+}
+
+message SC_61024 {
+  optional uint32 result = 1;
+  optional EVENT_BASE event_info = 2;
+  optional EVENT_BASE_COMPLETED completed_info = 3;
+}
+
+// ============================================================
+// cmd: 61025 - 提交表现数据 (CS)
+// ============================================================
+
+message CS_61025 {
+  repeated EVENT_PERFORMANCE perf = 1;
+}
+
+message SC_61026 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61027 - 获取Boss事件 (CS)
+// ============================================================
+
+message CS_61027 {
+  optional uint32 type = 1;
+}
+
+message SC_61028 {
+  optional uint32 result = 1;
+  optional EVENT_BOSS boss_event = 2;
+}
+
+// ============================================================
+// cmd: 61029 - 获取排行榜 (CS)
+// ============================================================
+
+message CS_61029 {
+  optional uint32 type = 1;
+}
+
+message SC_61030 {
+  repeated LEGION_RANK_INFO list = 1;
+}
+
+// ============================================================
+// cmd: 61031 - 退出活动 (CS)
+// ============================================================
+
+message CS_61031 {
+  optional uint32 type = 1;
+}
+
+message SC_61032 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61033 - 推荐操作 (CS)
+// ============================================================
+
+message CS_61033 {
+  optional uint32 recommend_uid = 1;
+  optional uint32 recommend_shipid = 2;
+  optional uint32 cmd = 3;
+}
+
+message SC_61034 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 61035 - 获取推荐列表 (CS)
+// ============================================================
+
+message CS_61035 {
+  optional uint32 type = 1;
+}
+
+message SC_61036 {
+  repeated TEAM_CELL recommends = 1;
+}
+
+// ============================================================
+// cmd: 61037 - 获取伤害排行 (CS)
+// ============================================================
+
+message CS_61037 {
+  optional uint32 id = 1;
+}
+
+message SC_61038 {
+  repeated LEGION_RANK_INFO list = 1;
+}

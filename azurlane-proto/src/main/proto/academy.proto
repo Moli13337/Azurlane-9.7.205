@@ -1,0 +1,213 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+// ===== Shared Types =====
+
+message NAVALACADEMY_CLASS {
+  optional uint32 proficiency = 1;
+}
+
+message NAVALACADEMY_STUDENT {
+  optional uint32 ship_id = 1;
+  optional uint32 energy = 2;
+}
+
+message SHOPPINGSTREET {
+  optional uint32 lv = 1;
+  optional uint32 next_flash_time = 2;
+  optional uint32 lv_up_time = 3;
+  repeated STREETGOODS goods_list = 4;
+  optional uint32 flash_count = 5;
+}
+
+message STREETGOODS {
+  optional uint32 goods_id = 1;
+  optional uint32 discount = 2;
+  optional uint32 buy_count = 3;
+}
+
+message SKILL_CLASS {
+  optional uint32 room_id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 start_time = 3;
+  optional uint32 finish_time = 4;
+  optional uint32 skill_pos = 5;
+  optional uint32 exp = 6;
+}
+
+message TUTHANDBOOK {
+  optional uint32 id = 1;
+  optional uint32 pt = 2;
+  optional uint32 award = 3;
+  repeated uint32 finished_task_ids = 4 [packed = false];
+}
+
+// ===== CS/SC Messages =====
+
+// cmd: 22001 - 海军学院数据推送 (SC only, 登录推送)
+message SC_22001 {
+  optional uint32 oil_well_level = 1;
+  optional uint32 oil_well_lv_up_time = 2;
+  optional uint32 gold_well_level = 3;
+  optional uint32 gold_well_lv_up_time = 4;
+  optional uint32 class_lv = 5;
+  optional uint32 class_lv_up_time = 6;
+  NAVALACADEMY_CLASS class = 7;
+  repeated SKILL_CLASS skill_class_list = 8;
+  optional uint32 skill_class_num = 9;
+  optional uint32 daily_finish_buff_cnt = 10;
+}
+
+// ============================================================
+// cmd: 22101 - 请求商业街 (CS)
+// ============================================================
+
+message CS_22101 {
+  optional uint32 type = 1;
+}
+
+// cmd: 22102 - 商业街数据 (SC)
+message SC_22102 {
+  SHOPPINGSTREET street = 1;
+}
+
+// cmd: 22103 - 购买商业街商品 (CS)
+message CS_22103 {
+  optional uint32 goods_id = 1;
+}
+
+// cmd: 22104 - 购买商业街商品结果 (SC)
+message SC_22104 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 22201 - 技能上课 (CS)
+// ============================================================
+
+message CS_22201 {
+  optional uint32 room_id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 skill_pos = 3;
+  optional uint32 item_id = 4;
+}
+
+// cmd: 22202 - 技能上课结果 (SC)
+message SC_22202 {
+  optional uint32 result = 1;
+  optional SKILL_CLASS class_info = 2;
+}
+
+// ============================================================
+// cmd: 22203 - 取消技能课 (CS)
+// ============================================================
+
+message CS_22203 {
+  optional uint32 room_id = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 22204 - 取消技能课结果 (SC)
+message SC_22204 {
+  optional uint32 result = 1;
+  optional uint32 exp = 2;
+}
+
+// cmd: 22205 - 加速完成技能课 (CS)
+message CS_22205 {
+  optional uint32 room_id = 1;
+  optional uint32 type = 2;
+}
+
+// cmd: 22206 - 加速完成技能课结果 (SC)
+message SC_22206 {
+  optional uint32 result = 1;
+  optional SKILL_CLASS class_info = 2;
+}
+
+// ============================================================
+// cmd: 22009 - 升级油井/金井 (CS)
+// ============================================================
+
+message CS_22009 {
+  optional uint32 type = 1;
+}
+
+// cmd: 22010 - 升级油井/金井结果 (SC)
+message SC_22010 {
+  optional uint32 result = 1;
+  optional uint32 exp_in_well = 2;
+}
+
+// ============================================================
+// cmd: 22011 - 喂书 (CS)
+// ============================================================
+
+message CS_22011 {
+  optional uint32 ship_id = 1;
+  repeated ITEM_INFO books = 2;
+}
+
+// cmd: 22012 - 喂书结果 (SC)
+message SC_22012 {
+  optional uint32 result = 1;
+}
+
+// cmd: 22013 - 熟练度推送 (SC only)
+message SC_22013 {
+  optional uint32 proficiency = 1;
+  optional uint32 exp_in_well = 2;
+}
+
+// ============================================================
+// cmd: 22014 - 升级教室 (CS)
+// ============================================================
+
+message CS_22014 {
+  optional uint32 roomid = 1;
+}
+
+// cmd: 22015 - 升级教室结果 (SC)
+message SC_22015 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 22300 - 教程手册推送 (SC only, 登录推送)
+// ============================================================
+
+message SC_22300 {
+  repeated TUTHANDBOOK handbooks = 1;
+  repeated uint32 finished_task_ids = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 22302 - 完成教程任务 (CS)
+// ============================================================
+
+message CS_22302 {
+  optional uint32 id = 1;
+  optional uint32 index = 2;
+}
+
+// cmd: 22303 - 完成教程任务结果 (SC)
+message SC_22303 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 22304 - 领取教程奖励 (CS)
+// ============================================================
+
+message CS_22304 {
+  optional uint32 id = 1;
+}
+
+// cmd: 22305 - 领取教程奖励结果 (SC)
+message SC_22305 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}

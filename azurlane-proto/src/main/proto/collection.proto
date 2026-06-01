@@ -1,0 +1,325 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message ACHIEVEMENT_INFO {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+  optional uint32 timestamp = 3;
+}
+
+message SHIP_STATISTICS_INFO {
+  optional uint32 id = 1;
+  optional uint32 star = 2;
+  optional uint32 heart_flag = 3;
+  optional uint32 heart_count = 4;
+  optional uint32 marry_flag = 5;
+  optional uint32 intimacy_max = 6;
+  optional uint32 lv_max = 7;
+}
+
+message SHIP_STATISTICS_AWARD {
+  optional uint32 id = 1;
+  repeated uint32 award_index = 2 [packed = false];
+}
+
+message DISCUSS_INFO {
+  optional uint32 id = 1;
+  optional uint32 good_count = 2;
+  optional string nick_name = 3;
+  optional string context = 4;
+  optional uint32 bad_count = 5;
+}
+
+message SHIP_DISCUSS_INFO {
+  optional uint32 ship_group_id = 1;
+  optional uint32 discuss_count = 2;
+  optional uint32 heart_count = 3;
+  repeated DISCUSS_INFO discuss_list = 4;
+  optional uint32 daily_discuss_count = 5;
+}
+
+message MULKEYVALUE {
+  optional uint32 key = 1;
+  optional uint32 value1 = 2;
+  optional uint32 value2 = 3;
+  optional uint32 value3 = 4;
+}
+
+message EQCODE_SHARE_INFO {
+  optional uint32 id = 1;
+  optional string eqcode = 2;
+  optional uint32 like = 3;
+  optional uint32 eval_point = 4;
+  optional uint32 state = 5;
+}
+
+message VOTEINFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+message ATTIRE_INFO {
+  optional uint32 id = 1;
+  optional uint32 end_time = 2;
+}
+
+// cmd: 17001 - 收藏数据初始化推送 (SC only, 登录推送)
+message SC_17001 {
+  repeated uint32 finish_list = 1 [packed = false];
+  repeated ACHIEVEMENT_INFO progress_list = 2;
+  repeated SHIP_STATISTICS_INFO ship_info_list = 3;
+  repeated SHIP_STATISTICS_AWARD ship_award_list = 4;
+  optional uint32 daily_discuss = 5;
+  repeated uint32 transform_list = 6 [packed = false];
+}
+
+// cmd: 17002 - 成就进度更新推送 (SC only)
+message SC_17002 {
+  repeated ACHIEVEMENT_INFO progress_list = 1;
+}
+
+// cmd: 17003 - 已完成成就ID列表推送 (SC only)
+message SC_17003 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 17004 - 舰船统计信息更新推送 (SC only)
+message SC_17004 {
+  SHIP_STATISTICS_INFO ship_info = 1;
+}
+
+// cmd: 17005 - 领取成就奖励 (CS)
+message CS_17005 {
+  optional uint32 id = 1;
+  optional uint32 award_index = 2;
+}
+
+// cmd: 17006 - 领取成就奖励响应 (SC)
+message SC_17006 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17101 - 请求舰船评论列表 (CS)
+message CS_17101 {
+  optional uint32 ship_group_id = 1;
+}
+
+// cmd: 17102 - 舰船评论列表响应 (SC)
+message SC_17102 {
+  SHIP_DISCUSS_INFO ship_discuss = 1;
+}
+
+// cmd: 17103 - 发表评论 (CS)
+message CS_17103 {
+  optional uint32 ship_group_id = 1;
+  optional string context = 2;
+}
+
+// cmd: 17104 - 发表评论响应 (SC)
+message SC_17104 {
+  optional uint32 result = 1;
+  optional SHIP_DISCUSS_INFO ship_discuss = 2;
+  optional uint32 need_level = 3;
+}
+
+// cmd: 17105 - 评论点赞/踩 (CS)
+message CS_17105 {
+  optional uint32 ship_group_id = 1;
+  optional uint32 discuss_id = 2;
+  optional uint32 good_or_bad = 3;
+}
+
+// cmd: 17106 - 评论点赞/踩响应 (SC)
+message SC_17106 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17107 - 请求评论列表(另一种) (CS)
+message CS_17107 {
+  optional uint32 ship_group_id = 1;
+}
+
+// cmd: 17108 - 评论列表响应(另一种) (SC)
+message SC_17108 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17109 - 举报评论 (CS)
+message CS_17109 {
+  optional uint32 ship_group_id = 1;
+  optional uint32 discuss_id = 2;
+  optional string reason = 3;
+}
+
+// cmd: 17110 - 举报评论响应 (SC)
+message SC_17110 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17201 - 请求投票信息 (CS)
+message CS_17201 {
+  optional uint32 type = 1;
+}
+
+// cmd: 17202 - 投票信息响应 (SC)
+message SC_17202 {
+  optional uint32 daily_vote = 1;
+  optional uint32 love_vote = 2;
+  repeated uint32 daily_ship_list = 3 [packed = false];
+}
+
+// cmd: 17203 - 投票操作 (CS)
+message CS_17203 {
+  optional uint32 type = 1;
+}
+
+// cmd: 17204 - 投票排行响应 (SC)
+message SC_17204 {
+  repeated MULKEYVALUE list = 1;
+}
+
+// cmd: 17301 - 装扮使用请求 (CS)
+message CS_17301 {
+  optional uint32 id = 1;
+}
+
+// cmd: 17302 - 装扮使用响应 (SC)
+message SC_17302 {
+  optional uint32 result = 1;
+  optional uint32 timestamp = 2;
+  repeated ACHIEVEMENT_INFO next = 3;
+}
+
+// cmd: 17401 - 勋章佩戴 (CS)
+message CS_17401 {
+  repeated uint32 medal_id = 1 [packed = false];
+  optional uint32 fixed_const = 2;
+}
+
+// cmd: 17402 - 勋章佩戴响应 (SC)
+message SC_17402 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17501 - 鉴赏-画廊请求 (CS)
+message CS_17501 {
+  optional uint32 id = 1;
+}
+
+// cmd: 17502 - 画廊响应 (SC)
+message SC_17502 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17503 - 鉴赏-音乐请求 (CS)
+message CS_17503 {
+  optional uint32 id = 1;
+}
+
+// cmd: 17504 - 音乐响应 (SC)
+message SC_17504 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17505 - 画廊收藏操作 (CS)
+message CS_17505 {
+  optional uint32 id = 1;
+  optional uint32 action = 2;
+}
+
+// cmd: 17506 - 画廊收藏响应 (SC)
+message SC_17506 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17507 - 音乐收藏操作 (CS)
+message CS_17507 {
+  optional uint32 id = 1;
+  optional uint32 action = 2;
+}
+
+// cmd: 17508 - 音乐收藏响应 (SC)
+message SC_17508 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17509 - 鉴赏查询请求 (CS)
+message CS_17509 {
+  optional uint32 id = 1;
+}
+
+// cmd: 17510 - 鉴赏查询响应 (SC)
+message SC_17510 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17511 - 鉴赏收藏操作 (CS)
+message CS_17511 {
+  optional uint32 id = 1;
+  optional uint32 action = 2;
+}
+
+// cmd: 17512 - 鉴赏收藏响应 (SC)
+message SC_17512 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17513 - 播放音乐 (CS)
+message CS_17513 {
+  optional uint32 music_no = 1;
+  optional uint32 music_mode = 2;
+}
+
+// cmd: 17514 - 播放音乐响应 (SC)
+message SC_17514 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17601 - 请求分享列表 (CS)
+message CS_17601 {
+  optional uint32 shipgroup = 1;
+}
+
+// cmd: 17602 - 分享列表响应 (SC)
+message SC_17602 {
+  optional uint32 result = 1;
+  repeated EQCODE_SHARE_INFO infos = 2;
+  repeated EQCODE_SHARE_INFO recent_infos = 3;
+}
+
+// cmd: 17603 - 分享编队 (CS)
+message CS_17603 {
+  optional uint32 shipgroup = 1;
+  optional string eqcode = 2;
+}
+
+// cmd: 17604 - 分享编队响应 (SC)
+message SC_17604 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17605 - 点赞分享 (CS)
+message CS_17605 {
+  optional uint32 shipgroup = 1;
+  optional uint32 shareid = 2;
+}
+
+// cmd: 17606 - 点赞分享响应 (SC)
+message SC_17606 {
+  optional uint32 result = 1;
+}
+
+// cmd: 17607 - 举报分享 (CS)
+message CS_17607 {
+  optional uint32 shipgroup = 1;
+  optional uint32 shareid = 2;
+  optional uint32 report_type = 3;
+}
+
+// cmd: 17608 - 举报分享响应 (SC)
+message SC_17608 {
+  optional uint32 result = 1;
+}

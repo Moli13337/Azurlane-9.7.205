@@ -1,0 +1,222 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message EQUIPINFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  optional uint32 is_locked = 3;
+}
+
+message EQUIPSKININFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+// ============================================================
+// cmd: 14001 - 装备数据初始化 (SC only, 登录推送)
+// ============================================================
+
+message SC_14001 {
+  repeated EQUIPINFO equip_list = 1;
+  repeated uint32 ship_id_list = 2 [packed = false];
+  repeated SPWEAPONINFO spweapon_list = 3;
+  optional uint32 spweapon_bag_size = 4;
+}
+
+// ============================================================
+// cmd: 14002 - 装备穿戴请求 (CS)
+// ship_id: 目标舰船ID
+// pos: 装备槽位
+// lv: 装备等级
+// ============================================================
+
+message CS_14002 {
+  optional uint32 ship_id = 1;
+  optional uint32 pos = 2;
+  optional uint32 lv = 3;
+}
+
+// cmd: 14003 - 装备穿戴响应 (SC)
+message SC_14003 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14004 - 装备强化请求 (CS)
+// ============================================================
+
+message CS_14004 {
+  optional uint32 equip_id = 1;
+  optional uint32 lv = 2;
+}
+
+// cmd: 14005 - 装备强化响应 (SC)
+message SC_14005 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14006 - 装备拆解请求 (CS)
+// ============================================================
+
+message CS_14006 {
+  optional uint32 id = 1;
+  optional uint32 num = 2;
+}
+
+// cmd: 14007 - 装备拆解响应 (SC)
+message SC_14007 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// ============================================================
+// cmd: 14008 - 批量装备操作请求 (CS)
+// ============================================================
+
+message CS_14008 {
+  repeated EQUIPINFO equip_list = 1;
+}
+
+// cmd: 14009 - 批量装备操作响应 (SC)
+message SC_14009 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14010 - 装备锁定/解锁请求 (CS)
+// ============================================================
+
+message CS_14010 {
+  optional uint32 equip_id = 1;
+}
+
+// cmd: 14011 - 装备锁定/解锁响应 (SC)
+message SC_14011 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14013 - 舰船装备栏位改造请求 (CS)
+// ============================================================
+
+message CS_14013 {
+  optional uint32 ship_id = 1;
+  optional uint32 pos = 2;
+  optional uint32 upgrade_id = 3;
+}
+
+// cmd: 14014 - 舰船装备栏位改造响应 (SC)
+message SC_14014 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14015 - 装备改造请求 (CS)
+// ============================================================
+
+message CS_14015 {
+  optional uint32 equip_id = 1;
+  optional uint32 upgrade_id = 2;
+}
+
+// cmd: 14016 - 装备改造响应 (SC)
+message SC_14016 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14101 - 装备皮肤数据同步 (SC only, 登录推送)
+// ============================================================
+
+message SC_14101 {
+  repeated EQUIPSKININFO equip_skin_list = 1;
+}
+
+// ============================================================
+// cmd: 14200 - 特殊兵装数据同步 (SC only, 登录推送)
+// ============================================================
+
+message SC_14200 {
+  repeated SPWEAPONINFO spweapon_list = 1;
+}
+
+// ============================================================
+// cmd: 14201 - 特殊兵装穿戴请求 (CS)
+// ============================================================
+
+message CS_14201 {
+  optional uint32 ship_id = 1;
+  optional uint32 spweapon_id = 2;
+}
+
+// cmd: 14202 - 特殊兵装穿戴响应 (SC)
+message SC_14202 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14203 - 特殊兵装强化请求 (CS)
+// ============================================================
+
+message CS_14203 {
+  optional uint32 ship_id = 1;
+  optional uint32 spweapon_id = 2;
+  repeated uint32 item_id_list = 3 [packed = false];
+  repeated uint32 spweapon_id_list = 4 [packed = false];
+}
+
+// cmd: 14204 - 特殊兵装强化响应 (SC)
+message SC_14204 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14205 - 特殊兵装卸下请求 (CS)
+// ============================================================
+
+message CS_14205 {
+  optional uint32 ship_id = 1;
+  optional uint32 spweapon_id = 2;
+}
+
+// cmd: 14206 - 特殊兵装卸下响应 (SC)
+message SC_14206 {
+  optional uint32 result = 1;
+  optional uint32 attr_temp_1 = 2;
+  optional uint32 attr_temp_2 = 3;
+}
+
+// ============================================================
+// cmd: 14207 - 特殊兵装指令操作请求 (CS)
+// ============================================================
+
+message CS_14207 {
+  optional uint32 ship_id = 1;
+  optional uint32 spweapon_id = 2;
+  optional uint32 cmd = 3;
+}
+
+// cmd: 14208 - 特殊兵装指令操作响应 (SC)
+message SC_14208 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 14209 - 特殊兵装合成/制造请求 (CS)
+// ============================================================
+
+message CS_14209 {
+  optional uint32 template_id = 1;
+  repeated uint32 item_id_list = 2 [packed = false];
+  repeated uint32 spweapon_id_list = 3 [packed = false];
+}
+
+// cmd: 14210 - 特殊兵装合成/制造响应 (SC)
+message SC_14210 {
+  optional uint32 result = 1;
+  SPWEAPONINFO spweapon = 2;
+}

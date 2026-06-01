@@ -1,0 +1,140 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+// ===== Shared Types =====
+
+message CHALLENGE_GROUPINFO {
+  optional uint32 id = 1;
+  repeated uint32 ship_list = 2 [packed = false];
+  repeated COMMANDERSINFO commanders = 3;
+}
+
+message CHALLENGEINFO {
+  optional uint32 season_max_score = 1;
+  optional uint32 activity_max_score = 2;
+  optional uint32 season_max_level = 3;
+  optional uint32 activity_max_level = 4;
+  optional uint32 season_id = 5;
+  repeated uint32 dungeon_id_list = 6 [packed = false];
+  repeated uint32 buff_list = 7 [packed = false];
+}
+
+message USERCHALLENGEINFO {
+  optional uint32 current_score = 1;
+  optional uint32 level = 2;
+  repeated GROUPINFOINCHALLENGE groupinc_list = 3;
+  optional uint32 mode = 4;
+  optional uint32 issl = 5;
+  optional uint32 season_id = 6;
+  repeated uint32 dungeon_id_list = 7 [packed = false];
+  repeated uint32 buff_list = 8 [packed = false];
+}
+
+message SHIPINCHALLENGE {
+  optional uint32 id = 1;
+  optional uint32 hp_rant = 2;
+  SHIPINFO ship_info = 3;
+}
+
+message GROUPINFOINCHALLENGE {
+  optional uint32 id = 1;
+  repeated SHIPINCHALLENGE ships = 2;
+  repeated COMMANDERINCHALLENGE commanders = 3;
+}
+
+message COMMANDERINCHALLENGE {
+  optional uint32 pos = 1;
+  COMMANDERINFO commanderinfo = 2;
+}
+
+// ===== CS/SC Messages =====
+
+// cmd: 24002 - 开始挑战 (CS)
+message CS_24002 {
+  optional uint32 activity_id = 1;
+  repeated CHALLENGE_GROUPINFO group_list = 2;
+  optional uint32 mode = 3;
+}
+
+// cmd: 24003 - 开始挑战结果 (SC)
+message SC_24003 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 24004 - 查询挑战信息 (CS)
+// ============================================================
+
+message CS_24004 {
+  optional uint32 activity_id = 1;
+}
+
+// cmd: 24005 - 查询挑战信息结果 (SC)
+message SC_24005 {
+  optional uint32 result = 1;
+  optional CHALLENGEINFO current_challenge = 2;
+  repeated USERCHALLENGEINFO user_challenge = 3;
+}
+
+// ============================================================
+// cmd: 24010 - 挑战分数推送 (SC only, 登录推送)
+// ============================================================
+
+message SC_24010 {
+  optional uint32 score = 1;
+}
+
+// ============================================================
+// cmd: 24011 - 放弃挑战 (CS)
+// ============================================================
+
+message CS_24011 {
+  optional uint32 activity_id = 1;
+  optional uint32 mode = 2;
+}
+
+// cmd: 24012 - 放弃挑战结果 (SC)
+message SC_24012 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 24020 - 挑战结算 (CS)
+// ============================================================
+
+message CS_24020 {
+  optional uint32 type = 1;
+}
+
+// cmd: 24021 - 挑战结算结果 (SC)
+message SC_24021 {
+  optional uint32 result = 1;
+  repeated KVDATA times = 2;
+  repeated KVDATA awards = 3;
+  repeated uint32 pass_ids = 4 [packed = false];
+}
+
+// ============================================================
+// cmd: 24022 - 领取挑战奖励 (CS)
+// ============================================================
+
+message CS_24022 {
+  repeated uint32 challengeids = 1 [packed = false];
+}
+
+// cmd: 24023 - 领取挑战奖励结果 (SC)
+message SC_24023 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 24100 - 挑战分数更新推送 (SC only)
+// ============================================================
+
+message SC_24100 {
+  optional uint32 score = 1;
+}

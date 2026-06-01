@@ -1,0 +1,665 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+import "ship.proto";
+import "login.proto";
+
+message ACTIVITYINFO {
+  optional uint32 id = 1;
+  optional uint32 stop_time = 2;
+  optional uint32 data1 = 3;
+  optional uint32 data2 = 4;
+  optional uint32 data3 = 5;
+  optional uint32 data4 = 6;
+  repeated uint32 data1_list = 7 [packed = false];
+  repeated uint32 data2_list = 8 [packed = false];
+  repeated uint32 data3_list = 9 [packed = false];
+  repeated KVDATA date1_key_value_list = 10;
+  repeated GROUPINFO group_list = 11;
+  reserved 12;
+  repeated COLLECTIONINFO collection_list = 13;
+  repeated TASKINFO task_list = 14;
+  repeated BENEFITBUFF buff_list = 15;
+  optional string str_data1 = 16;
+  repeated uint32 data4_list = 17 [packed = false];
+}
+
+// ============================================================
+// cmd: 11200 - 任务/活动列表推送 (SC only, 登录推送)
+// ============================================================
+
+message SC_11200 {
+  repeated ACTIVITYINFO activity_list = 1;
+  repeated uint32 hx_list = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 11201 - 活动信息更新推送 (SC only)
+// ============================================================
+
+message SC_11201 {
+  ACTIVITYINFO activity_info = 1;
+}
+
+// ============================================================
+// cmd: 11202 - 任务操作请求 (CS)
+// ============================================================
+
+message CS_11202 {
+  optional uint32 activity_id = 1;
+  optional uint32 cmd = 2;
+  optional uint32 arg1 = 3;
+  optional uint32 arg2 = 4;
+  optional uint32 arg3 = 5;
+  repeated uint32 arg_list = 6 [packed = false];
+  repeated uint32 arg_list2 = 7 [packed = false];
+  repeated KVDATA kvargs1 = 8;
+}
+
+// cmd: 11203 - 任务操作响应 (SC)
+message SC_11203 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+  repeated BUILDINFO build = 3;
+  repeated uint32 number = 4 [packed = false];
+  repeated RETURN_USER_INFO return_user_list = 5;
+  repeated COLLECTIONINFO collection_list = 7;
+  repeated TASKINFO task_list = 8;
+}
+
+// ============================================================
+// cmd: 11204 - 任务组请求 (CS)
+// ============================================================
+
+message CS_11204 {
+  optional uint32 activity_id = 1;
+  repeated GROUPINFO group_list = 2;
+}
+
+// cmd: 11205 - 任务组响应 (SC)
+message SC_11205 {
+  optional uint32 activity_id = 1;
+  optional uint32 result = 2;
+}
+
+// ============================================================
+// cmd: 11206 - 活动请求 (CS)
+// ============================================================
+
+message CS_11206 {
+  optional uint32 activity_id = 1;
+}
+
+// cmd: 11207 - 活动响应 (SC)
+message SC_11207 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11208 - 活动请求2 (CS)
+// ============================================================
+
+message CS_11208 {
+  optional uint32 activity_id = 1;
+}
+
+// cmd: 11209 - 活动响应2 (SC)
+message SC_11209 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11210 - 常驻活动推送 (SC only)
+// ============================================================
+
+message SC_11210 {
+  repeated uint32 permanent_activity = 1 [packed = false];
+  optional uint32 permanent_now = 2;
+}
+
+// ============================================================
+// cmd: 11212 - 追踪请求 (CS)
+// ============================================================
+
+message CS_11212 {
+  optional uint32 track_typ = 1;
+  optional uint32 ship_tid = 2;
+  optional uint32 from = 3;
+}
+
+// ============================================================
+// cmd: 11300 - 邮件/通知列表推送 (SC only, 登录推送)
+// ============================================================
+
+message SC_11300 {
+  repeated NOTICEINFO notice_list = 1;
+}
+
+// ============================================================
+// cmd: 11301 - 读取邮件请求 (CS)
+// ============================================================
+
+message CS_11301 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11302 - 读取邮件响应 (SC)
+message SC_11302 {
+  optional uint32 result = 1;
+  optional uint32 id = 2;
+}
+
+// ============================================================
+// cmd: 11303 - 删除邮件请求 (CS)
+// ============================================================
+
+message CS_11303 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11304 - 删除邮件响应 (SC)
+message SC_11304 {
+  optional uint32 result = 1;
+  optional uint32 id = 2;
+}
+
+// ============================================================
+// cmd: 11305 - 领取邮件附件请求 (CS)
+// ============================================================
+
+message CS_11305 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11306 - 领取邮件附件响应 (SC)
+message SC_11306 {
+  optional uint32 result = 1;
+  optional uint32 id = 2;
+  repeated DROPINFO award_list = 3;
+}
+
+// ============================================================
+// cmd: 11307 - 批量删除邮件请求 (CS)
+// ============================================================
+
+message CS_11307 {
+  repeated uint32 id_list = 1 [packed = false];
+}
+
+// cmd: 11308 - 批量删除邮件响应 (SC)
+message SC_11308 {
+  optional uint32 result = 1;
+  repeated uint32 deleted_id_list = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 11401 - 好友列表请求 (CS)
+// ============================================================
+
+message CS_11401 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11402 - 好友列表响应 (SC)
+message SC_11402 {
+  repeated USERSIMPLEINFO friend_list = 1;
+  optional uint32 result = 2;
+}
+
+// ============================================================
+// cmd: 11403 - 添加好友请求 (CS)
+// ============================================================
+
+message CS_11403 {
+  optional uint32 target_id = 1;
+}
+
+// cmd: 11404 - 添加好友响应 (SC)
+message SC_11404 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11405 - 接受好友请求 (CS)
+// ============================================================
+
+message CS_11405 {
+  optional uint32 requester_id = 1;
+}
+
+// cmd: 11406 - 接受好友响应 (SC)
+message SC_11406 {
+  optional uint32 result = 1;
+  USERSIMPLEINFO friend_info = 2;
+}
+
+// ============================================================
+// cmd: 11407 - 拒绝好友请求 (CS)
+// ============================================================
+
+message CS_11407 {
+  optional uint32 requester_id = 1;
+}
+
+// cmd: 11408 - 拒绝好友响应 (SC)
+message SC_11408 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11409 - 删除好友请求 (CS)
+// ============================================================
+
+message CS_11409 {
+  optional uint32 friend_id = 1;
+}
+
+// cmd: 11410 - 删除好友响应 (SC)
+message SC_11410 {
+  optional uint32 result = 1;
+  optional uint32 friend_id = 2;
+}
+
+// ============================================================
+// cmd: 11411 - 搜索好友请求 (CS)
+// ============================================================
+
+message CS_11411 {
+  optional string keyword = 1;
+}
+
+// cmd: 11412 - 搜索好友响应 (SC)
+message SC_11412 {
+  optional uint32 result = 1;
+  repeated USERSIMPLEINFO user_list = 2;
+}
+
+// ============================================================
+// cmd: 11413 - 好友请求列表 (CS)
+// ============================================================
+
+message CS_11413 {
+}
+
+// cmd: 11414 - 好友请求列表响应 (SC)
+message SC_11414 {
+  repeated USERSIMPLEINFO request_list = 1;
+}
+
+// ============================================================
+// cmd: 11601 - 聊天表情请求 (CS)
+// ============================================================
+
+message CS_11601 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11602 - 表情列表 (SC)
+message SC_11602 {
+  repeated uint32 emoji_list = 1 [packed = false];
+}
+
+// ============================================================
+// cmd: 11603 - 聊天状态请求 (CS)
+// ============================================================
+
+message CS_11603 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11604 - 聊天状态响应 (SC)
+message SC_11604 {
+  optional uint32 state = 1;
+  repeated uint32 system_list = 2 [packed = false];
+  optional uint32 fail_count = 3;
+  optional uint32 fail_cd = 4;
+  optional string notice = 5;
+}
+
+// ============================================================
+// cmd: 11605 - 创建聊天室 (CS)
+// ============================================================
+
+message CS_11605 {
+  optional string password = 1;
+  repeated uint32 system_list = 2 [packed = false];
+  optional string notice = 3;
+}
+
+// cmd: 11606 - 创建聊天室响应 (SC)
+message SC_11606 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11607 - 加入聊天室 (CS)
+// ============================================================
+
+message CS_11607 {
+  optional string password = 1;
+  repeated uint32 system_list = 2 [packed = false];
+}
+
+// cmd: 11608 - 加入聊天室响应 (SC)
+message SC_11608 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11609 - 退出聊天室 (CS)
+// ============================================================
+
+message CS_11609 {
+  optional string password = 1;
+}
+
+// cmd: 11610 - 退出聊天室响应 (SC)
+message SC_11610 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11611 - 发送聊天消息请求 (CS)
+// ============================================================
+
+message CS_11611 {
+  optional uint32 channel = 1;
+  optional string content = 2;
+  optional uint32 target_id = 3;
+}
+
+// cmd: 11612 - 发送聊天消息响应 (SC)
+message SC_11612 {
+  optional uint32 result = 1;
+  CHAT_MESSAGE message = 2;
+}
+
+// ============================================================
+// cmd: 11613 - 获取聊天消息请求 (CS)
+// ============================================================
+
+message CS_11613 {
+  optional uint32 channel = 1;
+  optional uint32 count = 2;
+  optional uint32 timestamp = 3;
+}
+
+// cmd: 11614 - 获取聊天消息响应 (SC)
+message SC_11614 {
+  optional uint32 result = 1;
+  repeated CHAT_MESSAGE message_list = 2;
+}
+
+// ============================================================
+// cmd: 11701 - INS/JUUS操作请求 (CS)
+// ============================================================
+
+message CS_11701 {
+  optional uint32 id = 1;
+  optional uint32 cmd = 2;
+}
+
+// cmd: 11702 - INS/JUUS操作响应 (SC)
+message SC_11702 {
+  optional uint32 result = 1;
+  repeated uint32 data = 2 [packed = false];
+}
+
+// ============================================================
+// cmd: 11703 - INS消息请求 (CS)
+// ============================================================
+
+message CS_11703 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11704 - INS消息响应 (SC)
+message SC_11704 {
+  optional uint32 result = 1;
+  INS_MESSAGE message = 2;
+}
+
+// ============================================================
+// cmd: 11705 - INS操作请求2 (CS)
+// ============================================================
+
+message CS_11705 {
+  optional uint32 id = 1;
+  optional uint32 cmd = 2;
+}
+
+// cmd: 11706 - INS操作响应2 (SC)
+message SC_11706 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11710 - JUUS操作请求 (CS)
+// ============================================================
+
+message CS_11710 {
+  optional uint32 id = 1;
+  optional uint32 cmd = 2;
+}
+
+// cmd: 11711 - JUUS操作响应 (SC)
+message SC_11711 {
+  optional uint32 result = 1;
+  JUUS_GROUP group = 2;
+}
+
+// ============================================================
+// cmd: 11712 - JUUS聊天请求 (CS)
+// ============================================================
+
+message CS_11712 {
+  optional uint32 id = 1;
+  optional uint32 chat_id = 2;
+}
+
+// cmd: 11713 - JUUS聊天响应 (SC)
+message SC_11713 {
+  optional uint32 result = 1;
+  JUUS_CHAT_GROUP chat = 2;
+}
+
+// ============================================================
+// cmd: 11714 - JUUS点赞请求 (CS)
+// ============================================================
+
+message CS_11714 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11715 - JUUS点赞响应 (SC)
+message SC_11715 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11716 - JUUS评论请求 (CS)
+// ============================================================
+
+message CS_11716 {
+  optional uint32 id = 1;
+  optional string text = 2;
+}
+
+// cmd: 11717 - JUUS评论响应 (SC)
+message SC_11717 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11718 - JUUS分享请求 (CS)
+// ============================================================
+
+message CS_11718 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11719 - JUUS分享响应 (SC)
+message SC_11719 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11720 - JUUS删除请求 (CS)
+// ============================================================
+
+message CS_11720 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11721 - JUUS删除响应 (SC)
+message SC_11721 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11722 - JUUS解锁请求 (CS)
+// ============================================================
+
+message CS_11722 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11723 - JUUS解锁响应 (SC)
+message SC_11723 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 11751 - 回流玩家请求 (CS)
+// ============================================================
+
+message CS_11751 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11752 - 回流玩家推送 (SC)
+message SC_11752 {
+  optional uint32 active = 1;
+  optional uint32 return_lv = 2;
+  optional uint32 return_time = 3;
+  optional uint32 ship_number = 4;
+  optional uint32 last_offline_time = 5;
+  optional uint32 pt = 6;
+  optional uint32 sign_cnt = 7;
+  optional uint32 sign_last_time = 8;
+  optional uint32 pt_stage = 9;
+}
+
+// ============================================================
+// cmd: 11753 - 回流签到请求 (CS)
+// ============================================================
+
+message CS_11753 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11754 - 回流签到响应 (SC)
+message SC_11754 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// ============================================================
+// cmd: 11755 - 回流任务请求 (CS)
+// ============================================================
+
+message CS_11755 {
+  optional uint32 type = 1;
+}
+
+// cmd: 11756 - 回流任务响应 (SC)
+message SC_11756 {
+  optional uint32 result = 1;
+  repeated DROPINFO award_list = 2;
+}
+
+// ============================================================
+// cmd: 11800 - JUUS数据请求 (CS)
+// ============================================================
+
+message CS_11800 {
+  optional uint32 id = 1;
+}
+
+// cmd: 11801 - JUUS舰船计数推送 (SC only)
+message SC_11801 {
+  optional uint32 ship_count = 1;
+}
+
+// cmd: 11802 - JUUS数据推送 (SC only)
+message SC_11802 {
+  optional uint32 id = 1;
+  optional uint32 value = 2;
+}
+
+// ============================================================
+// Shared message types for social systems
+// ============================================================
+
+message RETURN_USER_INFO {
+  optional uint32 id = 1;
+  optional uint32 level = 2;
+  optional string name = 3;
+  DISPLAYINFO display = 4;
+}
+
+message JUUS_GROUP {
+  optional uint32 id = 1;
+  optional uint32 ship_id = 2;
+  repeated JUUS_CHAT_GROUP chat_list = 3;
+}
+
+message JUUS_CHAT_GROUP {
+  optional uint32 id = 1;
+  repeated JUUS_CHAT_ITEM chat_list = 2;
+}
+
+message JUUS_CHAT_ITEM {
+  optional uint32 id = 1;
+  optional string text = 2;
+  optional uint32 like_count = 3;
+  optional uint32 is_liked = 4;
+}
+
+message INS_MESSAGE {
+  optional uint32 id = 1;
+  optional uint32 npc_id = 2;
+  optional string text = 3;
+  optional uint32 timestamp = 4;
+  repeated INS_REPLY reply_list = 5;
+}
+
+message INS_REPLY {
+  optional uint32 id = 1;
+  optional string text = 2;
+  optional uint32 like_count = 3;
+}
+
+message INS_NPC {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 icon = 3;
+  repeated INS_MESSAGE message_list = 4;
+}
+
+message INS_PLAYER {
+  optional uint32 id = 1;
+  repeated INS_NPC npc_list = 2;
+}
+
+message CHAT_MESSAGE {
+  optional uint32 id = 1;
+  optional uint32 sender_id = 2;
+  optional string sender_name = 3;
+  optional uint32 channel = 4;
+  optional string content = 5;
+  optional uint32 timestamp = 6;
+  DISPLAYINFO display = 7;
+}

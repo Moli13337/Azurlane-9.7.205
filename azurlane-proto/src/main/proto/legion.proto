@@ -1,0 +1,410 @@
+syntax = "proto3";
+package com.azurlane.proto;
+import "common.proto";
+
+// ============================================================
+// 数据结构定义（legion独有）
+// ============================================================
+
+message LEGION_PLAYER_INFO {
+  optional uint32 id = 1;
+  optional string name = 2;
+  optional uint32 lv = 3;
+  optional DISPLAYINFO display = 4;
+}
+
+message LEGION_MSG_INFO {
+  optional uint32 timestamp = 1;
+  optional LEGION_PLAYER_INFO player = 2;
+  optional string content = 3;
+}
+
+message GUILD_BASE_INFO {
+  optional uint32 id = 1;
+  optional uint32 policy = 2;
+  optional uint32 faction = 3;
+  optional string name = 4;
+  optional uint32 level = 5;
+  optional string announce = 6;
+  optional string manifesto = 7;
+  optional uint32 exp = 8;
+  optional uint32 member_count = 9;
+  optional uint32 change_faction_cd = 10;
+  optional uint32 kick_leader_cd = 11;
+}
+
+message WEEKLY_TASK {
+  optional uint32 id = 1;
+  optional uint32 progress = 2;
+  optional uint32 monday_0clock = 3;
+}
+
+message GUILD_TECHNOLOGY {
+  optional uint32 id = 1;
+  optional uint32 state = 2;
+  optional uint32 progress = 3;
+}
+
+message GUILD_EXPANSION_INFO {
+  optional uint32 capital = 1;
+  optional WEEKLY_TASK this_weekly_tasks = 2;
+  optional uint32 benefit_finish_time = 3;
+  repeated GUILD_TECHNOLOGY technologys = 4;
+  optional uint32 retreat_cnt = 5;
+  optional uint32 tech_cancel_cnt = 6;
+  optional uint32 last_benefit_finish_time = 7;
+  optional uint32 active_event_cnt = 8;
+}
+
+message MEMBER_INFO {
+  optional uint32 liveness = 1;
+  optional uint32 duty = 2;
+  optional uint32 id = 3;
+  optional string name = 4;
+  optional uint32 lv = 5;
+  optional string adv = 6;
+  optional uint32 online = 7;
+  optional uint32 pre_online_time = 8;
+  optional DISPLAYINFO display = 9;
+  optional uint32 join_time = 12;
+}
+
+message LOG_INFO {
+  optional uint32 cmd = 1;
+  optional uint32 time = 2;
+  optional uint32 user_id = 3;
+  optional string name = 4;
+  optional uint32 arg1 = 5;
+}
+
+message GUILD_INFO {
+  optional GUILD_BASE_INFO base = 1;
+  repeated MEMBER_INFO member = 2;
+  repeated LOG_INFO log = 3;
+  optional GUILD_EXPANSION_INFO guild_ex = 4;
+}
+
+message GUILD_SIMPLE_INFO {
+  optional GUILD_BASE_INFO base = 1;
+  optional LEGION_PLAYER_INFO leader = 2;
+  optional uint32 tech_seat = 3;
+}
+
+message USER_GUILD_INFO {
+  optional uint32 donate_count = 1;
+  repeated uint32 donate_tasks = 2 [packed = false];
+  optional uint32 benefit_time = 3;
+  repeated uint32 tech_id = 4 [packed = false];
+  optional uint32 weekly_task_flag = 5;
+  optional uint32 extra_donate = 6;
+  optional uint32 extra_operation = 7;
+}
+
+message LEGION_GUIDE_CHAT {
+  optional LEGION_PLAYER_INFO player = 1;
+  optional string content = 2;
+  optional uint32 time = 3;
+}
+
+message SHOP_INFO {
+  optional uint32 refresh_count = 1;
+  optional uint32 next_refresh_time = 2;
+  repeated LEGION_GOODS_INFO good_list = 3;
+}
+
+message LEGION_GOODS_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+  optional uint32 index = 3;
+}
+
+message GUILD_SHOP_INFO {
+  optional uint32 id = 1;
+  optional uint32 count = 2;
+}
+
+// ============================================================
+// cmd: 60000 - 大舰队登录推送 (SC)
+// ============================================================
+
+message SC_60000 {
+  optional GUILD_INFO guild = 1;
+}
+
+// ============================================================
+// cmd: 60001 - 创建大舰队 (CS)
+// ============================================================
+
+message CS_60001 {
+  optional uint32 faction = 1;
+  optional uint32 policy = 2;
+  optional string name = 3;
+  optional string manifesto = 4;
+}
+
+// cmd: 60002 - 创建大舰队响应 (SC)
+message SC_60002 {
+  optional uint32 result = 1;
+  optional uint32 id = 2;
+}
+
+// ============================================================
+// cmd: 60003 - 获取加入申请列表 (CS)
+// ============================================================
+
+message CS_60003 {
+  optional uint32 id = 1;
+}
+
+// cmd: 60004 - 加入申请列表响应 (SC)
+message SC_60004 {
+  repeated LEGION_MSG_INFO request_list = 2;
+}
+
+// ============================================================
+// cmd: 60005 - 发送加入申请 (CS)
+// ============================================================
+
+message CS_60005 {
+  optional uint32 id = 1;
+  optional string content = 2;
+}
+
+// cmd: 60006 - 发送加入申请响应 (SC)
+message SC_60006 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60007 - 发送大舰队聊天 (CS)
+// ============================================================
+
+message CS_60007 {
+  optional string chat = 1;
+}
+
+// cmd: 60008 - 大舰队聊天响应 (SC)
+message SC_60008 {
+  optional LEGION_GUIDE_CHAT chat = 1;
+}
+
+// cmd: 60009 - 大舰队申请数量推送 (SC)
+message SC_60009 {
+  optional uint32 count = 1;
+}
+
+// ============================================================
+// cmd: 60010 - 接受加入申请 (CS)
+// ============================================================
+
+message CS_60010 {
+  optional uint32 id = 1;
+}
+
+// cmd: 60011 - 接受加入申请响应 (SC)
+message SC_60011 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60012 - 设置成员职位 (CS)
+// ============================================================
+
+message CS_60012 {
+  optional uint32 player_id = 1;
+  optional uint32 duty_id = 2;
+}
+
+// cmd: 60013 - 设置成员职位响应 (SC)
+message SC_60013 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60014 - 踢出成员 (CS)
+// ============================================================
+
+message CS_60014 {
+  optional uint32 player_id = 1;
+}
+
+// cmd: 60015 - 踢出成员响应 (SC)
+message SC_60015 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60016 - 转让队长 (CS)
+// ============================================================
+
+message CS_60016 {
+  optional uint32 player_id = 1;
+}
+
+// cmd: 60017 - 转让队长响应 (SC)
+message SC_60017 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60018 - 退出大舰队 (CS)
+// ============================================================
+
+message CS_60018 {
+  optional uint32 id = 1;
+}
+
+// cmd: 60019 - 退出大舰队响应 (SC)
+message SC_60019 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60020 - 取消加入申请 (CS)
+// ============================================================
+
+message CS_60020 {
+  optional uint32 player_id = 1;
+}
+
+// cmd: 60021 - 取消加入申请响应 (SC)
+message SC_60021 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60022 - 拒绝加入申请 (CS)
+// ============================================================
+
+message CS_60022 {
+  optional uint32 player_id = 1;
+}
+
+// cmd: 60023 - 拒绝加入申请响应 (SC)
+message SC_60023 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60024 - 获取大舰队列表 (CS)
+// ============================================================
+
+message CS_60024 {
+  optional uint32 type = 1;
+}
+
+// cmd: 60025 - 大舰队列表响应 (SC)
+message SC_60025 {
+  repeated GUILD_SIMPLE_INFO guild_list = 1;
+}
+
+// ============================================================
+// cmd: 60026 - 设置大舰队信息 (CS)
+// ============================================================
+
+message CS_60026 {
+  optional uint32 type = 1;
+  optional uint32 int = 2;
+  optional string str = 3;
+}
+
+// cmd: 60027 - 设置大舰队信息响应 (SC)
+message SC_60027 {
+  optional uint32 result = 1;
+}
+
+// ============================================================
+// cmd: 60028 - 搜索大舰队 (CS)
+// ============================================================
+
+message CS_60028 {
+  optional uint32 type = 1;
+  optional string keyword = 2;
+}
+
+// cmd: 60029 - 搜索大舰队响应 (SC)
+message SC_60029 {
+  optional uint32 result = 1;
+  repeated GUILD_SIMPLE_INFO guild = 2;
+}
+
+// cmd: 60030 - 大舰队基础信息更新推送 (SC)
+message SC_60030 {
+  optional GUILD_BASE_INFO guild = 1;
+}
+
+// cmd: 60031 - 大舰队成员/日志更新推送 (SC)
+message SC_60031 {
+  repeated MEMBER_INFO member_list = 1;
+  repeated LOG_INFO log_list = 2;
+}
+
+// cmd: 60032 - 大舰队等级/经验更新推送 (SC)
+message SC_60032 {
+  optional uint32 lv = 1;
+  optional uint32 exp = 2;
+}
+
+// ============================================================
+// cmd: 60033 - 获取大舰队商店 (CS)
+// ============================================================
+
+message CS_60033 {
+  optional uint32 type = 1;
+}
+
+// cmd: 60034 - 大舰队商店响应 (SC)
+message SC_60034 {
+  optional uint32 result = 1;
+  optional SHOP_INFO info = 2;
+}
+
+// ============================================================
+// cmd: 60035 - 购买大舰队商店物品 (CS)
+// ============================================================
+
+message CS_60035 {
+  optional uint32 goodsid = 1;
+  optional uint32 index = 2;
+  repeated GUILD_SHOP_INFO selected = 3;
+}
+
+// cmd: 60036 - 购买商店物品响应 (SC)
+message SC_60036 {
+  optional uint32 result = 1;
+  repeated DROPINFO drop_list = 2;
+}
+
+// ============================================================
+// cmd: 60037 - 大舰队捐献 (CS)
+// ============================================================
+
+message CS_60037 {
+  optional uint32 type = 1;
+}
+
+// ============================================================
+// cmd: 60100 - 获取聊天历史 (CS)
+// ============================================================
+
+message CS_60100 {
+  optional uint32 count = 1;
+}
+
+// cmd: 60101 - 聊天历史响应 (SC)
+message SC_60101 {
+  repeated LEGION_GUIDE_CHAT chat_list = 1;
+}
+
+// ============================================================
+// cmd: 60102 - 获取玩家大舰队信息 (CS)
+// ============================================================
+
+message CS_60102 {
+  optional uint32 type = 1;
+}
+
+// cmd: 60103 - 玩家大舰队信息响应 (SC)
+message SC_60103 {
+  optional USER_GUILD_INFO user_info = 1;
+}

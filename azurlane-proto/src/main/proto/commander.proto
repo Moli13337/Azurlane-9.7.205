@@ -1,0 +1,216 @@
+syntax = "proto3";
+
+package com.azurlane.proto;
+
+import "common.proto";
+
+message COMMANDERBOXINFO {
+  optional uint32 id = 1;
+  optional uint32 poolId = 2;
+  optional uint32 finish_time = 3;
+  optional uint32 begin_time = 4;
+}
+
+message PRESETFLEET {
+  optional uint32 id = 1;
+  repeated COMMANDERSINFO commandersid = 2;
+  optional string name = 3;
+}
+
+message COMMANDERHOMESLOT {
+  optional uint32 id = 1;
+  optional uint32 op_flag = 2;
+  optional uint32 exp_time = 3;
+  optional uint32 commander_id = 4;
+  optional uint32 style = 5;
+  optional uint32 commander_level = 6;
+  optional uint32 commander_exp = 7;
+  optional uint32 cache_exp = 8;
+}
+
+message SC_25001 {
+  repeated COMMANDERINFO commanders = 1;
+  repeated COMMANDERBOXINFO box = 2;
+  optional uint32 usage_count = 3;
+  repeated PRESETFLEET presets = 4;
+}
+
+message CS_25002 {
+  optional uint32 boxid = 1;
+}
+
+message SC_25003 {
+  optional uint32 result = 1;
+  COMMANDERBOXINFO box = 2;
+}
+
+message CS_25004 {
+  optional uint32 boxid = 1;
+}
+
+message SC_25005 {
+  optional uint32 result = 1;
+  COMMANDERINFO commander = 2;
+  optional uint32 finish_time = 3;
+}
+
+message CS_25006 {
+  optional uint32 groupid = 1;
+  optional uint32 pos = 2;
+  optional uint32 commanderid = 3;
+}
+
+message SC_25007 {
+  optional uint32 result = 1;
+}
+
+message CS_25008 {
+  optional uint32 targetid = 1;
+  repeated uint32 materialid = 2 [packed = false];
+}
+
+message SC_25009 {
+  optional uint32 result = 1;
+}
+
+message CS_25010 {
+  optional uint32 commanderid = 1;
+}
+
+message SC_25011 {
+  optional uint32 result = 1;
+  repeated uint32 abilityid = 2 [packed = false];
+}
+
+message CS_25012 {
+  optional uint32 commanderid = 1;
+  optional uint32 targetid = 2;
+  optional uint32 replaceid = 3;
+}
+
+message SC_25013 {
+  optional uint32 result = 1;
+}
+
+message CS_25014 {
+  optional uint32 commanderid = 1;
+}
+
+message SC_25015 {
+  optional uint32 result = 1;
+}
+
+message CS_25016 {
+  optional uint32 commanderid = 1;
+  optional uint32 flag = 2;
+}
+
+message SC_25017 {
+  optional uint32 result = 1;
+}
+
+message CS_25018 {
+  optional uint32 type = 1;
+}
+
+message SC_25019 {
+  optional uint32 result = 1;
+  repeated DROPINFO awards = 2;
+}
+
+message CS_25020 {
+  optional string name = 1;
+  optional uint32 commanderid = 2;
+}
+
+message SC_25021 {
+  optional uint32 result = 1;
+}
+
+message CS_25022 {
+  optional uint32 id = 1;
+  repeated COMMANDERSINFO commandersid = 2;
+}
+
+message SC_25023 {
+  optional uint32 result = 1;
+}
+
+message CS_25024 {
+  optional uint32 id = 1;
+  optional string name = 2;
+}
+
+message SC_25025 {
+  optional uint32 result = 1;
+}
+
+message SC_25039 {
+  repeated COMMANDERINFO commander_list = 1;
+}
+
+message CS_25026 {
+  optional uint32 type = 1;
+}
+
+message SC_25027 {
+  optional uint32 level = 1;
+  optional uint32 exp = 2;
+  repeated COMMANDERHOMESLOT slots = 3;
+  optional uint32 clean = 4;
+}
+
+message CS_25028 {
+  optional uint32 type = 1;
+}
+
+message SC_25029 {
+  optional uint32 result = 1;
+  optional uint32 level = 2;
+  optional uint32 exp = 3;
+  repeated DROPINFO awards = 4;
+  optional uint32 op_time = 5;
+}
+
+message CS_25030 {
+  optional uint32 slotidx = 1;
+  optional uint32 commander_id = 2;
+}
+
+message SC_25031 {
+  optional uint32 result = 1;
+  optional uint32 time = 2;
+  optional uint32 commander_level = 3;
+  optional uint32 commander_exp = 4;
+}
+
+message CS_25032 {
+  optional uint32 slotidx = 1;
+  optional uint32 styleidx = 2;
+}
+
+message SC_25033 {
+  optional uint32 result = 1;
+}
+
+message CS_25034 {
+  optional uint32 type = 1;
+}
+
+message SC_25035 {
+  repeated COMMANDERBOXINFO box_list = 1;
+}
+
+message CS_25036 {
+  optional uint32 is_open = 1;
+}
+
+message CS_25037 {
+  optional uint32 item_cnt = 1;
+  optional uint32 finish_cnt = 2;
+  optional uint32 affect_cnt = 3;
+}
+
+message SC_25038 {
+  optional uint32 result = 1;
+}

@@ -1,0 +1,349 @@
+syntax = "proto3";
+package com.azurlane.proto;
+
+import "common.proto";
+
+message TECHNOLOGYINFO {
+  optional uint32 id = 1;
+  optional uint32 time = 2;
+}
+
+message TECHNOLOGYREFRESH {
+  optional uint32 id = 1;
+  optional uint32 target = 2;
+  repeated TECHNOLOGYINFO technologys = 3;
+}
+
+message TECHNOLOGYDROP {
+  repeated DROPINFO common_list = 1;
+  repeated DROPINFO drop_list = 2;
+  repeated DROPINFO catchup_list = 3;
+  repeated DROPINFO catchupact_list = 4;
+}
+
+message DR_NUMBER {
+  optional uint32 id = 1;
+  optional uint32 number = 2;
+}
+
+message TECHPURSUING {
+  optional uint32 version = 1;
+  optional uint32 number = 2;
+  repeated DR_NUMBER dr_numbers = 3;
+}
+
+message TECHNOLOGYCATCHUP {
+  optional uint32 version = 1;
+  optional uint32 target = 2;
+  repeated TECHPURSUING pursuings = 3;
+}
+
+message BLUPRINTINFO {
+  optional uint32 id = 1;
+  optional uint32 ship_id = 2;
+  optional uint32 start_time = 3;
+  optional uint32 blue_print_level = 4;
+  optional uint32 exp = 5;
+  optional uint32 start_duration = 6;
+}
+
+message METACHARINFO {
+  optional uint32 id = 1;
+  optional uint32 syn_rate = 2;
+}
+
+message FINISH_TASK {
+  optional uint32 skill_id = 1;
+  optional uint32 task_id = 2;
+  optional uint32 finish_cnt = 3;
+}
+
+message SKILL_EXP {
+  optional uint32 skill_id = 1;
+  optional uint32 exp = 2;
+}
+
+message SKILL_INFO {
+  optional uint32 ship_id = 1;
+  optional uint32 skill_id = 2;
+  optional uint32 skill_level = 3;
+  optional uint32 skill_exp = 4;
+  optional uint32 day_exp = 5;
+  optional uint32 add_exp = 6;
+}
+
+message META_SKILL_SIMPLE_INFO {
+  optional uint32 ship_id = 1;
+  optional uint32 exp = 2;
+  optional uint32 skill_id = 3;
+  repeated SKILL_EXP skill_exp = 4;
+}
+
+message SC_63000 {
+  repeated TECHNOLOGYREFRESH refresh_list = 1;
+  optional uint32 refresh_flag = 2;
+  optional TECHNOLOGYCATCHUP catchup = 3;
+  repeated TECHNOLOGYINFO queue = 4;
+}
+
+message CS_63001 {
+  optional uint32 tech_id = 1;
+  optional uint32 refresh_id = 2;
+}
+
+message SC_63002 {
+  optional uint32 result = 1;
+  optional uint32 time = 2;
+}
+
+message CS_63003 {
+  optional uint32 tech_id = 1;
+  optional uint32 refresh_id = 2;
+}
+
+message SC_63004 {
+  optional uint32 result = 1;
+  repeated DROPINFO common_list = 2;
+  repeated TECHNOLOGYREFRESH refresh_list = 3;
+  repeated DROPINFO drop_list = 4;
+  repeated DROPINFO catchup_list = 5;
+  repeated DROPINFO catchupact_list = 6;
+}
+
+message CS_63005 {
+  optional uint32 tech_id = 1;
+  optional uint32 refresh_id = 2;
+}
+
+message SC_63006 {
+  optional uint32 result = 1;
+}
+
+message CS_63007 {
+  optional uint32 type = 1;
+}
+
+message SC_63008 {
+  optional uint32 result = 1;
+  repeated TECHNOLOGYREFRESH refresh_list = 2;
+}
+
+message CS_63009 {
+  optional uint32 id = 1;
+  optional uint32 target = 2;
+}
+
+message SC_63010 {
+  optional uint32 result = 1;
+}
+
+message CS_63011 {
+  optional uint32 version = 1;
+  optional uint32 target = 2;
+}
+
+message SC_63012 {
+  optional uint32 result = 1;
+}
+
+message CS_63013 {
+  optional uint32 tech_id = 1;
+  optional uint32 refresh_id = 2;
+}
+
+message SC_63014 {
+  optional uint32 result = 1;
+  repeated TECHNOLOGYREFRESH refresh_list = 2;
+}
+
+message CS_63015 {
+  optional uint32 id = 1;
+}
+
+message SC_63016 {
+  optional uint32 result = 1;
+  optional TECHNOLOGYDROP drops = 2;
+}
+
+message SC_63100 {
+  repeated BLUPRINTINFO blueprint_list = 1;
+  optional uint32 cold_time = 2;
+  optional uint32 daily_catchup_strengthen = 3;
+  optional uint32 daily_catchup_strengthen_ur = 4;
+}
+
+message CS_63200 {
+  optional uint32 blueprint_id = 1;
+}
+
+message SC_63201 {
+  optional uint32 result = 1;
+  optional uint32 time = 2;
+}
+
+message CS_63202 {
+  optional uint32 blueprint_id = 1;
+}
+
+message SC_63203 {
+  optional uint32 result = 1;
+  optional SHIPINFO ship = 2;
+}
+
+message CS_63204 {
+  optional uint32 ship_id = 1;
+  optional uint32 count = 2;
+}
+
+message SC_63205 {
+  optional uint32 result = 1;
+}
+
+message CS_63206 {
+  optional uint32 blueprint_id = 1;
+}
+
+message SC_63207 {
+  optional uint32 result = 1;
+}
+
+message CS_63208 {
+  optional uint32 blueprint_id = 1;
+}
+
+message SC_63209 {
+  optional uint32 result = 1;
+}
+
+message CS_63210 {
+  optional uint32 blueprintid = 1;
+  optional uint32 itemid = 2;
+  optional uint32 number = 3;
+  optional uint32 task_id = 4;
+}
+
+message SC_63211 {
+  optional uint32 result = 1;
+}
+
+message CS_63212 {
+  optional uint32 ship_id = 1;
+  optional uint32 count = 2;
+}
+
+message SC_63213 {
+  optional uint32 result = 1;
+}
+
+message CS_63214 {
+  optional uint32 group = 1;
+  optional uint32 itemid = 2;
+}
+
+message SC_63215 {
+  optional uint32 result = 1;
+  optional SHIPINFO ship = 2;
+}
+
+message SC_63300 {
+  repeated METACHARINFO meta_char_list = 1;
+}
+
+message CS_63301 {
+  optional uint32 ship_id = 1;
+  optional uint32 repair_id = 2;
+}
+
+message SC_63302 {
+  optional uint32 result = 1;
+}
+
+message CS_63303 {
+  optional uint32 ship_id = 1;
+}
+
+message SC_63304 {
+  optional uint32 result = 1;
+}
+
+message CS_63305 {
+  optional uint32 meta_id = 1;
+}
+
+message SC_63306 {
+  optional uint32 result = 1;
+  optional SHIPINFO ship = 2;
+}
+
+message CS_63307 {
+  optional uint32 ship_id = 1;
+  optional uint32 skill_id = 2;
+}
+
+message SC_63308 {
+  optional uint32 result = 1;
+  optional uint32 switch_cnt = 2;
+}
+
+message CS_63309 {
+  optional uint32 ship_id = 1;
+  optional uint32 skill_id = 2;
+}
+
+message SC_63310 {
+  optional uint32 result = 1;
+  optional uint32 switch_cnt = 2;
+}
+
+message CS_63311 {
+  optional uint32 ship_id = 1;
+  optional uint32 skill_id = 2;
+  optional uint32 index = 3;
+}
+
+message SC_63312 {
+  optional uint32 result = 1;
+}
+
+message CS_63313 {
+  optional uint32 ship_id = 1;
+}
+
+message SC_63314 {
+  optional uint32 ship_id = 1;
+  optional uint32 double_exp = 2;
+  optional uint32 exp = 3;
+  optional uint32 skill_id = 4;
+  repeated FINISH_TASK tasks = 5;
+  optional uint32 switch_cnt = 6;
+  repeated SKILL_EXP skill_exp = 7;
+}
+
+message SC_63315 {
+  optional uint32 type = 1;
+  repeated uint32 arg1 = 2 [packed = false];
+}
+
+message SC_63316 {
+  repeated SKILL_INFO skill_info_list = 1;
+}
+
+message CS_63317 {
+  repeated uint32 ship_id_list = 1 [packed = false];
+}
+
+message SC_63318 {
+  repeated META_SKILL_SIMPLE_INFO info_list = 1;
+}
+
+message CS_63319 {
+  optional uint32 ship_id = 1;
+  optional uint32 skill_id = 2;
+  repeated ITEM_INFO books = 3;
+}
+
+message SC_63320 {
+  optional uint32 ret = 1;
+  optional uint32 level = 2;
+  optional uint32 exp = 3;
+}
