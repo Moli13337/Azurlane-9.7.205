@@ -36,7 +36,8 @@ data class AlsDatabaseSection(
 )
 
 data class AlsDataSection(
-    val region: String = "CN"
+    val region: String = "CN",
+    val resourceRepoUrl: String = "https://github.com/AzurLaneTools/AzurLaneData"
 )
 
 data class AlsAdminSection(

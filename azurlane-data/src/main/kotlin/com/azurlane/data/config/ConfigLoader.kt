@@ -104,4 +104,30 @@ object ConfigLoader {
         log.warn { "$name: file not found or empty in ${paths.joinToString()}" }
         return emptyMap()
     }
+
+    fun loadGenericConfigWithFallback(name: String, fallbackName: String, vararg paths: String): Map<String, JsonObject> {
+        for (basePath in paths) {
+            val file = File("$basePath/$name.json")
+            if (!file.exists()) continue
+            val content = file.readText()
+            if (content.trim() == "[]" || content.trim() == "{}") continue
+            val data = loadJsonFileToMap(file.absolutePath)
+            ConfigRegistry.register(name, data)
+            log.info { "$name: loaded ${data.size} entries" }
+            return data
+        }
+        log.info { "$name: not found, falling back to $fallbackName" }
+        for (basePath in paths) {
+            val file = File("$basePath/$fallbackName.json")
+            if (!file.exists()) continue
+            val content = file.readText()
+            if (content.trim() == "[]" || content.trim() == "{}") continue
+            val data = loadJsonFileToMap(file.absolutePath)
+            ConfigRegistry.register(name, data)
+            log.info { "$name: loaded ${data.size} entries (from $fallbackName)" }
+            return data
+        }
+        log.warn { "$name and fallback $fallbackName: file not found or empty in ${paths.joinToString()}" }
+        return emptyMap()
+    }
 }
