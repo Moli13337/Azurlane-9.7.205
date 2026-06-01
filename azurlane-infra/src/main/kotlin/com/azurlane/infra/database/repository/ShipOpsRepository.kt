@@ -34,8 +34,7 @@ data class BuildRow(
     val poolId: Int,
     val finishesAt: Long,
     val isFinished: Int,
-    val isConsumed: Int,
-    val createdAt: Long
+    val isConsumed: Int
 )
 
 object BuildRepository {
@@ -62,14 +61,12 @@ object BuildRepository {
     }
 
     fun create(commanderId: Int, pos: Int, shipId: Int, poolId: Int, finishesAt: Long): Int = transaction {
-        val now = System.currentTimeMillis()
         Builds.insert {
             it[builderId] = commanderId
             it[Builds.pos] = pos
             it[Builds.shipId] = shipId
             it[Builds.poolId] = poolId
             it[Builds.finishesAt] = finishesAt
-            it[Builds.createdAt] = now
         } get Builds.id
     }
 
@@ -123,8 +120,7 @@ object BuildRepository {
         poolId = this[Builds.poolId],
         finishesAt = this[Builds.finishesAt],
         isFinished = this[Builds.isFinished],
-        isConsumed = this[Builds.isConsumed],
-        createdAt = this[Builds.createdAt]
+        isConsumed = this[Builds.isConsumed]
     )
 }
 
@@ -308,20 +304,6 @@ object ShipOpsRepository {
             (OwnedShips.ownerId eq commanderId) and (OwnedShips.id eq shipId)
         }) {
             it[OwnedShips.skinId] = skinId
-        } > 0
-    }
-
-    fun updateEnergyAndIntimacy(commanderId: Int, shipId: Int, energyDelta: Int, intimacyDelta: Int): Boolean = transaction {
-        val ship = OwnedShips.selectAll().where {
-            (OwnedShips.ownerId eq commanderId) and (OwnedShips.id eq shipId)
-        }.singleOrNull() ?: return@transaction false
-        val newEnergy = (ship[OwnedShips.energy] + energyDelta).coerceAtLeast(0)
-        val newIntimacy = ship[OwnedShips.intimacy] + intimacyDelta
-        OwnedShips.update({
-            (OwnedShips.ownerId eq commanderId) and (OwnedShips.id eq shipId)
-        }) {
-            it[OwnedShips.energy] = newEnergy
-            it[OwnedShips.intimacy] = newIntimacy
         } > 0
     }
 

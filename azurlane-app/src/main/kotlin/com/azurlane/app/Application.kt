@@ -20,7 +20,6 @@ import com.azurlane.sdk.SdkServer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.slf4j.LoggerFactory
-import java.io.File
 import java.net.Inet4Address
 import java.net.NetworkInterface
 import kotlin.system.exitProcess
@@ -126,10 +125,6 @@ suspend fun main(args: Array<String>) {
     logger.info { "database initialized" }
 
     withContext(Dispatchers.IO) {
-        ensureResourcesDirectory(AlsConfigLoader.getBaseDirectory(), config.data.resourceRepoUrl, config.data.region)
-    }
-
-    withContext(Dispatchers.IO) {
         val loader = RegionDataLoaderFactory.getLoader(config.data.region)
         loader.loadData(AlsConfigLoader.getBaseDirectory())
         logger.info("region" to config.data.region) { "game data loaded" }
@@ -174,134 +169,6 @@ suspend fun main(args: Array<String>) {
     }
 }
 
-private fun ensureResourcesDirectory(baseDir: String, repoUrl: String, region: String) {
-    val resourcesDir = File(baseDir, "resources")
-    if (resourcesDir.exists() && resourcesDir.isDirectory) {
-        val hasContent = resourcesDir.listFiles()?.isNotEmpty() == true
-        if (hasContent) {
-            logger.info("path" to resourcesDir.absolutePath) { "resources directory exists" }
-            return
-        }
-    }
-
-    logger.info("repoUrl" to repoUrl, "region" to region) { "resources directory not found or empty, cloning repository..." }
-    println()
-    println("=== Resources Directory Missing ===")
-    println("  The 'resources' directory was not found or is empty.")
-    println("  This directory contains game data required by the server.")
-    println("  Attempting to clone ($region) from $repoUrl ...")
-    println()
-
-    val gitAvailable = isCommandAvailable("git")
-    if (!gitAvailable) {
-        logger.error { "git is not installed or not in PATH" }
-        println("  [ERROR] git is not installed or not in PATH.")
-        println("  Please install git and try again, or manually clone:")
-        println("    git clone --depth 1 --filter=blob:none --sparse $repoUrl resources")
-        println("    cd resources && git sparse-checkout set $region")
-        println()
-        print("Continue without resources? [y/N]: ")
-        val input = readlnOrNull()?.trim()?.lowercase()
-        if (input != "y" && input != "yes") {
-            exitProcess(1)
-        }
-        return
-    }
-
-    try {
-        val cloneDir = File(baseDir, "resources")
-        val os = System.getProperty("os.name").lowercase()
-
-        val cloneCmd = if (os.contains("win")) {
-            arrayOf("cmd", "/c", "git", "clone", "--depth", "1", "--filter=blob:none", "--sparse", repoUrl, cloneDir.absolutePath)
-        } else {
-            arrayOf("git", "clone", "--depth", "1", "--filter=blob:none", "--sparse", repoUrl, cloneDir.absolutePath)
-        }
-
-        println("  [1/2] Cloning repository (sparse, $region only)...")
-        val cloneProcess = ProcessBuilder(*cloneCmd)
-            .redirectErrorStream(true)
-            .directory(File(baseDir))
-            .start()
-        streamProcessOutput(cloneProcess)
-        val cloneExit = cloneProcess.waitFor()
-
-        if (cloneExit != 0) {
-            logger.error("exitCode" to cloneExit) { "git clone failed" }
-            println("  [ERROR] git clone failed (exit code $cloneExit).")
-            print("Continue without resources? [y/N]: ")
-            val input = readlnOrNull()?.trim()?.lowercase()
-            if (input != "y" && input != "yes") {
-                exitProcess(1)
-            }
-            println()
-            return
-        }
-
-        val sparseCmd = if (os.contains("win")) {
-            arrayOf("cmd", "/c", "git", "sparse-checkout", "set", region)
-        } else {
-            arrayOf("git", "sparse-checkout", "set", region)
-        }
-
-        println("  [2/2] Checking out $region data...")
-        val sparseProcess = ProcessBuilder(*sparseCmd)
-            .redirectErrorStream(true)
-            .directory(cloneDir)
-            .start()
-        streamProcessOutput(sparseProcess)
-        val sparseExit = sparseProcess.waitFor()
-
-        if (sparseExit == 0) {
-            logger.info("region" to region) { "repository cloned successfully" }
-            println("  Done! Region $region data is ready.")
-        } else {
-            logger.error("exitCode" to sparseExit) { "git sparse-checkout failed" }
-            println("  [WARN] sparse-checkout failed (exit code $sparseExit), full repo may have been cloned.")
-        }
-    } catch (e: Exception) {
-        logger.error(e) { "Failed to clone repository" }
-        println("  [ERROR] Failed to clone repository: ${e.message}")
-        print("Continue without resources? [y/N]: ")
-        val input = readlnOrNull()?.trim()?.lowercase()
-        if (input != "y" && input != "yes") {
-            exitProcess(1)
-        }
-    }
-    println()
-}
-
-private fun streamProcessOutput(process: Process) {
-    Thread {
-        val reader = process.inputStream.bufferedReader()
-        while (true) {
-            val line = runCatching { reader.readLine() }.getOrNull() ?: break
-            println("    $line")
-        }
-    }.apply {
-        isDaemon = true
-        start()
-    }
-}
-
-private fun isCommandAvailable(command: String): Boolean {
-    return try {
-        val os = System.getProperty("os.name").lowercase()
-        val cmd = if (os.contains("win")) {
-            arrayOf("cmd", "/c", "where", command)
-        } else {
-            arrayOf("which", command)
-        }
-        val process = ProcessBuilder(*cmd)
-            .redirectErrorStream(true)
-            .start()
-        process.waitFor()
-        process.exitValue() == 0
-    } catch (_: Exception) {
-        false
-    }
-}
-
 private fun detectLanIp(): String {
     val interfaces = NetworkInterface.getNetworkInterfaces()
     while (interfaces.hasMoreElements()) {
@@ -339,29 +206,18 @@ private fun checkPortsOrExit(ports: List<Pair<String, Int>>) {
     print("Force stop the occupying process(es)? [y/N]: ")
     val input = readlnOrNull()?.trim()?.lowercase()
     if (input == "y" || input == "yes") {
-        for ((_, port, procInfo) in occupied) {
+        for ((_, _, procInfo) in occupied) {
             if (procInfo != null) {
                 val pid = procInfo.first
-                if (pid == 4 || pid == 0) {
-                    println("PID $pid is a Windows system process (HTTP.sys). Attempting to stop IIS and release port $port...")
-                    stopHttpSysServices()
-                } else {
-                    println("Killing PID $pid (${procInfo.second})...")
-                    killProcess(pid)
-                }
+                println("Killing PID $pid (${procInfo.second})...")
+                killProcess(pid)
             }
         }
-        Thread.sleep(2000)
+        Thread.sleep(1000)
         val stillOccupied = occupied.filter { (_, port, _) -> !isPortAvailable(port) }
         if (stillOccupied.isNotEmpty()) {
-            for ((name, port, procInfo) in stillOccupied) {
-                if (procInfo != null && (procInfo.first == 4 || procInfo.first == 0)) {
-                    println("  [$name] Port $port is still occupied by system process.")
-                    println("    Try running as Administrator: net stop http /y")
-                    println("    Or change the port in config.yml")
-                } else {
-                    println("  [$name] Port $port is still occupied after kill attempt.")
-                }
+            for ((name, port, _) in stillOccupied) {
+                println("  [$name] Port $port is still occupied after kill attempt. Aborting.")
             }
             exitProcess(1)
         }
@@ -369,30 +225,6 @@ private fun checkPortsOrExit(ports: List<Pair<String, Int>>) {
     } else {
         println("Aborting startup.")
         exitProcess(1)
-    }
-}
-
-private fun stopHttpSysServices() {
-    val services = listOf("W3SVC", "WAS", "IISADMIN", "WMSVC")
-    for (svc in services) {
-        try {
-            val proc = ProcessBuilder("net", "stop", svc, "/y")
-                .redirectErrorStream(true)
-                .start()
-            val output = proc.inputStream.bufferedReader().readText()
-            proc.waitFor()
-            if (output.contains("has been stopped", ignoreCase = true) || output.contains("not been started", ignoreCase = true)) {
-                println("  Service $svc stopped.")
-            }
-        } catch (_: Exception) {
-        }
-    }
-    try {
-        val proc = ProcessBuilder("netsh", "http", "delete", "iplisten", "0.0.0.0:80")
-            .redirectErrorStream(true)
-            .start()
-        proc.waitFor()
-    } catch (_: Exception) {
     }
 }
 
