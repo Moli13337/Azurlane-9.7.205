@@ -63,7 +63,7 @@ class ProposeShipHandler : PacketHandler {
         val ringItemId = 15006
         val owned = com.azurlane.infra.database.repository.ItemRepository.getCount(commanderId, ringItemId)
         if (owned < 1) {
-            return Ship.SC_12033.newBuilder().setResult(1).build()
+            return Ship.SC_12033.newBuilder().setResult(2).build()
         }
 
         val success = transaction {
@@ -88,6 +88,8 @@ class ProposeShipHandler : PacketHandler {
 class RenameProposedShipHandler : PacketHandler {
     override val cmdId = 12034
 
+    private val sensitiveWords = listOf("admin", "moderator", "gm", "system", "管理员", "客服", "官方")
+
     override suspend fun handle(payload: ByteArray, client: ClientConnection): Message? {
         val commanderId = client.commanderId
             ?: return Ship.SC_12035.newBuilder().setResult(1).build()
@@ -95,6 +97,24 @@ class RenameProposedShipHandler : PacketHandler {
         val request = Ship.CS_12034.parseFrom(payload)
         val shipId = request.shipId
         val name = request.name.trim()
+
+        if (name.isEmpty() || name.length > 12) {
+            return Ship.SC_12035.newBuilder().setResult(2).build()
+        }
+
+        val lowerName = name.lowercase()
+        if (sensitiveWords.any { lowerName.contains(it) }) {
+            return Ship.SC_12035.newBuilder().setResult(3).build()
+        }
+
+        if (!ShipOpsRepository.shipBelongsTo(commanderId, shipId)) {
+            return Ship.SC_12035.newBuilder().setResult(1).build()
+        }
+
+        val ship = ShipRepository.findById(shipId)
+        if (ship == null || ship.propose == 0) {
+            return Ship.SC_12035.newBuilder().setResult(4).build()
+        }
 
         val success = ShipOpsRepository.renameShip(commanderId, shipId, name)
 

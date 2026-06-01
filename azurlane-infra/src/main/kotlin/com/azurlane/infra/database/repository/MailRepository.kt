@@ -65,7 +65,6 @@ object MailRepository {
     ): Int {
         return try {
             transaction {
-                val now = System.currentTimeMillis()
                 Mails.insert {
                     it[Mails.receiverId] = receiverId
                     it[Mails.title] = title
@@ -73,8 +72,8 @@ object MailRepository {
                     it[Mails.senderName] = senderName
                     it[Mails.attachFlag] = attachFlag
                     it[Mails.customSender] = customSender
-                    it[Mails.date] = now
-                    it[Mails.createdAt] = now
+                    it[Mails.date] = System.currentTimeMillis() / 1000
+                    it[Mails.createdAt] = System.currentTimeMillis() / 1000
                 } get Mails.id
             }
         } catch (e: Exception) {
@@ -102,7 +101,7 @@ object MailRepository {
 
     fun markRead(mailId: Int): Boolean = transaction {
         Mails.update({ Mails.id eq mailId }) {
-            it[readFlag] = 2
+            it[readFlag] = 1
         } > 0
     }
 

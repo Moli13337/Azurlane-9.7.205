@@ -61,12 +61,6 @@ class GetShipHandler : PacketHandler {
 
         logger.info { "ships received from build: commander=$commanderId count=${shipList.size}" }
 
-        if (shipList.isNotEmpty()) {
-            client.bufferPacket(12010, Ship.SC_12010.newBuilder()
-                .addAllShipList(shipList)
-                .build())
-        }
-
         return Ship.SC_12026.newBuilder()
             .setResult(0)
             .addAllShipList(shipList)

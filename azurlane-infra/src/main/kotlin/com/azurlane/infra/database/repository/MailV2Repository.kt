@@ -35,7 +35,7 @@ data class MailV2Row(
     val readFlag: Int,
     val isArchived: Int
 ) {
-    val dateInt: Int get() = if (date > 10000000000) (date / 1000).toInt() else date.toInt()
+    val dateInt: Int get() = (date / 1000).toInt()
 }
 
 data class MailV2AttachmentRow(
@@ -79,20 +79,20 @@ object MailV2Repository {
 
     fun markRead(receiverId: Int, mailId: Int): Boolean = transaction {
         Mails.update({ (Mails.receiverId eq receiverId) and (Mails.id eq mailId) }) {
-            it[readFlag] = 2
+            it[readFlag] = 1
         } > 0
     }
 
     fun markAllRead(receiverId: Int): Boolean = transaction {
         Mails.update({ Mails.receiverId eq receiverId }) {
-            it[readFlag] = 2
+            it[readFlag] = 1
         } > 0
     }
 
     fun markAttachmentsCollected(receiverId: Int, mailId: Int): Boolean = transaction {
         Mails.update({ (Mails.receiverId eq receiverId) and (Mails.id eq mailId) }) {
             it[attachFlag] = 2
-            it[readFlag] = 2
+            it[readFlag] = 1
         } > 0
     }
 

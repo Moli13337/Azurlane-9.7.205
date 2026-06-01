@@ -10,12 +10,12 @@ pluginManagement {
     }
 }
 
-include("proto")
-include("core")
-include("data")
-include("infra")
-include("server")
-include("admin")
-include("sdk")
-include("app")
-include("test")
+include("azurlane-proto")
+include("azurlane-core")
+include("azurlane-data")
+include("azurlane-infra")
+include("azurlane-server")
+include("azurlane-admin")
+include("azurlane-sdk")
+include("azurlane-app")
+include("azurlane-test")

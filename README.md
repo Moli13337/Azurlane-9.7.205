@@ -19,5 +19,6 @@ I couldn't have completed this project without you. Thank you for your selfless 
 
 - https://github.com/AzurLaneTools
 - https://github.com/ggmolly/belfast
+- https://github.com/rafi1212122/BLHX.Server
 
 Thank you for downloading :)

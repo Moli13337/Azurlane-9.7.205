@@ -640,7 +640,7 @@ object PacketRegistryInit {
         registry.register(GetMailListHandler())               // 30002 - 请求邮件列表
         registry.register(GetSimpleMailListHandler())         // 30004 - 请求简单邮件列表
         registry.register(MailMatchOperationHandler())        // 30006 - 邮件匹配操作
-        registry.register(DeleteSingleMailHandler())       // 30008 - 删除邮件
+        registry.register(MarkMailReadHandler())              // 30008 - 标记邮件已读
         registry.register(OneClickOperationHandler())         // 30010 - 一键操作
         registry.register(MailExchangeHandler())              // 30012 - 邮件兑换
         registry.register(BatchIdOperationHandler())          // 30014 - 批量ID操作

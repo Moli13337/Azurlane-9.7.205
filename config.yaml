@@ -1,18 +1,14 @@
 server:
   bindAddress: "0.0.0.0"
   port: 80
-  gatewayHost: "192.168.31.250"
-  gatewayDomain: "line1-login-bili-blhx.bilibiligame.net"
-  proxyDomain: "line1-bak-login-bili-blhx.bilibiligame.net"
-  gatewayPort: 80
-  proxyPort: 0
   name: "AzurLaneServer"
   maintenance: false
   id: 1
   state: 0
-  cdnList:
-    - "https://bilivideo.cdn.bcebos.com"
-  skipVersionHash: true
+  proxyIp: ""
+  proxyPort: 0
+  cdnList: []
+  version: []
 
 database:
   driver: "sqlite"
@@ -22,7 +18,6 @@ database:
 data:
   region: "CN"
   dataPath: "resources"
-  resourceRepoUrl: "https://github.com/AzurLaneTools/AzurLaneData"
 
 admin:
   enabled: true
@@ -34,7 +29,30 @@ sdk:
   bindAddress: "0.0.0.0"
   port: 443
   httpPort: 8081
-  ssl: true
+  ssl: false
+  sslCertCn: "api.biligame.net"
+  sslKeystorePassword: "changeit"
+  sslCertDays: 365
+  gameId: "209"
+  merchantId: "2610"
+  channelId: "1"
+  serverId: "388"
+  appKey: "d4761645d1632e8c"
+  sdkVersion: "6.17.0"
+  appVersion: "7.1.1"
+  platform: "3"
+  cpName: "blhx"
+  gameName: "AzurLane"
+  tokenExpireDays: 365
+  tokenRenewalDays: 30
+  allowTourist: true
+  requireRealname: false
+  allowQuickLogin: false
+  allowWechatLogin: false
+  allowAppleLogin: false
+  baseUrl: "https://127.0.0.1"
+  autoApprovePay: true
+  productName: "TestProduct"
 
 logging:
   level: "INFO"
@@ -52,8 +70,8 @@ auth:
 createPlayer:
   skipOnboarding: true
   starterShips:
-    - 101171
-    - 201211
+    - 202124
+    - 106011
   initialResources:
     1: 3000
     2: 500

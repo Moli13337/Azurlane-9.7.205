@@ -80,47 +80,29 @@ class BattleFinishHandler : PacketHandler {
             return Battle.SC_40004.newBuilder().setResult(1).build()
         }
 
-        val shipIdList = session.shipIdList
-        val statsMap = request.statisticsList.associateBy { it.shipId.toInt() }
-
-        val mvpShipId = if (shipIdList.isNotEmpty()) {
-            shipIdList.maxByOrNull { shipId ->
-                statsMap[shipId]?.damageCause?.toInt() ?: 0
-            } ?: 0
-        } else 0
-
-        val dropInfoList = mutableListOf<Common.DROPINFO>()
-        ResourceRepository.addResource(commanderId, 2, 30)
-        dropInfoList.add(Common.DROPINFO.newBuilder().setType(1).setId(2).setNumber(30).build())
-        ResourceRepository.addResource(commanderId, 1, 50)
-        dropInfoList.add(Common.DROPINFO.newBuilder().setType(1).setId(1).setNumber(50).build())
-
-        val baseExp = 100
-        val shipExpList = shipIdList.mapNotNull { shipId ->
-            val isMvp = shipId == mvpShipId
-            val exp = if (isMvp) (baseExp * 1.5).toInt() else baseExp
-            val energyDelta = -2
-            val intimacyDelta = 50
-
-            ShipOpsRepository.addExp(shipId, exp)
-            ShipOpsRepository.updateEnergyAndIntimacy(commanderId, shipId, energyDelta, intimacyDelta)
-
-            Battle.SHIP_EXP.newBuilder()
-                .setShipId(shipId)
-                .setExp(exp)
-                .setIntimacy(intimacyDelta)
-                .setEnergy(energyDelta)
-                .build()
+        val oilCost = calculateOilCost(system, data)
+        val currentOil = ResourceRepository.getAmount(commanderId, OIL_RESOURCE_ID)
+        if (currentOil < oilCost) {
+            logger.warn { "battle finish: insufficient oil commander=$commanderId has=$currentOil need=$oilCost" }
+            return Battle.SC_40004.newBuilder().setResult(1).build()
         }
+        ResourceRepository.addResource(commanderId, OIL_RESOURCE_ID, -oilCost.toLong())
 
-        logger.info { "battle finish: commander=$commanderId system=$system data=$data mvp=$mvpShipId drops=${dropInfoList.size}" }
+        val shipIdList = session.shipIdList
+        val mvp = if (request.statisticsCount > 0) request.getStatistics(0).shipId.toInt() else 0
+
+        val dropInfoList = generateBattleDrops(commanderId, system, data)
+        val shipExpList = generateShipExp(commanderId, shipIdList, system, data)
+        val commanderExp = generateCommanderExp(commanderId, system, data)
+
+        logger.info { "battle finish: commander=$commanderId system=$system data=$data oil=$oilCost drops=${dropInfoList.size} mvp=$mvp" }
 
         return Battle.SC_40004.newBuilder()
             .setResult(0)
             .addAllDropInfo(dropInfoList)
-            .setPlayerExp(50)
+            .setPlayerExp(commanderExp.first)
             .addAllShipExpList(shipExpList)
-            .setMvp(mvpShipId)
+            .setMvp(mvp)
             .build()
     }
 }
@@ -182,8 +164,12 @@ class QuickBattleHandler : PacketHandler {
 
 private fun generateBattleDrops(commanderId: Int, system: Int, data: Int): List<Common.DROPINFO> {
     val drops = mutableListOf<Common.DROPINFO>()
-    ResourceRepository.addResource(commanderId, 1, 100)
-    drops.add(Common.DROPINFO.newBuilder().setType(1).setId(1).setNumber(100).build())
+    when (system) {
+        else -> {
+            ResourceRepository.addResource(commanderId, 1, 100)
+            drops.add(Common.DROPINFO.newBuilder().setType(1).setId(1).setNumber(100).build())
+        }
+    }
     return drops
 }
 
@@ -198,6 +184,15 @@ private fun generateShipExp(commanderId: Int, shipIdList: List<Int>, system: Int
             .setEnergy(0)
             .build()
     }
+}
+
+private fun generateCommanderExp(commanderId: Int, system: Int, data: Int): Pair<Int, List<Battle.COMMANDER_EXP>> {
+    val baseExp = 50
+    val commanderExp = Battle.COMMANDER_EXP.newBuilder()
+        .setCommanderId(commanderId)
+        .setExp(baseExp)
+        .build()
+    return baseExp to listOf(commanderExp)
 }
 
 private fun calculateOilCost(system: Int, data: Int): Int {
