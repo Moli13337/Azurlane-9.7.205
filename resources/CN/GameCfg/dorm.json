@@ -1,0 +1,527 @@
+{
+  "dormlvperformance01": [
+    {
+      "name": "load",
+      "params": {
+        "name": "Qihe_Jinmenjieshao",
+        "wait_timeline": true
+      },
+      "type": 9
+    },
+    {
+      "name": "change",
+      "params": {
+        "point": "DormLvPerfomance01",
+        "scene": "map_siriushostel_01",
+        "sceneRoot": "Tianlangxing_DB/SiriusHostel"
+      },
+      "type": 10
+    },
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10011
+      ],
+      "type": 1
+    },
+    {
+      "name": "set",
+      "params": {
+        "back_button_trigger": false,
+        "near_trigger": true
+      },
+      "type": 10
+    },
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10012
+      ],
+      "type": 1
+    },
+    {
+      "name": "show",
+      "params": {
+        "time": 0
+      },
+      "type": 12
+    },
+    {
+      "name": "back",
+      "type": 10
+    },
+    {
+      "name": "unload",
+      "params": {
+        "name": "Qihe_Jinmenjieshao"
+      },
+      "type": 9
+    },
+    {
+      "name": "hide",
+      "type": 12
+    }
+  ],
+  "dormlvperformance02": [
+    {
+      "params": [
+        10021
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance03": [
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10031
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance04": [
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10041
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance05": [
+    {
+      "params": [
+        10051
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1101": [
+    {
+      "params": [
+        110511
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1102": [
+    {
+      "params": [
+        110521
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1103": [
+    {
+      "params": [
+        110531
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1104": [
+    {
+      "name": "load",
+      "params": {
+        "name": "FFliwu_10517_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    },
+    {
+      "name": "other",
+      "params": {
+        "scene": "map_newjerseyhostel_01",
+        "sceneRoot": "Xinzexi_DB/Newjerseyhostel"
+      },
+      "type": 8
+    },
+    {
+      "name": "Role Camera",
+      "type": 7
+    },
+    {
+      "params": [
+        110542
+      ],
+      "type": 1
+    },
+    {
+      "params": [
+        110543
+      ],
+      "type": 1
+    },
+    {
+      "name": "base",
+      "type": 8
+    },
+    {
+      "name": "unload",
+      "params": {
+        "name": "FFliwu_10517_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    }
+  ],
+  "dormlvperformance1105": [
+    {
+      "name": "load",
+      "params": {
+        "name": "FFliwu_10517_02",
+        "wait_timeline": false
+      },
+      "type": 9
+    },
+    {
+      "name": "other",
+      "params": {
+        "scene": "map_newjerseyhostel_01",
+        "sceneRoot": "Xinzexi_DB/Newjerseyhostel"
+      },
+      "type": 8
+    },
+    {
+      "name": "Role Camera",
+      "type": 7
+    },
+    {
+      "params": [
+        110552
+      ],
+      "type": 1
+    },
+    {
+      "params": [
+        110553
+      ],
+      "type": 1
+    },
+    {
+      "name": "base",
+      "type": 8
+    },
+    {
+      "name": "unload",
+      "params": {
+        "name": "FFliwu_10517_02",
+        "wait_timeline": false
+      },
+      "type": 9
+    }
+  ],
+  "dormlvperformance1199": [
+    {
+      "params": [
+        110542
+      ],
+      "type": 1
+    },
+    {
+      "name": "set",
+      "params": {
+        "hide_back": true,
+        "state": 400110
+      },
+      "type": 11
+    },
+    {
+      "name": "back",
+      "params": {
+        "character_action": "Idle"
+      },
+      "type": 11
+    }
+  ],
+  "dormlvperformance1201": [
+    {
+      "params": [
+        120511
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1202": [
+    {
+      "params": [
+        120521
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1203": [
+    {
+      "params": [
+        120531
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1204": [
+    {
+      "name": "load",
+      "params": {
+        "name": "FFliwu_30707_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    },
+    {
+      "name": "other",
+      "params": {
+        "scene": "map_dafeng_01",
+        "sceneRoot": "Dafeng_DB/Dafenghostel"
+      },
+      "type": 8
+    },
+    {
+      "name": "Role Camera",
+      "type": 7
+    },
+    {
+      "params": [
+        120542
+      ],
+      "type": 1
+    },
+    {
+      "params": [
+        120543
+      ],
+      "type": 1
+    },
+    {
+      "name": "base",
+      "type": 8
+    },
+    {
+      "name": "unload",
+      "params": {
+        "name": "FFliwu_30707_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    }
+  ],
+  "dormlvperformance1401": [
+    {
+      "params": [
+        140511
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1402": [
+    {
+      "params": [
+        140521
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1403": [
+    {
+      "params": [
+        140531
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance1404": [
+    {
+      "name": "load",
+      "params": {
+        "name": "FFliwu_49905_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    },
+    {
+      "name": "other",
+      "params": {
+        "scene": "map_aijier_01",
+        "sceneRoot": "Aijier_DB/Aijierhostel"
+      },
+      "type": 8
+    },
+    {
+      "name": "Role Camera",
+      "type": 7
+    },
+    {
+      "params": [
+        140542
+      ],
+      "type": 1
+    },
+    {
+      "params": [
+        140543
+      ],
+      "type": 1
+    },
+    {
+      "name": "base",
+      "type": 8
+    },
+    {
+      "name": "unload",
+      "params": {
+        "name": "FFliwu_49905_01",
+        "wait_timeline": false
+      },
+      "type": 9
+    }
+  ],
+  "dormlvperformance201": [
+    {
+      "params": [
+        20501
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance202": [
+    {
+      "params": [
+        20511
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance203": [
+    {
+      "params": [
+        20521
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance204": [
+    {
+      "params": [
+        29992
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance205": [
+    {
+      "params": [
+        20531
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance301": [
+    {
+      "params": [
+        30521
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance302": [
+    {
+      "params": [
+        30531
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance303": [
+    {
+      "params": [
+        30541
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance304": [
+    {
+      "params": [
+        30552
+      ],
+      "type": 1
+    }
+  ],
+  "dormlvperformance311": [
+    {
+      "params": [
+        30511
+      ],
+      "type": 1
+    }
+  ],
+  "dormpaidgiftperformance1": [
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10061
+      ],
+      "type": 1
+    }
+  ],
+  "dormpaidgiftperformance2": [
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10071
+      ],
+      "type": 1
+    }
+  ],
+  "dormpaidgiftperformance3": [
+    {
+      "params": [
+        1
+      ],
+      "type": 6
+    },
+    {
+      "params": [
+        10081
+      ],
+      "type": 1
+    }
+  ],
+  "stockingperformancetest": [
+    {
+      "name": "set",
+      "params": 2,
+      "type": 13
+    }
+  ]
+}
