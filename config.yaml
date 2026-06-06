@@ -18,6 +18,7 @@ database:
 data:
   region: "CN"
   dataPath: "resources"
+  resourceRepoUrl: "https://github.com/AzurLaneTools/AzurLaneData"
 
 admin:
   enabled: true
