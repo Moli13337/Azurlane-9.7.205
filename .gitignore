@@ -9,3 +9,5 @@ bin/
 *.iml
 out/
 bak/
+logs/
+test/
