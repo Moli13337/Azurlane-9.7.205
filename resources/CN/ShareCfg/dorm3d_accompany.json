@@ -1,0 +1,332 @@
+{
+  "1": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 1,
+    "image": "tianlangxing_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 1,
+    "sceneInfo": "map_siriushostel_01|Tianlangxing_DB/SiriusHostel",
+    "ship_id": 20220,
+    "timeline": "Xiangban_shinei",
+    "unlock": []
+  },
+  "2": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 2,
+    "image": "tianlangxing_accompany_beach",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 4,
+    "sceneInfo": "map_beach_01|Beach",
+    "ship_id": 20220,
+    "timeline": "Xiangban_shatan",
+    "unlock": [
+      5,
+      4,
+      20220
+    ]
+  },
+  "3": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 3,
+    "image": "cafe_accompany",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 16,
+    "sceneInfo": "map_publiccafe_01|Publiccafe",
+    "ship_id": 20220,
+    "timeline": "Xiangban_cafe_20220",
+    "unlock": [
+      5,
+      16,
+      20220
+    ]
+  },
+  "21": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 21,
+    "image": "nengdai_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 2,
+    "sceneInfo": "map_noshirohostel_01|Nengdai_DB/NoshiroHostel",
+    "ship_id": 30221,
+    "timeline": "Xiangban_shinei_ND",
+    "unlock": []
+  },
+  "22": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 22,
+    "image": "tianlangxing_accompany_beach",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 4,
+    "sceneInfo": "map_beach_01|Beach",
+    "ship_id": 30221,
+    "timeline": "Xiangban_shatan_ND",
+    "unlock": [
+      5,
+      4,
+      30221
+    ]
+  },
+  "31": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 31,
+    "image": "ankeleiqi_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 3,
+    "sceneInfo": "map_anchoragehostel_01|Ankeleiqi_DB/Anchoragehostel",
+    "ship_id": 19903,
+    "timeline": "Xiangban_shinei_Ab",
+    "unlock": []
+  },
+  "32": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 32,
+    "image": "tianlangxing_accompany_beach",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 4,
+    "sceneInfo": "map_beach_01|Beach",
+    "ship_id": 19903,
+    "timeline": "Xiangban_shatan_Ab",
+    "unlock": [
+      5,
+      4,
+      19903
+    ]
+  },
+  "111": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 111,
+    "image": "xinzexi_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 11,
+    "sceneInfo": "map_newjerseyhostel_01|Xinzexi_DB/Newjerseyhostel",
+    "ship_id": 10517,
+    "timeline": "Xiangban_personal_10517",
+    "unlock": []
+  },
+  "112": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 112,
+    "image": "cafe_accompany",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 16,
+    "sceneInfo": "map_publiccafe_01|Publiccafe",
+    "ship_id": 10517,
+    "timeline": "Xiangban_cafe_10517",
+    "unlock": [
+      5,
+      16,
+      10517
+    ]
+  },
+  "121": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 121,
+    "image": "dafeng_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 12,
+    "sceneInfo": "map_dafeng_01|Dafeng_DB/Dafenghostel",
+    "ship_id": 30707,
+    "timeline": "Xiangban_personal_30707",
+    "unlock": []
+  },
+  "122": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 122,
+    "image": "cafe_accompany",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 16,
+    "sceneInfo": "map_publiccafe_01|Publiccafe",
+    "ship_id": 30707,
+    "timeline": "Xiangban_cafe_30707",
+    "unlock": [
+      5,
+      16,
+      30707
+    ]
+  },
+  "141": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 141,
+    "image": "aijier_accompany_room",
+    "jump_trigger": [],
+    "name": "日常相伴",
+    "performance_time": 20,
+    "resource_room": 14,
+    "sceneInfo": "map_aijier_01|Aijier_DB/Aijierhostel",
+    "ship_id": 49905,
+    "timeline": "Xiangban_personal_49905",
+    "unlock": []
+  },
+  "142": {
+    "favor": [
+      300,
+      [
+        1015,
+        1016,
+        1017
+      ]
+    ],
+    "id": 142,
+    "image": "cafe_accompany",
+    "jump_trigger": [],
+    "name": "休闲相伴",
+    "performance_time": 20,
+    "resource_room": 16,
+    "sceneInfo": "map_publiccafe_01|Publiccafe",
+    "ship_id": 49905,
+    "timeline": "Xiangban_cafe_49905",
+    "unlock": [
+      5,
+      16,
+      49905
+    ]
+  },
+  "all": [
+    1,
+    2,
+    3,
+    21,
+    22,
+    31,
+    32,
+    111,
+    112,
+    121,
+    122,
+    141,
+    142
+  ],
+  "get_id_list_by_ship_id": {
+    "10517": [
+      111,
+      112
+    ],
+    "19903": [
+      31,
+      32
+    ],
+    "20220": [
+      1,
+      2,
+      3
+    ],
+    "30221": [
+      21,
+      22
+    ],
+    "30707": [
+      121,
+      122
+    ],
+    "49905": [
+      141,
+      142
+    ]
+  }
+}

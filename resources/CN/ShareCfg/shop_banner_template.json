@@ -1,0 +1,550 @@
+{
+  "10": {
+    "id": 10,
+    "name": "banner_big",
+    "order": 10,
+    "param": [
+      "scene skinshop",
+      []
+    ],
+    "pic": "shopbanner/shop_skin",
+    "relation_param": "",
+    "time": [
+      [
+        [
+          2026,
+          4,
+          17
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          4,
+          30
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "11": {
+    "id": 11,
+    "name": "banner_big",
+    "order": 9,
+    "param": [
+      "scene skinshop",
+      []
+    ],
+    "pic": "shopbanner/shop_skin2",
+    "relation_param": "",
+    "time": [
+      [
+        [
+          2026,
+          4,
+          23
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          4,
+          30
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "12": {
+    "id": 12,
+    "name": "banner_big",
+    "order": 8,
+    "param": [
+      "scene skinshop",
+      []
+    ],
+    "pic": "shopbanner/shop_skin3",
+    "relation_param": "",
+    "time": [
+      [
+        [
+          2026,
+          2,
+          12
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          2,
+          15
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "13": {
+    "id": 13,
+    "name": "banner_big",
+    "order": 7,
+    "param": [
+      "scene skinshop",
+      []
+    ],
+    "pic": "shopbanner/shop_skin4",
+    "relation_param": "",
+    "time": [
+      [
+        [
+          2026,
+          1,
+          5
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ],
+      [
+        [
+          2026,
+          1,
+          7
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "14": {
+    "id": 14,
+    "name": "banner_big",
+    "order": 1,
+    "param": [
+      "scene skinshop",
+      []
+    ],
+    "pic": "shopbanner/shop_skin_default",
+    "relation_param": "",
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "20": {
+    "id": 20,
+    "name": "banner_middle",
+    "order": 50,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_pack_bg",
+    "relation_param": [
+      1,
+      9015
+    ],
+    "time": [
+      [
+        [
+          2026,
+          3,
+          19
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          4,
+          8
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "21": {
+    "id": 21,
+    "name": "banner_middle",
+    "order": 49,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_pack_bg",
+    "relation_param": [
+      1,
+      9012
+    ],
+    "time": [
+      [
+        [
+          2026,
+          2,
+          12
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          3,
+          4
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "22": {
+    "id": 22,
+    "name": "banner_middle",
+    "order": 1,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_akashi_recommend",
+    "relation_param": "",
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "23": {
+    "id": 23,
+    "name": "banner_middle",
+    "order": 52,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_pack_bg",
+    "relation_param": [
+      1,
+      9013
+    ],
+    "time": [
+      [
+        [
+          2026,
+          2,
+          26
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          3,
+          11
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "24": {
+    "id": 24,
+    "name": "banner_middle",
+    "order": 51,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_pack_bg",
+    "relation_param": [
+      1,
+      9014
+    ],
+    "time": [
+      [
+        [
+          2026,
+          2,
+          26
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          3,
+          11
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "25": {
+    "id": 25,
+    "name": "banner_middle",
+    "order": 46,
+    "param": [
+      "scene charge",
+      {
+        "warp": 4
+      }
+    ],
+    "pic": "shopbanner/shop_pack_bg",
+    "relation_param": [
+      1,
+      9006
+    ],
+    "time": "stop",
+    "time_lable": 1,
+    "type": 2
+  },
+  "30": {
+    "id": 30,
+    "name": "banner_small1",
+    "order": 10,
+    "param": [
+      "scene charge",
+      {
+        "warp": 1
+      }
+    ],
+    "pic": "shopbanner/shop_diamond",
+    "relation_param": "",
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "31": {
+    "id": 31,
+    "name": "banner_small1",
+    "order": 1,
+    "param": [
+      "scene charge",
+      {
+        "warp": 3
+      }
+    ],
+    "pic": "shopbanner/shop_props",
+    "relation_param": "",
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "40": {
+    "id": 40,
+    "name": "banner_small2",
+    "order": 10,
+    "param": "",
+    "pic": "",
+    "relation_param": "",
+    "time": "stop",
+    "time_lable": 0,
+    "type": 2
+  },
+  "41": {
+    "id": 41,
+    "name": "banner_small2",
+    "order": 1,
+    "param": [
+      "scene charge",
+      {
+        "warp": 1
+      }
+    ],
+    "pic": "shopbanner/shop_item_bg",
+    "relation_param": [
+      1,
+      1
+    ],
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "50": {
+    "id": 50,
+    "name": "banner_small3",
+    "order": 10,
+    "param": [
+      "scene shop",
+      {
+        "warp": "activity"
+      }
+    ],
+    "pic": "shopbanner/shop_event_pt",
+    "relation_param": "",
+    "time": [
+      [
+        [
+          2026,
+          4,
+          17
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2026,
+          5,
+          7
+        ],
+        [
+          23,
+          59,
+          59
+        ]
+      ]
+    ],
+    "time_lable": 1,
+    "type": 2
+  },
+  "51": {
+    "id": 51,
+    "name": "banner_small3",
+    "order": 1,
+    "param": [
+      "scene shop",
+      {
+        "warp": "shopstreet"
+      }
+    ],
+    "pic": "shopbanner/shop_shopstreet",
+    "relation_param": "",
+    "time": "always",
+    "time_lable": 0,
+    "type": 2
+  },
+  "all": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    30,
+    31,
+    40,
+    41,
+    50,
+    51
+  ],
+  "get_id_list_by_name": {
+    "banner_big": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "banner_middle": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "banner_small1": [
+      30,
+      31
+    ],
+    "banner_small2": [
+      40,
+      41
+    ],
+    "banner_small3": [
+      50,
+      51
+    ]
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "1": {
+    "banners": [
+      "banner_furniture121"
+    ],
+    "id": 1,
+    "item_id": 121,
+    "name": "甜蜜心事",
+    "order": "8",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      270101
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "2": {
+    "banners": [
+      "banner_furniture122"
+    ],
+    "id": 2,
+    "item_id": 122,
+    "name": "午后遐乡",
+    "order": "11",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      270103
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "3": {
+    "banners": [
+      "banner_furniture221"
+    ],
+    "id": 3,
+    "item_id": 221,
+    "name": "柔软怀抱",
+    "order": "9",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      270201
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "4": {
+    "banners": [
+      "banner_furniture222"
+    ],
+    "id": 4,
+    "item_id": 222,
+    "name": "对坐之谈",
+    "order": "14",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      270202
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "5": {
+    "banners": [
+      "banner_furniture151"
+    ],
+    "id": 5,
+    "item_id": 151,
+    "name": "圣诞雪橇沙发套组",
+    "order": "1",
+    "panel": [
+      1
+    ],
+    "rarity": 5,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      270104
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "6": {
+    "banners": [
+      "banner_furniture251"
+    ],
+    "id": 6,
+    "item_id": 251,
+    "name": "暖意入梦",
+    "order": "2",
+    "panel": [
+      1
+    ],
+    "rarity": 5,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      270105
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "7": {
+    "banners": [
+      "banner_furniture321"
+    ],
+    "id": 7,
+    "item_id": 321,
+    "name": "童心下午茶",
+    "order": "10",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      270301
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "8": {
+    "banners": [
+      "banner_furniture322"
+    ],
+    "id": 8,
+    "item_id": 322,
+    "name": "星河满船",
+    "order": "13",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      270302
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "9": {
+    "banners": [
+      "banner_gift2022001"
+    ],
+    "id": 9,
+    "item_id": 2022001,
+    "name": "清扫工具箱",
+    "order": "16",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      260301
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "10": {
+    "banners": [
+      "banner_gift2022002"
+    ],
+    "id": 10,
+    "item_id": 2022002,
+    "name": "茶享套装",
+    "order": "19",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      260302
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "11": {
+    "banners": [
+      "banner_gift3022101"
+    ],
+    "id": 11,
+    "item_id": 3022101,
+    "name": "素色物语 ",
+    "order": "17",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      260321
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "12": {
+    "banners": [
+      "banner_gift1990301"
+    ],
+    "id": 12,
+    "item_id": 1990301,
+    "name": "彩虹心语",
+    "order": "18",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      260331
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "13": {
+    "banners": [
+      "banner_test"
+    ],
+    "id": 13,
+    "item_id": 1021002,
+    "name": "浪漫满分",
+    "order": "998",
+    "panel": [
+      5
+    ],
+    "rarity": 3,
+    "realroom_id": 0,
+    "room_id": 0,
+    "shop_id": [
+      260101,
+      260102,
+      260103,
+      260104,
+      260105
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "14": {
+    "banners": [
+      "banner_test"
+    ],
+    "id": 14,
+    "item_id": 1021003,
+    "name": "蛋糕礼盒",
+    "order": "999",
+    "panel": [
+      5
+    ],
+    "rarity": 3,
+    "realroom_id": 0,
+    "room_id": 0,
+    "shop_id": [
+      260201,
+      260202
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "15": {
+    "banners": [
+      "banner_beach1",
+      "banner_beach2"
+    ],
+    "id": 15,
+    "item_id": 4,
+    "name": "天狼星沙滩邀请函",
+    "order": "11",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      270110
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "16": {
+    "banners": [
+      "banner_beach3"
+    ],
+    "id": 16,
+    "item_id": 4,
+    "name": "{namecode:50}沙滩邀请函",
+    "order": "12",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      270111
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "17": {
+    "banners": [
+      "banner_beach4"
+    ],
+    "id": 17,
+    "item_id": 4,
+    "name": "安克雷奇沙滩邀请函",
+    "order": "11",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      270112
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "18": {
+    "banners": [
+      "banner_gift3022102"
+    ],
+    "id": 18,
+    "item_id": 3022102,
+    "name": "能量修复仪",
+    "order": "12",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      260322
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "19": {
+    "banners": [
+      "banner_furniture1151"
+    ],
+    "id": 19,
+    "item_id": 1151,
+    "name": "星球一隅",
+    "order": "10",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      271101
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "20": {
+    "banners": [
+      "banner_gift1051701"
+    ],
+    "id": 20,
+    "item_id": 1051701,
+    "name": "水晶糖",
+    "order": "15",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      260401
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "21": {
+    "banners": [
+      "banner_cafe1"
+    ],
+    "id": 21,
+    "item_id": 16,
+    "name": "{namecode:199}咖啡馆邀请函",
+    "order": "11",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      270113
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "22": {
+    "banners": [
+      "banner_furniture223"
+    ],
+    "id": 22,
+    "item_id": 223,
+    "name": "安逸时光",
+    "order": "12",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30221,
+    "shop_id": [
+      270203
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "23": {
+    "banners": [
+      "banner_furniture1152"
+    ],
+    "id": 23,
+    "item_id": 1152,
+    "name": "动感飞轮",
+    "order": "13",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      270204
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "24": {
+    "banners": [
+      "banner_gift1990302"
+    ],
+    "id": 24,
+    "item_id": 1990302,
+    "name": "精致画框 ",
+    "order": "10",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      260332
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "25": {
+    "banners": [
+      "banner_furniture401"
+    ],
+    "id": 25,
+    "item_id": 401,
+    "name": "滨海欢愉",
+    "order": "10",
+    "panel": [
+      1
+    ],
+    "rarity": 5,
+    "realroom_id": 4,
+    "room_id": 0,
+    "shop_id": [
+      270401
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "26": {
+    "banners": [
+      "banner_furniture323"
+    ],
+    "id": 26,
+    "item_id": 323,
+    "name": "云中甜梦",
+    "order": "9",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      270303
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "27": {
+    "banners": [
+      "banner_furniture1221"
+    ],
+    "id": 27,
+    "item_id": 1221,
+    "name": "爱之巢 ",
+    "order": "9",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30707,
+    "shop_id": [
+      270501
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "28": {
+    "banners": [
+      "banner_gift3070701"
+    ],
+    "id": 28,
+    "item_id": 3070701,
+    "name": "相连的爱意 ",
+    "order": "9",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30707,
+    "shop_id": [
+      260501
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "29": {
+    "banners": [
+      "banner_cafe2"
+    ],
+    "id": 29,
+    "item_id": 16,
+    "name": "{namecode:97}咖啡馆邀请函",
+    "order": "8",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30707,
+    "shop_id": [
+      270114
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "30": {
+    "banners": [
+      "banner_furniture1153"
+    ],
+    "id": 30,
+    "item_id": 1153,
+    "name": "天外庇所",
+    "order": "8",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      270205
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "31": {
+    "banners": [
+      "banner_furniture1222"
+    ],
+    "id": 31,
+    "item_id": 1222,
+    "name": "花乐留韵 ",
+    "order": "8",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 5,
+    "realroom_id": 0,
+    "room_id": 30707,
+    "shop_id": [
+      270502
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "32": {
+    "banners": [
+      "banner_gift2022003"
+    ],
+    "id": 32,
+    "item_id": 2022003,
+    "name": "《完美女仆守则》 ",
+    "order": "8",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      260303
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "33": {
+    "banners": [
+      "banner_furniture1461"
+    ],
+    "id": 33,
+    "item_id": 1461,
+    "name": "真红谧影 ",
+    "order": "7",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 49905,
+    "shop_id": [
+      270601
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "34": {
+    "banners": [
+      "banner_gift4990501"
+    ],
+    "id": 34,
+    "item_id": 4990501,
+    "name": "郁金香杯 ",
+    "order": "7",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 49905,
+    "shop_id": [
+      260601
+    ],
+    "type": 2,
+    "unlock": ""
+  },
+  "35": {
+    "banners": [
+      "banner_cafe3"
+    ],
+    "id": 35,
+    "item_id": 16,
+    "name": "{namecode:480}咖啡馆邀请函",
+    "order": "7",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 49905,
+    "shop_id": [
+      270115
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "36": {
+    "banners": [
+      "banner_cafe4"
+    ],
+    "id": 36,
+    "item_id": 16,
+    "name": "天狼星咖啡馆邀请函",
+    "order": "5",
+    "panel": [
+      2
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 20220,
+    "shop_id": [
+      270116
+    ],
+    "type": 3,
+    "unlock": ""
+  },
+  "37": {
+    "banners": [
+      "banner_furniture1154"
+    ],
+    "id": 37,
+    "item_id": 1154,
+    "name": "智能冰箱IB-7",
+    "order": "4",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      270206
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "38": {
+    "banners": [
+      "banner_furniture1223"
+    ],
+    "id": 38,
+    "item_id": 1223,
+    "name": "绯樱雅席",
+    "order": "4",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 30707,
+    "shop_id": [
+      270503
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "39": {
+    "banners": [
+      "banner_furniture324"
+    ],
+    "id": 39,
+    "item_id": 324,
+    "name": "童心乐园 ",
+    "order": "4",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 19903,
+    "shop_id": [
+      270304
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "40": {
+    "banners": [
+      "banner_furniture1462"
+    ],
+    "id": 40,
+    "item_id": 1462,
+    "name": "知韵沉思 ",
+    "order": "3",
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 49905,
+    "shop_id": [
+      270602
+    ],
+    "type": 1,
+    "unlock": ""
+  },
+  "41": {
+    "banners": [
+      "banner_gift1051702"
+    ],
+    "id": 41,
+    "item_id": 1051702,
+    "name": "炫彩游戏手柄 ",
+    "order": "2",
+    "panel": [
+      2,
+      3,
+      4
+    ],
+    "rarity": 4,
+    "realroom_id": 0,
+    "room_id": 10517,
+    "shop_id": [
+      260402
+    ],
+    "type": 2,
+    "unlock": ""
+  }
+}

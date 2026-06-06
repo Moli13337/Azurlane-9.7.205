@@ -1,0 +1,60 @@
+{
+  "1001": {
+    "activity_id": 50043,
+    "id": 1001,
+    "relevance": ""
+  },
+  "1002": {
+    "activity_id": 4852,
+    "id": 1002,
+    "relevance": "activity_workbench_item"
+  },
+  "1003": {
+    "activity_id": 4966,
+    "id": 1003,
+    "relevance": "activity_workbench_item"
+  },
+  "1004": {
+    "activity_id": 5523,
+    "id": 1004,
+    "relevance": ""
+  },
+  "1005": {
+    "activity_id": 5951,
+    "id": 1005,
+    "relevance": ""
+  },
+  "1006": {
+    "activity_id": 50434,
+    "id": 1006,
+    "relevance": ""
+  },
+  "all": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006
+  ],
+  "get_id_list_by_activity_id": {
+    "4852": [
+      1002
+    ],
+    "4966": [
+      1003
+    ],
+    "5523": [
+      1004
+    ],
+    "5951": [
+      1005
+    ],
+    "50043": [
+      1001
+    ],
+    "50434": [
+      1006
+    ]
+  }
+}

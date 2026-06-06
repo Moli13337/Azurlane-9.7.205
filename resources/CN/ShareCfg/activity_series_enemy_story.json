@@ -1,0 +1,4270 @@
+{
+  "1": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_greenA",
+    "id": 1,
+    "label_key": "",
+    "line": 2,
+    "name": "TS-1",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.10703125",
+    "pos_y": "0.157291667",
+    "story": "JIDIFENGBAO3",
+    "trigger_type": [
+      1
+    ],
+    "trigger_value": [
+      500
+    ],
+    "type": 1
+  },
+  "2": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "level2",
+    "id": 2,
+    "label_key": "",
+    "line": 0,
+    "name": "TS-2",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "JIDIFENGBAO4",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      1
+    ],
+    "type": 3
+  },
+  "3": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_greenB",
+    "id": 3,
+    "label_key": "",
+    "line": 4,
+    "name": "TS-3",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.50546875",
+    "pos_y": "0.080208333",
+    "story": "JIDIFENGBAO5",
+    "trigger_type": [
+      1,
+      3
+    ],
+    "trigger_value": [
+      1000,
+      2
+    ],
+    "type": 1
+  },
+  "4": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "level1",
+    "id": 4,
+    "label_key": "",
+    "line": 0,
+    "name": "TS-4",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.60546875",
+    "pos_y": "0.446875",
+    "story": "1719601",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      3
+    ],
+    "type": 3
+  },
+  "5": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_greenC",
+    "id": 5,
+    "label_key": "",
+    "line": 6,
+    "name": "TS-5",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6265625",
+    "pos_y": "0.15625",
+    "story": "JIDIFENGBAO7",
+    "trigger_type": [
+      1,
+      3
+    ],
+    "trigger_value": [
+      2000,
+      4
+    ],
+    "type": 1
+  },
+  "6": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "level3",
+    "id": 6,
+    "label_key": "",
+    "line": 0,
+    "name": "TS-6",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.10703125",
+    "pos_y": "1.157291667",
+    "story": "JIDIFENGBAO8",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      5
+    ],
+    "type": 3
+  },
+  "7": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_greenD",
+    "id": 7,
+    "label_key": "",
+    "line": 8,
+    "name": "TS-7",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.34609375",
+    "pos_y": "1.347916667",
+    "story": "JIDIFENGBAO9",
+    "trigger_type": [
+      1,
+      3
+    ],
+    "trigger_value": [
+      3000,
+      6
+    ],
+    "type": 1
+  },
+  "8": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "level4",
+    "id": 8,
+    "label_key": "",
+    "line": 0,
+    "name": "TS-8",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.50546875",
+    "pos_y": "1.080208333",
+    "story": "JIDIFENGBAO10",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      7
+    ],
+    "type": 3
+  },
+  "9": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_greenE",
+    "id": 9,
+    "label_key": "",
+    "line": 10,
+    "name": "TS-9",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.60546875",
+    "pos_y": "1.446875",
+    "story": "JIDIFENGBAO11",
+    "trigger_type": [
+      1,
+      3
+    ],
+    "trigger_value": [
+      4000,
+      8
+    ],
+    "type": 1
+  },
+  "10": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "level5",
+    "id": 10,
+    "label_key": "",
+    "line": 0,
+    "name": "TS-10",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.6265625",
+    "pos_y": "1.15625",
+    "story": "JIDIFENGBAO12",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      9
+    ],
+    "type": 3
+  },
+  "11": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowF",
+    "id": 11,
+    "label_key": "",
+    "line": 12,
+    "name": "TSH-1",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "2.10703125",
+    "pos_y": "2.157291667",
+    "story": "JIDIFENGBAO13",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      2
+    ],
+    "type": 2
+  },
+  "12": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowG",
+    "id": 12,
+    "label_key": "",
+    "line": 13,
+    "name": "TSH-2",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "2.34609375",
+    "pos_y": "2.347916667",
+    "story": "JIDIFENGBAO14",
+    "trigger_type": [
+      3,
+      3
+    ],
+    "trigger_value": [
+      4,
+      11
+    ],
+    "type": 2
+  },
+  "13": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowH",
+    "id": 13,
+    "label_key": "",
+    "line": 14,
+    "name": "TSH-3",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "2.50546875",
+    "pos_y": "2.080208333",
+    "story": "JIDIFENGBAO15",
+    "trigger_type": [
+      3,
+      3
+    ],
+    "trigger_value": [
+      6,
+      12
+    ],
+    "type": 2
+  },
+  "14": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowI",
+    "id": 14,
+    "label_key": "",
+    "line": 15,
+    "name": "TSH-4",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.10703125",
+    "pos_y": "0.157291667",
+    "story": "JIDIFENGBAO16",
+    "trigger_type": [
+      3,
+      3
+    ],
+    "trigger_value": [
+      8,
+      13
+    ],
+    "type": 2
+  },
+  "15": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowJ",
+    "id": 15,
+    "label_key": "",
+    "line": 16,
+    "name": "TSH-5",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "JIDIFENGBAO17",
+    "trigger_type": [
+      3,
+      3
+    ],
+    "trigger_value": [
+      10,
+      14
+    ],
+    "type": 2
+  },
+  "16": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "story_yellowK",
+    "id": 16,
+    "label_key": "",
+    "line": 0,
+    "name": "TSH-6",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "1719602",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      15
+    ],
+    "type": 2
+  },
+  "17": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "base1",
+    "id": 17,
+    "label_key": "",
+    "line": 0,
+    "name": "基地1",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "",
+    "trigger_type": "",
+    "trigger_value": "",
+    "type": 4
+  },
+  "18": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "base2",
+    "id": 18,
+    "label_key": "",
+    "line": 1,
+    "name": "基地2",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "",
+    "trigger_type": "",
+    "trigger_value": "",
+    "type": 4
+  },
+  "19": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "base3",
+    "id": 19,
+    "label_key": "",
+    "line": 3,
+    "name": "基地3",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "",
+    "trigger_type": "",
+    "trigger_value": "",
+    "type": 4
+  },
+  "20": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "base4",
+    "id": 20,
+    "label_key": "",
+    "line": 5,
+    "name": "基地4",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "",
+    "trigger_type": "",
+    "trigger_value": "",
+    "type": 4
+  },
+  "21": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "base5",
+    "id": 21,
+    "label_key": "",
+    "line": 11,
+    "name": "基地5",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "",
+    "trigger_type": "",
+    "trigger_value": "",
+    "type": 4
+  },
+  "31": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 31,
+    "label_key": "",
+    "line": 0,
+    "name": "叛恶者之歌",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.10703125",
+    "pos_y": "0.157291667",
+    "story": "HUANYINLAIDAOTONGXINXUEYUAN2",
+    "trigger_type": [
+      1
+    ],
+    "trigger_value": [
+      0
+    ],
+    "type": 1
+  },
+  "32": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 32,
+    "label_key": "",
+    "line": 0,
+    "name": "组成乐队吧♪",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.34609375",
+    "pos_y": "0.347916667",
+    "story": "1819601",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      31
+    ],
+    "type": 3
+  },
+  "33": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 33,
+    "label_key": "",
+    "line": 0,
+    "name": "巨大指挥官",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.50546875",
+    "pos_y": "0.080208333",
+    "story": "1819602",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      32
+    ],
+    "type": 3
+  },
+  "34": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 34,
+    "label_key": "",
+    "line": 0,
+    "name": "健康活力Fight",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.60546875",
+    "pos_y": "0.446875",
+    "story": "1819603",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      33
+    ],
+    "type": 3
+  },
+  "35": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 35,
+    "label_key": "",
+    "line": 0,
+    "name": "拯救老师大作战",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6265625",
+    "pos_y": "0.15625",
+    "story": "HUANYINLAIDAOTONGXINXUEYUAN6",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      34
+    ],
+    "type": 1
+  },
+  "36": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 36,
+    "label_key": "",
+    "line": 0,
+    "name": "与童心重逢之时",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.10703125",
+    "pos_y": "1.157291667",
+    "story": "1819604",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      35
+    ],
+    "type": 3
+  },
+  "37": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 37,
+    "label_key": "",
+    "line": 0,
+    "name": "失控的童心",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.34609375",
+    "pos_y": "1.347916667",
+    "story": "1819605",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      36
+    ],
+    "type": 3
+  },
+  "38": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 38,
+    "label_key": "",
+    "line": 0,
+    "name": "愿童心永驻",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "1.50546875",
+    "pos_y": "1.080208333",
+    "story": "HUANYINLAIDAOTONGXINXUEYUAN9",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      37
+    ],
+    "type": 1
+  },
+  "39": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 39,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-1 爆炸疑云",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE2",
+    "trigger_type": [
+      1
+    ],
+    "trigger_value": [
+      0
+    ],
+    "type": 1
+  },
+  "40": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 40,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-2 兔警官探案中",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE3",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      39
+    ],
+    "type": 1
+  },
+  "41": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 41,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-3 战略性约会进行时",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE4",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      40
+    ],
+    "type": 1
+  },
+  "42": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 42,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-4 公路维和组，出击！",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE5",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      41
+    ],
+    "type": 1
+  },
+  "43": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 43,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-5 问题的关键",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE6",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      42
+    ],
+    "type": 1
+  },
+  "44": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 44,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-6 说来话长",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE7",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      43
+    ],
+    "type": 1
+  },
+  "45": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 45,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-7 谈心教室",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE8",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      44
+    ],
+    "type": 1
+  },
+  "46": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 46,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-8 迷彩都市之夜",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE9",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      45
+    ],
+    "type": 1
+  },
+  "47": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 47,
+    "label_key": "",
+    "line": 0,
+    "name": "CH-9 谁是卧底？",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "",
+    "pos_y": "",
+    "story": "MICAIDUSHIDEXUNZONGZHE10",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      46
+    ],
+    "type": 1
+  },
+  "48": {
+    "change_background": "bg_yumia_story_mode_1",
+    "change_bgm": "Yumia-az-theme-pv",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 48,
+    "label_key": "",
+    "line": 0,
+    "name": "EPS-1 一次调查",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.174729166666667",
+    "pos_y": "0.50712962962963",
+    "story": "YOUMIYAGUANQIAPIAN1",
+    "trigger_type": [
+      4
+    ],
+    "trigger_value": [
+      48
+    ],
+    "type": 1
+  },
+  "49": {
+    "change_background": "bg_yumia_story_mode_1",
+    "change_bgm": "Yumia-az-theme-pv",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 49,
+    "label_key": "",
+    "line": 0,
+    "name": "EPS-2 一场寻宝",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.389166666666667",
+    "pos_y": "0.320555555555556",
+    "story": "YOUMIYAGUANQIAPIAN2",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      48,
+      49
+    ],
+    "type": 1
+  },
+  "50": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 50,
+    "label_key": "",
+    "line": 0,
+    "name": "EPS-3 一次冒险",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.705729166666667",
+    "pos_y": "0.215",
+    "story": "YOUMIYAGUANQIAPIAN3",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      49,
+      50
+    ],
+    "type": 1
+  },
+  "51": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 51,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-1 起始之海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.173489583333333",
+    "pos_y": "0.241296296296296",
+    "story": "YOUMIYAGUANQIAPIAN4",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      50,
+      51
+    ],
+    "type": 1
+  },
+  "52": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 52,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-2 舒适海滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.173229166666667",
+    "pos_y": "0.483055555555556",
+    "story": "YOUMIYAGUANQIAPIAN5",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      51,
+      52
+    ],
+    "type": 1
+  },
+  "53": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 53,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-3 险峻石滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.613",
+    "pos_y": "0.372",
+    "story": "YOUMIYAGUANQIAPIAN6",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      52,
+      53
+    ],
+    "type": 1
+  },
+  "54": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 54,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-4 合流·其一",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.380208333333333",
+    "pos_y": "0.26537037037037",
+    "story": "YOUMIYAGUANQIAPIAN7",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      53,
+      54
+    ],
+    "type": 1
+  },
+  "55": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 55,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-5 合流·其二",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.600520833333333",
+    "pos_y": "0.255555555555556",
+    "story": "YOUMIYAGUANQIAPIAN8",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      54,
+      55
+    ],
+    "type": 1
+  },
+  "56": {
+    "change_background": "bg_yumia_story_mode_2",
+    "change_bgm": "Yumia-1",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 56,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-6 天际塔：起始区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.483854166666667",
+    "pos_y": "0.288888888888889",
+    "story": "YOUMIYAGUANQIAPIAN9",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      55,
+      56
+    ],
+    "type": 1
+  },
+  "57": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 57,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-7 向上进发",
+    "params": [
+      [
+        "item_lock",
+        [
+          1001,
+          134,
+          1
+        ]
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.4671875",
+    "pos_y": "0.331481481481481",
+    "story": "YOUMIYAGUANQIAPIAN10",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      56,
+      57
+    ],
+    "type": 1
+  },
+  "58": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 58,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-1 丰水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.385416666666667",
+    "pos_y": "0.386111111111111",
+    "story": "YOUMIYAGUANQIAPIAN11",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      57,
+      58
+    ],
+    "type": 1
+  },
+  "59": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 59,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-2 丰饶林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.313020833333333",
+    "pos_y": "0.494444444444444",
+    "story": "YOUMIYAGUANQIAPIAN12",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      58,
+      59
+    ],
+    "type": 1
+  },
+  "60": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 60,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-3 青草区",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.266666666666667",
+    "pos_y": "0.573148148148148",
+    "story": "YOUMIYAGUANQIAPIAN13",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      59,
+      60
+    ],
+    "type": 1
+  },
+  "61": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 61,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-4 腐草区",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.186458333333333",
+    "pos_y": "0.653703703703704",
+    "story": "YOUMIYAGUANQIAPIAN14",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      60,
+      61
+    ],
+    "type": 1
+  },
+  "62": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 62,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-5 腐水河流",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.128645833333333",
+    "pos_y": "0.753703703703704",
+    "story": "YOUMIYAGUANQIAPIAN15",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      61,
+      62
+    ],
+    "type": 1
+  },
+  "63": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 63,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-6 废弃村落",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.176041666666667",
+    "pos_y": "0.75",
+    "story": "YOUMIYAGUANQIAPIAN16",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      62,
+      63
+    ],
+    "type": 1
+  },
+  "64": {
+    "change_background": "bg_yumia_story_mode_3",
+    "change_bgm": "Yumia-7",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 64,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-7 腐水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.252604166666667",
+    "pos_y": "0.769444444444444",
+    "story": "1947001",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      63,
+      64
+    ],
+    "type": 3
+  },
+  "65": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 65,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-8 天际塔：L1区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.328125",
+    "pos_y": "0.713888888888889",
+    "story": "YOUMIYAGUANQIAPIAN18",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      64,
+      65
+    ],
+    "type": 1
+  },
+  "66": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 66,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-1 腐水海",
+    "params": [
+      [
+        "item_lock",
+        [
+          1001,
+          135,
+          1
+        ]
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.395833333333333",
+    "pos_y": "0.801851851851852",
+    "story": "1947002",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      66
+    ],
+    "type": 3
+  },
+  "67": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 67,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-2 腐蚀林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.445833333333333",
+    "pos_y": "0.686111111111111",
+    "story": "YOUMIYAGUANQIAPIAN20",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      66,
+      67
+    ],
+    "type": 1
+  },
+  "68": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 68,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-3 死亡荒原",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.5015625",
+    "pos_y": "0.588888888888889",
+    "story": "YOUMIYAGUANQIAPIAN21",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      67,
+      68
+    ],
+    "type": 1
+  },
+  "69": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 69,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-4 废弃哨站",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.559375",
+    "pos_y": "0.433333333333333",
+    "story": "YOUMIYAGUANQIAPIAN22",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      68,
+      69
+    ],
+    "type": 1
+  },
+  "70": {
+    "change_background": "bg_yumia_story_mode_4",
+    "change_bgm": "Yumia-20",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 70,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-5 大裂谷",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.616145833333333",
+    "pos_y": "0.351851851851852",
+    "story": "YOUMIYAGUANQIAPIAN23",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      69,
+      70
+    ],
+    "type": 1
+  },
+  "71": {
+    "change_background": "bg_yumia_story_mode_5",
+    "change_bgm": "Yumia-28",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 71,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-6 天际塔：L2区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.819791666666667",
+    "pos_y": "0.382407407407407",
+    "story": "YOUMIYAGUANQIAPIAN24",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      70,
+      71
+    ],
+    "type": 1
+  },
+  "72": {
+    "change_background": "bg_yumia_story_mode_5",
+    "change_bgm": "Yumia-28",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 72,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-1 鬼影群山",
+    "params": [
+      [
+        "item_lock",
+        [
+          1001,
+          136,
+          1
+        ]
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.822916666666667",
+    "pos_y": "0.457407407407407",
+    "story": "YOUMIYAGUANQIAPIAN25",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      72
+    ],
+    "type": 1
+  },
+  "73": {
+    "change_background": "bg_yumia_story_mode_5",
+    "change_bgm": "Yumia-28",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 73,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-2 废弃都市",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6453125",
+    "pos_y": "0.592592592592593",
+    "story": "YOUMIYAGUANQIAPIAN26",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      72,
+      73
+    ],
+    "type": 1
+  },
+  "74": {
+    "change_background": "bg_yumia_story_mode_6",
+    "change_bgm": "Yumia-53",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 74,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-3 天际塔：L3区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.610416666666667",
+    "pos_y": "0.749074074074074",
+    "story": "YOUMIYAGUANQIAPIAN27",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      73,
+      74
+    ],
+    "type": 1
+  },
+  "75": {
+    "change_background": "bg_yumia_story_mode_6",
+    "change_bgm": "Yumia-53",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 75,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-1 天际海",
+    "params": [
+      [
+        "item_lock",
+        [
+          1001,
+          137,
+          1
+        ]
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.697916666666667",
+    "pos_y": "0.815740740740741",
+    "story": "YOUMIYAGUANQIAPIAN28",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      74,
+      75
+    ],
+    "type": 1
+  },
+  "76": {
+    "change_background": "bg_yumia_story_mode_6",
+    "change_bgm": "Yumia-53",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 76,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-2 大护盾",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.778645833333333",
+    "pos_y": "0.739814814814815",
+    "story": "YOUMIYAGUANQIAPIAN29",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      75,
+      76
+    ],
+    "type": 1
+  },
+  "77": {
+    "change_background": "bg_yumia_story_mode_6",
+    "change_bgm": "Yumia-53",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 77,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-3 核心都市区",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.813541666666667",
+    "pos_y": "0.681481481481481",
+    "story": "YOUMIYAGUANQIAPIAN30",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      76,
+      77
+    ],
+    "type": 1
+  },
+  "78": {
+    "change_background": "bg_yumia_story_mode_6",
+    "change_bgm": "Yumia-az-theme-pv",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 78,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-4 天际塔：塔尖区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.811979166666667",
+    "pos_y": "0.793518518518519",
+    "story": "YOUMIYAGUANQIAPIAN31",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      77,
+      78
+    ],
+    "type": 1
+  },
+  "79": {
+    "change_background": "bg_yumia_story_mode_1",
+    "change_bgm": "Yumia-az-theme-pv",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 79,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-5 决战",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.848958333333333",
+    "pos_y": "0.750925925925926",
+    "story": "1947003",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      78,
+      79
+    ],
+    "type": 3
+  },
+  "80": {
+    "change_background": "bg_yumia_story_mode_1",
+    "change_bgm": "Yumia-az-theme-pv",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 80,
+    "label_key": "",
+    "line": 0,
+    "name": "EPS-4 尾声",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.349479166666667",
+    "pos_y": "0.512962962962963",
+    "story": "YOUMIYAGUANQIAPIAN33",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      79,
+      80
+    ],
+    "type": 1
+  },
+  "81": {
+    "change_background": "bg_yumia_story_mode_7",
+    "change_bgm": "Yumia-az-story",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 81,
+    "label_key": "",
+    "line": 0,
+    "name": "EPS-5 尾声的尾声",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.633854166666667",
+    "pos_y": "0.512962962962963",
+    "story": "YOUMIYAGUANQIAPIAN34",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      80,
+      81
+    ],
+    "type": 1
+  },
+  "82": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 82,
+    "label_key": "",
+    "line": 0,
+    "name": "起始区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.463541666666667",
+    "pos_y": "0.262037037037037",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      57,
+      79
+    ],
+    "type": 4
+  },
+  "83": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 83,
+    "label_key": "",
+    "line": 0,
+    "name": "险峻石滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.541145833333333",
+    "pos_y": "0.187962962962963",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      57,
+      79
+    ],
+    "type": 4
+  },
+  "84": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 84,
+    "label_key": "",
+    "line": 0,
+    "name": "起始之海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.150520833333333",
+    "pos_y": "0.27037037037037",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      57,
+      79
+    ],
+    "type": 4
+  },
+  "85": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 85,
+    "label_key": "",
+    "line": 0,
+    "name": "舒适海滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.168229166666667",
+    "pos_y": "0.480555555555556",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      57,
+      79
+    ],
+    "type": 4
+  },
+  "86": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 86,
+    "label_key": "",
+    "line": 0,
+    "name": "丰水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.375520833333333",
+    "pos_y": "0.39537037037037",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      79
+    ],
+    "type": 4
+  },
+  "87": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 87,
+    "label_key": "",
+    "line": 0,
+    "name": "丰饶林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.247395833333333",
+    "pos_y": "0.572222222222222",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      79
+    ],
+    "type": 4
+  },
+  "88": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 88,
+    "label_key": "",
+    "line": 0,
+    "name": "L1区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.289583333333333",
+    "pos_y": "0.721296296296296",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      79
+    ],
+    "type": 4
+  },
+  "89": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 89,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃村落",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.139583333333333",
+    "pos_y": "0.711111111111111",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      79
+    ],
+    "type": 4
+  },
+  "90": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 90,
+    "label_key": "",
+    "line": 0,
+    "name": "腐水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.1953125",
+    "pos_y": "0.806481481481482",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      65,
+      79
+    ],
+    "type": 4
+  },
+  "91": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 91,
+    "label_key": "",
+    "line": 0,
+    "name": "腐水海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.397395833333333",
+    "pos_y": "0.842592592592593",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "92": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 92,
+    "label_key": "",
+    "line": 0,
+    "name": "腐蚀林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.430208333333333",
+    "pos_y": "0.69537037037037",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "93": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 93,
+    "label_key": "",
+    "line": 0,
+    "name": "死亡荒原",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.514583333333333",
+    "pos_y": "0.49537037037037",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "94": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 94,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃哨站",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.554166666666667",
+    "pos_y": "0.398148148148148",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "95": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 95,
+    "label_key": "",
+    "line": 0,
+    "name": "大裂谷",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6375",
+    "pos_y": "0.324074074074074",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "96": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 96,
+    "label_key": "",
+    "line": 0,
+    "name": "L2区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.815104166666667",
+    "pos_y": "0.32962962962963",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      71,
+      79
+    ],
+    "type": 4
+  },
+  "97": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 97,
+    "label_key": "",
+    "line": 0,
+    "name": "鬼影群山",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.8359375",
+    "pos_y": "0.473148148148148",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      74,
+      79
+    ],
+    "type": 4
+  },
+  "98": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 98,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃都市",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.602604166666667",
+    "pos_y": "0.612962962962963",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      74,
+      79
+    ],
+    "type": 4
+  },
+  "99": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 99,
+    "label_key": "",
+    "line": 0,
+    "name": "L3区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.597395833333333",
+    "pos_y": "0.736111111111111",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      74,
+      79
+    ],
+    "type": 4
+  },
+  "100": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 100,
+    "label_key": "",
+    "line": 0,
+    "name": "起始区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.463541666666667",
+    "pos_y": "0.262037037037037",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "101": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 101,
+    "label_key": "",
+    "line": 0,
+    "name": "险峻石滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.541145833333333",
+    "pos_y": "0.187962962962963",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "102": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 102,
+    "label_key": "",
+    "line": 0,
+    "name": "起始之海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.150520833333333",
+    "pos_y": "0.27037037037037",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "103": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 103,
+    "label_key": "",
+    "line": 0,
+    "name": "舒适海滩",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.168229166666667",
+    "pos_y": "0.480555555555556",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "104": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 104,
+    "label_key": "",
+    "line": 0,
+    "name": "丰水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.375520833333333",
+    "pos_y": "0.39537037037037",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "105": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 105,
+    "label_key": "",
+    "line": 0,
+    "name": "丰饶林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.247395833333333",
+    "pos_y": "0.572222222222222",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "106": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 106,
+    "label_key": "",
+    "line": 0,
+    "name": "L1区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.289583333333333",
+    "pos_y": "0.721296296296296",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "107": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 107,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃村落",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.139583333333333",
+    "pos_y": "0.711111111111111",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "108": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 108,
+    "label_key": "",
+    "line": 0,
+    "name": "腐水湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.1953125",
+    "pos_y": "0.806481481481482",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "109": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 109,
+    "label_key": "",
+    "line": 0,
+    "name": "腐水海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.397395833333333",
+    "pos_y": "0.842592592592593",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "110": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 110,
+    "label_key": "",
+    "line": 0,
+    "name": "腐蚀林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.430208333333333",
+    "pos_y": "0.69537037037037",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "111": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 111,
+    "label_key": "",
+    "line": 0,
+    "name": "死亡荒原",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.514583333333333",
+    "pos_y": "0.49537037037037",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "112": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 112,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃哨站",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.554166666666667",
+    "pos_y": "0.398148148148148",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "113": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 113,
+    "label_key": "",
+    "line": 0,
+    "name": "大裂谷",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6375",
+    "pos_y": "0.324074074074074",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "114": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 114,
+    "label_key": "",
+    "line": 0,
+    "name": "L2区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.815104166666667",
+    "pos_y": "0.32962962962963",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "115": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 115,
+    "label_key": "",
+    "line": 0,
+    "name": "鬼影群山",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.8359375",
+    "pos_y": "0.473148148148148",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "116": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 116,
+    "label_key": "",
+    "line": 0,
+    "name": "废弃都市",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.602604166666667",
+    "pos_y": "0.612962962962963",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "117": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 117,
+    "label_key": "",
+    "line": 0,
+    "name": "L3区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.597395833333333",
+    "pos_y": "0.736111111111111",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "118": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 118,
+    "label_key": "",
+    "line": 0,
+    "name": "天际海",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.673958333333333",
+    "pos_y": "0.878703703703704",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "119": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 119,
+    "label_key": "",
+    "line": 0,
+    "name": "塔尖区段",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.822916666666667",
+    "pos_y": "0.794444444444444",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "120": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 120,
+    "label_key": "",
+    "line": 0,
+    "name": "核心都市区",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.819270833333333",
+    "pos_y": "0.707407407407407",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      81
+    ],
+    "type": 4
+  },
+  "121": {
+    "change_background": "bg_masaina_story_mode_1",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 121,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-1 初见即毕业",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.444270833333333",
+    "pos_y": "0.707407407407407",
+    "story": "QIYUANXIADEMIMI2",
+    "trigger_type": [
+      4
+    ],
+    "trigger_value": [
+      121
+    ],
+    "type": 1
+  },
+  "122": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 122,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-2 初入奇渊",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.444270833333333",
+    "pos_y": "0.707407407407407",
+    "story": "QIYUANXIADEMIMI3",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      121,
+      122
+    ],
+    "type": 1
+  },
+  "123": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 123,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-3 再见还是毕业",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.444270833333333",
+    "pos_y": "0.707407407407407",
+    "story": "QIYUANXIADEMIMI4",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      122,
+      123
+    ],
+    "type": 1
+  },
+  "124": {
+    "change_background": "bg_masaina_story_mode_2",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 124,
+    "label_key": "",
+    "line": 0,
+    "name": "EP1-4 再度启程",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.444270833333333",
+    "pos_y": "0.707407407407407",
+    "story": "QIYUANXIADEMIMI5",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      123,
+      124
+    ],
+    "type": 1
+  },
+  "125": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 125,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-1 冰喉峡谷",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.388020833333333",
+    "pos_y": "0.558333333333333",
+    "story": "QIYUANXIADEMIMI6",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      124,
+      125
+    ],
+    "type": 1
+  },
+  "126": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 126,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-2 极光之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.358333333333333",
+    "pos_y": "0.526851851851852",
+    "story": "QIYUANXIADEMIMI7",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      125,
+      126
+    ],
+    "type": 1
+  },
+  "127": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 127,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-3 陷阱",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.328645833333333",
+    "pos_y": "0.480555555555556",
+    "story": "QIYUANXIADEMIMI8",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      126,
+      127
+    ],
+    "type": 1
+  },
+  "128": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 128,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-4 重逢",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.244791666666667",
+    "pos_y": "0.533333333333333",
+    "story": "QIYUANXIADEMIMI9",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      127,
+      128
+    ],
+    "type": 1
+  },
+  "129": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 129,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-5 过去的事",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.3",
+    "pos_y": "0.637962962962963",
+    "story": "QIYUANXIADEMIMI10",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      128,
+      129
+    ],
+    "type": 1
+  },
+  "130": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 130,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-6 古老的馈赠",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.1796875",
+    "pos_y": "0.659259259259259",
+    "story": "QIYUANXIADEMIMI11",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      129,
+      130
+    ],
+    "type": 1
+  },
+  "131": {
+    "change_background": "bg_masaina_story_mode_3",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 131,
+    "label_key": "",
+    "line": 0,
+    "name": "EP2-7 寒冬要塞",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.23125",
+    "pos_y": "0.360185185185185",
+    "story": "QIYUANXIADEMIMI12",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      130,
+      131
+    ],
+    "type": 1
+  },
+  "132": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 132,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-1 秽沼瘴潭之战",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.502083333333333",
+    "pos_y": "0.785185185185185",
+    "story": "1956001",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      131,
+      132
+    ],
+    "type": 3
+  },
+  "133": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 133,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-2 异化法师营地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.603125",
+    "pos_y": "0.785185185185185",
+    "story": "QIYUANXIADEMIMI14",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      132,
+      133
+    ],
+    "type": 1
+  },
+  "134": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 134,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-3 结盟仪式",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6640625",
+    "pos_y": "0.672222222222222",
+    "story": "QIYUANXIADEMIMI15",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      133,
+      134
+    ],
+    "type": 1
+  },
+  "135": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 135,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-4 和谈生变",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6359375",
+    "pos_y": "0.652777777777778",
+    "story": "1956002",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      134,
+      135
+    ],
+    "type": 3
+  },
+  "136": {
+    "change_background": "bg_masaina_story_mode_4",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 136,
+    "label_key": "",
+    "line": 0,
+    "name": "EP3-5 预言之子",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.765625",
+    "pos_y": "0.55",
+    "story": "QIYUANXIADEMIMI17",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      135,
+      136
+    ],
+    "type": 1
+  },
+  "137": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 137,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-1 遗忘之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.5453125",
+    "pos_y": "0.505555555555556",
+    "story": "1956003",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      136,
+      137
+    ],
+    "type": 3
+  },
+  "138": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 138,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-2 不落要塞",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.591145833333333",
+    "pos_y": "0.461111111111111",
+    "story": "QIYUANXIADEMIMI19",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      137,
+      138
+    ],
+    "type": 1
+  },
+  "139": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 139,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-3 幻影之境",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.5390625",
+    "pos_y": "0.387962962962963",
+    "story": "1956004",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      138,
+      139
+    ],
+    "type": 3
+  },
+  "140": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 140,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-4 黎明的终战",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.698958333333333",
+    "pos_y": "0.30462962962963",
+    "story": "QIYUANXIADEMIMI21",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      139,
+      140
+    ],
+    "type": 1
+  },
+  "141": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 141,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-5 神庙漫步",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.763541666666667",
+    "pos_y": "0.213888888888889",
+    "story": "QIYUANXIADEMIMI22",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      140,
+      141
+    ],
+    "type": 1
+  },
+  "142": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 142,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-6 回忆觉醒",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.853125",
+    "pos_y": "0.234259259259259",
+    "story": "QIYUANXIADEMIMI23",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      141,
+      142
+    ],
+    "type": 1
+  },
+  "143": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 143,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-7 寂灭魔法塔",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.455208333333333",
+    "pos_y": "0.446296296296296",
+    "story": "QIYUANXIADEMIMI24",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      142,
+      143
+    ],
+    "type": 1
+  },
+  "144": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 144,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-8 逝去的时代",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.855729166666667",
+    "pos_y": "0.248148148148148",
+    "story": "QIYUANXIADEMIMI25",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      143,
+      144
+    ],
+    "type": 1
+  },
+  "145": {
+    "change_background": "bg_masaina_story_mode_5",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 145,
+    "label_key": "",
+    "line": 0,
+    "name": "EP4-9 沉睡之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.85",
+    "pos_y": "0.339814814814815",
+    "story": "QIYUANXIADEMIMI26",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      144,
+      145
+    ],
+    "type": 1
+  },
+  "146": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 146,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-1 反攻的第一枪",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.836458333333333",
+    "pos_y": "0.473148148148148",
+    "story": "QIYUANXIADEMIMI27",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      145,
+      146
+    ],
+    "type": 1
+  },
+  "147": {
+    "change_background": "",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 147,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-2 恩泽城之战",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.446875",
+    "pos_y": "0.642592592592593",
+    "story": "1956005",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      146,
+      147
+    ],
+    "type": 3
+  },
+  "148": {
+    "change_background": "bg_masaina_story_mode_4",
+    "change_bgm": "story-enzecheng-theme",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 148,
+    "label_key": "",
+    "line": 0,
+    "name": "EP5-3 终结与新生",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.446875",
+    "pos_y": "0.642592592592593",
+    "story": "QIYUANXIADEMIMI29",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      147,
+      148
+    ],
+    "type": 1
+  },
+  "149": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "Benedictus",
+    "icon": "",
+    "id": 149,
+    "label_key": "",
+    "line": 0,
+    "name": "恩泽城",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.446875",
+    "pos_y": "0.642592592592593",
+    "story": "",
+    "trigger_type": [
+      3,
+      4
+    ],
+    "trigger_value": [
+      124,
+      145
+    ],
+    "type": 4
+  },
+  "150": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "IcemawGorge",
+    "icon": "",
+    "id": 150,
+    "label_key": "",
+    "line": 0,
+    "name": "冰喉峡谷",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.371354166666667",
+    "pos_y": "0.530555555555556",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "151": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "LandofAuroras",
+    "icon": "",
+    "id": 151,
+    "label_key": "",
+    "line": 0,
+    "name": "极光之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.308854166666667",
+    "pos_y": "0.471296296296296",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "152": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "NevermeltingLake",
+    "icon": "",
+    "id": 152,
+    "label_key": "",
+    "line": 0,
+    "name": "永寂冰湖",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.3015625",
+    "pos_y": "0.639814814814815",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "153": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "LightbaneTundra",
+    "icon": "",
+    "id": 153,
+    "label_key": "",
+    "line": 0,
+    "name": "噬光苔原",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.218229166666667",
+    "pos_y": "0.555555555555556",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "154": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "AncientRuins",
+    "icon": "",
+    "id": 154,
+    "label_key": "",
+    "line": 0,
+    "name": "古代遗迹",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.175520833333333",
+    "pos_y": "0.663888888888889",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "155": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "Frostheim",
+    "icon": "",
+    "id": 155,
+    "label_key": "",
+    "line": 0,
+    "name": "寒冬要塞",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.2390625",
+    "pos_y": "0.278703703703704",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      131
+    ],
+    "type": 4
+  },
+  "156": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "MiasmicSwamp",
+    "icon": "",
+    "id": 156,
+    "label_key": "",
+    "line": 0,
+    "name": "秽沼瘴潭",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.522916666666667",
+    "pos_y": "0.773148148148148",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      136
+    ],
+    "type": 4
+  },
+  "157": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "DerelictusHold",
+    "icon": "",
+    "id": 157,
+    "label_key": "",
+    "line": 0,
+    "name": "异化法师营地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.613541666666667",
+    "pos_y": "0.742",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      136
+    ],
+    "type": 4
+  },
+  "158": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "WhisperingGrove",
+    "icon": "",
+    "id": 158,
+    "label_key": "",
+    "line": 0,
+    "name": "低语林地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.6265625",
+    "pos_y": "0.625925925925926",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      136
+    ],
+    "type": 4
+  },
+  "159": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "HollowheartTree",
+    "icon": "",
+    "id": 159,
+    "label_key": "",
+    "line": 0,
+    "name": "腐心树",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.700520833333333",
+    "pos_y": "0.814814814814815",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      136
+    ],
+    "type": 4
+  },
+  "160": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "Pandemonium",
+    "icon": "",
+    "id": 160,
+    "label_key": "",
+    "line": 0,
+    "name": "暗夜魔宫",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.7703125",
+    "pos_y": "0.547222222222222",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      136
+    ],
+    "type": 4
+  },
+  "161": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "ForgottenReach",
+    "icon": "",
+    "id": 161,
+    "label_key": "",
+    "line": 0,
+    "name": "遗忘之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.697395833333333",
+    "pos_y": "0.311111111111111",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      145
+    ],
+    "type": 4
+  },
+  "162": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "ShatteredLands",
+    "icon": "",
+    "id": 162,
+    "label_key": "",
+    "line": 0,
+    "name": "破碎之地",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.586979166666667",
+    "pos_y": "0.392592592592593",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      145
+    ],
+    "type": 4
+  },
+  "163": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "SpireofCycles",
+    "icon": "",
+    "id": 163,
+    "label_key": "",
+    "line": 0,
+    "name": "寂灭魔法塔",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.473958333333333",
+    "pos_y": "0.442592592592593",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      145
+    ],
+    "type": 4
+  },
+  "164": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "AncientBattlefieldRuins",
+    "icon": "",
+    "id": 164,
+    "label_key": "",
+    "line": 0,
+    "name": "古战场遗迹",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.853125",
+    "pos_y": "0.228703703703704",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      145
+    ],
+    "type": 4
+  },
+  "165": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "SilentGrove",
+    "icon": "",
+    "id": 165,
+    "label_key": "",
+    "line": 0,
+    "name": "静默树庭",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.841145833333333",
+    "pos_y": "0.360185185185185",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      145
+    ],
+    "type": 4
+  },
+  "166": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "Benedictus",
+    "icon": "",
+    "id": 166,
+    "label_key": "",
+    "line": 0,
+    "name": "恩泽城",
+    "params": "",
+    "pass_awards": 0,
+    "pos_x": "0.446875",
+    "pos_y": "0.642592592592593",
+    "story": "",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      148
+    ],
+    "type": 4
+  },
+  "167": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 167,
+    "label_key": "",
+    "line": 0,
+    "name": "VR-0",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.6229167",
+    "pos_y": "0.381481481",
+    "story": "MANYOUZHEZHAOMUJIHUA1",
+    "trigger_type": [
+      1
+    ],
+    "trigger_value": [
+      0
+    ],
+    "type": 1
+  },
+  "168": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 168,
+    "label_key": "",
+    "line": 0,
+    "name": "VR-1",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.5421875",
+    "pos_y": "0.715740741",
+    "story": "MANYOUZHEZHAOMUJIHUA2",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      167
+    ],
+    "type": 1
+  },
+  "169": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 169,
+    "label_key": "",
+    "line": 0,
+    "name": "VR-2",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.4375",
+    "pos_y": "0.533333333",
+    "story": "MANYOUZHEZHAOMUJIHUA3",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      168
+    ],
+    "type": 1
+  },
+  "170": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 170,
+    "label_key": "",
+    "line": 0,
+    "name": "VR-3",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.28125",
+    "pos_y": "0.381481481",
+    "story": "MANYOUZHEZHAOMUJIHUA4",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      169
+    ],
+    "type": 1
+  },
+  "171": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 171,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 1
+    },
+    "line": 0,
+    "name": "VR-4",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.214583333",
+    "pos_y": "0.656481481",
+    "story": "MANYOUZHEZHAOMUJIHUA5",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      170
+    ],
+    "type": 1
+  },
+  "172": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 172,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 2
+    },
+    "line": 0,
+    "name": "VR-5",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.30625",
+    "pos_y": "0.887037037",
+    "story": "MANYOUZHEZHAOMUJIHUA6",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      171
+    ],
+    "type": 1
+  },
+  "173": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 173,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 3
+    },
+    "line": 0,
+    "name": "VR-6",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.558854167",
+    "pos_y": "0.943518519",
+    "story": "MANYOUZHEZHAOMUJIHUA7",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      172
+    ],
+    "type": 1
+  },
+  "174": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 174,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 4
+    },
+    "line": 0,
+    "name": "VR-7",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.861458333",
+    "pos_y": "0.905555556",
+    "story": "MANYOUZHEZHAOMUJIHUA8",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      173
+    ],
+    "type": 1
+  },
+  "175": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 175,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 5
+    },
+    "line": 0,
+    "name": "VR-8",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.816145833",
+    "pos_y": "0.715740741",
+    "story": "MANYOUZHEZHAOMUJIHUA9",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      174
+    ],
+    "type": 1
+  },
+  "176": {
+    "change_background": "",
+    "change_bgm": "",
+    "change_prefab": "",
+    "en_name": "",
+    "icon": "",
+    "id": 176,
+    "label_key": {
+      "flagID": 1,
+      "flagIndex": 6
+    },
+    "line": 0,
+    "name": "VR-9",
+    "params": [
+      [
+        "repeatable",
+        true
+      ]
+    ],
+    "pass_awards": 0,
+    "pos_x": "0.828125",
+    "pos_y": "0.489814815",
+    "story": "MANYOUZHEZHAOMUJIHUA10",
+    "trigger_type": [
+      3
+    ],
+    "trigger_value": [
+      175
+    ],
+    "type": 1
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176
+  ]
+}

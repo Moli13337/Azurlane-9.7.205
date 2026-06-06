@@ -1,0 +1,1944 @@
+{
+  "1": {
+    "acesses": "",
+    "desc": "做工精细的吧台椅，由黑色木质底座和红色皮革坐垫组成。坐垫厚度适中，即使久坐也不会感到疲劳。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture5",
+    "id": 1,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "吧台椅",
+    "rarity": 3,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100202
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100201
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "2": {
+    "acesses": "",
+    "desc": "只需将水果或蔬菜切成小块，放入其中并按下启动键即可。功能齐全，使用方便，厨房新手必备佳品。 ",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture4",
+    "id": 2,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Siriushostel/pre_db_sh_electrical03",
+    "name": "榨汁机",
+    "rarity": 2,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100201
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "3": {
+    "acesses": "",
+    "desc": "造型经典，长度适宜的皮质沙发。不仅可以为客厅增添一抹奢华气息，更能提供舒适的坐享体验。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture6",
+    "id": 3,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "经典沙发",
+    "rarity": 3,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100301
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100303
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "4": {
+    "acesses": "",
+    "desc": "床架由坚固耐用的木材制成，可以轻松支撑起使用者的重量。设计简单舒适，足够使用者拥有一个好梦。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture3",
+    "id": 4,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "简约木床",
+    "rarity": 3,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100102
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100104
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "5": {
+    "acesses": "",
+    "desc": "天狼星梳妆台上的台灯。夜晚光线不佳时，她便会打开这盏台灯。似乎是想时刻方便自己检查仪容，以方便用最佳的状态来迎接所思所念之人。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture2",
+    "id": 5,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Siriushostel/pre_db_sh_chandelier01",
+    "name": "台灯",
+    "rarity": 2,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "6": {
+    "acesses": "",
+    "desc": "邮轮之旅结束后，天狼星亲自购买并手动拼装的邮轮模型。或许寄托着少女某些小小的心思。 ",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_CommonFurniture1",
+    "id": 6,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Siriushostel/pre_db_sh_decoration01",
+    "name": "邮轮模型",
+    "rarity": 2,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      100402
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "121": {
+    "acesses": "",
+    "desc": "床身各处点缀着可爱的蝴蝶结装饰。红白色调的枕头和被子，营造出甜蜜浪漫的氛围。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_PremiumFurniture4",
+    "id": 121,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Siriushostel/pre_db_sh_bed01",
+    "name": "甜蜜心事",
+    "rarity": 4,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [
+      270101
+    ],
+    "target_slots": [
+      100102
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100107
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture121"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "122": {
+    "acesses": "",
+    "desc": "舒适的躺椅沙发。\n柔软舒适的沙发上摆放着靠枕和毯子，方便使用者随时入睡。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_PremiumFurniture2",
+    "id": 122,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Siriushostel/pre_db_sh_chair02",
+    "name": "午后遐乡",
+    "rarity": 4,
+    "room_id": 1,
+    "scene_hides": "",
+    "shop_id": [
+      270103
+    ],
+    "target_slots": [
+      100301
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100202
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture122"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "151": {
+    "acesses": "",
+    "desc": "雪花飘落、烛光温馨，圣诞之约。\n造型别致的驯鹿雪橇上是柔软的坐垫和舒服的毛毯，交织着祝福与期待的星光下还隐藏着一份令人期待的小惊喜。\n圣诞晚餐后，在这份温暖与美好间，说不定还会发生一些美好的小故事。",
+    "icon": "dorm3dIcon/3Ddrom_tianlangxing_PremiumFurniture5",
+    "id": 151,
+    "is_exclusive": 1,
+    "is_special": 1,
+    "model": "Pay_Siriushostel/Sh_Sp_Xmas/pre_db_sp_sh_xmas01",
+    "name": "圣诞雪橇沙发套组",
+    "rarity": 5,
+    "room_id": 1,
+    "scene_hides": [
+      "fbx/litmap_03/pre_db_chandelier06",
+      "fbx/litmap_03/pre_db_table02",
+      "fbx/litmap_03/pre_db_ceram01",
+      "fbx/litmap_03/pre_db_ceram01b (1)",
+      "fbx/litmap_03/pre_db_book01"
+    ],
+    "shop_id": [
+      270104
+    ],
+    "target_slots": [
+      100301
+    ],
+    "touch_id": [
+      [
+        20220,
+        10100203
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture151"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "201": {
+    "acesses": "",
+    "desc": "配色素雅的榻榻米床铺，清爽大方，柔软而舒适。\n躺下的一刻，疲惫尽散。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture1",
+    "id": 201,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "简然舒眠",
+    "rarity": 3,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120103
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200310
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "202": {
+    "acesses": "",
+    "desc": "相对而坐，轻声细语间，食物的气味在空气中弥漫。\n在她的笑容中，连时光都变得温柔起来。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture2",
+    "id": 202,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "惬意一餐",
+    "rarity": 3,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120203
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200210
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "203": {
+    "acesses": "",
+    "desc": "令人安心的植物材质上，承载着闲适的小憩时光。\n微风带来阵阵清香，伴随着细碎的响声，编织着完美的午后。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture3",
+    "id": 203,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "午后微风",
+    "rarity": 3,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120303
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200110
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "204": {
+    "acesses": "",
+    "desc": "素雅的瓷器勾勒出优美的线条，盛开的花朵是最美的点缀。\n花香与器形相得益彰，为空间增添一份生机与雅致。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture4",
+    "id": 204,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_vase01",
+    "name": "瓶中暖意",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "205": {
+    "acesses": "",
+    "desc": "可爱的形态总能勾起会心的微笑，细腻的做工传递着温暖的心意。\n它安静地守候在角落，却是空间里最暖心的存在。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture5",
+    "id": 205,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_toy02",
+    "name": "啾啾玩偶",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120102
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "206": {
+    "acesses": "",
+    "desc": "春日，粉嫩花瓣轻抚杯沿，如同一抹温柔的风景。\n让人想起与她置身于浪漫唯美的樱花雨下，尽享茶韵与春意的美妙时光。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture6",
+    "id": 206,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_tableware02",
+    "name": "杯沿春色",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120201
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "207": {
+    "acesses": "",
+    "desc": "挺拔的枝干优雅延伸，如同云端的诗意。\n疏密有致的枝叶间，是生命向往闲适与自得的悠然姿态。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture7",
+    "id": 207,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "一支青霄",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120202
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "208": {
+    "acesses": "",
+    "desc": "简约的瓷盆与翠绿的植物，演绎着留白的艺术。\n不张扬的生命力，却能让整个空间充满禅意般的宁静。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture8",
+    "id": 208,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "闲时留白",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120301
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "209": {
+    "acesses": "",
+    "desc": "玲珑的器形中绽放着季节的色彩，花枝自然舒展，仿佛一幅流动的画卷。\n每一次插花都是对美的重新诠释。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture9",
+    "id": 209,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_vase02",
+    "name": "瓶中灿景",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120302
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "210": {
+    "acesses": "",
+    "desc": "福气降至，吉祥如意。\n圆滚可爱的造型为整个空间都带来了温馨的韵味。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_CommonFurniture10",
+    "id": 210,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_decoration02",
+    "name": "好运将至",
+    "rarity": 2,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      120202
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "221": {
+    "acesses": "",
+    "desc": "柔软的触感，适宜的温度，能将整个人温柔地包裹。\n不论是依偎还是拥抱，都是和它相处的最舒适姿态。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_PremiumFurniture1",
+    "id": 221,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_bed01",
+    "name": "柔软怀抱",
+    "rarity": 4,
+    "room_id": 2,
+    "scene_hides": "",
+    "shop_id": [
+      270201
+    ],
+    "target_slots": [
+      120103
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200410
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture221"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "222": {
+    "acesses": "",
+    "desc": "宽敞的餐桌承载着每一次的喜悦与期待。\n精心布置的座位，静候着一场私密相聚。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_PremiumFurniture2",
+    "id": 222,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_diningroom01",
+    "name": "对坐之谈",
+    "rarity": 3,
+    "room_id": 2,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/diningroom"
+    ],
+    "shop_id": [
+      270202
+    ],
+    "target_slots": [
+      120203
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200610
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": [
+      "banner_furniture222"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "223": {
+    "acesses": "",
+    "desc": "柔软的布艺包裹着疲惫的身躯，靠枕轻轻拥住每一个慵懒的姿态。\n这里是一天中最温柔的角落，让人不自觉沉醉其中。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_PremiumFurniture3",
+    "id": 223,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Noshirohostel/pre_db_nh_livingroom01",
+    "name": "安逸时光",
+    "rarity": 4,
+    "room_id": 2,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      270203
+    ],
+    "target_slots": [
+      120303
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200710
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture223"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "251": {
+    "acesses": "",
+    "desc": "被炉里温暖的气息，让人想起冬日里懒洋洋的午后。\n阳光透过窗棂，洒在榻榻米上，与被炉的暖意交织，仿佛能融化所有的疲惫。",
+    "icon": "dorm3dIcon/3Ddrom_nengdai_PremiumFurniture251",
+    "id": 251,
+    "is_exclusive": 1,
+    "is_special": 1,
+    "model": "Pay_Noshirohostel/Nh_Sp_NewYearsDay/pre_db_nh_sp_nyd_livingroom01",
+    "name": "暖意入梦",
+    "rarity": 5,
+    "room_id": 2,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      270105
+    ],
+    "target_slots": [
+      120303
+    ],
+    "touch_id": [
+      [
+        30221,
+        2200510
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture251"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "301": {
+    "acesses": "",
+    "desc": "小熊曲奇饼干形状的床头，简洁又不失童趣。\n躺在这张床上，仿佛能嗅到海盐曲奇的香气，让人忘却疲惫，进入甜蜜的梦乡。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture2",
+    "id": 301,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "海盐曲奇木床",
+    "rarity": 3,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130103
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990330
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "302": {
+    "acesses": "",
+    "desc": "彩色的装饰与此刻绽放的想象力都让这一方湛蓝的小天地布满了奇妙的气息。在这片小角落，即使下着雨也会有好心情",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture3",
+    "id": 302,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "湛蓝奇趣",
+    "rarity": 3,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130202
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990320
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "303": {
+    "acesses": "",
+    "desc": "仿佛刚刚出炉的曲奇饼干，散发出温暖的香气。\n每一处弧线都充满了童趣与甜蜜，打造最治愈的角落。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture1",
+    "id": 303,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "曲奇沙发",
+    "rarity": 3,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130302
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990310
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "304": {
+    "acesses": "",
+    "desc": "造型可爱的海洋生物玩偶，采用柔软织物填充。\n抱在怀中十分舒适。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture5",
+    "id": 304,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_toy05",
+    "name": "海洋生物玩偶",
+    "rarity": 2,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "305": {
+    "acesses": "",
+    "desc": "小小的绿意。层层叠叠。\n无论是放在哪里，都能为你的空间增添一份自然的治愈。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture4",
+    "id": 305,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_pottedplant01",
+    "name": "自然之息",
+    "rarity": 2,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130102
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "306": {
+    "acesses": "",
+    "desc": "一组清新风格的画框，装点着充满童趣风格的画作。\n或许有一天，画框中会被放入最珍贵的回忆。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture6",
+    "id": 306,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_billboard01_group01",
+    "name": "时光印记",
+    "rarity": 2,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130201
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "307": {
+    "acesses": "",
+    "desc": "不仅是一件装饰品，更像是一个开关。\n轻轻一按就让窗户变成了通往海洋的魔法窗口。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_CommonFurniture7",
+    "id": 307,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_decoration02",
+    "name": "海洋奇遇",
+    "rarity": 2,
+    "room_id": 3,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      130301
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "321": {
+    "acesses": "",
+    "desc": "咖啡杯中盛着的是属于幻想时刻的自得与惬意，童话故事中的下午茶时光，属于在这方天地中的每一个人。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_PremiumFurniture1",
+    "id": 321,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_entertainmentarea01",
+    "name": "童心下午茶",
+    "rarity": 4,
+    "room_id": 3,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/entertainmentarea"
+    ],
+    "shop_id": [
+      270301
+    ],
+    "target_slots": [
+      130202
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990340
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": [
+      "banner_furniture321"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "322": {
+    "acesses": "",
+    "desc": "船型设计搭配深邃的海蓝色调，柔软的床铺仿佛漂浮在夜空下，让人沉醉于浪漫的冒险情怀。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_PremiumFurniture2",
+    "id": 322,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_bedroom01",
+    "name": "星河满船",
+    "rarity": 4,
+    "room_id": 3,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/bedroom"
+    ],
+    "shop_id": [
+      270302
+    ],
+    "target_slots": [
+      130103
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990350
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture322"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "323": {
+    "acesses": "",
+    "desc": "轻轻晃动的蓬松云朵，柔软细腻的触感，或许这就是坐进一团棉花糖的感觉，和她一起在诱人的香甜气息中享受轻松时光吧。 ",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_PremiumFurniture8",
+    "id": 323,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Anchoragehostel/pre_db_ah_livingroom01",
+    "name": "云中甜梦",
+    "rarity": 4,
+    "room_id": 3,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      270303
+    ],
+    "target_slots": [
+      130302
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990360
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture323"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "324": {
+    "acesses": "",
+    "desc": "松软甜蜜的心形抱枕，闪烁星光的玩具灯球，一同点缀着海蓝色的甜蜜美梦，欢迎进入无忧无虑的童心乐园。",
+    "icon": "dorm3dIcon/3Ddrom_ankeleiqi_PremiumFurniture9",
+    "id": 324,
+    "is_exclusive": 1,
+    "is_special": 1,
+    "model": "Pay_Anchoragehostel/Ah_Sp_ValentinesDay/pre_db_aklq_sp_vd01",
+    "name": "童心乐园 ",
+    "rarity": 5,
+    "room_id": 3,
+    "scene_hides": [
+      "fbx/no_bake_pay_prop/bedroom",
+      "fbx/no_bake/pre_db_anchoragehostel01_lamp01",
+      "fbx/no_bake/pre_db_anchoragehostel01_lamp01_night"
+    ],
+    "shop_id": [
+      270304
+    ],
+    "target_slots": [
+      130103
+    ],
+    "touch_id": [
+      [
+        19903,
+        1990370
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture324"
+    ],
+    "unlock_tips": [
+      8
+    ]
+  },
+  "401": {
+    "acesses": "",
+    "desc": "度假时间开始~！椰树下的阳光，海岸边的清凉。从高处直冲而下时，迎面扑来海风混合着飞溅的水珠。只是刹那间就跃入了一片假期的欢愉。",
+    "icon": "dorm3dIcon/3Ddrom_beach_PremiumFurniture1",
+    "id": 401,
+    "is_exclusive": 0,
+    "is_special": 1,
+    "model": "pay_publicplace/slide",
+    "name": "滨海欢愉 ",
+    "rarity": 5,
+    "room_id": 4,
+    "scene_hides": "",
+    "shop_id": [
+      270401
+    ],
+    "target_slots": [
+      140101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": [
+      "banner_furniture401"
+    ],
+    "unlock_tips": [
+      7
+    ]
+  },
+  "1101": {
+    "acesses": "",
+    "desc": "注重体验的舒适大床，结构稳定，坚固耐用。抱着柔软的兔兔抱枕入睡，或许会梦见星河下的胡萝卜庄园？",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture1",
+    "id": 1101,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "兔兔摇篮",
+    "rarity": 3,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110102
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051730
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1102": {
+    "acesses": "",
+    "desc": "以简约线条勾勒未来美学，搭载澎湃制冷系统。提供酸素可乐畅饮，为生活注入冰爽与惬意。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture2",
+    "id": 1102,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "极冰纪元",
+    "rarity": 3,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110203
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051710
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1103": {
+    "acesses": "",
+    "desc": "一款经典的布艺沙发，质感蓬松柔软。每当午后阳光洒落其上，这里就是最适合打盹的一小块漂浮陆地。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture3",
+    "id": 1103,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "日光棉岛",
+    "rarity": 3,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110303
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051720
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1104": {
+    "acesses": "",
+    "desc": "形似行星的台灯，在夜晚静静发出朦胧微光。深空之中，总有一颗不熄灭的星星在静静守候着你。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture6",
+    "id": 1104,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_electrical03",
+    "name": "惑星夜灯",
+    "rarity": 2,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1105": {
+    "acesses": "",
+    "desc": "精美的装饰画，为咖啡店增添艺术气息和美感，让咖啡时光更具温馨。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture5",
+    "id": 1105,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_billboard01",
+    "name": "装饰画",
+    "rarity": 2,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110301
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1106": {
+    "acesses": "",
+    "desc": "轻轻拧动开关，柔光如流水般漫溢而出，水母群浮游于深蓝色的虚空。是从何时……坠入了这如梦似幻的海洋？",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture7",
+    "id": 1106,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_fishtank01",
+    "name": "静谧深蓝",
+    "rarity": 2,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110302
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1107": {
+    "acesses": "",
+    "desc": "方便快捷的加热工具，无论是早餐还是下午茶，都能让美食保持温暖，为每一餐增添一份贴心的关怀。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture8",
+    "id": 1107,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_electrical04",
+    "name": "微波炉",
+    "rarity": 2,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110201
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1108": {
+    "acesses": "",
+    "desc": "别小看它，美化环境的同时还能净化空气哦~",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_CommonFurniture9",
+    "id": 1108,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_pottedplant01",
+    "name": "绿意盆栽",
+    "rarity": 2,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1110202
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1151": {
+    "acesses": "",
+    "desc": "未来感十足的新概念卡座，同步配置了智能控温功能。24小时供应冰镇饮品，诠释对服务和舒适的极致追求。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_PremiumFurniture1",
+    "id": 1151,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_livingroom01",
+    "name": "星空一隅",
+    "rarity": 4,
+    "room_id": 11,
+    "scene_hides": [
+      "no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      271101
+    ],
+    "target_slots": [
+      1110303
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051740
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture1151"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1152": {
+    "acesses": "",
+    "desc": "专业的健身器材，甚至考虑到了使用者的精神娱乐需求。\n只要蹬上踏板，足不出户也能开启一段心跳加速的畅快旅途。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_PremiumFurniture4",
+    "id": 1152,
+    "is_exclusive": 1,
+    "is_special": 1,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_entertainment01",
+    "name": "动感飞轮",
+    "rarity": 5,
+    "room_id": 11,
+    "scene_hides": [
+      "no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      270204
+    ],
+    "target_slots": [
+      1110303
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051750
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture1152"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1153": {
+    "acesses": "",
+    "desc": "将科技美学转化为私密的休憩空间，构建出一处甜蜜的天外庇护所。\n投身其中，就仿佛置身于遥远星空外的温暖角落。",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_PremiumFurniture2",
+    "id": 1153,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_bedroom01",
+    "name": "天外庇所 ",
+    "rarity": 4,
+    "room_id": 11,
+    "scene_hides": [
+      "no_bake_pay_prop/bedroom"
+    ],
+    "shop_id": [
+      270205
+    ],
+    "target_slots": [
+      1110102
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051760
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture1153"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1154": {
+    "acesses": "",
+    "desc": "您好，欢迎使用智能冰箱IB-7。\n现打草莓冰激凌已制作完成，就是您最喜欢的口味。\n想要更多个性化推荐吗？该功能暂未开发，敬请期待吧！",
+    "icon": "dorm3dIcon/3Ddrom_xinzexi_PremiumFurniture3",
+    "id": 1154,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Newjerseyhostel/pre_db_njh_kitchen01",
+    "name": "智能冰箱IB-7",
+    "rarity": 4,
+    "room_id": 11,
+    "scene_hides": "",
+    "shop_id": [
+      270206
+    ],
+    "target_slots": [
+      1110204
+    ],
+    "touch_id": [
+      [
+        10517,
+        1051780
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": [
+      "banner_furniture1154"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1201": {
+    "acesses": "",
+    "desc": "温馨柔软的双人床，床铺上铺着舒适的床垫，被褥枕头齐全，随时都能钻进被窝缓解一天积攒下来的疲劳。",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture1",
+    "id": 1201,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "温馨软床 ",
+    "rarity": 3,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120103
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070710
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture1151"
+    ],
+    "unlock_tips": ""
+  },
+  "1202": {
+    "acesses": "",
+    "desc": "只有椅面和椅背的简约座椅，专为榻榻米设计，搭配柔软坐垫使用舒适，即使久坐也不用担心肌肉疲劳。",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture2",
+    "id": 1202,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "木制餐桌",
+    "rarity": 3,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120203
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070720
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": [
+      "banner_furniture1151"
+    ],
+    "unlock_tips": ""
+  },
+  "1203": {
+    "acesses": "",
+    "desc": "由坚固耐用的优质木材制成的桌子，桌面光滑平整便于清理，深色耐脏还原檀木本身质感。",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture3",
+    "id": 1203,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "简约座椅",
+    "rarity": 3,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120303
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070730
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture1152"
+    ],
+    "unlock_tips": ""
+  },
+  "1211": {
+    "acesses": "",
+    "desc": "古典挂画，淡雅节制，禅意自然，色彩与室内风格匹配协调，为宿舍增添一份宁静与雅致。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture4",
+    "id": 1211,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_wallscrolls01",
+    "name": "古典挂画",
+    "rarity": 2,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120301
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1212": {
+    "acesses": "",
+    "desc": "黑色的比基尼泳衣，材质轻盈柔软，穿上仿若无物十分舒适。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture5",
+    "id": 1212,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_cloth01",
+    "name": "黑色比基尼",
+    "rarity": 2,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120101
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1213": {
+    "acesses": "",
+    "desc": "方形高挑的木制灯立在地板上，从内向外散发着柔和的光晕，是她精心挑选的装饰用光源。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture6",
+    "id": 1213,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_floorlamp01",
+    "name": "落地灯",
+    "rarity": 2,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120302
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1214": {
+    "acesses": "",
+    "desc": "一扇半透明的屏风，屏风上绘有精致的花纹，她喜欢将屏风放在床边，屏风的半透明设计给室内增添了一丝暧昧。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture7",
+    "id": 1214,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_frame01",
+    "name": "半透明屏风",
+    "rarity": 2,
+    "room_id": 12,
+    "scene_hides": [
+      "no_bake_prop_substitute/pre_db_frame32"
+    ],
+    "shop_id": [],
+    "target_slots": [
+      1120102
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1215": {
+    "acesses": "",
+    "desc": "造型可爱的小夜灯，内部有藤木枝条的装饰，灯光温暖柔和，为宿舍增添一份温馨。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_CommonFurniture8",
+    "id": 1215,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_desklamp01",
+    "name": "小夜灯",
+    "rarity": 2,
+    "room_id": 12,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1120104
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1221": {
+    "acesses": "",
+    "desc": "一张以简约风格为主的双人床，选用了高强度材料，坚固的金属框架可以承担相当大的拉力而不被折损，搭配精心挑选的记忆棉床垫，保证睡眠安全舒适。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_PremiumFurniture1",
+    "id": 1221,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_bedroom_01",
+    "name": "爱之巢",
+    "rarity": 4,
+    "room_id": 12,
+    "scene_hides": [
+      "no_bake_pay_prop/bedroom"
+    ],
+    "shop_id": [
+      270501
+    ],
+    "target_slots": [
+      1120103
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070740
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture1221"
+    ],
+    "unlock_tips": ""
+  },
+  "1222": {
+    "acesses": "",
+    "desc": "淡雅的光晕透出，抚过绽开的花瓣，留下她动人的身影。花影与乐声交织，仿佛自然的低语流淌其中。",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_PremiumFurniture2",
+    "id": 1222,
+    "is_exclusive": 1,
+    "is_special": 1,
+    "model": "Pay_Dafenghostel/pre_db_df_tedian01",
+    "name": "花乐留韵",
+    "rarity": 5,
+    "room_id": 12,
+    "scene_hides": [
+      "no_bake_pay_prop/entertainment"
+    ],
+    "shop_id": [
+      270502
+    ],
+    "target_slots": [
+      1120304
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070750
+      ]
+    ],
+    "type": 99,
+    "unlock_banners": [
+      "banner_furniture1222"
+    ],
+    "unlock_tips": [
+      8
+    ]
+  },
+  "1223": {
+    "acesses": "",
+    "desc": "古典纸灯映照绯红长绸，茶香氤氲间可见精巧茶器，两侧樱瓣坐垫点缀榻榻米，恰成一方典雅待客之所。 ",
+    "icon": "dorm3dIcon/3Ddrom_dafeng_PremiumFurniture3",
+    "id": 1223,
+    "is_exclusive": 1,
+    "is_special": 0,
+    "model": "Pay_Dafenghostel/pre_db_df_livingroom_01",
+    "name": "绯樱雅席 ",
+    "rarity": 4,
+    "room_id": 12,
+    "scene_hides": [
+      "no_bake_pay_prop/livingroom"
+    ],
+    "shop_id": [
+      270503
+    ],
+    "target_slots": [
+      1120303
+    ],
+    "touch_id": [
+      [
+        30707,
+        3070760
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": [
+      "banner_furniture1223"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1401": {
+    "acesses": "",
+    "desc": "采用经典双人床设计，黑色床头搭配红色丝绒被褥，柔软的床垫与枕头为疲惫的身心提供了温暖的庇护。",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture1",
+    "id": 1401,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "丝绒软床",
+    "rarity": 3,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140101
+    ],
+    "touch_id": [
+      [
+        49905,
+        4990510
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1402": {
+    "acesses": "",
+    "desc": "该书桌采用黑色木料制成，搭配简约的红色座椅，整体设计既实用又充满古典气息。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture2",
+    "id": 1402,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "简约书桌",
+    "rarity": 3,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140201
+    ],
+    "touch_id": [
+      [
+        49905,
+        4990520
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1403": {
+    "acesses": "",
+    "desc": "真皮沙发，柔软舒适，搭配圆形小茶几，是享受个人时光的理想角落。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture3",
+    "id": 1403,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "",
+    "name": "真皮沙发",
+    "rarity": 3,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140301
+    ],
+    "touch_id": [
+      [
+        49905,
+        4990530
+      ]
+    ],
+    "type": 5,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1411": {
+    "acesses": "",
+    "desc": "经典象牙白长杆蜡烛，烛光温暖柔和，为夜晚增添一份宁静与浪漫的氛围。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture4",
+    "id": 1411,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aje_decoration01",
+    "name": "长杆蜡烛",
+    "rarity": 2,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140303
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1412": {
+    "acesses": "",
+    "desc": "高大的盆栽植物，叶片宽大碧绿，不仅为房间增添生机，还能有效净化空气。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture5",
+    "id": 1412,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aje_bonsai01",
+    "name": "绿意盆栽",
+    "rarity": 2,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140202
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1413": {
+    "acesses": "",
+    "desc": "书桌上的小台灯，从内向外散发着温暖的光晕，为夜晚阅读或工作提供舒适的照明。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture6",
+    "id": 1413,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aje_desklamp01_on",
+    "name": "护眼台灯",
+    "rarity": 2,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140103
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1414": {
+    "acesses": "",
+    "desc": "一台经典的复古相机，保留了老式相机的独特设计，适合喜欢摄影的人收藏使用。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture7",
+    "id": 1414,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aje_camera01",
+    "name": "老式相机",
+    "rarity": 2,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140102
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1415": {
+    "acesses": "",
+    "desc": "一幅风格古典的抽象派肖像画，鲜艳与深邃的色彩相互矛盾却又并存，意外地和房间的氛围很搭。",
+    "icon": "dorm3dIcon/3Ddrom_aijier_CommonFurniture8",
+    "id": 1415,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aje_billboard01",
+    "name": "肖像画",
+    "rarity": 2,
+    "room_id": 14,
+    "scene_hides": "",
+    "shop_id": [],
+    "target_slots": [
+      1140302
+    ],
+    "touch_id": "",
+    "type": 3,
+    "unlock_banners": "",
+    "unlock_tips": ""
+  },
+  "1461": {
+    "acesses": "",
+    "desc": "私密与浪漫的避风港，红色丝绒被褥与可拉床帘组合，在夜色中轻松享受静谧与温馨。 ",
+    "icon": "dorm3dIcon/3Ddrom_aijier_PremiumFurniture1",
+    "id": 1461,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aijier_bed01",
+    "name": "真红谧影",
+    "rarity": 4,
+    "room_id": 14,
+    "scene_hides": [
+      "no_bake_pay_prop/bedroom"
+    ],
+    "shop_id": [
+      270601
+    ],
+    "target_slots": [
+      1140101
+    ],
+    "touch_id": [
+      [
+        49905,
+        4990540
+      ]
+    ],
+    "type": 4,
+    "unlock_banners": [
+      "banner_furniture1461"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "1462": {
+    "acesses": "",
+    "desc": "采用古典设计的书桌，表面光滑平整，框架坚实牢固，还兼具着储物的作用，是学习和工作的不二之选。",
+    "icon": "dorm3dIcon/3Ddrom_aijier_PremiumFurniture2",
+    "id": 1462,
+    "is_exclusive": 0,
+    "is_special": 0,
+    "model": "Pay_Aijierhostel/pre_db_aijier_study01",
+    "name": "知韵沉思",
+    "rarity": 4,
+    "room_id": 14,
+    "scene_hides": [
+      "no_bake_pay_prop/study"
+    ],
+    "shop_id": [
+      270602
+    ],
+    "target_slots": [
+      1140201
+    ],
+    "touch_id": [
+      [
+        49905,
+        4990550
+      ]
+    ],
+    "type": 6,
+    "unlock_banners": [
+      "banner_furniture1462"
+    ],
+    "unlock_tips": [
+      3
+    ]
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    121,
+    122,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    221,
+    222,
+    223,
+    151,
+    251,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    321,
+    322,
+    401,
+    323,
+    324,
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108,
+    1151,
+    1152,
+    1153,
+    1154,
+    1201,
+    1202,
+    1203,
+    1211,
+    1212,
+    1213,
+    1214,
+    1215,
+    1221,
+    1222,
+    1223,
+    1401,
+    1402,
+    1403,
+    1411,
+    1412,
+    1413,
+    1414,
+    1415,
+    1461,
+    1462
+  ],
+  "get_id_list_by_room_id": {
+    "1": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      121,
+      122,
+      151
+    ],
+    "2": [
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      221,
+      222,
+      223,
+      251
+    ],
+    "3": [
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      321,
+      322,
+      323,
+      324
+    ],
+    "4": [
+      401
+    ],
+    "11": [
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1107,
+      1108,
+      1151,
+      1152,
+      1153,
+      1154
+    ],
+    "12": [
+      1201,
+      1202,
+      1203,
+      1211,
+      1212,
+      1213,
+      1214,
+      1215,
+      1221,
+      1222,
+      1223
+    ],
+    "14": [
+      1401,
+      1402,
+      1403,
+      1411,
+      1412,
+      1413,
+      1414,
+      1415,
+      1461,
+      1462
+    ]
+  }
+}

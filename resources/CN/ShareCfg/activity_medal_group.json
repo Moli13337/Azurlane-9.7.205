@@ -1,0 +1,632 @@
+{
+  "5711": {
+    "activity_link": [
+      [
+        1,
+        5733,
+        [
+          21043,
+          21035,
+          21036,
+          21037,
+          21038,
+          21039,
+          21040,
+          21041,
+          21042
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5711",
+    "group_name": "星光下的余晖",
+    "id": 5711,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        293,
+        1
+      ],
+      [
+        8,
+        65500,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "StarLightMedalAlbumView"
+    }
+  },
+  "5769": {
+    "activity_link": [
+      [
+        1,
+        5769,
+        [
+          21126,
+          21118,
+          21119,
+          21120,
+          21121,
+          21122,
+          21123,
+          21124,
+          21125
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5769",
+    "group_name": "华裳巧展喜事长",
+    "id": 5769,
+    "is_out_of_print": 0,
+    "item_show": [
+      [],
+      [
+        8,
+        65510,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "SpringFashionFestaMedalAlbumView"
+    }
+  },
+  "5812": {
+    "activity_link": [
+      [
+        1,
+        5812,
+        [
+          21286,
+          21278,
+          21279,
+          21280,
+          21281,
+          21282,
+          21283,
+          21284,
+          21285
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5812",
+    "group_name": "樊笼内的神光",
+    "id": 5812,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        295,
+        1
+      ],
+      [
+        8,
+        65540,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "DivineLightMedalAlbumView"
+    }
+  },
+  "5875": {
+    "activity_link": [
+      [
+        1,
+        5875,
+        [
+          21659,
+          21651,
+          21652,
+          21653,
+          21654,
+          21655,
+          21656,
+          21657,
+          21658
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5875",
+    "group_name": "深谷来信",
+    "id": 5875,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        296,
+        1
+      ],
+      [
+        8,
+        65570,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "ValleyMessageAlbumView"
+    }
+  },
+  "5913": {
+    "activity_link": [
+      [
+        1,
+        5913,
+        [
+          21711,
+          21703,
+          21704,
+          21705,
+          21706,
+          21707,
+          21708,
+          21709,
+          21710
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5913",
+    "group_name": "扬起郁金之旗",
+    "id": 5913,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        302,
+        1
+      ],
+      [
+        8,
+        65593,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "TulipKingdomMedalAlbumView"
+    }
+  },
+  "5970": {
+    "activity_link": [
+      [
+        1,
+        5970,
+        [
+          21714,
+          21715,
+          21716,
+          21717,
+          21718,
+          21719,
+          21720,
+          21721,
+          21722
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5970",
+    "group_name": "高塔上的蔷薇",
+    "id": 5970,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        303,
+        1
+      ],
+      [
+        8,
+        65602,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "TowerRoseMedalAlbumView"
+    }
+  },
+  "5971": {
+    "activity_link": [
+      [
+        1,
+        5971,
+        [
+          21723,
+          21724,
+          21725,
+          21726,
+          21727,
+          21728,
+          21729,
+          21730
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/5971",
+    "group_name": "夏日重建",
+    "id": 5971,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        304,
+        1
+      ],
+      [
+        8,
+        65611,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "HolidayVillaMedalAlbumView"
+    }
+  },
+  "50021": {
+    "activity_link": [
+      [
+        1,
+        50021,
+        [
+          21776,
+          21777,
+          21778,
+          21779,
+          21780,
+          21781,
+          21782,
+          21783,
+          21784
+        ]
+      ]
+    ],
+    "entrance_picture": "MedalAlbum/50021",
+    "group_name": "迷彩都市的寻踪者",
+    "id": 50021,
+    "is_out_of_print": 0,
+    "item_show": [
+      [],
+      [
+        8,
+        65631,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "CamouflageCityMedalAlbumView"
+    }
+  },
+  "50087": {
+    "activity_link": [
+      [
+        1,
+        50087,
+        [
+          21802,
+          21803,
+          21804,
+          21805,
+          21806,
+          21807,
+          21808,
+          21809,
+          21810
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50087",
+    "group_name": "奇渊下的秘密",
+    "id": 50087,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        314,
+        1
+      ],
+      [
+        8,
+        65665,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "MassenaMedalAlbumView"
+    }
+  },
+  "50136": {
+    "activity_link": [
+      [
+        1,
+        50136,
+        [
+          21835,
+          21836,
+          21837,
+          21838,
+          21839,
+          21840,
+          21841,
+          21842,
+          21843,
+          21844
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50136",
+    "group_name": "起舞于天原之上",
+    "id": 50136,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        316,
+        1
+      ],
+      [
+        8,
+        65685,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "TianYuTianYuanMedalAlbumView"
+    }
+  },
+  "50209": {
+    "activity_link": [
+      [
+        1,
+        50209,
+        [
+          21849,
+          21850,
+          21851,
+          21852,
+          21853,
+          21854,
+          21855,
+          21856,
+          21857,
+          21858
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50209",
+    "group_name": "飓风与自由群岛",
+    "id": 50209,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        319,
+        1
+      ],
+      [
+        8,
+        65722,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "SailingShip3MedalAlbumView"
+    }
+  },
+  "50295": {
+    "activity_link": [
+      [
+        1,
+        50295,
+        [
+          21873,
+          21874,
+          21875,
+          21876,
+          21877,
+          21878,
+          21879,
+          21880,
+          21881,
+          21882
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50295",
+    "group_name": "响彻于天穹之音",
+    "id": 50295,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        323,
+        1
+      ],
+      [
+        8,
+        65785,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "TianqiongMedalAlbumView"
+    }
+  },
+  "50359": {
+    "activity_link": [
+      [
+        1,
+        50359,
+        [
+          21883,
+          21884,
+          21885,
+          21886,
+          21887,
+          21888,
+          21889,
+          21890,
+          21891
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50359",
+    "group_name": "光影风尚——拍摄进行时！",
+    "id": 50359,
+    "is_out_of_print": 0,
+    "item_show": [
+      [],
+      [
+        8,
+        65802,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "SardiniaSPMedalAlbumView"
+    }
+  },
+  "50405": {
+    "activity_link": [
+      [
+        1,
+        50405,
+        [
+          21892,
+          21893,
+          21894,
+          21895,
+          21896,
+          21897,
+          21898,
+          21899,
+          21900
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50405",
+    "group_name": "春宴怀玉香满庭",
+    "id": 50405,
+    "is_out_of_print": 0,
+    "item_show": [
+      [],
+      [
+        8,
+        65848,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "DonghuangMedalAlbumView"
+    }
+  },
+  "50441": {
+    "activity_link": [
+      [
+        1,
+        50441,
+        [
+          21901,
+          21902,
+          21903,
+          21904,
+          21905,
+          21906,
+          21907,
+          21908,
+          21909,
+          21910
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50441",
+    "group_name": "春满客栈online",
+    "id": 50441,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        331,
+        1
+      ],
+      [
+        8,
+        65860,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "MedalAlbumMoskvaView"
+    }
+  },
+  "50482": {
+    "activity_link": [
+      [
+        1,
+        50482,
+        [
+          21914,
+          21915,
+          21916,
+          21917,
+          21918,
+          21919,
+          21920,
+          21921,
+          21922,
+          21923
+        ]
+      ]
+    ],
+    "entrance_picture": "medalAlbum/50482",
+    "group_name": "漫游者招募计划",
+    "id": 50482,
+    "is_out_of_print": 0,
+    "item_show": [
+      [
+        5,
+        332,
+        1
+      ],
+      [
+        8,
+        65886,
+        1
+      ]
+    ],
+    "ui_prefab": {
+      "mediator": "MedalAlbumTemplateMediator",
+      "scene": "YunLongSPMedalAlbumView"
+    }
+  },
+  "all": [
+    5711,
+    5769,
+    5812,
+    5875,
+    5913,
+    5970,
+    5971,
+    50021,
+    50087,
+    50136,
+    50209,
+    50295,
+    50359,
+    50405,
+    50441,
+    50482
+  ]
+}

@@ -1,0 +1,4322 @@
+{
+  "1": {
+    "desc": "进行1次演习",
+    "id": 1,
+    "sub_type": 27,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "2": {
+    "desc": "进行1次委托 ",
+    "id": 2,
+    "sub_type": 80,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "3": {
+    "desc": "舰队出征，获得1次胜利",
+    "id": 3,
+    "sub_type": 20,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "4": {
+    "desc": "击沉任意敌人1艘",
+    "id": 4,
+    "sub_type": 11,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "5": {
+    "desc": "大型作战内获得1次胜利",
+    "id": 5,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "6": {
+    "desc": "大型作战内击沉任意敌人1艘",
+    "id": 6,
+    "sub_type": 300,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "7": {
+    "desc": "完成大型作战港口任务1次",
+    "id": 7,
+    "sub_type": 308,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "101": {
+    "desc": "使用{namecode:191}获得1次胜利",
+    "id": 101,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "102": {
+    "desc": "使用{namecode:191}击破等级>30的敌方1次",
+    "id": 102,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "103": {
+    "desc": "使用{namecode:191}击破等级>55的敌方1次",
+    "id": 103,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "104": {
+    "desc": "使用{namecode:191}击破等级>80的敌方1次",
+    "id": 104,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "105": {
+    "desc": "使用{namecode:191}击破等级>100的敌方1次",
+    "id": 105,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "106": {
+    "desc": "使用皇家方舟·META获得1次胜利",
+    "id": 106,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "107": {
+    "desc": "使用皇家方舟·META击破等级>30的敌方1次",
+    "id": 107,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "108": {
+    "desc": "使用皇家方舟·META击破等级>55的敌方1次",
+    "id": 108,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "109": {
+    "desc": "使用皇家方舟·META击破等级>80的敌方1次",
+    "id": 109,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "110": {
+    "desc": "使用皇家方舟·META击破等级>100的敌方1次",
+    "id": 110,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "111": {
+    "desc": "使用海伦娜·META获得1次胜利",
+    "id": 111,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "112": {
+    "desc": "使用海伦娜·META击破等级>30的敌方1次",
+    "id": 112,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "113": {
+    "desc": "使用海伦娜·META击破等级>55的敌方1次",
+    "id": 113,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "114": {
+    "desc": "使用海伦娜·META击破等级>80的敌方1次",
+    "id": 114,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "115": {
+    "desc": "使用海伦娜·META击破等级>100的敌方1次",
+    "id": 115,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "116": {
+    "desc": "使用{namecode:205}获得1次胜利",
+    "id": 116,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "117": {
+    "desc": "使用{namecode:205}击破等级>30的敌方1次",
+    "id": 117,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "118": {
+    "desc": "使用{namecode:205}击破等级>55的敌方1次",
+    "id": 118,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "119": {
+    "desc": "使用{namecode:205}击破等级>80的敌方1次",
+    "id": 119,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "120": {
+    "desc": "使用{namecode:205}击破等级>100的敌方1次",
+    "id": 120,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "121": {
+    "desc": "使用{namecode:210}获得1次胜利",
+    "id": 121,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "122": {
+    "desc": "使用{namecode:210}击破等级>30的敌方1次",
+    "id": 122,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "123": {
+    "desc": "使用{namecode:210}击破等级>55的敌方1次",
+    "id": 123,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "124": {
+    "desc": "使用{namecode:210}击破等级>80的敌方1次",
+    "id": 124,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "125": {
+    "desc": "使用{namecode:210}击破等级>100的敌方1次",
+    "id": 125,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "126": {
+    "desc": "使用{namecode:220}获得1次胜利",
+    "id": 126,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "127": {
+    "desc": "使用{namecode:220}击破等级>30的敌方1次",
+    "id": 127,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "128": {
+    "desc": "使用{namecode:220}击破等级>55的敌方1次",
+    "id": 128,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "129": {
+    "desc": "使用{namecode:220}击破等级>80的敌方1次",
+    "id": 129,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "130": {
+    "desc": "使用{namecode:220}击破等级>100的敌方1次",
+    "id": 130,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "131": {
+    "desc": "使用{namecode:477}获得1次胜利",
+    "id": 131,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "132": {
+    "desc": "使用{namecode:477}击破等级>30的敌方1次",
+    "id": 132,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "133": {
+    "desc": "使用{namecode:477}击破等级>55的敌方1次",
+    "id": 133,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "134": {
+    "desc": "使用{namecode:477}击破等级>80的敌方1次",
+    "id": 134,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "135": {
+    "desc": "使用{namecode:477}击破等级>100的敌方1次",
+    "id": 135,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "136": {
+    "desc": "使用{namecode:221}获得1次胜利",
+    "id": 136,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "137": {
+    "desc": "使用{namecode:221}击破等级>30的敌方1次",
+    "id": 137,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "138": {
+    "desc": "使用{namecode:221}击破等级>55的敌方1次",
+    "id": 138,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "139": {
+    "desc": "使用{namecode:221}击破等级>80的敌方1次",
+    "id": 139,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "140": {
+    "desc": "使用{namecode:221}击破等级>100的敌方1次",
+    "id": 140,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "141": {
+    "desc": "使用{namecode:478}获得1次胜利",
+    "id": 141,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "142": {
+    "desc": "使用{namecode:478}击破等级>30的敌方1次",
+    "id": 142,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "143": {
+    "desc": "使用{namecode:478}击破等级>55的敌方1次",
+    "id": 143,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "144": {
+    "desc": "使用{namecode:478}击破等级>80的敌方1次",
+    "id": 144,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "145": {
+    "desc": "使用{namecode:478}击破等级>100的敌方1次",
+    "id": 145,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "146": {
+    "desc": "使用{namecode:223}获得1次胜利",
+    "id": 146,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "147": {
+    "desc": "使用{namecode:223}击破等级>30的敌方1次",
+    "id": 147,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "148": {
+    "desc": "使用{namecode:223}击破等级>55的敌方1次",
+    "id": 148,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "149": {
+    "desc": "使用{namecode:223}击破等级>80的敌方1次",
+    "id": 149,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "150": {
+    "desc": "使用{namecode:223}击破等级>100的敌方1次",
+    "id": 150,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "151": {
+    "desc": "使用孟菲斯·META获得1次胜利",
+    "id": 151,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "152": {
+    "desc": "使用孟菲斯·META击破等级>30的敌方1次",
+    "id": 152,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "153": {
+    "desc": "使用孟菲斯·META击破等级>55的敌方1次",
+    "id": 153,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "154": {
+    "desc": "使用孟菲斯·META击破等级>80的敌方1次",
+    "id": 154,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "155": {
+    "desc": "使用孟菲斯·META击破等级>100的敌方1次",
+    "id": 155,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "156": {
+    "desc": "使用反击·META获得1次胜利",
+    "id": 156,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "157": {
+    "desc": "使用反击·META击破等级>30的敌方1次",
+    "id": 157,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "158": {
+    "desc": "使用反击·META击破等级>55的敌方1次",
+    "id": 158,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "159": {
+    "desc": "使用反击·META击破等级>80的敌方1次",
+    "id": 159,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "160": {
+    "desc": "使用反击·META击破等级>100的敌方1次",
+    "id": 160,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "161": {
+    "desc": "使用特伦托·META获得1次胜利",
+    "id": 161,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "162": {
+    "desc": "使用特伦托·META击破等级>30的敌方1次",
+    "id": 162,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "163": {
+    "desc": "使用特伦托·META击破等级>55的敌方1次",
+    "id": 163,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "164": {
+    "desc": "使用特伦托·META击破等级>80的敌方1次",
+    "id": 164,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "165": {
+    "desc": "使用特伦托·META击破等级>100的敌方1次",
+    "id": 165,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "166": {
+    "desc": "使用声望·META获得1次胜利",
+    "id": 166,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "167": {
+    "desc": "使用声望·META击破等级>30的敌方1次",
+    "id": 167,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "168": {
+    "desc": "使用声望·META击破等级>55的敌方1次",
+    "id": 168,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "169": {
+    "desc": "使用声望·META击破等级>80的敌方1次",
+    "id": 169,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "170": {
+    "desc": "使用声望·META击破等级>100的敌方1次",
+    "id": 170,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "200": {
+    "desc": "大型作战内使用{namecode:191}获得1次胜利",
+    "id": 200,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "201": {
+    "desc": "大型作战内使用{namecode:191}击破等级>70的敌方1次",
+    "id": 201,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "202": {
+    "desc": "大型作战内使用{namecode:191}击破等级>90的敌方1次",
+    "id": 202,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "203": {
+    "desc": "大型作战内使用{namecode:191}击破等级>100的敌方1次",
+    "id": 203,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970701",
+    "target_num": 1
+  },
+  "204": {
+    "desc": "大型作战内使用皇家方舟·META获得1次胜利",
+    "id": 204,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "205": {
+    "desc": "大型作战内使用皇家方舟·META击破等级>70的敌方1次",
+    "id": 205,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "206": {
+    "desc": "大型作战内使用皇家方舟·META击破等级>90的敌方1次",
+    "id": 206,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "207": {
+    "desc": "大型作战内使用皇家方舟·META击破等级>100的敌方1次",
+    "id": 207,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970702",
+    "target_num": 1
+  },
+  "208": {
+    "desc": "大型作战内使用海伦娜·META获得1次胜利",
+    "id": 208,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "209": {
+    "desc": "大型作战内使用海伦娜·META击破等级>70的敌方1次",
+    "id": 209,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "210": {
+    "desc": "大型作战内使用海伦娜·META击破等级>90的敌方1次",
+    "id": 210,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "211": {
+    "desc": "大型作战内使用海伦娜·META击破等级>100的敌方1次",
+    "id": 211,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970201",
+    "target_num": 1
+  },
+  "212": {
+    "desc": "大型作战内使用{namecode:205}获得1次胜利",
+    "id": 212,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "213": {
+    "desc": "大型作战内使用{namecode:205}击破等级>70的敌方1次",
+    "id": 213,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "214": {
+    "desc": "大型作战内使用{namecode:205}击破等级>90的敌方1次",
+    "id": 214,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "215": {
+    "desc": "大型作战内使用{namecode:205}击破等级>100的敌方1次",
+    "id": 215,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970703",
+    "target_num": 1
+  },
+  "216": {
+    "desc": "大型作战内使用{namecode:210}获得1次胜利",
+    "id": 216,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "217": {
+    "desc": "大型作战内使用{namecode:210}击破等级>70的敌方1次",
+    "id": 217,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "218": {
+    "desc": "大型作战内使用{namecode:210}击破等级>90的敌方1次",
+    "id": 218,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "219": {
+    "desc": "大型作战内使用{namecode:210}击破等级>100的敌方1次",
+    "id": 219,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970501",
+    "target_num": 1
+  },
+  "220": {
+    "desc": "大型作战内使用{namecode:220}获得1次胜利",
+    "id": 220,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "221": {
+    "desc": "大型作战内使用{namecode:220}击破等级>70的敌方1次",
+    "id": 221,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "222": {
+    "desc": "大型作战内使用{namecode:220}击破等级>90的敌方1次",
+    "id": 222,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "223": {
+    "desc": "大型作战内使用{namecode:220}击破等级>100的敌方1次",
+    "id": 223,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970601",
+    "target_num": 1
+  },
+  "224": {
+    "desc": "大型作战内使用{namecode:477}获得1次胜利",
+    "id": 224,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "225": {
+    "desc": "大型作战内使用{namecode:477}击破等级>70的敌方1次",
+    "id": 225,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "226": {
+    "desc": "大型作战内使用{namecode:477}击破等级>90的敌方1次",
+    "id": 226,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "227": {
+    "desc": "大型作战内使用{namecode:477}击破等级>100的敌方1次",
+    "id": 227,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970401",
+    "target_num": 1
+  },
+  "228": {
+    "desc": "大型作战内使用{namecode:221}获得1次胜利",
+    "id": 228,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "229": {
+    "desc": "大型作战内使用{namecode:221}击破等级>70的敌方1次",
+    "id": 229,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "230": {
+    "desc": "大型作战内使用{namecode:221}击破等级>90的敌方1次",
+    "id": 230,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "231": {
+    "desc": "大型作战内使用{namecode:221}击破等级>100的敌方1次",
+    "id": 231,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970602",
+    "target_num": 1
+  },
+  "232": {
+    "desc": "大型作战内使用{namecode:478}获得1次胜利",
+    "id": 232,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "233": {
+    "desc": "大型作战内使用{namecode:478}击破等级>70的敌方1次",
+    "id": 233,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "234": {
+    "desc": "大型作战内使用{namecode:478}击破等级>90的敌方1次",
+    "id": 234,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "235": {
+    "desc": "大型作战内使用{namecode:478}击破等级>100的敌方1次",
+    "id": 235,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970402",
+    "target_num": 1
+  },
+  "236": {
+    "desc": "大型作战内使用{namecode:223}获得1次胜利",
+    "id": 236,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "237": {
+    "desc": "大型作战内使用{namecode:223}击破等级>70的敌方1次",
+    "id": 237,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "238": {
+    "desc": "大型作战内使用{namecode:223}击破等级>90的敌方1次",
+    "id": 238,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "239": {
+    "desc": "大型作战内使用{namecode:223}击破等级>100的敌方1次",
+    "id": 239,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970502",
+    "target_num": 1
+  },
+  "240": {
+    "desc": "大型作战内使用孟菲斯·META获得1次胜利",
+    "id": 240,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "241": {
+    "desc": "大型作战内使用孟菲斯·META击破等级>70的敌方1次",
+    "id": 241,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "242": {
+    "desc": "大型作战内使用孟菲斯·META击破等级>90的敌方1次",
+    "id": 242,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "243": {
+    "desc": "大型作战内使用孟菲斯·META击破等级>100的敌方1次",
+    "id": 243,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970202",
+    "target_num": 1
+  },
+  "244": {
+    "desc": "大型作战内使用反击·META获得1次胜利",
+    "id": 244,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "245": {
+    "desc": "大型作战内使用反击·META击破等级>70的敌方1次",
+    "id": 245,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "246": {
+    "desc": "大型作战内使用反击·META击破等级>90的敌方1次",
+    "id": 246,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "247": {
+    "desc": "大型作战内使用反击·META击破等级>100的敌方1次",
+    "id": 247,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970403",
+    "target_num": 1
+  },
+  "248": {
+    "desc": "大型作战内使用特伦托·META获得1次胜利",
+    "id": 248,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "249": {
+    "desc": "大型作战内使用特伦托·META击破等级>70的敌方1次",
+    "id": 249,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "250": {
+    "desc": "大型作战内使用特伦托·META击破等级>90的敌方1次",
+    "id": 250,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "251": {
+    "desc": "大型作战内使用特伦托·META击破等级>100的敌方1次",
+    "id": 251,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970301",
+    "target_num": 1
+  },
+  "252": {
+    "desc": "大型作战内使用声望·META获得1次胜利",
+    "id": 252,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "253": {
+    "desc": "大型作战内使用声望·META击破等级>70的敌方1次",
+    "id": 253,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "254": {
+    "desc": "大型作战内使用声望·META击破等级>90的敌方1次",
+    "id": 254,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "255": {
+    "desc": "大型作战内使用声望·META击破等级>100的敌方1次",
+    "id": 255,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970404",
+    "target_num": 1
+  },
+  "301": {
+    "desc": "解析信标1次",
+    "id": 301,
+    "sub_type": 305,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "302": {
+    "desc": "参与信标战斗1次",
+    "id": 302,
+    "sub_type": 306,
+    "target_id": "0",
+    "target_id_2": "",
+    "target_num": 1
+  },
+  "100001": {
+    "desc": "使用猎人·META获得1次胜利",
+    "id": 100001,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "100002": {
+    "desc": "使用猎人·META击破等级>30的敌方1次",
+    "id": 100002,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "100003": {
+    "desc": "使用猎人·META击破等级>55的敌方1次",
+    "id": 100003,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "100004": {
+    "desc": "使用猎人·META击破等级>80的敌方1次",
+    "id": 100004,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "100005": {
+    "desc": "使用猎人·META击破等级>100的敌方1次",
+    "id": 100005,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "100021": {
+    "desc": "使用命运女神·META获得1次胜利",
+    "id": 100021,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "100022": {
+    "desc": "使用命运女神·META击破等级>30的敌方1次",
+    "id": 100022,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "100023": {
+    "desc": "使用命运女神·META击破等级>55的敌方1次",
+    "id": 100023,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "100024": {
+    "desc": "使用命运女神·META击破等级>80的敌方1次",
+    "id": 100024,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "100025": {
+    "desc": "使用命运女神·META击破等级>100的敌方1次",
+    "id": 100025,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "100031": {
+    "desc": "使用亚利桑那·META获得1次胜利",
+    "id": 100031,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "100032": {
+    "desc": "使用亚利桑那·META击破等级>30的敌方1次",
+    "id": 100032,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "100033": {
+    "desc": "使用亚利桑那·META击破等级>55的敌方1次",
+    "id": 100033,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "100034": {
+    "desc": "使用亚利桑那·META击破等级>80的敌方1次",
+    "id": 100034,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "100035": {
+    "desc": "使用亚利桑那·META击破等级>100的敌方1次",
+    "id": 100035,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "100041": {
+    "desc": "使用谢菲尔德·META获得1次胜利",
+    "id": 100041,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "100042": {
+    "desc": "使用谢菲尔德·META击破等级>30的敌方1次",
+    "id": 100042,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "100043": {
+    "desc": "使用谢菲尔德·META击破等级>55的敌方1次",
+    "id": 100043,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "100044": {
+    "desc": "使用谢菲尔德·META击破等级>80的敌方1次",
+    "id": 100044,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "100045": {
+    "desc": "使用谢菲尔德·META击破等级>100的敌方1次",
+    "id": 100045,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "100051": {
+    "desc": "使用伊丽莎白女王·META获得1次胜利",
+    "id": 100051,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "100052": {
+    "desc": "使用伊丽莎白女王·META击破等级>30的敌方1次",
+    "id": 100052,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "100053": {
+    "desc": "使用伊丽莎白女王·META击破等级>55的敌方1次",
+    "id": 100053,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "100054": {
+    "desc": "使用伊丽莎白女王·META击破等级>80的敌方1次",
+    "id": 100054,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "100055": {
+    "desc": "使用伊丽莎白女王·META击破等级>100的敌方1次",
+    "id": 100055,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "100061": {
+    "desc": "使用拉·加利索尼埃·META获得1次胜利",
+    "id": 100061,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "100062": {
+    "desc": "使用拉·加利索尼埃·META击破等级>30的敌方1次",
+    "id": 100062,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "100063": {
+    "desc": "使用拉·加利索尼埃·META击破等级>55的敌方1次",
+    "id": 100063,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "100064": {
+    "desc": "使用拉·加利索尼埃·META击破等级>80的敌方1次",
+    "id": 100064,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "100065": {
+    "desc": "使用拉·加利索尼埃·META击破等级>100的敌方1次",
+    "id": 100065,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "100071": {
+    "desc": "使用U-556·META获得1次胜利",
+    "id": 100071,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "100072": {
+    "desc": "使用U-556·META击破等级>30的敌方1次",
+    "id": 100072,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "100073": {
+    "desc": "使用U-556·META击破等级>55的敌方1次",
+    "id": 100073,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "100074": {
+    "desc": "使用U-556·META击破等级>80的敌方1次",
+    "id": 100074,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "100075": {
+    "desc": "使用U-556·META击破等级>100的敌方1次",
+    "id": 100075,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "100081": {
+    "desc": "使用女灶神·META获得1次胜利",
+    "id": 100081,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "100082": {
+    "desc": "使用女灶神·META击破等级>30的敌方1次",
+    "id": 100082,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "100083": {
+    "desc": "使用女灶神·META击破等级>55的敌方1次",
+    "id": 100083,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "100084": {
+    "desc": "使用女灶神·META击破等级>80的敌方1次",
+    "id": 100084,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "100085": {
+    "desc": "使用女灶神·META击破等级>100的敌方1次",
+    "id": 100085,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "100091": {
+    "desc": "使用阿尔及利亚·META获得1次胜利",
+    "id": 100091,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "100092": {
+    "desc": "使用阿尔及利亚·META击破等级＞30的敌方1次",
+    "id": 100092,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "100093": {
+    "desc": "使用阿尔及利亚·META击破等级＞55的敌方1次",
+    "id": 100093,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "100094": {
+    "desc": "使用阿尔及利亚·META击破等级＞80的敌方1次",
+    "id": 100094,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "100095": {
+    "desc": "使用阿尔及利亚·META击破等级＞100的敌方1次",
+    "id": 100095,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "100101": {
+    "desc": "使用{namecode:522}获得1次胜利",
+    "id": 100101,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "100102": {
+    "desc": "使用{namecode:522}击破等级＞30的敌方1次",
+    "id": 100102,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "100103": {
+    "desc": "使用{namecode:522}击破等级＞55的敌方1次",
+    "id": 100103,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "100104": {
+    "desc": "使用{namecode:522}击破等级＞80的敌方1次",
+    "id": 100104,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "100105": {
+    "desc": "使用{namecode:522}击破等级＞100的敌方1次",
+    "id": 100105,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "100111": {
+    "desc": "使用{namecode:293}获得1次胜利",
+    "id": 100111,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "100112": {
+    "desc": "使用{namecode:293}击破等级＞30的敌方1次",
+    "id": 100112,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "100113": {
+    "desc": "使用{namecode:293}击破等级＞55的敌方1次",
+    "id": 100113,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "100114": {
+    "desc": "使用{namecode:293}击破等级＞80的敌方1次",
+    "id": 100114,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "100115": {
+    "desc": "使用{namecode:293}击破等级＞100的敌方1次",
+    "id": 100115,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "100121": {
+    "desc": "使用普林斯顿·META获得1次胜利",
+    "id": 100121,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "100122": {
+    "desc": "使用普林斯顿·META击破等级＞30的敌方1次",
+    "id": 100122,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "100123": {
+    "desc": "使用普林斯顿·META击破等级＞55的敌方1次",
+    "id": 100123,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "100124": {
+    "desc": "使用普林斯顿·META击破等级＞80的敌方1次",
+    "id": 100124,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "100125": {
+    "desc": "使用普林斯顿·META击破等级＞100的敌方1次",
+    "id": 100125,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "100131": {
+    "desc": "使用黑暗界·META获得1次胜利",
+    "id": 100131,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "100132": {
+    "desc": "使用黑暗界·META击破等级＞30的敌方1次",
+    "id": 100132,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "100133": {
+    "desc": "使用黑暗界·META击破等级＞55的敌方1次",
+    "id": 100133,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "100134": {
+    "desc": "使用黑暗界·META击破等级＞80的敌方1次",
+    "id": 100134,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "100135": {
+    "desc": "使用黑暗界·META击破等级＞100的敌方1次",
+    "id": 100135,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "100141": {
+    "desc": "使用基洛夫·META获得1次胜利",
+    "id": 100141,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "100142": {
+    "desc": "使用基洛夫·META击破等级＞30的敌方1次",
+    "id": 100142,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "100143": {
+    "desc": "使用基洛夫·META击破等级＞55的敌方1次",
+    "id": 100143,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "100144": {
+    "desc": "使用基洛夫·META击破等级＞80的敌方1次",
+    "id": 100144,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "100145": {
+    "desc": "使用基洛夫·META击破等级＞100的敌方1次",
+    "id": 100145,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "100151": {
+    "desc": "使用金伯利·META获得1次胜利",
+    "id": 100151,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "100152": {
+    "desc": "使用金伯利·META击破等级＞30的敌方1次",
+    "id": 100152,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "100153": {
+    "desc": "使用金伯利·META击破等级＞55的敌方1次",
+    "id": 100153,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "100154": {
+    "desc": "使用金伯利·META击破等级＞80的敌方1次",
+    "id": 100154,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "100155": {
+    "desc": "使用金伯利·META击破等级＞100的敌方1次",
+    "id": 100155,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "100161": {
+    "desc": "使用水星纪念·META获得1次胜利",
+    "id": 100161,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "100162": {
+    "desc": "使用水星纪念·META击破等级＞30的敌方1次",
+    "id": 100162,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "100163": {
+    "desc": "使用水星纪念·META击破等级＞55的敌方1次",
+    "id": 100163,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "100164": {
+    "desc": "使用水星纪念·META击破等级＞80的敌方1次",
+    "id": 100164,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "100165": {
+    "desc": "使用水星纪念·META击破等级＞100的敌方1次",
+    "id": 100165,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "100171": {
+    "desc": "使用罗德尼·META获得1次胜利",
+    "id": 100171,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "100172": {
+    "desc": "使用罗德尼·META击破等级＞30的敌方1次",
+    "id": 100172,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "100173": {
+    "desc": "使用罗德尼·META击破等级＞55的敌方1次",
+    "id": 100173,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "100174": {
+    "desc": "使用罗德尼·META击破等级＞80的敌方1次",
+    "id": 100174,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "100175": {
+    "desc": "使用罗德尼·META击破等级＞100的敌方1次",
+    "id": 100175,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "100181": {
+    "desc": "使用吸血鬼·META获得1次胜利",
+    "id": 100181,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "100182": {
+    "desc": "使用吸血鬼·META击破等级＞30的敌方1次",
+    "id": 100182,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "100183": {
+    "desc": "使用吸血鬼·META击破等级＞55的敌方1次",
+    "id": 100183,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "100184": {
+    "desc": "使用吸血鬼·META击破等级＞80的敌方1次",
+    "id": 100184,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "100185": {
+    "desc": "使用吸血鬼·META击破等级＞100的敌方1次",
+    "id": 100185,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "100191": {
+    "desc": "使用贝亚恩·META获得1次胜利",
+    "id": 100191,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "100192": {
+    "desc": "使用贝亚恩·META击破等级＞30的敌方1次",
+    "id": 100192,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "100193": {
+    "desc": "使用贝亚恩·META击破等级＞55的敌方1次",
+    "id": 100193,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "100194": {
+    "desc": "使用贝亚恩·META击破等级＞80的敌方1次",
+    "id": 100194,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "100195": {
+    "desc": "使用贝亚恩·META击破等级＞100的敌方1次",
+    "id": 100195,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "100201": {
+    "desc": "使用福煦·META获得1次胜利",
+    "id": 100201,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "100202": {
+    "desc": "使用福煦·META击破等级＞30的敌方1次",
+    "id": 100202,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "100203": {
+    "desc": "使用福煦·META击破等级＞55的敌方1次",
+    "id": 100203,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "100204": {
+    "desc": "使用福煦·META击破等级＞80的敌方1次",
+    "id": 100204,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "100205": {
+    "desc": "使用福煦·META击破等级＞100的敌方1次",
+    "id": 100205,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "100301": {
+    "desc": "使用威奇塔·META获得1次胜利",
+    "id": 100301,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "100302": {
+    "desc": "使用威奇塔·META击破等级＞30的敌方1次",
+    "id": 100302,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "100303": {
+    "desc": "使用威奇塔·META击破等级＞55的敌方1次",
+    "id": 100303,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "100304": {
+    "desc": "使用威奇塔·META击破等级＞80的敌方1次",
+    "id": 100304,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "100305": {
+    "desc": "使用威奇塔·META击破等级＞100的敌方1次",
+    "id": 100305,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "100311": {
+    "desc": "使用{namecode:229}获得1次胜利",
+    "id": 100311,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "100312": {
+    "desc": "使用{namecode:229}击破等级＞30的敌方1次",
+    "id": 100312,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "100313": {
+    "desc": "使用{namecode:229}击破等级＞55的敌方1次",
+    "id": 100313,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "100314": {
+    "desc": "使用{namecode:229}击破等级＞80的敌方1次",
+    "id": 100314,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "100315": {
+    "desc": "使用{namecode:229}击破等级＞100的敌方1次",
+    "id": 100315,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "100321": {
+    "desc": "使用{namecode:230}获得1次胜利",
+    "id": 100321,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "100322": {
+    "desc": "使用{namecode:230}击破等级＞30的敌方1次",
+    "id": 100322,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "100323": {
+    "desc": "使用{namecode:230}击破等级＞55的敌方1次",
+    "id": 100323,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "100324": {
+    "desc": "使用{namecode:230}击破等级＞80的敌方1次",
+    "id": 100324,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "100325": {
+    "desc": "使用{namecode:230}击破等级＞100的敌方1次",
+    "id": 100325,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "100331": {
+    "desc": "使用{namecode:232}获得1次胜利",
+    "id": 100331,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "100332": {
+    "desc": "使用{namecode:232}击破等级＞30的敌方1次",
+    "id": 100332,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "100333": {
+    "desc": "使用{namecode:232}击破等级＞55的敌方1次",
+    "id": 100333,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "100334": {
+    "desc": "使用{namecode:232}击破等级＞80的敌方1次",
+    "id": 100334,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "100335": {
+    "desc": "使用{namecode:232}击破等级＞100的敌方1次",
+    "id": 100335,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "100341": {
+    "desc": "使用{namecode:237}获得1次胜利",
+    "id": 100341,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "100342": {
+    "desc": "使用{namecode:237}击破等级＞30的敌方1次",
+    "id": 100342,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "100343": {
+    "desc": "使用{namecode:237}击破等级＞55的敌方1次",
+    "id": 100343,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "100344": {
+    "desc": "使用{namecode:237}击破等级＞80的敌方1次",
+    "id": 100344,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "100345": {
+    "desc": "使用{namecode:237}击破等级＞100的敌方1次",
+    "id": 100345,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "100351": {
+    "desc": "使用朱利奥·凯撒·META获得1次胜利",
+    "id": 100351,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "100352": {
+    "desc": "使用朱利奥·凯撒·META击破等级＞30的敌方1次",
+    "id": 100352,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "100353": {
+    "desc": "使用朱利奥·凯撒·META击破等级＞55的敌方1次",
+    "id": 100353,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "100354": {
+    "desc": "使用朱利奥·凯撒·META击破等级＞80的敌方1次",
+    "id": 100354,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "100355": {
+    "desc": "使用朱利奥·凯撒·META击破等级＞100的敌方1次",
+    "id": 100355,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "100361": {
+    "desc": "使用{namecode:238}获得1次胜利",
+    "id": 100361,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "100362": {
+    "desc": "使用{namecode:238}击破等级＞30的敌方1次",
+    "id": 100362,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "100363": {
+    "desc": "使用{namecode:238}击破等级＞55的敌方1次",
+    "id": 100363,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "100364": {
+    "desc": "使用{namecode:238}击破等级＞80的敌方1次",
+    "id": 100364,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "100365": {
+    "desc": "使用{namecode:238}击破等级＞100的敌方1次",
+    "id": 100365,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "100371": {
+    "desc": "使用{namecode:543}获得1次胜利",
+    "id": 100371,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "100372": {
+    "desc": "使用{namecode:543}击破等级＞30的敌方1次",
+    "id": 100372,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "100373": {
+    "desc": "使用{namecode:543}击破等级＞55的敌方1次",
+    "id": 100373,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "100374": {
+    "desc": "使用{namecode:543}击破等级＞80的敌方1次",
+    "id": 100374,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "100375": {
+    "desc": "使用{namecode:543}击破等级＞100的敌方1次",
+    "id": 100375,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "100381": {
+    "desc": "使用博尔扎诺·META获得1次胜利",
+    "id": 100381,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "100382": {
+    "desc": "使用博尔扎诺·META击破等级＞30的敌方1次",
+    "id": 100382,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "100383": {
+    "desc": "使用博尔扎诺·META击破等级＞55的敌方1次",
+    "id": 100383,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "100384": {
+    "desc": "使用博尔扎诺·META击破等级＞80的敌方1次",
+    "id": 100384,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "100385": {
+    "desc": "使用博尔扎诺·META击破等级＞100的敌方1次",
+    "id": 100385,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "100391": {
+    "desc": "使用安德烈亚·多利亚·META获得1次胜利",
+    "id": 100391,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "100392": {
+    "desc": "使用安德烈亚·多利亚·META击破等级＞30的敌方1次",
+    "id": 100392,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "100393": {
+    "desc": "使用安德烈亚·多利亚·META击破等级＞55的敌方1次",
+    "id": 100393,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "100394": {
+    "desc": "使用安德烈亚·多利亚·META击破等级＞80的敌方1次",
+    "id": 100394,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "100395": {
+    "desc": "使用安德烈亚·多利亚·META击破等级＞100的敌方1次",
+    "id": 100395,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "100401": {
+    "desc": "使用大黄蜂·META获得1次胜利",
+    "id": 100401,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "100402": {
+    "desc": "使用大黄蜂·META击破等级＞30的敌方1次",
+    "id": 100402,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "100403": {
+    "desc": "使用大黄蜂·META击破等级＞55的敌方1次",
+    "id": 100403,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "100404": {
+    "desc": "使用大黄蜂·META击破等级＞80的敌方1次",
+    "id": 100404,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "100405": {
+    "desc": "使用大黄蜂·META击破等级＞100的敌方1次",
+    "id": 100405,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "100411": {
+    "desc": "使用内华达·META获得1次胜利",
+    "id": 100411,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "100412": {
+    "desc": "使用内华达·META击破等级＞30的敌方1次",
+    "id": 100412,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "100413": {
+    "desc": "使用内华达·META击破等级＞55的敌方1次",
+    "id": 100413,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "100414": {
+    "desc": "使用内华达·META击破等级＞80的敌方1次",
+    "id": 100414,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "100415": {
+    "desc": "使用内华达·META击破等级＞100的敌方1次",
+    "id": 100415,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "100421": {
+    "desc": "使用格伦维尔·META获得1次胜利",
+    "id": 100421,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "100422": {
+    "desc": "使用格伦维尔·META击破等级＞30的敌方1次",
+    "id": 100422,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "100423": {
+    "desc": "使用格伦维尔·META击破等级＞55的敌方1次",
+    "id": 100423,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "100424": {
+    "desc": "使用格伦维尔·META击破等级＞80的敌方1次",
+    "id": 100424,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "100425": {
+    "desc": "使用格伦维尔·META击破等级＞100的敌方1次",
+    "id": 100425,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "100431": {
+    "desc": "使用光荣·META获得1次胜利",
+    "id": 100431,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "100432": {
+    "desc": "使用光荣·META击破等级＞30的敌方1次",
+    "id": 100432,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "100433": {
+    "desc": "使用光荣·META击破等级＞55的敌方1次",
+    "id": 100433,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "100434": {
+    "desc": "使用光荣·META击破等级＞80的敌方1次",
+    "id": 100434,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "100435": {
+    "desc": "使用光荣·META击破等级＞100的敌方1次",
+    "id": 100435,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "100441": {
+    "desc": "使用{namecode:300}·META获得1次胜利",
+    "id": 100441,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "100442": {
+    "desc": "使用{namecode:300}·META击破等级＞30的敌方1次",
+    "id": 100442,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "100443": {
+    "desc": "使用{namecode:300}·META击破等级＞55的敌方1次",
+    "id": 100443,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "100444": {
+    "desc": "使用{namecode:300}·META击破等级＞80的敌方1次",
+    "id": 100444,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "100445": {
+    "desc": "使用{namecode:300}·META击破等级＞100的敌方1次",
+    "id": 100445,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "100451": {
+    "desc": "使用敦刻尔克·META获得1次胜利",
+    "id": 100451,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "100452": {
+    "desc": "使用敦刻尔克·META击破等级＞30的敌方1次",
+    "id": 100452,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "100453": {
+    "desc": "使用敦刻尔克·META击破等级＞55的敌方1次",
+    "id": 100453,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "100454": {
+    "desc": "使用敦刻尔克·META击破等级＞80的敌方1次",
+    "id": 100454,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "100455": {
+    "desc": "使用敦刻尔克·META击破等级＞100的敌方1次",
+    "id": 100455,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "100461": {
+    "desc": "使用夕立·META获得1次胜利",
+    "id": 100461,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "100462": {
+    "desc": "使用夕立·META击破等级＞30的敌方1次",
+    "id": 100462,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "100463": {
+    "desc": "使用夕立·META击破等级＞55的敌方1次",
+    "id": 100463,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "100464": {
+    "desc": "使用夕立·META击破等级＞80的敌方1次",
+    "id": 100464,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "100465": {
+    "desc": "使用夕立·META击破等级＞100的敌方1次",
+    "id": 100465,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "100471": {
+    "desc": "使用杜威·META获得1次胜利",
+    "id": 100471,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "100472": {
+    "desc": "使用杜威·META击破等级＞30的敌方1次",
+    "id": 100472,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "100473": {
+    "desc": "使用杜威·META击破等级＞55的敌方1次",
+    "id": 100473,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "100474": {
+    "desc": "使用杜威·META击破等级＞80的敌方1次",
+    "id": 100474,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "100475": {
+    "desc": "使用杜威·META击破等级＞100的敌方1次",
+    "id": 100475,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "100481": {
+    "desc": "使用{namecode:551}获得1次胜利",
+    "id": 100481,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "100482": {
+    "desc": "使用{namecode:551}击破等级＞30的敌方1次",
+    "id": 100482,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "100483": {
+    "desc": "使用{namecode:551}击破等级＞55的敌方1次",
+    "id": 100483,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "100484": {
+    "desc": "使用{namecode:551}击破等级＞80的敌方1次",
+    "id": 100484,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "100485": {
+    "desc": "使用{namecode:551}击破等级＞100的敌方1次",
+    "id": 100485,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "100491": {
+    "desc": "使用约克城·META获得1次胜利",
+    "id": 100491,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "100492": {
+    "desc": "使用约克城·META击破等级＞30的敌方1次",
+    "id": 100492,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "100493": {
+    "desc": "使用约克城·META击破等级＞55的敌方1次",
+    "id": 100493,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "100494": {
+    "desc": "使用约克城·META击破等级＞80的敌方1次",
+    "id": 100494,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "100495": {
+    "desc": "使用约克城·META击破等级＞100的敌方1次",
+    "id": 100495,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "100501": {
+    "desc": "使用克利夫兰·META获得1次胜利",
+    "id": 100501,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "100502": {
+    "desc": "使用克利夫兰·META击破等级＞30的敌方1次",
+    "id": 100502,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "100503": {
+    "desc": "使用克利夫兰·META击破等级＞55的敌方1次",
+    "id": 100503,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "100504": {
+    "desc": "使用克利夫兰·META击破等级＞80的敌方1次",
+    "id": 100504,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "100505": {
+    "desc": "使用克利夫兰·META击破等级＞100的敌方1次",
+    "id": 100505,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "100511": {
+    "desc": "使用龙骑兵·META获得1次胜利",
+    "id": 100511,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "100512": {
+    "desc": "使用龙骑兵·META击破等级＞30的敌方1次",
+    "id": 100512,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "100513": {
+    "desc": "使用龙骑兵·META击破等级＞55的敌方1次",
+    "id": 100513,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "100514": {
+    "desc": "使用龙骑兵·META击破等级＞80的敌方1次",
+    "id": 100514,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "100515": {
+    "desc": "使用龙骑兵·META击破等级＞100的敌方1次",
+    "id": 100515,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "100521": {
+    "desc": "使用甘古特·META获得1次胜利",
+    "id": 100521,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "100522": {
+    "desc": "使用甘古特·META击破等级＞30的敌方1次",
+    "id": 100522,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "100523": {
+    "desc": "使用甘古特·META击破等级＞55的敌方1次",
+    "id": 100523,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "100524": {
+    "desc": "使用甘古特·META击破等级＞80的敌方1次",
+    "id": 100524,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "100525": {
+    "desc": "使用甘古特·META击破等级＞100的敌方1次",
+    "id": 100525,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "100531": {
+    "desc": "使用{namecode:552}获得1次胜利",
+    "id": 100531,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "100532": {
+    "desc": "使用{namecode:552}击破等级＞30的敌方1次",
+    "id": 100532,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "100533": {
+    "desc": "使用{namecode:552}击破等级＞55的敌方1次",
+    "id": 100533,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "100534": {
+    "desc": "使用{namecode:552}击破等级＞80的敌方1次",
+    "id": 100534,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "100535": {
+    "desc": "使用{namecode:552}击破等级＞100的敌方1次",
+    "id": 100535,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "100541": {
+    "desc": "使用{namecode:553}获得1次胜利",
+    "id": 100541,
+    "sub_type": 180,
+    "target_id": "0",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "100542": {
+    "desc": "使用{namecode:553}击破等级＞30的敌方1次",
+    "id": 100542,
+    "sub_type": 180,
+    "target_id": "30",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "100543": {
+    "desc": "使用{namecode:553}击破等级＞55的敌方1次",
+    "id": 100543,
+    "sub_type": 180,
+    "target_id": "55",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "100544": {
+    "desc": "使用{namecode:553}击破等级＞80的敌方1次",
+    "id": 100544,
+    "sub_type": 180,
+    "target_id": "80",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "100545": {
+    "desc": "使用{namecode:553}击破等级＞100的敌方1次",
+    "id": 100545,
+    "sub_type": 180,
+    "target_id": "100",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "200001": {
+    "desc": "大型作战内使用猎人·META获得1次胜利",
+    "id": 200001,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "200002": {
+    "desc": "大型作战内使用猎人·META击破等级>70的敌方1次",
+    "id": 200002,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "200003": {
+    "desc": "大型作战内使用猎人·META击破等级>90的敌方1次",
+    "id": 200003,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "200004": {
+    "desc": "大型作战内使用猎人·META击破等级>100的敌方1次",
+    "id": 200004,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970101",
+    "target_num": 1
+  },
+  "200021": {
+    "desc": "大型作战内使用命运女神·META获得1次胜利",
+    "id": 200021,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "200022": {
+    "desc": "大型作战内使用命运女神·META击破等级>70的敌方1次",
+    "id": 200022,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "200023": {
+    "desc": "大型作战内使用命运女神·META击破等级>90的敌方1次",
+    "id": 200023,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "200024": {
+    "desc": "大型作战内使用命运女神·META击破等级>100的敌方1次",
+    "id": 200024,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970102",
+    "target_num": 1
+  },
+  "200031": {
+    "desc": "大型作战内使用亚利桑那·META获得1次胜利",
+    "id": 200031,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "200032": {
+    "desc": "大型作战内使用亚利桑那·META击破等级>70的敌方1次",
+    "id": 200032,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "200033": {
+    "desc": "大型作战内使用亚利桑那·META击破等级>90的敌方1次",
+    "id": 200033,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "200034": {
+    "desc": "大型作战内使用亚利桑那·META击破等级>100的敌方1次",
+    "id": 200034,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970503",
+    "target_num": 1
+  },
+  "200041": {
+    "desc": "大型作战内使用谢菲尔德·META获得1次胜利",
+    "id": 200041,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "200042": {
+    "desc": "大型作战内使用谢菲尔德·META击破等级>70的敌方1次",
+    "id": 200042,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "200043": {
+    "desc": "大型作战内使用谢菲尔德·META击破等级>90的敌方1次",
+    "id": 200043,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "200044": {
+    "desc": "大型作战内使用谢菲尔德·META击破等级>100的敌方1次",
+    "id": 200044,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970203",
+    "target_num": 1
+  },
+  "200051": {
+    "desc": "大型作战内使用伊丽莎白女王·META获得1次胜利",
+    "id": 200051,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "200052": {
+    "desc": "大型作战内使用伊丽莎白女王·META击破等级>70的敌方1次",
+    "id": 200052,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "200053": {
+    "desc": "大型作战内使用伊丽莎白女王·META击破等级>90的敌方1次",
+    "id": 200053,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "200054": {
+    "desc": "大型作战内使用伊丽莎白女王·META击破等级>100的敌方1次",
+    "id": 200054,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970504",
+    "target_num": 1
+  },
+  "200061": {
+    "desc": "大型作战内使用拉·加利索尼埃·META获得1次胜利",
+    "id": 200061,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "200062": {
+    "desc": "大型作战内使用拉·加利索尼埃·META击破等级>70的敌方1次",
+    "id": 200062,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "200063": {
+    "desc": "大型作战内使用拉·加利索尼埃·META击破等级>90的敌方1次",
+    "id": 200063,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "200064": {
+    "desc": "大型作战内使用拉·加利索尼埃·META击破等级>100的敌方1次",
+    "id": 200064,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970204",
+    "target_num": 1
+  },
+  "200071": {
+    "desc": "大型作战内使用U-556·META获得1次胜利",
+    "id": 200071,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "200072": {
+    "desc": "大型作战内使用U-556·META击破等级>70的敌方1次",
+    "id": 200072,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "200073": {
+    "desc": "大型作战内使用U-556·META击破等级>90的敌方1次",
+    "id": 200073,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "200074": {
+    "desc": "大型作战内使用U-556·META击破等级>100的敌方1次",
+    "id": 200074,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970801",
+    "target_num": 1
+  },
+  "200081": {
+    "desc": "大型作战内使用女灶神·META获得1次胜利",
+    "id": 200081,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "200082": {
+    "desc": "大型作战内使用女灶神·META击破等级>70的敌方1次",
+    "id": 200082,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "200083": {
+    "desc": "大型作战内使用女灶神·META击破等级>90的敌方1次",
+    "id": 200083,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "200084": {
+    "desc": "大型作战内使用女灶神·META击破等级>100的敌方1次",
+    "id": 200084,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "971201",
+    "target_num": 1
+  },
+  "200091": {
+    "desc": "大型作战内使用阿尔及利亚·META获得1次胜利",
+    "id": 200091,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "200092": {
+    "desc": "大型作战内使用阿尔及利亚·META击破等级＞70的敌方1次",
+    "id": 200092,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "200093": {
+    "desc": "大型作战内使用阿尔及利亚·META击破等级＞90的敌方1次",
+    "id": 200093,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "200094": {
+    "desc": "大型作战内使用阿尔及利亚·META击破等级＞100的敌方1次",
+    "id": 200094,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970302",
+    "target_num": 1
+  },
+  "200101": {
+    "desc": "大型作战内使用{namecode:522}获得1次胜利",
+    "id": 200101,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "200102": {
+    "desc": "大型作战内使用{namecode:522}击破等级＞70的敌方1次",
+    "id": 200102,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "200103": {
+    "desc": "大型作战内使用{namecode:522}击破等级＞90的敌方1次",
+    "id": 200103,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "200104": {
+    "desc": "大型作战内使用{namecode:522}击破等级＞100的敌方1次",
+    "id": 200104,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970103",
+    "target_num": 1
+  },
+  "200111": {
+    "desc": "大型作战内使用{namecode:293}获得1次胜利",
+    "id": 200111,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "200112": {
+    "desc": "大型作战内使用{namecode:293}击破等级＞70的敌方1次",
+    "id": 200112,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "200113": {
+    "desc": "大型作战内使用{namecode:293}击破等级＞90的敌方1次",
+    "id": 200113,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "200114": {
+    "desc": "大型作战内使用{namecode:293}击破等级＞100的敌方1次",
+    "id": 200114,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970205",
+    "target_num": 1
+  },
+  "200121": {
+    "desc": "大型作战内使用普林斯顿·META获得1次胜利",
+    "id": 200121,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "200122": {
+    "desc": "大型作战内使用普林斯顿·META击破等级＞70的敌方1次",
+    "id": 200122,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "200123": {
+    "desc": "大型作战内使用普林斯顿·META击破等级＞90的敌方1次",
+    "id": 200123,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "200124": {
+    "desc": "大型作战内使用普林斯顿·META击破等级＞100的敌方1次",
+    "id": 200124,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970603",
+    "target_num": 1
+  },
+  "200131": {
+    "desc": "大型作战内使用黑暗界·META获得1次胜利",
+    "id": 200131,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "200132": {
+    "desc": "大型作战内使用黑暗界·META击破等级＞70的敌方1次",
+    "id": 200132,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "200133": {
+    "desc": "大型作战内使用黑暗界·META击破等级＞90的敌方1次",
+    "id": 200133,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "200134": {
+    "desc": "大型作战内使用黑暗界·META击破等级＞100的敌方1次",
+    "id": 200134,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "971301",
+    "target_num": 1
+  },
+  "200141": {
+    "desc": "大型作战内使用基洛夫·META获得1次胜利",
+    "id": 200141,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "200142": {
+    "desc": "大型作战内使用基洛夫·META击破等级＞70的敌方1次",
+    "id": 200142,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "200143": {
+    "desc": "大型作战内使用基洛夫·META击破等级＞90的敌方1次",
+    "id": 200143,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "200144": {
+    "desc": "大型作战内使用基洛夫·META击破等级＞100的敌方1次",
+    "id": 200144,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970206",
+    "target_num": 1
+  },
+  "200151": {
+    "desc": "大型作战内使用金伯利·META获得1次胜利",
+    "id": 200151,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "200152": {
+    "desc": "大型作战内使用金伯利·META击破等级＞70的敌方1次",
+    "id": 200152,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "200153": {
+    "desc": "大型作战内使用金伯利·META击破等级＞90的敌方1次",
+    "id": 200153,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "200154": {
+    "desc": "大型作战内使用金伯利·META击破等级＞100的敌方1次",
+    "id": 200154,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970104",
+    "target_num": 1
+  },
+  "200161": {
+    "desc": "大型作战内使用水星纪念·META获得1次胜利",
+    "id": 200161,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "200162": {
+    "desc": "大型作战内使用水星纪念·META击破等级＞70的敌方1次",
+    "id": 200162,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "200163": {
+    "desc": "大型作战内使用水星纪念·META击破等级＞90的敌方1次",
+    "id": 200163,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "200164": {
+    "desc": "大型作战内使用水星纪念·META击破等级＞100的敌方1次",
+    "id": 200164,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970207",
+    "target_num": 1
+  },
+  "200171": {
+    "desc": "大型作战内使用罗德尼·META获得1次胜利",
+    "id": 200171,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "200172": {
+    "desc": "大型作战内使用罗德尼·META击破等级＞70的敌方1次",
+    "id": 200172,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "200173": {
+    "desc": "大型作战内使用罗德尼·META击破等级＞90的敌方1次",
+    "id": 200173,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "200174": {
+    "desc": "大型作战内使用罗德尼·META击破等级＞100的敌方1次",
+    "id": 200174,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970505",
+    "target_num": 1
+  },
+  "200181": {
+    "desc": "大型作战内使用吸血鬼·META获得1次胜利",
+    "id": 200181,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "200182": {
+    "desc": "大型作战内使用吸血鬼·META击破等级＞70的敌方1次",
+    "id": 200182,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "200183": {
+    "desc": "大型作战内使用吸血鬼·META击破等级＞90的敌方1次",
+    "id": 200183,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "200184": {
+    "desc": "大型作战内使用吸血鬼·META击破等级＞100的敌方1次",
+    "id": 200184,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970105",
+    "target_num": 1
+  },
+  "200191": {
+    "desc": "大型作战内使用贝亚恩·META获得1次胜利",
+    "id": 200191,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "200192": {
+    "desc": "大型作战内使用贝亚恩·META击破等级＞70的敌方1次",
+    "id": 200192,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "200193": {
+    "desc": "大型作战内使用贝亚恩·META击破等级＞90的敌方1次",
+    "id": 200193,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "200194": {
+    "desc": "大型作战内使用贝亚恩·META击破等级＞100的敌方1次",
+    "id": 200194,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970704",
+    "target_num": 1
+  },
+  "200201": {
+    "desc": "大型作战内使用福煦·META获得1次胜利",
+    "id": 200201,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "200202": {
+    "desc": "大型作战内使用福煦·META击破等级＞70的敌方1次",
+    "id": 200202,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "200203": {
+    "desc": "大型作战内使用福煦·META击破等级＞90的敌方1次",
+    "id": 200203,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "200204": {
+    "desc": "大型作战内使用福煦·META击破等级＞100的敌方1次",
+    "id": 200204,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970303",
+    "target_num": 1
+  },
+  "200211": {
+    "desc": "大型作战内使用威奇塔·META获得1次胜利",
+    "id": 200211,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "200212": {
+    "desc": "大型作战内使用威奇塔·META击破等级＞70的敌方1次",
+    "id": 200212,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "200213": {
+    "desc": "大型作战内使用威奇塔·META击破等级＞90的敌方1次",
+    "id": 200213,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "200214": {
+    "desc": "大型作战内使用威奇塔·META击破等级＞100的敌方1次",
+    "id": 200214,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970304",
+    "target_num": 1
+  },
+  "200221": {
+    "desc": "大型作战内使用{namecode:229}获得1次胜利",
+    "id": 200221,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "200222": {
+    "desc": "大型作战内使用{namecode:229}击破等级＞70的敌方1次",
+    "id": 200222,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "200223": {
+    "desc": "大型作战内使用{namecode:229}击破等级＞90的敌方1次",
+    "id": 200223,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "200224": {
+    "desc": "大型作战内使用{namecode:229}击破等级＞100的敌方1次",
+    "id": 200224,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970106",
+    "target_num": 1
+  },
+  "200231": {
+    "desc": "大型作战内使用{namecode:230}获得1次胜利",
+    "id": 200231,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "200232": {
+    "desc": "大型作战内使用{namecode:230}击破等级＞70的敌方1次",
+    "id": 200232,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "200233": {
+    "desc": "大型作战内使用{namecode:230}击破等级＞90的敌方1次",
+    "id": 200233,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "200234": {
+    "desc": "大型作战内使用{namecode:230}击破等级＞100的敌方1次",
+    "id": 200234,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970506",
+    "target_num": 1
+  },
+  "200241": {
+    "desc": "大型作战内使用{namecode:232}获得1次胜利",
+    "id": 200241,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "200242": {
+    "desc": "大型作战内使用{namecode:232}击破等级＞70的敌方1次",
+    "id": 200242,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "200243": {
+    "desc": "大型作战内使用{namecode:232}击破等级＞90的敌方1次",
+    "id": 200243,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "200244": {
+    "desc": "大型作战内使用{namecode:232}击破等级＞100的敌方1次",
+    "id": 200244,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970405",
+    "target_num": 1
+  },
+  "200251": {
+    "desc": "大型作战内使用{namecode:237}获得1次胜利",
+    "id": 200251,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "200252": {
+    "desc": "大型作战内使用{namecode:237}击破等级＞70的敌方1次",
+    "id": 200252,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "200253": {
+    "desc": "大型作战内使用{namecode:237}击破等级＞90的敌方1次",
+    "id": 200253,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "200254": {
+    "desc": "大型作战内使用{namecode:237}击破等级＞100的敌方1次",
+    "id": 200254,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970604",
+    "target_num": 1
+  },
+  "200261": {
+    "desc": "大型作战内使用朱利奥·凯撒·META获得1次胜利",
+    "id": 200261,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "200262": {
+    "desc": "大型作战内使用朱利奥·凯撒·META击破等级＞70的敌方1次",
+    "id": 200262,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "200263": {
+    "desc": "大型作战内使用朱利奥·凯撒·META击破等级＞90的敌方1次",
+    "id": 200263,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "200264": {
+    "desc": "大型作战内使用朱利奥·凯撒·META击破等级＞100的敌方1次",
+    "id": 200264,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970507",
+    "target_num": 1
+  },
+  "200271": {
+    "desc": "大型作战内使用{namecode:238}获得1次胜利",
+    "id": 200271,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "200272": {
+    "desc": "大型作战内使用{namecode:238}击破等级＞70的敌方1次",
+    "id": 200272,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "200273": {
+    "desc": "大型作战内使用{namecode:238}击破等级＞90的敌方1次",
+    "id": 200273,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "200274": {
+    "desc": "大型作战内使用{namecode:238}击破等级＞100的敌方1次",
+    "id": 200274,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970705",
+    "target_num": 1
+  },
+  "200281": {
+    "desc": "大型作战内使用{namecode:543}获得1次胜利",
+    "id": 200281,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "200282": {
+    "desc": "大型作战内使用{namecode:543}击破等级＞70的敌方1次",
+    "id": 200282,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "200283": {
+    "desc": "大型作战内使用{namecode:543}击破等级＞90的敌方1次",
+    "id": 200283,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "200284": {
+    "desc": "大型作战内使用{namecode:543}击破等级＞100的敌方1次",
+    "id": 200284,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970305",
+    "target_num": 1
+  },
+  "200291": {
+    "desc": "大型作战内使用博尔扎诺·META获得1次胜利",
+    "id": 200291,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "200292": {
+    "desc": "大型作战内使用博尔扎诺·META击破等级＞70的敌方1次",
+    "id": 200292,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "200293": {
+    "desc": "大型作战内使用博尔扎诺·META击破等级＞90的敌方1次",
+    "id": 200293,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "200294": {
+    "desc": "大型作战内使用博尔扎诺·META击破等级＞100的敌方1次",
+    "id": 200294,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970306",
+    "target_num": 1
+  },
+  "200301": {
+    "desc": "大型作战内使用安德烈亚·多利亚·META获得1次胜利",
+    "id": 200301,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "200302": {
+    "desc": "大型作战内使用安德烈亚·多利亚·META击破等级＞70的敌方1次",
+    "id": 200302,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "200303": {
+    "desc": "大型作战内使用安德烈亚·多利亚·META击破等级＞90的敌方1次",
+    "id": 200303,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "200304": {
+    "desc": "大型作战内使用安德烈亚·多利亚·META击破等级＞100的敌方1次",
+    "id": 200304,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970508",
+    "target_num": 1
+  },
+  "200311": {
+    "desc": "大型作战内使用大黄蜂·META获得1次胜利",
+    "id": 200311,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "200312": {
+    "desc": "大型作战内使用大黄蜂·META击破等级＞70的敌方1次",
+    "id": 200312,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "200313": {
+    "desc": "大型作战内使用大黄蜂·META击破等级＞90的敌方1次",
+    "id": 200313,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "200314": {
+    "desc": "大型作战内使用大黄蜂·META击破等级＞100的敌方1次",
+    "id": 200314,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970706",
+    "target_num": 1
+  },
+  "200321": {
+    "desc": "大型作战内使用内华达·META获得1次胜利",
+    "id": 200321,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "200322": {
+    "desc": "大型作战内使用内华达·META击破等级＞70的敌方1次",
+    "id": 200322,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "200323": {
+    "desc": "大型作战内使用内华达·META击破等级＞90的敌方1次",
+    "id": 200323,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "200324": {
+    "desc": "大型作战内使用内华达·META击破等级＞100的敌方1次",
+    "id": 200324,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970509",
+    "target_num": 1
+  },
+  "200331": {
+    "desc": "大型作战内使用格伦维尔·META获得1次胜利",
+    "id": 200331,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "200332": {
+    "desc": "大型作战内使用格伦维尔·META击破等级＞70的敌方1次",
+    "id": 200332,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "200333": {
+    "desc": "大型作战内使用格伦维尔·META击破等级＞90的敌方1次",
+    "id": 200333,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "200334": {
+    "desc": "大型作战内使用格伦维尔·META击破等级＞100的敌方1次",
+    "id": 200334,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970107",
+    "target_num": 1
+  },
+  "200341": {
+    "desc": "大型作战内使用光荣·META获得1次胜利",
+    "id": 200341,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "200342": {
+    "desc": "大型作战内使用光荣·META击破等级＞70的敌方1次",
+    "id": 200342,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "200343": {
+    "desc": "大型作战内使用光荣·META击破等级＞90的敌方1次",
+    "id": 200343,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "200344": {
+    "desc": "大型作战内使用光荣·META击破等级＞100的敌方1次",
+    "id": 200344,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970707",
+    "target_num": 1
+  },
+  "200351": {
+    "desc": "大型作战内使用{namecode:300}·META获得1次胜利",
+    "id": 200351,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "200352": {
+    "desc": "大型作战内使用{namecode:300}·META击破等级＞70的敌方1次",
+    "id": 200352,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "200353": {
+    "desc": "大型作战内使用{namecode:300}·META击破等级＞90的敌方1次",
+    "id": 200353,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "200354": {
+    "desc": "大型作战内使用{namecode:300}·META击破等级＞100的敌方1次",
+    "id": 200354,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970108",
+    "target_num": 1
+  },
+  "200361": {
+    "desc": "大型作战内使用敦刻尔克·META获得1次胜利",
+    "id": 200361,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "200362": {
+    "desc": "大型作战内使用敦刻尔克·META击破等级＞70的敌方1次",
+    "id": 200362,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "200363": {
+    "desc": "大型作战内使用敦刻尔克·META击破等级＞90的敌方1次",
+    "id": 200363,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "200364": {
+    "desc": "大型作战内使用敦刻尔克·META击破等级＞100的敌方1次",
+    "id": 200364,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970406",
+    "target_num": 1
+  },
+  "200371": {
+    "desc": "大型作战内使用夕立·META获得1次胜利",
+    "id": 200371,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "200372": {
+    "desc": "大型作战内使用夕立·META击破等级＞70的敌方1次",
+    "id": 200372,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "200373": {
+    "desc": "大型作战内使用夕立·META击破等级＞90的敌方1次",
+    "id": 200373,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "200374": {
+    "desc": "大型作战内使用夕立·META击破等级＞100的敌方1次",
+    "id": 200374,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970109",
+    "target_num": 1
+  },
+  "200381": {
+    "desc": "大型作战内使用杜威·META获得1次胜利",
+    "id": 200381,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "200382": {
+    "desc": "大型作战内使用杜威·META击破等级＞70的敌方1次",
+    "id": 200382,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "200383": {
+    "desc": "大型作战内使用杜威·META击破等级＞90的敌方1次",
+    "id": 200383,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "200384": {
+    "desc": "大型作战内使用杜威·META击破等级＞100的敌方1次",
+    "id": 200384,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970110",
+    "target_num": 1
+  },
+  "200391": {
+    "desc": "大型作战内使用{namecode:551}获得1次胜利",
+    "id": 200391,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "200392": {
+    "desc": "大型作战内使用{namecode:551}击破等级＞70的敌方1次",
+    "id": 200392,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "200393": {
+    "desc": "大型作战内使用{namecode:551}击破等级＞90的敌方1次",
+    "id": 200393,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "200394": {
+    "desc": "大型作战内使用{namecode:551}击破等级＞100的敌方1次",
+    "id": 200394,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970208",
+    "target_num": 1
+  },
+  "200401": {
+    "desc": "大型作战内使用约克城·META获得1次胜利",
+    "id": 200401,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "200402": {
+    "desc": "大型作战内使用约克城·META击破等级＞70的敌方1次",
+    "id": 200402,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "200403": {
+    "desc": "大型作战内使用约克城·META击破等级＞90的敌方1次",
+    "id": 200403,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "200404": {
+    "desc": "大型作战内使用约克城·META击破等级＞100的敌方1次",
+    "id": 200404,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970708",
+    "target_num": 1
+  },
+  "200411": {
+    "desc": "大型作战内使用克利夫兰·META获得1次胜利",
+    "id": 200411,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "200412": {
+    "desc": "大型作战内使用克利夫兰·META击破等级＞70的敌方1次",
+    "id": 200412,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "200413": {
+    "desc": "大型作战内使用克利夫兰·META击破等级＞90的敌方1次",
+    "id": 200413,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "200414": {
+    "desc": "大型作战内使用克利夫兰·META击破等级＞100的敌方1次",
+    "id": 200414,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970209",
+    "target_num": 1
+  },
+  "200421": {
+    "desc": "大型作战内使用龙骑兵·META获得1次胜利",
+    "id": 200421,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "200422": {
+    "desc": "大型作战内使用龙骑兵·META击破等级＞70的敌方1次",
+    "id": 200422,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "200423": {
+    "desc": "大型作战内使用龙骑兵·META击破等级＞90的敌方1次",
+    "id": 200423,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "200424": {
+    "desc": "大型作战内使用龙骑兵·META击破等级＞100的敌方1次",
+    "id": 200424,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970111",
+    "target_num": 1
+  },
+  "200431": {
+    "desc": "大型作战内使用甘古特·META获得1次胜利",
+    "id": 200431,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "200432": {
+    "desc": "大型作战内使用甘古特·META击破等级＞70的敌方1次",
+    "id": 200432,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "200433": {
+    "desc": "大型作战内使用甘古特·META击破等级＞90的敌方1次",
+    "id": 200433,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "200434": {
+    "desc": "大型作战内使用甘古特·META击破等级＞100的敌方1次",
+    "id": 200434,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970510",
+    "target_num": 1
+  },
+  "200441": {
+    "desc": "大型作战内使用{namecode:552}获得1次胜利",
+    "id": 200441,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "200442": {
+    "desc": "大型作战内使用{namecode:552}击破等级＞70的敌方1次",
+    "id": 200442,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "200443": {
+    "desc": "大型作战内使用{namecode:552}击破等级＞90的敌方1次",
+    "id": 200443,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "200444": {
+    "desc": "大型作战内使用{namecode:552}击破等级＞100的敌方1次",
+    "id": 200444,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970211",
+    "target_num": 1
+  },
+  "200451": {
+    "desc": "大型作战内使用{namecode:553}获得1次胜利",
+    "id": 200451,
+    "sub_type": 302,
+    "target_id": "0",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "200452": {
+    "desc": "大型作战内使用{namecode:553}击破等级＞70的敌方1次",
+    "id": 200452,
+    "sub_type": 302,
+    "target_id": "70",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "200453": {
+    "desc": "大型作战内使用{namecode:553}击破等级＞90的敌方1次",
+    "id": 200453,
+    "sub_type": 302,
+    "target_id": "90",
+    "target_id_2": "970210",
+    "target_num": 1
+  },
+  "200454": {
+    "desc": "大型作战内使用{namecode:553}击破等级＞100的敌方1次",
+    "id": 200454,
+    "sub_type": 302,
+    "target_id": "100",
+    "target_id_2": "970210",
+    "target_num": 1
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "1": {
+    "id": 1,
+    "param": [
+      "scene court yard",
+      {
+        "OpenShop": true
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "param": [
+      "OTHERWORLD_MAP",
+      {
+        "openTerminal": true,
+        "terminalPage": 2
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "param": [
+      "scene get boat",
+      {
+        "page": 1,
+        "projectName": "new"
+      }
+    ]
+  },
+  "4": {
+    "id": 4,
+    "param": [
+      "scene skinshop",
+      []
+    ]
+  },
+  "5": {
+    "id": 5,
+    "param": [
+      "seltechnology"
+    ]
+  },
+  "6": {
+    "id": 6,
+    "param": [
+      "COWBOY_TOWN_BACKHILL"
+    ]
+  },
+  "7": {
+    "id": 7,
+    "param": [
+      "DREAMLAND_PREVIEW"
+    ]
+  },
+  "8": {
+    "id": 8,
+    "param": [
+      "dorm 3d select"
+    ]
+  },
+  "9": {
+    "id": 9,
+    "param": [
+      "scene skinshop",
+      {
+        "warp": -3
+      }
+    ]
+  },
+  "10": {
+    "id": 10,
+    "param": [
+      "scene Cryptolalia",
+      []
+    ]
+  },
+  "11": {
+    "id": 11,
+    "param": [
+      "scene get boat",
+      {
+        "page": 1,
+        "projectName": "light"
+      }
+    ]
+  },
+  "12": {
+    "id": 12,
+    "param": [
+      "holiday villa map"
+    ]
+  },
+  "13": {
+    "id": 13,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "BRSCoreActivityUI"
+      }
+    ]
+  },
+  "14": {
+    "id": 14,
+    "param": [
+      "scene charge",
+      {
+        "wrap": 4
+      }
+    ]
+  },
+  "15": {
+    "id": 15,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "ALYCoreActivityUI"
+      }
+    ]
+  },
+  "16": {
+    "id": 16,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "RyzaCoreActivityUI"
+      }
+    ]
+  },
+  "17": {
+    "id": 17,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "SecretsAbyssCoreActivityUI"
+      }
+    ]
+  },
+  "18": {
+    "id": 18,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "EighthAnniversaryJpCoreActivityUI"
+      }
+    ]
+  },
+  "19": {
+    "id": 19,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "TianYuTianYuanCoreActivityUI"
+      }
+    ]
+  },
+  "20": {
+    "id": 20,
+    "param": [
+      "scene charge",
+      {
+        "wrap": 4
+      }
+    ]
+  },
+  "21": {
+    "id": 21,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "AEBCSCoreActivityUI"
+      }
+    ]
+  },
+  "22": {
+    "id": 22,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "SailingShip3CoreActivityUI"
+      }
+    ]
+  },
+  "23": {
+    "id": 23,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "PSSCoreActivityUI"
+      }
+    ]
+  },
+  "24": {
+    "id": 24,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "DALCoreActivityUI"
+      }
+    ]
+  },
+  "25": {
+    "id": 25,
+    "param": [
+      "scene vote entrance"
+    ]
+  },
+  "26": {
+    "id": 26,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "WinterFestival2025CoreActivityUI"
+      }
+    ]
+  },
+  "27": {
+    "id": 27,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "HelenaCoreActivityUI"
+      }
+    ]
+  },
+  "28": {
+    "id": 28,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "SardiniaSPCoreActivityUI"
+      }
+    ]
+  },
+  "29": {
+    "id": 29,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "SpringFestival2026CoreActivityUI"
+      }
+    ]
+  },
+  "30": {
+    "id": 30,
+    "param": [
+      "LiquorFloor"
+    ]
+  },
+  "31": {
+    "id": 31,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "MoscowURCoreActivityUI"
+      }
+    ]
+  },
+  "32": {
+    "id": 32,
+    "param": [
+      "scene activity",
+      {
+        "data": [],
+        "event": "ActivityMediator.OPEN_CULTIVATING_PLANT"
+      }
+    ]
+  },
+  "33": {
+    "id": 33,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "YunLongSPCoreActivityUI"
+      }
+    ]
+  },
+  "34": {
+    "id": 34,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "AprilFoolDiscovery2026UI"
+      }
+    ]
+  },
+  "35": {
+    "id": 35,
+    "param": [
+      "scene core activity",
+      {
+        "coreName": "DOACoreActivityUI"
+      }
+    ]
+  },
+  "36": {
+    "id": 36,
+    "param": [
+      "scene activity"
+    ]
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ]
+}

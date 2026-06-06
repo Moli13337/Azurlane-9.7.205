@@ -1,0 +1,1306 @@
+{
+  "101": {
+    "default_favor": 1001,
+    "finish_action": "",
+    "heartbeat_enable": 1,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 101,
+    "ik_status": [
+      1
+    ]
+  },
+  "102": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 102,
+    "ik_status": [
+      8
+    ]
+  },
+  "103": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 1,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 103,
+    "ik_status": [
+      3
+    ]
+  },
+  "104": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 104,
+    "ik_status": [
+      2
+    ]
+  },
+  "105": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 1,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 105,
+    "ik_status": [
+      1
+    ]
+  },
+  "106": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 106,
+    "ik_status": [
+      5
+    ]
+  },
+  "201": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 201,
+    "ik_status": [
+      115010
+    ]
+  },
+  "1051710": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051710,
+    "ik_status": [
+      400110
+    ]
+  },
+  "1051720": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051720,
+    "ik_status": [
+      400210
+    ]
+  },
+  "1051730": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051730,
+    "ik_status": [
+      400310
+    ]
+  },
+  "1051740": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051740,
+    "ik_status": [
+      400410
+    ]
+  },
+  "1051750": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051750,
+    "ik_status": [
+      400710
+    ]
+  },
+  "1051760": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051760,
+    "ik_status": [
+      400510
+    ]
+  },
+  "1051780": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051780,
+    "ik_status": [
+      400810
+    ]
+  },
+  "1051790": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051790,
+    "ik_status": [
+      410910
+    ]
+  },
+  "1051799": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1051799,
+    "ik_status": [
+      410910
+    ]
+  },
+  "1990310": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990310,
+    "ik_status": [
+      300210
+    ]
+  },
+  "1990320": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990320,
+    "ik_status": [
+      300310
+    ]
+  },
+  "1990330": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990330,
+    "ik_status": [
+      300110
+    ]
+  },
+  "1990340": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990340,
+    "ik_status": [
+      300410
+    ]
+  },
+  "1990350": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990350,
+    "ik_status": [
+      300510
+    ]
+  },
+  "1990360": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990360,
+    "ik_status": [
+      300610
+    ]
+  },
+  "1990370": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990370,
+    "ik_status": [
+      300710
+    ]
+  },
+  "1990390": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 1990390,
+    "ik_status": [
+      310910
+    ]
+  },
+  "2200110": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200110,
+    "ik_status": [
+      200110
+    ]
+  },
+  "2200210": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200210,
+    "ik_status": [
+      200310
+    ]
+  },
+  "2200310": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200310,
+    "ik_status": [
+      200210
+    ]
+  },
+  "2200410": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200410,
+    "ik_status": [
+      200410
+    ]
+  },
+  "2200510": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 1,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200510,
+    "ik_status": [
+      200510,
+      200540
+    ]
+  },
+  "2200610": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200610,
+    "ik_status": [
+      200610
+    ]
+  },
+  "2200710": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2200710,
+    "ik_status": [
+      200710
+    ]
+  },
+  "2210110": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 2210110,
+    "ik_status": [
+      215110
+    ]
+  },
+  "3070710": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070710,
+    "ik_status": [
+      500110
+    ]
+  },
+  "3070720": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070720,
+    "ik_status": [
+      500210
+    ]
+  },
+  "3070730": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070730,
+    "ik_status": [
+      500310
+    ]
+  },
+  "3070740": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070740,
+    "ik_status": [
+      500410
+    ]
+  },
+  "3070750": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070750,
+    "ik_status": [
+      500510
+    ]
+  },
+  "3070760": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070760,
+    "ik_status": [
+      500610
+    ]
+  },
+  "3070790": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 3070790,
+    "ik_status": [
+      510910
+    ]
+  },
+  "4990510": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990510,
+    "ik_status": [
+      600110
+    ]
+  },
+  "4990520": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990520,
+    "ik_status": [
+      600210
+    ]
+  },
+  "4990530": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990530,
+    "ik_status": [
+      600310
+    ]
+  },
+  "4990540": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990540,
+    "ik_status": [
+      600410
+    ]
+  },
+  "4990550": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990550,
+    "ik_status": [
+      600510
+    ]
+  },
+  "4990590": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 4990590,
+    "ik_status": [
+      610910
+    ]
+  },
+  "10100104": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100104,
+    "ik_status": [
+      100410
+    ]
+  },
+  "10100107": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100107,
+    "ik_status": [
+      100710
+    ]
+  },
+  "10100201": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100201,
+    "ik_status": [
+      100110
+    ]
+  },
+  "10100202": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "PayGoToSofaStart",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100202,
+    "ik_status": [
+      100210
+    ]
+  },
+  "10100203": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 1,
+    "heartbeat_enter_anim": "TLX_TD_shafa_idle_03",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100203,
+    "ik_status": [
+      100250,
+      100280
+    ]
+  },
+  "10100303": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100303,
+    "ik_status": [
+      100310
+    ]
+  },
+  "10100401": {
+    "default_favor": 1001,
+    "finish_action": "Idle",
+    "heartbeat_enable": 0,
+    "heartbeat_enter_anim": "",
+    "heartbeat_favor": [
+      [
+        0,
+        1011
+      ],
+      [
+        50,
+        1012
+      ],
+      [
+        100,
+        1013
+      ]
+    ],
+    "id": 10100401,
+    "ik_status": [
+      120810
+    ]
+  },
+  "all": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    201,
+    10100104,
+    10100107,
+    10100201,
+    10100202,
+    10100203,
+    10100303,
+    10100401,
+    2200110,
+    2200210,
+    2200310,
+    2200410,
+    2200510,
+    2200610,
+    2200710,
+    2210110,
+    1990310,
+    1990320,
+    1990330,
+    1990340,
+    1990350,
+    1990360,
+    1990370,
+    1990390,
+    1051710,
+    1051720,
+    1051730,
+    1051740,
+    1051750,
+    1051760,
+    1051780,
+    1051790,
+    1051799,
+    3070710,
+    3070720,
+    3070730,
+    3070740,
+    3070750,
+    3070760,
+    3070790,
+    4990510,
+    4990520,
+    4990530,
+    4990540,
+    4990550,
+    4990590
+  ]
+}

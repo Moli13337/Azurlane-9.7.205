@@ -1,0 +1,1656 @@
+{
+  "1": {
+    "config_client": "",
+    "description": [
+      [
+        "完成困难关卡",
+        [
+          "scene level",
+          {
+            "eliteDefault": true
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 1,
+    "itemids": [
+      59900
+    ]
+  },
+  "2": {
+    "config_client": "",
+    "description": [
+      [
+        "进行军事演习",
+        [
+          " scene militaryexercise"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 2,
+    "itemids": [
+      59003
+    ]
+  },
+  "3": {
+    "config_client": "",
+    "description": [
+      [
+        "进行海域突进每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 301
+          }
+        ],
+        0
+      ],
+      [
+        "军火商概率出售",
+        [
+          "scene shop",
+          {
+            "warp": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托概率获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ],
+      [
+        "舰队商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 7
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 3,
+    "itemids": [
+      16001,
+      16002,
+      16003,
+      16011,
+      16012,
+      16013,
+      16021,
+      16022,
+      16023
+    ]
+  },
+  "4": {
+    "config_client": "",
+    "description": [
+      [
+        "进行海域突进每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 301
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 4,
+    "itemids": [
+      16004,
+      16014,
+      16024
+    ]
+  },
+  "5": {
+    "config_client": "",
+    "description": [
+      [
+        "进行商船护卫每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 201
+          }
+        ],
+        0
+      ],
+      [
+        "出征主线第1章及其后的关卡",
+        [
+          "scene level"
+        ],
+        0
+      ],
+      [
+        "军火商概率出售",
+        [
+          "scene shop",
+          {
+            "warp": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托获取",
+        [
+          "scene event"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 5,
+    "itemids": [
+      17001,
+      17011,
+      17021,
+      17031,
+      17041
+    ]
+  },
+  "6": {
+    "config_client": "",
+    "description": [
+      [
+        "进行商船护卫每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 201
+          }
+        ],
+        0
+      ],
+      [
+        "出征主线第3章及其后的关卡",
+        [
+          "scene level",
+          [],
+          {
+            "leastChapterId": 301
+          }
+        ],
+        0
+      ],
+      [
+        "军火商概率出售",
+        [
+          "scene shop",
+          {
+            "warp": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "舰队商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 7
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 6,
+    "itemids": [
+      17002,
+      17012,
+      17022,
+      17032,
+      17042
+    ]
+  },
+  "7": {
+    "config_client": "",
+    "description": [
+      [
+        "进行商船护卫每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 201
+          }
+        ],
+        0
+      ],
+      [
+        "出征主线第6章及其后的关卡",
+        [
+          "scene level",
+          [],
+          {
+            "leastChapterId": 601
+          }
+        ],
+        0
+      ],
+      [
+        "军火商概率出售",
+        [
+          "scene shop",
+          {
+            "warp": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "舰队商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 7
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 7,
+    "itemids": [
+      17003,
+      17013,
+      17023,
+      17033,
+      17043
+    ]
+  },
+  "8": {
+    "config_client": "",
+    "description": [
+      [
+        "进行商船护卫每日挑战",
+        [
+          "scene dailylevel",
+          {
+            "dailyLevelId": 201
+          }
+        ],
+        0
+      ],
+      [
+        "舰队商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 7
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 8,
+    "itemids": [
+      17004,
+      17014,
+      17024,
+      17034,
+      17044
+    ]
+  },
+  "51": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 51,
+    "itemids": [
+      42001,
+      42002,
+      42003,
+      42004,
+      42005,
+      42006
+    ]
+  },
+  "52": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 52,
+    "itemids": [
+      42011,
+      42012,
+      42013,
+      42014,
+      42015,
+      42016
+    ]
+  },
+  "53": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 53,
+    "itemids": [
+      42021,
+      42022,
+      42023,
+      42024,
+      42025
+    ]
+  },
+  "54": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 54,
+    "itemids": [
+      42031,
+      42032,
+      42033,
+      42034,
+      42035
+    ]
+  },
+  "55": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 55,
+    "itemids": [
+      42041,
+      42042,
+      42043,
+      42044,
+      42045
+    ]
+  },
+  "56": {
+    "config_client": "",
+    "description": [
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 56,
+    "itemids": [
+      42051,
+      42052,
+      42053,
+      42054,
+      42055
+    ]
+  },
+  "101": {
+    "config_client": "",
+    "description": [
+      [
+        "完成任意章主线困难的第1节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 1,
+            "leastChapterId": 10101,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托概率获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 101,
+    "itemids": [
+      18001,
+      18002
+    ]
+  },
+  "102": {
+    "config_client": "",
+    "description": [
+      [
+        "完成任意章主线困难的第2节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 2,
+            "leastChapterId": 10102,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托概率获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 102,
+    "itemids": [
+      18011,
+      18012
+    ]
+  },
+  "103": {
+    "config_client": "",
+    "description": [
+      [
+        "完成任意章主线困难的第3节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 3,
+            "leastChapterId": 10103,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托概率获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 103,
+    "itemids": [
+      18021,
+      18022
+    ]
+  },
+  "104": {
+    "config_client": "",
+    "description": [
+      [
+        "完成任意章主线困难的第4节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 4,
+            "leastChapterId": 10104,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "部分军事委托概率获取",
+        [
+          "scene event"
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 104,
+    "itemids": [
+      18031,
+      18032
+    ]
+  },
+  "111": {
+    "config_client": "",
+    "description": [
+      [
+        "完成第3章及其后主线困难的第1节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 1,
+            "leastChapterId": 10301,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 111,
+    "itemids": [
+      18003
+    ]
+  },
+  "112": {
+    "config_client": "",
+    "description": [
+      [
+        "完成第3章及其后主线困难的第2节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 2,
+            "leastChapterId": 10302,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 112,
+    "itemids": [
+      18013
+    ]
+  },
+  "113": {
+    "config_client": "",
+    "description": [
+      [
+        "完成第3章及其后主线困难的第3节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 3,
+            "leastChapterId": 10303,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 113,
+    "itemids": [
+      18023
+    ]
+  },
+  "114": {
+    "config_client": "",
+    "description": [
+      [
+        "完成第3章及其后主线困难的第4节",
+        [
+          "scene level",
+          [],
+          {
+            "lastDigit": 4,
+            "leastChapterId": 10304,
+            "mapType": 2
+          }
+        ],
+        0
+      ],
+      [
+        "进行部分科研项目",
+        [
+          "technology"
+        ],
+        0
+      ],
+      [
+        "勋章商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 8
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 114,
+    "itemids": [
+      18033
+    ]
+  },
+  "201": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【厌战的特别训练】",
+        [
+          ""
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 201,
+    "itemids": [
+      59762
+    ]
+  },
+  "202": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【闪耀的战斗之星】",
+        [
+          ""
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 202,
+    "itemids": [
+      59749
+    ]
+  },
+  "203": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【龙腾虎跃】",
+        [
+          ""
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 203,
+    "itemids": [
+      59844
+    ]
+  },
+  "204": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【龙腾虎跃】",
+        [
+          ""
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 204,
+    "itemids": [
+      59845
+    ]
+  },
+  "205": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【啾啾大胃王】",
+        [
+          ""
+        ],
+        0
+      ],
+      [
+        "原型商店兑换",
+        [
+          "scene shop",
+          {
+            "warp": 6
+          }
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 205,
+    "itemids": [
+      59843
+    ]
+  },
+  "206": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【电气功率增幅中】",
+        [
+          ""
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 206,
+    "itemids": [
+      59853
+    ]
+  },
+  "207": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【美意延年】",
+        [
+          ""
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 207,
+    "itemids": [
+      59851
+    ]
+  },
+  "208": {
+    "config_client": "",
+    "description": [
+      [
+        "参与限时活动【抚顺大冒险IV复刻】",
+        [
+          ""
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 208,
+    "itemids": [
+      59854
+    ]
+  },
+  "209": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 209,
+    "itemids": [
+      18101
+    ]
+  },
+  "210": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 210,
+    "itemids": [
+      18102
+    ]
+  },
+  "211": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 211,
+    "itemids": [
+      18103
+    ]
+  },
+  "212": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 212,
+    "itemids": [
+      18104
+    ]
+  },
+  "213": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 213,
+    "itemids": [
+      18105
+    ]
+  },
+  "214": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 214,
+    "itemids": [
+      18106
+    ]
+  },
+  "215": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 215,
+    "itemids": [
+      18107
+    ]
+  },
+  "216": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 216,
+    "itemids": [
+      18108
+    ]
+  },
+  "217": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 217,
+    "itemids": [
+      18109
+    ]
+  },
+  "218": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 218,
+    "itemids": [
+      18110
+    ]
+  },
+  "219": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 219,
+    "itemids": [
+      18111
+    ]
+  },
+  "220": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 220,
+    "itemids": [
+      18112
+    ]
+  },
+  "221": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 221,
+    "itemids": [
+      18113
+    ]
+  },
+  "222": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 222,
+    "itemids": [
+      18114
+    ]
+  },
+  "223": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 223,
+    "itemids": [
+      18115
+    ]
+  },
+  "224": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 224,
+    "itemids": [
+      18116
+    ]
+  },
+  "225": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 225,
+    "itemids": [
+      18117
+    ]
+  },
+  "226": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 226,
+    "itemids": [
+      18118
+    ]
+  },
+  "227": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 227,
+    "itemids": [
+      18119
+    ]
+  },
+  "228": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 228,
+    "itemids": [
+      18120
+    ]
+  },
+  "229": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 229,
+    "itemids": [
+      18121
+    ]
+  },
+  "230": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 230,
+    "itemids": [
+      18122
+    ]
+  },
+  "231": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 231,
+    "itemids": [
+      18123
+    ]
+  },
+  "232": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 232,
+    "itemids": [
+      18124
+    ]
+  },
+  "233": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 233,
+    "itemids": [
+      18125
+    ]
+  },
+  "234": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ]
+    ],
+    "drop_type": 2,
+    "id": 234,
+    "itemids": [
+      18126
+    ]
+  },
+  "235": {
+    "config_client": "",
+    "description": [
+      [
+        "参与大型作战",
+        [
+          "scene level"
+        ],
+        0
+      ],
+      [
+        "合成获得",
+        [
+          "BaseUI:ON_ITEM",
+          {
+            "itemId": 18126
+          }
+        ]
+      ]
+    ],
+    "drop_type": 2,
+    "id": 235,
+    "itemids": [
+      18127
+    ]
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    101,
+    102,
+    103,
+    104,
+    111,
+    112,
+    113,
+    114,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235
+  ],
+  "get_id_list_by_drop_type": {
+    "2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      101,
+      102,
+      103,
+      104,
+      111,
+      112,
+      113,
+      114,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235
+    ]
+  }
+}

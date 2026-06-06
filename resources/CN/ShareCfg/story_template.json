@@ -1,0 +1,290 @@
+{
+  "4342": {
+    "icon": "story-doujichang",
+    "id": 4342,
+    "name": "E0-1",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YUZHEDETIANPING2"
+  },
+  "4343": {
+    "icon": "story-doujichang",
+    "id": 4343,
+    "name": "E0-2",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YUZHEDETIANPING3"
+  },
+  "4344": {
+    "icon": "story-doujichang",
+    "id": 4344,
+    "name": "E0-3",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YUZHEDETIANPING4"
+  },
+  "4350": {
+    "icon": "story-diluoyi",
+    "id": 4350,
+    "name": "E1-1",
+    "pos": [
+      0.105,
+      0.14
+    ],
+    "story": "YUZHEDETIANPING10"
+  },
+  "4351": {
+    "icon": "story-diluoyi",
+    "id": 4351,
+    "name": "E1-2",
+    "pos": [
+      0.5,
+      0.136
+    ],
+    "story": "YUZHEDETIANPING11"
+  },
+  "4352": {
+    "icon": "story-diluoyi",
+    "id": 4352,
+    "name": "E1-3",
+    "pos": [
+      0.411,
+      0.355
+    ],
+    "story": "YUZHEDETIANPING12"
+  },
+  "4353": {
+    "icon": "story-diluoyi",
+    "id": 4353,
+    "name": "E1-4",
+    "pos": [
+      0.578,
+      0.296
+    ],
+    "story": "YUZHEDETIANPING13"
+  },
+  "4354": {
+    "icon": "story-diluoyi",
+    "id": 4354,
+    "name": "E1-5",
+    "pos": [
+      0.41,
+      0.276
+    ],
+    "story": "YUZHEDETIANPING14"
+  },
+  "4355": {
+    "icon": "story-diluoyi",
+    "id": 4355,
+    "name": "E1-6",
+    "pos": [
+      0.517,
+      0.412
+    ],
+    "story": "YUZHEDETIANPING15"
+  },
+  "4356": {
+    "icon": "story-diluoyi",
+    "id": 4356,
+    "name": "E1-7",
+    "pos": [
+      0.28,
+      0.391
+    ],
+    "story": "YUZHEDETIANPING16"
+  },
+  "4368": {
+    "icon": "story-xinhaota",
+    "id": 4368,
+    "name": "E2-1",
+    "pos": [
+      0.91,
+      0.114
+    ],
+    "story": "YUZHEDETIANPING28"
+  },
+  "4369": {
+    "icon": "story-xinhaota",
+    "id": 4369,
+    "name": "E2-2",
+    "pos": [
+      0.71,
+      0.33
+    ],
+    "story": "YUZHEDETIANPING29"
+  },
+  "4370": {
+    "icon": "story-xinhaota",
+    "id": 4370,
+    "name": "E2-3",
+    "pos": [
+      0.9,
+      0.341
+    ],
+    "story": "YUZHEDETIANPING30"
+  },
+  "4371": {
+    "icon": "story-xinhaota",
+    "id": 4371,
+    "name": "E2-4",
+    "pos": [
+      0.443,
+      0.152
+    ],
+    "story": "YUZHEDETIANPING31"
+  },
+  "4372": {
+    "icon": "story-xinhaota",
+    "id": 4372,
+    "name": "E2-5",
+    "pos": [
+      0.188,
+      0.176
+    ],
+    "story": "YUZHEDETIANPING32"
+  },
+  "4373": {
+    "icon": "story-xinhaota",
+    "id": 4373,
+    "name": "E2-6",
+    "pos": [
+      0.33,
+      0.358
+    ],
+    "story": "YUZHEDETIANPING33"
+  },
+  "4374": {
+    "icon": "story-xinhaota",
+    "id": 4374,
+    "name": "E2-7",
+    "pos": [
+      0.192,
+      0.447
+    ],
+    "story": "YUZHEDETIANPING34"
+  },
+  "6180": {
+    "icon": "story-wurenji",
+    "id": 6180,
+    "name": "E1-1",
+    "pos": [
+      0.65,
+      0.49
+    ],
+    "story": "TIEYIQINGFENG10"
+  },
+  "6181": {
+    "icon": "story-wurenji",
+    "id": 6181,
+    "name": "E1-2",
+    "pos": [
+      0.56,
+      0.1
+    ],
+    "story": "TIEYIQINGFENG11"
+  },
+  "6182": {
+    "icon": "story-wurenji",
+    "id": 6182,
+    "name": "E1-3",
+    "pos": [
+      0.73,
+      0.25
+    ],
+    "story": "TIEYIQINGFENG12"
+  },
+  "6183": {
+    "icon": "story-xinghaizhuangzhi",
+    "id": 6183,
+    "name": "E1-4",
+    "pos": [
+      0.85,
+      0.4
+    ],
+    "story": "TIEYIQINGFENG13"
+  },
+  "6184": {
+    "icon": "story-zhihuimao",
+    "id": 6184,
+    "name": "E1-5",
+    "pos": [
+      0.2,
+      0.4
+    ],
+    "story": "TIEYIQINGFENG14"
+  },
+  "6959": {
+    "icon": "story-doujichang",
+    "id": 6959,
+    "name": "SP",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YOUMIYAGUANQIAPIAN9"
+  },
+  "6969": {
+    "icon": "story-doujichang",
+    "id": 6969,
+    "name": "SP",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YOUMIYAGUANQIAPIAN18"
+  },
+  "6976": {
+    "icon": "story-doujichang",
+    "id": 6976,
+    "name": "SP",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YOUMIYAGUANQIAPIAN24"
+  },
+  "6979": {
+    "icon": "story-doujichang",
+    "id": 6979,
+    "name": "SP",
+    "pos": [
+      0.5,
+      0.3
+    ],
+    "story": "YOUMIYAGUANQIAPIAN27"
+  },
+  "all": [
+    4342,
+    4343,
+    4344,
+    4350,
+    4351,
+    4352,
+    4353,
+    4354,
+    4355,
+    4356,
+    4368,
+    4369,
+    4370,
+    4371,
+    4372,
+    4373,
+    4374,
+    6180,
+    6181,
+    6182,
+    6183,
+    6184,
+    6959,
+    6969,
+    6976,
+    6979
+  ]
+}

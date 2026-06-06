@@ -1,0 +1,514 @@
+{
+  "1": {
+    "camera_focus": "",
+    "id": 1,
+    "strategy": 90
+  },
+  "2": {
+    "camera_focus": "",
+    "id": 2,
+    "strategy": 91
+  },
+  "3": {
+    "camera_focus": "",
+    "id": 3,
+    "strategy": 93
+  },
+  "4": {
+    "camera_focus": "",
+    "id": 4,
+    "strategy": 92
+  },
+  "5": {
+    "camera_focus": "",
+    "id": 5,
+    "strategy": 8801
+  },
+  "6": {
+    "camera_focus": "",
+    "id": 6,
+    "strategy": 8802
+  },
+  "7": {
+    "camera_focus": "",
+    "id": 7,
+    "strategy": 8841
+  },
+  "8": {
+    "camera_focus": "",
+    "id": 8,
+    "strategy": 8842
+  },
+  "9": {
+    "camera_focus": "",
+    "id": 9,
+    "strategy": 0
+  },
+  "10": {
+    "camera_focus": "",
+    "id": 10,
+    "strategy": 0
+  },
+  "11": {
+    "camera_focus": "",
+    "id": 11,
+    "strategy": 0
+  },
+  "12": {
+    "camera_focus": "",
+    "id": 12,
+    "strategy": 9211
+  },
+  "13": {
+    "camera_focus": "",
+    "id": 13,
+    "strategy": 9212
+  },
+  "14": {
+    "camera_focus": "",
+    "id": 14,
+    "strategy": 9231
+  },
+  "15": {
+    "camera_focus": "",
+    "id": 15,
+    "strategy": 9232
+  },
+  "16": {
+    "camera_focus": "",
+    "id": 16,
+    "strategy": 9251
+  },
+  "17": {
+    "camera_focus": "",
+    "id": 17,
+    "strategy": 9252
+  },
+  "18": {
+    "camera_focus": "",
+    "id": 18,
+    "strategy": 9271
+  },
+  "19": {
+    "camera_focus": "",
+    "id": 19,
+    "strategy": 9272
+  },
+  "20": {
+    "camera_focus": "",
+    "id": 20,
+    "strategy": 14
+  },
+  "22": {
+    "camera_focus": "",
+    "id": 22,
+    "strategy": 9401
+  },
+  "24": {
+    "camera_focus": "",
+    "id": 24,
+    "strategy": 9461
+  },
+  "25": {
+    "camera_focus": "",
+    "id": 25,
+    "strategy": 9391
+  },
+  "26": {
+    "camera_focus": [
+      1,
+      5
+    ],
+    "id": 26,
+    "strategy": 9392
+  },
+  "27": {
+    "camera_focus": [
+      1,
+      5
+    ],
+    "id": 27,
+    "strategy": 9393
+  },
+  "28": {
+    "camera_focus": [
+      1,
+      5
+    ],
+    "id": 28,
+    "strategy": 9394
+  },
+  "29": {
+    "camera_focus": [
+      1,
+      5
+    ],
+    "id": 29,
+    "strategy": 9395
+  },
+  "30": {
+    "camera_focus": "",
+    "id": 30,
+    "strategy": 8910
+  },
+  "31": {
+    "camera_focus": "",
+    "id": 31,
+    "strategy": 8911
+  },
+  "32": {
+    "camera_focus": "",
+    "id": 32,
+    "strategy": 8912
+  },
+  "33": {
+    "camera_focus": "",
+    "id": 33,
+    "strategy": 8910
+  },
+  "34": {
+    "camera_focus": "",
+    "id": 34,
+    "strategy": 8914
+  },
+  "35": {
+    "camera_focus": "",
+    "id": 35,
+    "strategy": 8915
+  },
+  "36": {
+    "camera_focus": "",
+    "id": 36,
+    "strategy": 8916
+  },
+  "37": {
+    "camera_focus": "",
+    "id": 37,
+    "strategy": 8914
+  },
+  "39": {
+    "camera_focus": "",
+    "id": 39,
+    "strategy": 8944
+  },
+  "40": {
+    "camera_focus": "",
+    "id": 40,
+    "strategy": 8945
+  },
+  "41": {
+    "camera_focus": "",
+    "id": 41,
+    "strategy": 8946
+  },
+  "42": {
+    "camera_focus": "",
+    "id": 42,
+    "strategy": 200054
+  },
+  "43": {
+    "camera_focus": "",
+    "id": 43,
+    "strategy": 200057
+  },
+  "44": {
+    "camera_focus": "",
+    "id": 44,
+    "strategy": 200060
+  },
+  "45": {
+    "camera_focus": "",
+    "id": 45,
+    "strategy": 200063
+  },
+  "46": {
+    "camera_focus": "",
+    "id": 46,
+    "strategy": 200067
+  },
+  "47": {
+    "camera_focus": "",
+    "id": 47,
+    "strategy": 200070
+  },
+  "48": {
+    "camera_focus": "",
+    "id": 48,
+    "strategy": 200074
+  },
+  "49": {
+    "camera_focus": "",
+    "id": 49,
+    "strategy": 200078
+  },
+  "50": {
+    "camera_focus": "",
+    "id": 50,
+    "strategy": 200084
+  },
+  "51": {
+    "camera_focus": "",
+    "id": 51,
+    "strategy": 200085
+  },
+  "52": {
+    "camera_focus": "",
+    "id": 52,
+    "strategy": 200086
+  },
+  "53": {
+    "camera_focus": "",
+    "id": 53,
+    "strategy": 200087
+  },
+  "54": {
+    "camera_focus": "",
+    "id": 54,
+    "strategy": 200088
+  },
+  "55": {
+    "camera_focus": "",
+    "id": 55,
+    "strategy": 200394
+  },
+  "56": {
+    "camera_focus": "",
+    "id": 56,
+    "strategy": 200396
+  },
+  "57": {
+    "camera_focus": "",
+    "id": 57,
+    "strategy": 200401
+  },
+  "58": {
+    "camera_focus": "",
+    "id": 58,
+    "strategy": 200406
+  },
+  "59": {
+    "camera_focus": "",
+    "id": 59,
+    "strategy": 200411
+  },
+  "60": {
+    "camera_focus": "",
+    "id": 60,
+    "strategy": 200416
+  },
+  "61": {
+    "camera_focus": "",
+    "id": 61,
+    "strategy": 200645
+  },
+  "62": {
+    "camera_focus": "",
+    "id": 62,
+    "strategy": 200655
+  },
+  "63": {
+    "camera_focus": "",
+    "id": 63,
+    "strategy": 200646
+  },
+  "64": {
+    "camera_focus": "",
+    "id": 64,
+    "strategy": 200658
+  },
+  "65": {
+    "camera_focus": "",
+    "id": 65,
+    "strategy": 200647
+  },
+  "66": {
+    "camera_focus": "",
+    "id": 66,
+    "strategy": 200661
+  },
+  "67": {
+    "camera_focus": "",
+    "id": 67,
+    "strategy": 200648
+  },
+  "68": {
+    "camera_focus": "",
+    "id": 68,
+    "strategy": 200664
+  },
+  "69": {
+    "camera_focus": "",
+    "id": 69,
+    "strategy": 200649
+  },
+  "70": {
+    "camera_focus": "",
+    "id": 70,
+    "strategy": 200667
+  },
+  "71": {
+    "camera_focus": "",
+    "id": 71,
+    "strategy": 200670
+  },
+  "72": {
+    "camera_focus": "",
+    "id": 72,
+    "strategy": 200673
+  },
+  "73": {
+    "camera_focus": "",
+    "id": 73,
+    "strategy": 200676
+  },
+  "74": {
+    "camera_focus": "",
+    "id": 74,
+    "strategy": 200679
+  },
+  "75": {
+    "camera_focus": "",
+    "id": 75,
+    "strategy": 0
+  },
+  "101": {
+    "camera_focus": "",
+    "id": 101,
+    "strategy": 94
+  },
+  "102": {
+    "camera_focus": "",
+    "id": 102,
+    "strategy": 97
+  },
+  "103": {
+    "camera_focus": "",
+    "id": 103,
+    "strategy": 94
+  },
+  "104": {
+    "camera_focus": "",
+    "id": 104,
+    "strategy": 0
+  },
+  "121": {
+    "camera_focus": "",
+    "id": 121,
+    "strategy": 1009
+  },
+  "122": {
+    "camera_focus": "",
+    "id": 122,
+    "strategy": 1010
+  },
+  "123": {
+    "camera_focus": "",
+    "id": 123,
+    "strategy": 1011
+  },
+  "124": {
+    "camera_focus": "",
+    "id": 124,
+    "strategy": 1012
+  },
+  "125": {
+    "camera_focus": "",
+    "id": 125,
+    "strategy": 1013
+  },
+  "126": {
+    "camera_focus": "",
+    "id": 126,
+    "strategy": 1014
+  },
+  "127": {
+    "camera_focus": "",
+    "id": 127,
+    "strategy": 1015
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29,
+    22,
+    24,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    101,
+    102,
+    103,
+    104,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ]
+}

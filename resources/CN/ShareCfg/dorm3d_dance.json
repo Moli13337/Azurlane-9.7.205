@@ -1,0 +1,148 @@
+{
+  "10517": {
+    "camera_names": [
+      "镜头1",
+      "镜头2",
+      "镜头3"
+    ],
+    "camera_tracks": [
+      "dance_camera1",
+      "dance_camera2",
+      "dance_camera3"
+    ],
+    "cucoloris_group": [
+      [
+        101,
+        104,
+        107
+      ],
+      [
+        102,
+        105,
+        108
+      ],
+      [
+        103,
+        106,
+        109
+      ]
+    ],
+    "default_camera": "dance_camera1",
+    "director_name": "[sequence]",
+    "finish_anim": "weixiao",
+    "id": 10517,
+    "song_name": "迷乱奇遇",
+    "timeline_scene": "Dance_10517"
+  },
+  "20220": {
+    "camera_names": [
+      "镜头1",
+      "镜头2",
+      "镜头3"
+    ],
+    "camera_tracks": [
+      "dance_camera1",
+      "dance_camera2",
+      "dance_camera3"
+    ],
+    "cucoloris_group": [
+      [
+        401,
+        404,
+        407
+      ],
+      [
+        402,
+        405,
+        408
+      ],
+      [
+        403,
+        406,
+        409
+      ]
+    ],
+    "default_camera": "dance_camera1",
+    "director_name": "[sequence]",
+    "finish_anim": "weixiao",
+    "id": 20220,
+    "song_name": "舞池旋律3",
+    "timeline_scene": "Dance_20220"
+  },
+  "30707": {
+    "camera_names": [
+      "镜头1",
+      "镜头2",
+      "镜头3"
+    ],
+    "camera_tracks": [
+      "dance_camera1",
+      "dance_camera2",
+      "dance_camera3"
+    ],
+    "cucoloris_group": [
+      [
+        201,
+        204,
+        207
+      ],
+      [
+        202,
+        205,
+        208
+      ],
+      [
+        203,
+        206,
+        209
+      ]
+    ],
+    "default_camera": "dance_camera1",
+    "director_name": "[sequence]",
+    "finish_anim": "weixiao",
+    "id": 30707,
+    "song_name": "今日之凤_shade",
+    "timeline_scene": "Dance_30707"
+  },
+  "49905": {
+    "camera_names": [
+      "镜头1",
+      "镜头2",
+      "镜头3"
+    ],
+    "camera_tracks": [
+      "dance_camera1",
+      "dance_camera2",
+      "dance_camera3"
+    ],
+    "cucoloris_group": [
+      [
+        301,
+        304,
+        307
+      ],
+      [
+        302,
+        305,
+        308
+      ],
+      [
+        303,
+        306,
+        309
+      ]
+    ],
+    "default_camera": "dance_camera1",
+    "director_name": "[sequence]",
+    "finish_anim": "weixiao",
+    "id": 49905,
+    "song_name": "深渊的期待",
+    "timeline_scene": "Dance_49905"
+  },
+  "all": [
+    10517,
+    30707,
+    49905,
+    20220
+  ]
+}

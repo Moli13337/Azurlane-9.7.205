@@ -1,0 +1,432 @@
+{
+  "1001301": {
+    "action_emote": "",
+    "body": "Head",
+    "char_id": 20220,
+    "id": 1001301,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "1001302": {
+    "action_emote": "",
+    "body": "Chest",
+    "char_id": 20220,
+    "id": 1001302,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "1002101": {
+    "action_emote": "",
+    "body": "Chest",
+    "char_id": 20220,
+    "id": 1002101,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "1002801": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 20220,
+    "id": 1002801,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/100301/pre_db_sp_sh_xmas01(Clone)/pre_db_sp_sh_xmas_decoration02",
+    "tip_offset": "",
+    "vibrate": ""
+  },
+  "1003101": {
+    "action_emote": "",
+    "body": "Head",
+    "char_id": 20220,
+    "id": 1003101,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "1004101": {
+    "action_emote": "",
+    "body": "LeftHand",
+    "char_id": 20220,
+    "id": 1004101,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "1007101": {
+    "action_emote": "",
+    "body": "LeftFoot",
+    "char_id": 20220,
+    "id": 1007101,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.3
+      ]
+    ]
+  },
+  "2002501": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 30221,
+    "id": 2002501,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/120303/pre_db_nh_sp_nyd_livingroom01(Clone)/pre_db_nh_sp_nyd_decoration02",
+    "tip_offset": "",
+    "vibrate": ""
+  },
+  "2002502": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 30221,
+    "id": 2002502,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/120303/pre_db_nh_sp_nyd_livingroom01(Clone)/pre_db_nh_sp_nyd_table/all/pre_db_nh_sp_nyd_food01a",
+    "tip_offset": "",
+    "vibrate": ""
+  },
+  "3003321": {
+    "action_emote": "",
+    "body": "Butt",
+    "char_id": 19903,
+    "id": 3003321,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3003322": {
+    "action_emote": "",
+    "body": "Chest",
+    "char_id": 19903,
+    "id": 3003322,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3003323": {
+    "action_emote": "",
+    "body": "RightThigh",
+    "char_id": 19903,
+    "id": 3003323,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3003324": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 19903,
+    "id": 3003324,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/130302/pre_db_ah_livingroom01(Clone)/all/pre_db_ah_toy06",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "3004000": {
+    "action_emote": "",
+    "body": "Back",
+    "char_id": 19903,
+    "id": 3004000,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "3004001": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 19903,
+    "id": 3004001,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/130103/pre_db_aklq_sp_vd01(Clone)/pre_db_aklq_decoration01/all/xiong",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "3999991": {
+    "action_emote": "",
+    "body": "LeftFoot",
+    "char_id": 19903,
+    "id": 3999991,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3999992": {
+    "action_emote": "",
+    "body": "RightThigh",
+    "char_id": 19903,
+    "id": 3999992,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3999993": {
+    "action_emote": "",
+    "body": "RightThigh",
+    "char_id": 19903,
+    "id": 3999993,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "3999994": {
+    "action_emote": "",
+    "body": "LeftThigh",
+    "char_id": 19903,
+    "id": 3999994,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "4000001": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 10517,
+    "id": 4000001,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1110204/pre_db_njh_kitchen01(Clone)/pre_db_njh_refrigerator01/all/fbx_db_food03",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "4000002": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 10517,
+    "id": 4000002,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1110204/pre_db_njh_kitchen01(Clone)/pre_db_njh_refrigerator01/all/BX/BX_men",
+    "tip_offset": [
+      -100,
+      0
+    ],
+    "vibrate": ""
+  },
+  "5004001": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 30707,
+    "id": 5004001,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1120103/pre_db_df_bedroom_01(Clone)/pre_db_tool01_1",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "5004002": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 30707,
+    "id": 5004002,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1120103/pre_db_df_bedroom_01(Clone)/pre_db_df_handcuffs_01",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "5005001": {
+    "action_emote": "",
+    "body": "RightThigh",
+    "char_id": 30707,
+    "id": 5005001,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "5005002": {
+    "action_emote": "",
+    "body": "LeftThigh",
+    "char_id": 30707,
+    "id": 5005002,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "5005003": {
+    "action_emote": "",
+    "body": "LeftThigh",
+    "char_id": 30707,
+    "id": 5005003,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "5005004": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 30707,
+    "id": 5005004,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1120303/pre_db_df_livingroom_01(Clone)/all/ZZ/1/fbx_db_df_food01",
+    "tip_offset": [
+      0,
+      0
+    ],
+    "vibrate": ""
+  },
+  "6004001": {
+    "action_emote": "",
+    "body": "",
+    "char_id": 49905,
+    "id": 6004001,
+    "ik_move": "",
+    "scene_item": "FurnitureSlots/1140101/pre_db_aijier_bed01(Clone)/all/mesh/fbx_db_aje_bed01_1",
+    "tip_offset": "",
+    "vibrate": ""
+  },
+  "6004002": {
+    "action_emote": "",
+    "body": "RightHand",
+    "char_id": 49905,
+    "id": 6004002,
+    "ik_move": "",
+    "scene_item": "",
+    "tip_offset": "",
+    "vibrate": [
+      [
+        100,
+        0.2
+      ]
+    ]
+  },
+  "all": [
+    1002101,
+    1003101,
+    1001301,
+    1001302,
+    1004101,
+    1007101,
+    1002801,
+    2002501,
+    2002502,
+    3003321,
+    3003322,
+    3003323,
+    3003324,
+    3004000,
+    3004001,
+    3999991,
+    3999992,
+    3999993,
+    3999994,
+    4000001,
+    4000002,
+    5004001,
+    5004002,
+    5005001,
+    5005002,
+    5005003,
+    5005004,
+    6004001,
+    6004002
+  ]
+}

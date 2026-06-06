@@ -1,0 +1,134 @@
+{
+  "1": {
+    "group": 2017,
+    "id": 1,
+    "rank": 1,
+    "ship_group": 10706,
+    "story": "RENQIQIYE",
+    "task": 31017
+  },
+  "2": {
+    "group": 2017,
+    "id": 2,
+    "rank": 2,
+    "ship_group": 20212,
+    "story": "RENQIBEIERFASITE",
+    "task": 31018
+  },
+  "3": {
+    "group": 2017,
+    "id": 3,
+    "rank": 3,
+    "ship_group": 30114,
+    "story": "RENQIXILI",
+    "task": 31019
+  },
+  "4": {
+    "group": 2019,
+    "id": 4,
+    "rank": 1,
+    "ship_group": 50201,
+    "story": "RENQIYIXIAN",
+    "task": 31042
+  },
+  "5": {
+    "group": 2019,
+    "id": 5,
+    "rank": 2,
+    "ship_group": 10117,
+    "story": "RENQILAFEI",
+    "task": 31043
+  },
+  "6": {
+    "group": 2019,
+    "id": 6,
+    "rank": 3,
+    "ship_group": 20603,
+    "story": "RENQIDUJIAOSHOU",
+    "task": 31044
+  },
+  "7": {
+    "group": 2021,
+    "id": 7,
+    "rank": 1,
+    "ship_group": 50204,
+    "story": "RENQIYINGRUI",
+    "task": 31045
+  },
+  "8": {
+    "group": 2021,
+    "id": 8,
+    "rank": 2,
+    "ship_group": 29903,
+    "story": "RENQICHAIJUN",
+    "task": 31046
+  },
+  "9": {
+    "group": 2021,
+    "id": 9,
+    "rank": 3,
+    "ship_group": 10517,
+    "story": "RENQIXINZEXI",
+    "task": 31047
+  },
+  "10": {
+    "group": 2023,
+    "id": 10,
+    "rank": 1,
+    "ship_group": 50601,
+    "story": "RENQIZHENHAI",
+    "task": 31048
+  },
+  "11": {
+    "group": 2023,
+    "id": 11,
+    "rank": 2,
+    "ship_group": 49905,
+    "story": "RENQIAIJIER",
+    "task": 31049
+  },
+  "12": {
+    "group": 2023,
+    "id": 12,
+    "rank": 3,
+    "ship_group": 30708,
+    "story": "RENQIXINNONG",
+    "task": 31050
+  },
+  "all": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "get_id_list_by_group": {
+    "2017": [
+      1,
+      2,
+      3
+    ],
+    "2019": [
+      4,
+      5,
+      6
+    ],
+    "2021": [
+      7,
+      8,
+      9
+    ],
+    "2023": [
+      10,
+      11,
+      12
+    ]
+  }
+}

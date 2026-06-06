@@ -1,0 +1,183 @@
+{
+  "2001": {
+    "id": 2001,
+    "item_name": "FurnitureSlots/100301/pre_db_sp_sh_xmas01(Clone)/pre_db_sp_sh_xmas_toy01",
+    "room_id": 1
+  },
+  "2002": {
+    "id": 2002,
+    "item_name": "FurnitureSlots/120303/pre_db_nh_sp_nyd_livingroom01(Clone)/pre_db_nh_sp_nyd_table",
+    "room_id": 2
+  },
+  "2003": {
+    "id": 2003,
+    "item_name": "FurnitureSlots/130202/pre_db_ah_entertainmentarea01(Clone)/pre_db_ah_toy04/pre_db_aklq_toy01",
+    "room_id": 3
+  },
+  "2004": {
+    "id": 2004,
+    "item_name": "FurnitureSlots/pre_db_killerwhaletoys_01",
+    "room_id": 4
+  },
+  "2005": {
+    "id": 2005,
+    "item_name": "no_bake_pay_prop/kitchen/pre_db_appliances04",
+    "room_id": 11
+  },
+  "2006": {
+    "id": 2006,
+    "item_name": "no_bake_pay_prop/bedroom/pre_db_bed04",
+    "room_id": 11
+  },
+  "2007": {
+    "id": 2007,
+    "item_name": "FurnitureSlots/1110303/pre_db_njh_livingroom01(Clone)/pre_db_njh_chair01_group",
+    "room_id": 11
+  },
+  "2008": {
+    "id": 2008,
+    "item_name": "FurnitureSlots/120303/pre_db_nh_livingroom01(Clone)",
+    "room_id": 2
+  },
+  "2009": {
+    "id": 2009,
+    "item_name": "FurnitureSlots/120303/pre_db_nh_livingroom01(Clone)/all/bone_electrical01_1/bone_electrical01_2/vfx_electrical",
+    "room_id": 2
+  },
+  "2010": {
+    "id": 2010,
+    "item_name": "FurnitureSlots/1110303/pre_db_njh_entertainment01(Clone)/pre_db_njh_sportsequipment01",
+    "room_id": 11
+  },
+  "2011": {
+    "id": 2011,
+    "item_name": "FurnitureSlots/1110303/pre_db_njh_entertainment01(Clone)/pre_db_njh_sportsequipment01/vfx_njh_bike",
+    "room_id": 11
+  },
+  "2012": {
+    "id": 2012,
+    "item_name": "FurnitureSlots/130302/pre_db_ah_livingroom01(Clone)",
+    "room_id": 3
+  },
+  "2013": {
+    "id": 2013,
+    "item_name": "no_bake_pay_prop/livingroom/pre_db_df_livingroom01_0",
+    "room_id": 12
+  },
+  "2014": {
+    "id": 2014,
+    "item_name": "fbx/litmap_03/pre_db_chair23_10/fbx_db_chair23a",
+    "room_id": 16
+  },
+  "2015": {
+    "id": 2015,
+    "item_name": "no_bake_pay_prop/study/pre_db_aijier_study01_0",
+    "room_id": 14
+  },
+  "2016": {
+    "id": 2016,
+    "item_name": "FurnitureSlots/1140101/pre_db_aijier_bed01(Clone)",
+    "room_id": 14
+  },
+  "2017": {
+    "id": 2017,
+    "item_name": "fbx/litmap_03/pre_db_chair23_6/fbx_db_chair23a",
+    "room_id": 16
+  },
+  "2018": {
+    "id": 2018,
+    "item_name": "FurnitureSlots/1110204/pre_db_njh_kitchen01(Clone)/pre_db_njh_refrigerator01",
+    "room_id": 11
+  },
+  "2019": {
+    "id": 2019,
+    "item_name": "FurnitureSlots/1120303/pre_db_df_livingroom_01(Clone)",
+    "room_id": 12
+  },
+  "2020": {
+    "id": 2020,
+    "item_name": "FurnitureSlots/130103/pre_db_aklq_sp_vd01(Clone)/pre_db_aklq_bed01",
+    "room_id": 3
+  },
+  "2021": {
+    "id": 2021,
+    "item_name": "FurnitureSlots/130103/pre_db_aklq_sp_vd01(Clone)/pre_db_aklq_decoration01",
+    "room_id": 3
+  },
+  "2022": {
+    "id": 2022,
+    "item_name": "FurnitureSlots/130103/pre_db_aklq_sp_vd01(Clone)/pre_db_aklq_chandelier01",
+    "room_id": 3
+  },
+  "2023": {
+    "id": 2023,
+    "item_name": "FurnitureSlots/1140201/pre_db_aijier_study01(Clone)/pre_db_aje_chair01",
+    "room_id": 14
+  },
+  "all": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "get_id_list_by_room_id": {
+    "1": [
+      2001
+    ],
+    "2": [
+      2002,
+      2008,
+      2009
+    ],
+    "3": [
+      2003,
+      2012,
+      2020,
+      2021,
+      2022
+    ],
+    "4": [
+      2004
+    ],
+    "11": [
+      2005,
+      2006,
+      2007,
+      2010,
+      2011,
+      2018
+    ],
+    "12": [
+      2013,
+      2019
+    ],
+    "14": [
+      2015,
+      2016,
+      2023
+    ],
+    "16": [
+      2014,
+      2017
+    ]
+  }
+}
