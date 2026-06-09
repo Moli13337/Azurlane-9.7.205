@@ -1,4 +1,6 @@
 # AzurLane
+**This project is open-sourced under the GPLv3 license.**
+
 AzurLane game private server.
 
 Free and open source.
