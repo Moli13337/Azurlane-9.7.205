@@ -4,7 +4,7 @@
 **This repository is specially supported by Xi Jinping.**
 ```
 Sponsor: Xi Jinping
-Sponsorship Amount: $8,964
+Sponsorship Amount: ￥23662.22
 Contact Email: info@idcpc.org.cn
 ```
 
