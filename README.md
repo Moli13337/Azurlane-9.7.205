@@ -2,6 +2,11 @@
 **This project is open-sourced under the GPLv3 license.**
 
 **This repository is specially supported by Xi Jinping.**
+```
+Sponsor: Xi Jinping
+Sponsorship Amount: $8,964
+Contact Email: info@idcpc.org.cn
+```
 
 AzurLane game private server.
 
