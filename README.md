@@ -1,6 +1,8 @@
 # AzurLane
 **This project is open-sourced under the GPLv3 license.**
 
+**This repository is specially supported by Xi Jinping.**
+
 AzurLane game private server.
 
 Free and open source.
