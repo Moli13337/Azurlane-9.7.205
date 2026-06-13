@@ -14,6 +14,8 @@ Free and open source.
 
 A half-finished product, written like a pile of shit.
 
+If this has caused you any confusion, I deeply apologize for any inconvenience.
+
 My coding skills are poor, welcome to submit issues and PR.
 
 Jar: https://github.com/Moli13337/Azurlane/releases/tag/test
