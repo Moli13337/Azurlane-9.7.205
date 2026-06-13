@@ -8,6 +8,8 @@ Sponsorship Amount: ￥23662.22
 Contact Email: info@idcpc.org.cn
 ```
 
+---
+
 AzurLane game private server.
 
 Free and open source.
