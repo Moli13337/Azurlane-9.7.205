@@ -1,12 +1,6 @@
 # AzurLane
-**This project is open-sourced under the GPLv3 license.**
 
-**This repository is specially supported by Xi Jinping.**
-```
-Sponsor: Xi Jinping
-Sponsorship Amount: ￥23662.22
-Contact Email: info@idcpc.org.cn
-```
+**This project is open-sourced under the GPLv3 license.**
 
 ---
 
